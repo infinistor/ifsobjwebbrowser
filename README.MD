@@ -1,7 +1,7 @@
-# Ifs S3 Browser
+# IfsS3Browser
 
 ## 용도
-linux 서버에서 web으로 제공하는 S3 Compatible에 접근하기 위한 솔루션
+WEB 기반 S3 Compatible 스토리지용 파일 탐색기
 
 ## 주요 기능
 - URL, Credential 정보를 바탕으로 S3 Compatible에 접근 가능

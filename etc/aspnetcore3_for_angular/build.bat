@@ -1,0 +1,1 @@
+docker build -t pspace/aspnetcore3_for_angular:latest .

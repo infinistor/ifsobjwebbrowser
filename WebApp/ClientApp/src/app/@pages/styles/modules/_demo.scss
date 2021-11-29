@@ -1,0 +1,80 @@
+/*------------------------------------------------------------------
+[30. Demo : Only for demo pursposes]
+*/
+
+
+$builder-options-width : 260px;
+$builder-options-header-height :102px;
+$assets-img-url:'../../assets/img/';
+
+.content-builder{
+    display: none;
+    &.active{
+        display: block;
+    }
+    .placeholder{
+        position: relative;
+        &:after{
+            content: "Content goes here";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -10px;
+            right: 0;
+            text-align: center;
+            font-size: 26px;
+            opacity: .16;
+            color: $color-master;
+        }
+    }
+}
+.previewer{
+    height: 35px;
+}
+
+/* Demo Widths For GIF Animations 
+------------------------------------
+*/
+.demo-bg-hinted{
+    background-color: #939393
+}
+.demo-fs-23{
+    font-size:23px !important;
+}
+.demo-mw-50{
+    max-width: 50px;
+}
+.demo-mw-300{
+    max-width: 300px;
+}
+.demo-mw-350{
+    max-width: 350px;
+}
+.demo-mw-400{
+    max-width: 400px;
+}
+.demo-mw-500{
+    max-width: 500px;
+}
+.demo-mw-600{
+    max-width: 600px;
+}
+.demo-container{
+    height: 2000px;
+}
+
+/* Views page */
+.view-iframe-wrapper{
+    width: 100%;
+    height: 255px;
+    background: #fff;
+    position: relative;
+    iframe{
+        width: 100%;
+        height: 100%;
+        padding: 45px 45px 0 45px;
+        @media (max-width:1200px){
+            padding: 0;
+        }
+    }
+}

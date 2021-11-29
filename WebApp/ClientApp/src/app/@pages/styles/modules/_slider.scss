@@ -1,0 +1,251 @@
+
+@mixin vertical(){
+    &-vertical {
+      width: 12px;
+      height: 100%;
+      margin: 6px 10px;
+      padding: 0 4px;
+  
+      .pg-slider-rail {
+        height: 100%;
+        width: 4px;
+      }
+  
+      .pg-slider-track {
+        width: 4px;
+      }
+  
+      .pg-slider-handle {
+        margin-left: -7px;
+        margin-bottom: -7px;
+        transition: all 0.2s ease;
+      }
+  
+      .pg-slider-mark {
+        top: 0;
+        left: 12px;
+        width: 18px;
+        height: 100%;
+      }
+  
+      .pg-slider-mark-text {
+        left: 4px;
+        white-space: nowrap;
+      }
+  
+      .pg-slider-step {
+        width: 4px;
+        height: 100%;
+      }
+  
+      .pg-slider-dot {
+        top: auto;
+        left: 2px;
+        margin-bottom: -4px;
+      }
+    }
+}
+@mixin colors{
+    &.primary{
+        .pg-slider-track, .pg-slider-dot-active{
+            background-color: $color-primary
+        }
+        .pg-slider-dot-active{
+          border-color: $color-primary
+        }
+    }
+    &.success{
+        .pg-slider-track, .pg-slider-dot-active{
+            background-color: $color-success
+        }
+        .pg-slider-dot-active{
+          border-color: $color-success
+        }
+    }
+    &.danger{
+        .pg-slider-track, .pg-slider-dot-active{
+            background-color: $color-danger
+        }
+        .pg-slider-dot-active{
+          border-color: $color-danger
+        }
+    }
+    &.info{
+        .pg-slider-track, .pg-slider-dot-active{
+            background-color: $color-info
+        }
+        .pg-slider-dot-active{
+          border-color: $color-info
+        }
+    }
+    &.warning{
+        .pg-slider-track, .pg-slider-dot-active{
+            background-color: $color-warning
+        }
+        .pg-slider-dot-active{
+          border-color: $color-warning
+        }
+    }
+    &.complete{
+        .pg-slider-track,.pg-slider-dot-active{
+            background-color: $color-complete
+        }
+        .pg-slider-dot-active{
+          border-color: $color-complete
+        }
+    }
+}
+
+$slider-disabled-color:#ddd;
+// tooltip
+$slider-tooltip-color: #fff;
+$slider-tooltip-bg: #000;
+$slider-tooltip-arrow-width: 4px;
+$slider-tooltip-distance:4px;
+$slider-tooltip-arrow-color: #000;
+$border-color-split:#ddd;
+.pg-slider {
+  position: relative;
+  margin: 4x 6px;
+  padding: 4px 0;
+  height: 12px;
+  cursor: pointer;
+
+  @include vertical();
+
+  &-with-marks {
+    margin-bottom: 28px;
+  }
+
+  &-handle {
+    border: 1px solid #dbdbdb;
+    position: absolute;
+    margin-left: -9px;
+    margin-top: -7px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    transition:left 0.2s ease,border-color 0.3s ease, transform .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+    &:hover {
+      transform: scale(1.2);
+      transform-origin: center center;
+    }
+
+    &:active {
+      transform: scale(1.2);
+      transform-origin: center center;
+      box-shadow: 0 0 0 2px fadeout($color-master, 80%);
+    }
+  }
+  
+  &-rail {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $border-color-split;
+    transition: background-color 0.2s ease;
+  }
+
+  &-track {
+    position: absolute;
+    height: 4px;
+    border-radius: 3;
+    background-color: tint($color-master, 60%);
+    transition: all 0.2s ease;
+    background: $color-master;
+  }
+  @include colors();
+
+  &:hover {
+    .pg-slider-rail {
+      background-color: #e1e1e1;
+    }
+    .pg-slider-track {
+      background-color: tint($color-master, 40%);
+    }
+    .pg-slider-handle {
+      border-color: $color-master-light;
+    }
+  }
+
+  &-mark {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  &-mark-text {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: #ddd;
+
+    &-active {
+      color: $color-master-dark;
+    }
+  }
+
+  &-step {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+  }
+
+  &-dot {
+    position: absolute;
+    top: -2px;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: #fff;
+    &:first-child {
+      margin-left: -4px;
+    }
+    &:last-child {
+      margin-left: -4px;
+    }
+    &-active {
+      border-color: tint($color-master, 50%);
+    }
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+
+    .pg-slider-track {
+      background-color: $slider-disabled-color !important;
+    }
+
+    .pg-slider-handle,
+    .pg-slider-dot {
+      border-color: $slider-disabled-color !important;
+      background-color: $color-primary;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .pg-slider-mark-text,
+    .pg-slider-dot {
+      cursor: not-allowed !important;
+    }
+  }
+  .tooltip{
+    z-index: 600;
+  }
+  .show{
+    opacity: 0.7;
+  }
+}

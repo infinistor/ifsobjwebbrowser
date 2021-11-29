@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ko" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ec4f6e0c77992a6dd3518cec396079fd0bd06d53" datatype="html">
+        <source>Close</source>
+				<target>닫기</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-notification/dist/es2015/notification.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The title of the close button</note>
+        <note priority="1" from="meaning">kendo.notification.closeTitle</note>
+      </trans-unit>
+      <trans-unit id="262a7a2e1c2c01f72e494499e4031ca52bfb6c62" datatype="html">
+        <source>Cancel</source>
+				<target>취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Cancel button</note>
+        <note priority="1" from="meaning">kendo.upload.cancel</note>
+      </trans-unit>
+      <trans-unit id="47d53c4c549530374586d580a1fffb90509aa114" datatype="html">
+        <source>Clear</source>
+				<target>지우기</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Clear button</note>
+        <note priority="1" from="meaning">kendo.upload.clearSelectedFiles</note>
+      </trans-unit>
+      <trans-unit id="ed0e4f0924eb8ac2dfc0a30d0852da2f0a356e8f" datatype="html">
+        <source>Drop files here to upload</source>
+				<target>업로드 할 파일을 여기에 올려 놓으세요.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The drop zone hint</note>
+        <note priority="1" from="meaning">kendo.upload.dropFilesHere</note>
+      </trans-unit>
+      <trans-unit id="940cf4e04c5b4fd5e98b4affd35a4b2c9c3036a4" datatype="html">
+        <source>Paused</source>
+				<target>일시정지</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">The header status message when the file upload is paused</note>
+        <note priority="1" from="meaning">kendo.upload.headerStatusPaused</note>
+      </trans-unit>
+      <trans-unit id="30d5eeceb66bae90056d593fcf90eecd851b36a4" datatype="html">
+        <source>Done</source>
+				<target>완료</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">The header status message after file upload completion</note>
+        <note priority="1" from="meaning">kendo.upload.headerStatusUploaded</note>
+      </trans-unit>
+      <trans-unit id="be0775f64ce53906c132f6b5a50280ff5b948b35" datatype="html">
+        <source>Uploading...</source>
+				<target>업로드 중...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The header status message during file upload</note>
+        <note priority="1" from="meaning">kendo.upload.headerStatusUploading</note>
+      </trans-unit>
+      <trans-unit id="8292c7f6c967dcade8639d0dd477a67ad08457c7" datatype="html">
+        <source>File type not allowed.</source>
+				<target>파일 형식이 허용되지 않습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/fileselect.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The text for the invalid allowed extensions restriction message</note>
+        <note priority="1" from="meaning">kendo.upload.invalidFileExtension</note>
+      </trans-unit>
+      <trans-unit id="6dd7e145884074d6d0bf5302dd13b63a02c9b949" datatype="html">
+        <source>Invalid file(s). Please check file upload requirements.</source>
+				<target>유효하지 않은 파일. 파일 업로드 요구 사항을 확인하십시오.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">The text for the invalid files message</note>
+        <note priority="1" from="meaning">kendo.upload.invalidFiles</note>
+      </trans-unit>
+      <trans-unit id="1d3c53a4169aceb03929a0dcdd2f4c5436aa4470" datatype="html">
+        <source>File size too large.</source>
+				<target>파일 크기가 너무 큽니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/fileselect.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The text for the invalid max file size restriction message</note>
+        <note priority="1" from="meaning">kendo.upload.invalidMaxFileSize</note>
+      </trans-unit>
+      <trans-unit id="dde6c68c96cf06aab654c8054c516d0d12f6309a" datatype="html">
+        <source>File size too small.</source>
+				<target>파일 크기가 너무 작습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/fileselect.component.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">The text for the invalid min file size restriction message</note>
+        <note priority="1" from="meaning">kendo.upload.invalidMinFileSize</note>
+      </trans-unit>
+      <trans-unit id="8a0a61519fec031579cf6b1c4f31c94578bd0981" datatype="html">
+        <source>Pause</source>
+				<target>일시정지</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Pause button</note>
+        <note priority="1" from="meaning">kendo.upload.pause</note>
+      </trans-unit>
+      <trans-unit id="1e81e5de447f5792cd15c18c435360a7b946ac70" datatype="html">
+        <source>Remove</source>
+				<target>제거</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/fileselect.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Remove button</note>
+        <note priority="1" from="meaning">kendo.upload.remove</note>
+      </trans-unit>
+      <trans-unit id="f9ef89f76dd3d8c5a3184830d60e4d4f9c4dc998" datatype="html">
+        <source>Resume</source>
+				<target>다시 시작</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Resume button</note>
+        <note priority="1" from="meaning">kendo.upload.resume</note>
+      </trans-unit>
+      <trans-unit id="9150dfa816d23dfa75f231ca6f053f5e0ae26713" datatype="html">
+        <source>Retry</source>
+				<target>재시도</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Retry button</note>
+        <note priority="1" from="meaning">kendo.upload.retry</note>
+      </trans-unit>
+      <trans-unit id="24063b06532dc5303d28524d6245ba6d3eed80c1" datatype="html">
+        <source>Select files...</source>
+				<target>파일 선택...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/fileselect.component.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Select button</note>
+        <note priority="1" from="meaning">kendo.upload.select</note>
+      </trans-unit>
+      <trans-unit id="3449491aa76964a8dceb9ed3957b6fc4c17f568f" datatype="html">
+        <source>Upload</source>
+				<target>업로드</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/upload.component.d.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">The text for the Upload files button</note>
+        <note priority="1" from="meaning">kendo.upload.uploadSelectedFiles</note>
+      </trans-unit>
+      <trans-unit id="49152e310ccb32f7817cfac932777e083d282882" datatype="html">
+        <source>Drop files here to select</source>
+				<target>선택할 파일을 여기에 놓으세요.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-upload/dist/es2015/fileselect.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The drop zone hint</note>
+        <note priority="1" from="meaning">kendo.upload.dropFilesHere</note>
+      </trans-unit>
+      <trans-unit id="4e9993e088a293543eb0c2801343518c115b6f20" datatype="html">
+        <source>NO DATA FOUND</source>
+				<target>데이터가 없습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/autocomplete.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The text displayed in the popup when there are no items</note>
+        <note priority="1" from="meaning">kendo.autocomplete.noDataText</note>
+      </trans-unit>
+      <trans-unit id="7cf49cc2d50eebd29f8d61564512383caaaac7a6" datatype="html">
+        <source>clear</source>
+				<target>지우기</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/autocomplete.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The title of the clear button</note>
+        <note priority="1" from="meaning">kendo.autocomplete.clearTitle</note>
+      </trans-unit>
+      <trans-unit id="2b6e00c74a6d9c98c03a6274d0224e9bd457ff89" datatype="html">
+        <source>NO DATA FOUND</source>
+				<target>데이터가 없습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/combobox.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The text displayed in the popup when there are no items</note>
+        <note priority="1" from="meaning">kendo.combobox.noDataText</note>
+      </trans-unit>
+      <trans-unit id="069e8fae80677e3e785861123bef446b3ff41ab4" datatype="html">
+        <source>clear</source>
+				<target>지우기</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/combobox.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/multiselect.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The title of the clear button</note>
+        <note priority="1" from="meaning">kendo.combobox.clearTitle</note>
+      </trans-unit>
+      <trans-unit id="4fc2f70c9c8cf7b18affd6b938105996d6ac3306" datatype="html">
+        <source>NO DATA FOUND</source>
+				<target>데이터가 없습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/dropdownlist.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The text displayed in the popup when there are no items</note>
+        <note priority="1" from="meaning">kendo.dropdownlist.noDataText</note>
+      </trans-unit>
+      <trans-unit id="3cc1323f79a5fe012960578e513f8a35b2af1e96" datatype="html">
+        <source>NO DATA FOUND</source>
+				<target>데이터가 없습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dropdowns/dist/es2015/multiselect.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The text displayed in the popup when there are no items</note>
+        <note priority="1" from="meaning">kendo.multiselect.noDataText</note>
+      </trans-unit>
+      <trans-unit id="0fa71630d40c425b9c366afd7f6c3cecc5bef59d" datatype="html">
+        <source>increment</source>
+				<target>증가</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/slider/slider.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The title of the **Increase** button of the Slider.</note>
+        <note priority="1" from="meaning">kendo.slider.increment</note>
+      </trans-unit>
+      <trans-unit id="042c26f68d78afd6834ea46a5f7533850fe8c800" datatype="html">
+        <source>decrement</source>
+				<target>감소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/slider/slider.component.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The title of the **Decrease** button of the Slider.</note>
+        <note priority="1" from="meaning">kendo.slider.decrement</note>
+      </trans-unit>
+      <trans-unit id="481eb98e9cd8ef8e8b22051796441901e883763d" datatype="html">
+        <source>Drag</source>
+				<target>드래그</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/slider/slider.component.d.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">The title of the drag handle of the Slider.</note>
+        <note priority="1" from="meaning">kendo.slider.dragHandle</note>
+      </trans-unit>
+      <trans-unit id="155f0a38198ffbf0429c5dbf9765e74f246a8617" datatype="html">
+        <source>ON</source>
+				<target>ON</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/switch/switch.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The **On** label of the Switch.</note>
+        <note priority="1" from="meaning">kendo.switch.on</note>
+      </trans-unit>
+      <trans-unit id="79df1a6d2b35c32b2948e3cee56dd3ffe28127bc" datatype="html">
+        <source>OFF</source>
+				<target>OFF</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/switch/switch.component.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The **Off** label of the Switch.</note>
+        <note priority="1" from="meaning">kendo.switch.off</note>
+      </trans-unit>
+      <trans-unit id="0fc68540ffa04fdc246cf6cf8a1fed085f8b19a5" datatype="html">
+        <source>Increase value</source>
+				<target>값 증가</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/numerictextbox/numerictextbox.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The title for the **Increment** button in the NumericTextBox</note>
+        <note priority="1" from="meaning">kendo.numerictextbox.increment</note>
+      </trans-unit>
+      <trans-unit id="df4751834075bf970c77d0da2c960b4e19a6b0dd" datatype="html">
+        <source>Decrease value</source>
+				<target>값 감소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-inputs/dist/es2015/numerictextbox/numerictextbox.component.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The title for the **Decrement** button in the NumericTextBox</note>
+        <note priority="1" from="meaning">kendo.numerictextbox.decrement</note>
+      </trans-unit>
+      <trans-unit id="2df64767cd895a8fabe3e18b94b5b6b6f9e2e3f0" datatype="html">
+        <source>TODAY</source>
+				<target>오늘</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/calendar/calendar.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The label for the today button in the calendar header</note>
+        <note priority="1" from="meaning">kendo.calendar.today</note>
+      </trans-unit>
+      <trans-unit id="a55944f9de69e7cc86b91200fe96f980a947d704" datatype="html">
+        <source>Increase value</source>
+				<target>값 증가</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/dateinput/dateinput.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The label for the **Increment** button in the DateInput</note>
+        <note priority="1" from="meaning">kendo.dateinput.increment</note>
+      </trans-unit>
+      <trans-unit id="0eded761107e6dad120997006a7f915bade9b15c" datatype="html">
+        <source>Decrease value</source>
+				<target>값 감소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/dateinput/dateinput.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The label for the **Decrement** button in the DateInput</note>
+        <note priority="1" from="meaning">kendo.dateinput.decrement</note>
+      </trans-unit>
+      <trans-unit id="91a84f2d4871dbe7e90d84865d4a4d83c8ae041e" datatype="html">
+        <source>TODAY</source>
+				<target>오늘</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datepicker/datepicker.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The label for the today button in the calendar header</note>
+        <note priority="1" from="meaning">kendo.datepicker.today</note>
+      </trans-unit>
+      <trans-unit id="f6c28c2d80dbe993c4b33f4dc4010364f41cc2ae" datatype="html">
+        <source>Toggle calendar</source>
+				<target>달력 전환</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datepicker/datepicker.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The label for the toggle button in the datepicker component</note>
+        <note priority="1" from="meaning">kendo.datepicker.toggle</note>
+      </trans-unit>
+      <trans-unit id="4c3bf42192220c7611c09ece1c5de14855139dd0" datatype="html">
+        <source>Set</source>
+				<target>지정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The Accept button text in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.accept</note>
+      </trans-unit>
+      <trans-unit id="93c2a9c3aa49f56e452c0aecbaabe3bb33fa4222" datatype="html">
+        <source>Set time</source>
+				<target>시간 지정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Accept button in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.acceptLabel</note>
+      </trans-unit>
+      <trans-unit id="132eefca16bd41d489b4647724b91e93793603aa" datatype="html">
+        <source>Cancel</source>
+				<target>취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The Cancel button text in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.cancel</note>
+      </trans-unit>
+      <trans-unit id="2cf6f4ca4470810944b4016c9b6f87943d3390ab" datatype="html">
+        <source>Cancel changes</source>
+				<target>변경 취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Cancel button in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.cancelLabel</note>
+      </trans-unit>
+      <trans-unit id="bbc99bb74ae75a503bd813aad0c7253d3553e923" datatype="html">
+        <source>Now</source>
+				<target>지금</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">The Now button text in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.now</note>
+      </trans-unit>
+      <trans-unit id="df1a696f318275aa934e27850920889d494c2740" datatype="html">
+        <source>Select now</source>
+				<target>지금 선택</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Now button in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.nowLabel</note>
+      </trans-unit>
+      <trans-unit id="f2c196786ed2d3ecb2369750c36aac9a4053fb30" datatype="html">
+        <source>Toggle time list</source>
+				<target>시간 목록 전환</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timepicker.component.d.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">The label for the toggle button in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.timepicker.toggle</note>
+      </trans-unit>
+      <trans-unit id="5bb17f81ae8dbc109499ce3792afffa6b7cef855" datatype="html">
+        <source>Date</source>
+				<target>날짜</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The Date tab text in the datetimepicker popup header</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.dateTab</note>
+      </trans-unit>
+      <trans-unit id="2a400c9e364a4c6d83ac39b5513c962805db54b2" datatype="html">
+        <source>Date tab</source>
+				<target>날짜 탭</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Date tab in the datetimepicker popup header</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.dateTabLabel</note>
+      </trans-unit>
+      <trans-unit id="e9b2b760a6916040e7520a9a2926d65de175944d" datatype="html">
+        <source>Time</source>
+				<target>시간</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">The Time tab text in the datetimepicker popup header</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.timeTab</note>
+      </trans-unit>
+      <trans-unit id="13bf7e3a1036140119732c6d5952f7a20c22999e" datatype="html">
+        <source>Time tab</source>
+				<target>시간 탭</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Time tab in the datetimepicker popup header</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.timeTabLabel</note>
+      </trans-unit>
+      <trans-unit id="60296a83f0d3e3d07aaba87c4f8e91b0aca3c22a" datatype="html">
+        <source>Toggle popup</source>
+				<target>팝업 전환</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">The label for the toggle button in the datetimepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.toggle</note>
+      </trans-unit>
+      <trans-unit id="4359b59db7ded88e106ada877e744c71b188f8f9" datatype="html">
+        <source>Set</source>
+				<target>지정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">The Accept button text in the datetimepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.accept</note>
+      </trans-unit>
+      <trans-unit id="cbea4571cca81ad9767a6b29f0287d1f3f6372dc" datatype="html">
+        <source>Set</source>
+				<target>지정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Accept button in the datetimepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.acceptLabel</note>
+      </trans-unit>
+      <trans-unit id="17ab795d6f7527dd962a309759ca58cb4edd7e52" datatype="html">
+        <source>Cancel</source>
+				<target>취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">The Cancel button text in the datetimepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.cancel</note>
+      </trans-unit>
+      <trans-unit id="ba26795ab9f4c21d66b17549ba854a96fcdac1f9" datatype="html">
+        <source>Cancel</source>
+				<target>취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Cancel button in the datetimepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.cancelLabel</note>
+      </trans-unit>
+      <trans-unit id="7172e7e9a1741f6b63439ec89e498c995cb23b0d" datatype="html">
+        <source>NOW</source>
+				<target>지금</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">The Now button text in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.now</note>
+      </trans-unit>
+      <trans-unit id="52d90641b26b1ce4c011cadf0437ce36c1dac1d5" datatype="html">
+        <source>Select now</source>
+				<target>지금 선택</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Now button in the timepicker component</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.nowLabel</note>
+      </trans-unit>
+      <trans-unit id="7ee30b9ae5918cc544fbd87a4135694397aeefaf" datatype="html">
+        <source>TODAY</source>
+				<target>오늘</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/datetimepicker/datetimepicker.component.d.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">The label for the today button in the calendar header</note>
+        <note priority="1" from="meaning">kendo.datetimepicker.today</note>
+      </trans-unit>
+      <trans-unit id="063d99483243b27bc8282abfb5f2c76877e1112e" datatype="html">
+        <source>TODAY</source>
+				<target>오늘</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/calendar/multiview-calendar.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The label for the today button in the calendar header</note>
+        <note priority="1" from="meaning">kendo.multiviewcalendar.today</note>
+      </trans-unit>
+      <trans-unit id="e783e2af4828224b846fa92148ea1cc52b21bb13" datatype="html">
+        <source>Navigate to previous view</source>
+				<target>이전보기로 이동</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/calendar/multiview-calendar.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The label for the previous button in the Multiview calendar</note>
+        <note priority="1" from="meaning">kendo.multiviewcalendar.prevButtonTitle</note>
+      </trans-unit>
+      <trans-unit id="3e3a529a242f39d22f841c3bd8045ec75b696b7a" datatype="html">
+        <source>Navigate to next view</source>
+				<target>다음보기로 이동</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/calendar/multiview-calendar.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The label for the next button in the Multiview calendar</note>
+        <note priority="1" from="meaning">kendo.multiviewcalendar.nextButtonTitle</note>
+      </trans-unit>
+      <trans-unit id="801811aa1609e3f173c86baa82cee037f75a215f" datatype="html">
+        <source>Set</source>
+				<target>지정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timeselector.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The Accept button text in the timeselector component</note>
+        <note priority="1" from="meaning">kendo.timeselector.accept</note>
+      </trans-unit>
+      <trans-unit id="b4b1e5ac55f0330f6c4e32b866ae4339ad969978" datatype="html">
+        <source>Set time</source>
+				<target>시간 지정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timeselector.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Accept button in the timeselector component</note>
+        <note priority="1" from="meaning">kendo.timeselector.acceptLabel</note>
+      </trans-unit>
+      <trans-unit id="3004d7704ffa6202a3b3925fcea490e486203a3e" datatype="html">
+        <source>Cancel</source>
+				<target>취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timeselector.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The Cancel button text in the timeselector component</note>
+        <note priority="1" from="meaning">kendo.timeselector.cancel</note>
+      </trans-unit>
+      <trans-unit id="08dfbdfffd662371a6ff4c0b6ed82b9faa48143b" datatype="html">
+        <source>Cancel changes</source>
+				<target>변경 취소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timeselector.component.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Cancel button in the timeselector component</note>
+        <note priority="1" from="meaning">kendo.timeselector.cancelLabel</note>
+      </trans-unit>
+      <trans-unit id="98cba1ae36a7bbe15e1bac1837e07922ec109e7d" datatype="html">
+        <source>Now</source>
+				<target>지금</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timeselector.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">The Now button text in the timeselector component</note>
+        <note priority="1" from="meaning">kendo.timeselector.now</note>
+      </trans-unit>
+      <trans-unit id="08e6a8a51d970609e138950fdd89c5cf201869f3" datatype="html">
+        <source>Select now</source>
+				<target>지금 선택</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dateinputs/dist/es2015/timepicker/timeselector.component.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The label for the Now button in the timeselector component</note>
+        <note priority="1" from="meaning">kendo.timeselector.nowLabel</note>
+      </trans-unit>
+      <trans-unit id="30bcb3a2fbc22fcab6ca805e74b90adb8ba1ae96" datatype="html">
+        <source>Drag a column header and drop it here to group by that column</source>
+				<target>열 머리글을 끌어서 여기에 놓아 해당 열을 기준으로 그룹화하십시오</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The label visible in the Grid group panel when it is empty</note>
+        <note priority="1" from="meaning">kendo.grid.groupPanelEmpty</note>
+      </trans-unit>
+      <trans-unit id="ff9cfd4bf3e40305db251f2b6961796c0550b4b0" datatype="html">
+        <source>No records available.</source>
+				<target>사용 가능한 데이터가 없습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The label visible in the Grid when there are no records</note>
+        <note priority="1" from="meaning">kendo.grid.noRecords</note>
+      </trans-unit>
+      <trans-unit id="b405dfc5ee42415daa08d54847d3010de1821111" datatype="html">
+        <source>Go to the first page</source>
+				<target>첫 페이지로 이동</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The label for the first page button in Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerFirstPage</note>
+      </trans-unit>
+      <trans-unit id="47aa4fe05f5a2577d3336971d7c44ce48802b860" datatype="html">
+        <source>Go to the previous page</source>
+				<target>이전 페이지로 이동</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">The label for the previous page button in Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerPreviousPage</note>
+      </trans-unit>
+      <trans-unit id="90031133fca899b4e491d9fc51128c1a184afb30" datatype="html">
+        <source>Go to the next page</source>
+				<target>다음 페이지로 이동</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">The label for the next page button in Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerNextPage</note>
+      </trans-unit>
+      <trans-unit id="fe84f2ea868286ce03e50b6e55558c16d675c753" datatype="html">
+        <source>Go to the last page</source>
+				<target>마지막 페이지로 이동</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The label for the last page button in Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerLastPage</note>
+      </trans-unit>
+      <trans-unit id="89c1f616c25bb610824cd8a26473a03921df48bd" datatype="html">
+        <source>Page</source>
+				<target>페이지</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">The label before the current page number in the Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerPage</note>
+      </trans-unit>
+      <trans-unit id="0c9abe48f5d4bd2cb51846712e41864fc64aad6a" datatype="html">
+        <source>of</source>
+				<target>/</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">The label before the total pages number in the Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerOf</note>
+      </trans-unit>
+      <trans-unit id="7c1704d11bfb77340485acd891439c2b6c6616ca" datatype="html">
+        <source>items</source>
+				<target>데이터</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">The label after the total pages number in the Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerItems</note>
+      </trans-unit>
+      <trans-unit id="3331fe7ec45f299afaa4c1e08ea25c493eda9144" datatype="html">
+        <source>items per page</source>
+				<target>페이지 당 데이터</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">The label for the page size chooser in the Grid pager</note>
+        <note priority="1" from="meaning">kendo.grid.pagerItemsPerPage</note>
+      </trans-unit>
+      <trans-unit id="21a04b7b090dac60e0449cb6e435b7e879173c75" datatype="html">
+        <source>Filter</source>
+				<target>필터</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">The label of the filter cell or icon</note>
+        <note priority="1" from="meaning">kendo.grid.filter</note>
+      </trans-unit>
+      <trans-unit id="8b31e1604d10a2f8709dcb1ed5c237e33cffc135" datatype="html">
+        <source>Is equal to</source>
+				<target>다음과 같음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">The text of the equal filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterEqOperator</note>
+      </trans-unit>
+      <trans-unit id="d46e14d35d89d2fadf5c852abf5557643510a013" datatype="html">
+        <source>Is not equal to</source>
+				<target>다음과 같지 않음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">The text of the not equal filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterNotEqOperator</note>
+      </trans-unit>
+      <trans-unit id="078c50eb1fe8b2b43fcc40c5e7f4493152310c2f" datatype="html">
+        <source>Is null</source>
+				<target>null 값</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is null filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterIsNullOperator</note>
+      </trans-unit>
+      <trans-unit id="70b39eeaf2674907b2e59b414baf17e032b464dc" datatype="html">
+        <source>Is not null</source>
+				<target>null 값이 아님</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is not null filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterIsNotNullOperator</note>
+      </trans-unit>
+      <trans-unit id="a4e77e444b4e9b63851ac818e20136212b06c750" datatype="html">
+        <source>Is empty</source>
+				<target>빈 값</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is empty filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterIsEmptyOperator</note>
+      </trans-unit>
+      <trans-unit id="dee7553c341248e90aef4a8e7438c52e667e68be" datatype="html">
+        <source>Is not empty</source>
+				<target>빈 값이 아님</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is not empty filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterIsNotEmptyOperator</note>
+      </trans-unit>
+      <trans-unit id="da43b363b636156e3ccdbb64a0788bdeab51e992" datatype="html">
+        <source>Starts with</source>
+				<target>문자열로 시작</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">The text of the starts with filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterStartsWithOperator</note>
+      </trans-unit>
+      <trans-unit id="5b568a46d2e34ebde7dd53a7e599cbbb7dc6bae1" datatype="html">
+        <source>Contains</source>
+				<target>포함</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">The text of the contains filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterContainsOperator</note>
+      </trans-unit>
+      <trans-unit id="be06aa4fde7fa722c9de5a45f241ff595071d718" datatype="html">
+        <source>Does not contain</source>
+				<target>포함되지 않음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">The text of the does not contain filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterNotContainsOperator</note>
+      </trans-unit>
+      <trans-unit id="a54b2ecffb41f0603ceedc7ea5a40b7d130e2fa1" datatype="html">
+        <source>Ends with</source>
+				<target>문자열로 끝남</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">The text of the ends with filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterEndsWithOperator</note>
+      </trans-unit>
+      <trans-unit id="68471603db771d0304d02fe086da9701c16911c3" datatype="html">
+        <source>Is greater than or equal to</source>
+				<target>크거나 같음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">The text of the greater than or equal filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterGteOperator</note>
+      </trans-unit>
+      <trans-unit id="ae68acc0e18252a348bdfb32112996d81e5305de" datatype="html">
+        <source>Is greater than</source>
+				<target>큼</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description">The text of the greater than filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterGtOperator</note>
+      </trans-unit>
+      <trans-unit id="e48d50a6422c616a00b95025adc5283aff4fa8cb" datatype="html">
+        <source>Is less than or equal to</source>
+				<target>작거나 같음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description">The text of the less than or equal filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterLteOperator</note>
+      </trans-unit>
+      <trans-unit id="c4d58f0e509cb7e37014715dd91546a724210d70" datatype="html">
+        <source>Is less than</source>
+				<target>작음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <note priority="1" from="description">The text of the less than filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterLtOperator</note>
+      </trans-unit>
+      <trans-unit id="d5f1e9028bc60c30e8f8e0f9cfeb872512446cea" datatype="html">
+        <source>Is True</source>
+				<target>True 값</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">The text of the IsTrue boolean filter option</note>
+        <note priority="1" from="meaning">kendo.grid.filterIsTrue</note>
+      </trans-unit>
+      <trans-unit id="6d34731320e2536fd78f4a9e08f0b8dcd01edf3d" datatype="html">
+        <source>Is False</source>
+				<target>False 값</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <note priority="1" from="description">The text of the IsFalse boolean filter option</note>
+        <note priority="1" from="meaning">kendo.grid.filterIsFalse</note>
+      </trans-unit>
+      <trans-unit id="4da1456a62bafe2614ed2bc05a2c790a64a4dd0b" datatype="html">
+        <source>(All)</source>
+				<target>전체</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="description">The text of the (All) boolean filter option</note>
+        <note priority="1" from="meaning">kendo.grid.filterBooleanAll</note>
+      </trans-unit>
+      <trans-unit id="d7dac1bbc2372d578a9d2bca099de766043aed7e" datatype="html">
+        <source>Is after or equal to</source>
+				<target>이후 혹은 같음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="description">The text of the after or equal date filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterAfterOrEqualOperator</note>
+      </trans-unit>
+      <trans-unit id="bff777df0d0831cc02679227422fab4ef2763fa9" datatype="html">
+        <source>Is after</source>
+				<target>이후</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description">The text of the after date filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterAfterOperator</note>
+      </trans-unit>
+      <trans-unit id="35ef5cf367670f15432c9f8761bc85fbdb2b1830" datatype="html">
+        <source>Is before</source>
+				<target>이전</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <note priority="1" from="description">The text of the before date filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterBeforeOperator</note>
+      </trans-unit>
+      <trans-unit id="27a6b29ffbc1eb498de8d7af20051461a2e842ec" datatype="html">
+        <source>Is before or equal to</source>
+				<target>이전 혹은 같음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note priority="1" from="description">The text of the before or equal date filter operator</note>
+        <note priority="1" from="meaning">kendo.grid.filterBeforeOrEqualOperator</note>
+      </trans-unit>
+      <trans-unit id="4f1c08d0b056646cdb668da669e2e15825adfe4d" datatype="html">
+        <source>Filter</source>
+				<target>필터</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <note priority="1" from="description">The text of the filter button</note>
+        <note priority="1" from="meaning">kendo.grid.filterFilterButton</note>
+      </trans-unit>
+      <trans-unit id="06e4e4dadede6f91f261cdbb7fb174246a135238" datatype="html">
+        <source>Clear</source>
+				<target>지우기</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <note priority="1" from="description">The text of the clear filter button</note>
+        <note priority="1" from="meaning">kendo.grid.filterClearButton</note>
+      </trans-unit>
+      <trans-unit id="f73fbcc2f813d469e4a34491950ca01ea1ac8f60" datatype="html">
+        <source>And</source>
+				<target>And</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <note priority="1" from="description">The text of the And filter logic</note>
+        <note priority="1" from="meaning">kendo.grid.filterAndLogic</note>
+      </trans-unit>
+      <trans-unit id="04e64780de0fc1c3a9986997e0808ec53a5f2a63" datatype="html">
+        <source>Or</source>
+				<target>Or</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <note priority="1" from="description">The text of the Or filter logic</note>
+        <note priority="1" from="meaning">kendo.grid.filterOrLogic</note>
+      </trans-unit>
+      <trans-unit id="781c049cc69efc30bc8053af9ace3cb4b04bd438" datatype="html">
+        <source>Loading</source>
+				<target>로딩 중</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <note priority="1" from="description">The loading text</note>
+        <note priority="1" from="meaning">kendo.grid.loading</note>
+      </trans-unit>
+      <trans-unit id="3596c6b21d39223adc5c352daec9938474a8cc0d" datatype="html">
+        <source>Column Menu</source>
+				<target>컬럼 메뉴</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <note priority="1" from="description">The title of the column menu icon</note>
+        <note priority="1" from="meaning">kendo.grid.columnMenu</note>
+      </trans-unit>
+      <trans-unit id="9b841399fbb3d81f2401f98b4f4763834b72a1e5" datatype="html">
+        <source>Columns</source>
+				<target>컬럼 목록</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the columns item</note>
+        <note priority="1" from="meaning">kendo.grid.columns</note>
+      </trans-unit>
+      <trans-unit id="f356cae509dec3dc1b7156326b9a0328a79c62a8" datatype="html">
+        <source>Lock</source>
+				<target>잠금</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the lock item</note>
+        <note priority="1" from="meaning">kendo.grid.lock</note>
+      </trans-unit>
+      <trans-unit id="f33355540003068372e39ba7f3def794869ea9f8" datatype="html">
+        <source>Unlock</source>
+				<target>잠금 해제</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the unlock item</note>
+        <note priority="1" from="meaning">kendo.grid.unlock</note>
+      </trans-unit>
+      <trans-unit id="a692ba271be066ce379f942ff67094e1ea989f4c" datatype="html">
+        <source>Sortable</source>
+				<target>정렬 가능</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+        <note priority="1" from="description">The label of the sort icon</note>
+        <note priority="1" from="meaning">kendo.grid.sortable</note>
+      </trans-unit>
+      <trans-unit id="96beffd8446c5455f3bbdc313c946db32df7dcc2" datatype="html">
+        <source>Sort Ascending</source>
+				<target>오름차순 정렬</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the sort ascending item</note>
+        <note priority="1" from="meaning">kendo.grid.sortAscending</note>
+      </trans-unit>
+      <trans-unit id="208d0538d4c2537a1cbf456941e34a2884053d52" datatype="html">
+        <source>Sort Descending</source>
+				<target>내림차순 정렬</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the sort descending item</note>
+        <note priority="1" from="meaning">kendo.grid.sortDescending</note>
+      </trans-unit>
+      <trans-unit id="947c64329461efd9f8a9aa2c51acbbd099170aa5" datatype="html">
+        <source>Sorted Ascending</source>
+				<target>오름차순으로 정렬 됨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <note priority="1" from="description">The status announcement when a column is sorted ascending</note>
+        <note priority="1" from="meaning">kendo.grid.sortedAscending</note>
+      </trans-unit>
+      <trans-unit id="092a688d1b2b6d873bdc29beaaf43c3f45336581" datatype="html">
+        <source>Sorted Descending</source>
+				<target>내림차순으로 정렬 됨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <note priority="1" from="description">The status announcement when a column is sorted descending</note>
+        <note priority="1" from="meaning">kendo.grid.sortedDescending</note>
+      </trans-unit>
+      <trans-unit id="66e99ea340974022c07c52a6f668f5573e7edab0" datatype="html">
+        <source>Not Sorted</source>
+				<target>정렬 안됨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <note priority="1" from="description">The status announcement when a column is no longer sorted</note>
+        <note priority="1" from="meaning">kendo.grid.sortedDefault</note>
+      </trans-unit>
+      <trans-unit id="04600bd6e362cf9da9f7f9c4666eab2c88eb6a90" datatype="html">
+        <source>Apply</source>
+				<target>적용</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu or column chooser for the columns apply button</note>
+        <note priority="1" from="meaning">kendo.grid.columnsApply</note>
+      </trans-unit>
+      <trans-unit id="94d3b472d99994a5cca9930afd4cf0ac2774c382" datatype="html">
+        <source>Reset</source>
+				<target>초기화</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu or column chooser for the columns reset button</note>
+        <note priority="1" from="meaning">kendo.grid.columnsReset</note>
+      </trans-unit>
+      <trans-unit id="ad6629bb6e79235623cfce486ef48087dbe96fb5" datatype="html">
+        <source>Expand Details</source>
+				<target>세부 정보 확장</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <note priority="1" from="description">The title of the expand icon of detail rows.</note>
+        <note priority="1" from="meaning">kendo.grid.detailExpand</note>
+      </trans-unit>
+      <trans-unit id="ace0c0a58fbb211e8678efb3bd6ac9bb587144c3" datatype="html">
+        <source>Collapse Details</source>
+				<target>세부 정보 축소</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-grid/dist/es2015/grid.component.d.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+        <note priority="1" from="description">The title of the collapse icon of detail rows.</note>
+        <note priority="1" from="meaning">kendo.grid.detailCollapse</note>
+      </trans-unit>
+      <trans-unit id="9b2bd34897f127e69e5f02f64692fca98a5a7572" datatype="html">
+        <source>Close</source>
+				<target>닫기</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dialog/dist/es2015/dialog/dialog-titlebar.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The title of the close button</note>
+        <note priority="1" from="meaning">kendo.dialog.closeTitle</note>
+      </trans-unit>
+      <trans-unit id="bb50cb526949482fc976fd868573ab283580ee69" datatype="html">
+        <source>Close</source>
+				<target>닫기</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dialog/dist/es2015/window/window.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The title of the close button</note>
+        <note priority="1" from="meaning">kendo.window.closeTitle</note>
+      </trans-unit>
+      <trans-unit id="9a9ce231f0396e40adcfa80bfa76e546e0085be0" datatype="html">
+        <source>Restore</source>
+				<target>복원</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dialog/dist/es2015/window/window.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The title of the restore button</note>
+        <note priority="1" from="meaning">kendo.window.restoreTitle</note>
+      </trans-unit>
+      <trans-unit id="42bc654ef8767c5df5277aa88941b94f8d373b4d" datatype="html">
+        <source>Maximize</source>
+				<target>최대화</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dialog/dist/es2015/window/window.component.d.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">The title of the maximize button</note>
+        <note priority="1" from="meaning">kendo.window.maximizeTitle</note>
+      </trans-unit>
+      <trans-unit id="7ca9f9b41a23760f7f74e91ee4c76d5a5f4a706c" datatype="html">
+        <source>Minimize</source>
+				<target>최소화</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-dialog/dist/es2015/window/window.component.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">The title of the minimize button</note>
+        <note priority="1" from="meaning">kendo.window.minimizeTitle</note>
+      </trans-unit>
+      <trans-unit id="a79c1279afcbf136c3ddefd1a201af99f4a3c7b5" datatype="html">
+        <source>No records available.</source>
+				<target>사용 가능한 데이터가 존재하지 않습니다.</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">The label visible in the TreeList when there are no records</note>
+        <note priority="1" from="meaning">kendo.treelist.noRecords</note>
+      </trans-unit>
+      <trans-unit id="0b5adc1a84b662963928aa73f7941cf2a502ca9c" datatype="html">
+        <source>Go to the first page</source>
+				<target>첫 페이지로 이동</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">The label for the first page button in TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerFirstPage</note>
+      </trans-unit>
+      <trans-unit id="09781b4cad65124a1087c4b05c4f9ec3ae88e165" datatype="html">
+        <source>Go to the previous page</source>
+				<target>이전 페이지로 이동</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">The label for the previous page button in TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerPreviousPage</note>
+      </trans-unit>
+      <trans-unit id="1bda5b0e26236ea09a0fc371fcbdb7688d09a509" datatype="html">
+        <source>Go to the next page</source>
+				<target>다음 페이지로 이동</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">The label for the next page button in TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerNextPage</note>
+      </trans-unit>
+      <trans-unit id="cdf1ad243b2890940fe26b3e419ba71ddbd8aa5a" datatype="html">
+        <source>Go to the last page</source>
+				<target>마지막 페이지로 이동</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">The label for the last page button in TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerLastPage</note>
+      </trans-unit>
+      <trans-unit id="287412bc1246aad2b6fd05d0853a2fe6877b801b" datatype="html">
+        <source>Page</source>
+				<target>페이지</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">The label before the current page number in the TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerPage</note>
+      </trans-unit>
+      <trans-unit id="4cc4f3c66a1233dee14e6f8655494e08eb81e191" datatype="html">
+        <source>of</source>
+				<target> / </target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">The label before the total pages number in the TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerOf</note>
+      </trans-unit>
+      <trans-unit id="de854490936ba56018ef7f8a2d67a124d688b8db" datatype="html">
+        <source>items</source>
+				<target>개 데이터</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">The label after the total pages number in the TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerItems</note>
+      </trans-unit>
+      <trans-unit id="7a7b68e92a1ec505004d2bbeec0a8e0c4a47e227" datatype="html">
+        <source>items per page</source>
+				<target>페이지 당 데이터 수</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">The label for the page size chooser in the TreeList pager</note>
+        <note priority="1" from="meaning">kendo.treelist.pagerItemsPerPage</note>
+      </trans-unit>
+      <trans-unit id="3ab4d93d98979483ce91931db991a6bb104d11c9" datatype="html">
+        <source>Filter</source>
+				<target>필터</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">The label of the filter cell or icon</note>
+        <note priority="1" from="meaning">kendo.treelist.filter</note>
+      </trans-unit>
+      <trans-unit id="0cd1adb5c835c05e298bc5568c02b39baa74d4a9" datatype="html">
+        <source>Is equal to</source>
+				<target>같음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">The text of the equal filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterEqOperator</note>
+      </trans-unit>
+      <trans-unit id="4765862efa585fb5c4e1adf5db9b38eebabe051d" datatype="html">
+        <source>Is not equal to</source>
+				<target>같지 않음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">The text of the not equal filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterNotEqOperator</note>
+      </trans-unit>
+      <trans-unit id="a00ed88d352ccdb637ce675dc521f5e4e5ab0c63" datatype="html">
+        <source>Is null</source>
+				<target>null 값</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is null filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterIsNullOperator</note>
+      </trans-unit>
+      <trans-unit id="7a1a67a28283daea42755cba9a7cdefe16ecaf8b" datatype="html">
+        <source>Is not null</source>
+				<target>null이 아님</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is not null filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterIsNotNullOperator</note>
+      </trans-unit>
+      <trans-unit id="f97b8102d63bef513a269c6f237bb1ecd66b45d6" datatype="html">
+        <source>Is empty</source>
+				<target>빈 값</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is empty filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterIsEmptyOperator</note>
+      </trans-unit>
+      <trans-unit id="09b1b3a5f812dc75afb4d3d37bb368c522db362c" datatype="html">
+        <source>Is not empty</source>
+				<target>빈 값이 아님</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">The text of the is not empty filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterIsNotEmptyOperator</note>
+      </trans-unit>
+      <trans-unit id="2890d20b61276813d24bcac9decdab6e193c924c" datatype="html">
+        <source>Starts with</source>
+				<target>특정 값으로 시작</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">The text of the starts with filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterStartsWithOperator</note>
+      </trans-unit>
+      <trans-unit id="914e690a4cb74e8c65363b458a6c9b48dfea1da7" datatype="html">
+        <source>Contains</source>
+				<target>포함</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">The text of the contains filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterContainsOperator</note>
+      </trans-unit>
+      <trans-unit id="c70b6d3fc752b2c6b26dfce75bd19d8599b93033" datatype="html">
+        <source>Does not contain</source>
+				<target>포함하지 않음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">The text of the does not contain filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterNotContainsOperator</note>
+      </trans-unit>
+      <trans-unit id="cd9a432b859c491a7723ef12fda786b62053cc1d" datatype="html">
+        <source>Ends with</source>
+				<target>특정 값으로 끝</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description">The text of the ends with filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterEndsWithOperator</note>
+      </trans-unit>
+      <trans-unit id="289e58555a6d803c3450dd399b9cf67a1a2e98c8" datatype="html">
+        <source>Is greater than or equal to</source>
+				<target>크거나 같음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">The text of the greater than or equal filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterGteOperator</note>
+      </trans-unit>
+      <trans-unit id="b9278f5f3160545b330f162aa7e82066dbed9607" datatype="html">
+        <source>Is greater than</source>
+				<target>큼</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">The text of the greater than filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterGtOperator</note>
+      </trans-unit>
+      <trans-unit id="6918259000dbe30cd78e8860b9fdaafbabcb9a25" datatype="html">
+        <source>Is less than or equal to</source>
+				<target>작거나 같음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">The text of the less than or equal filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterLteOperator</note>
+      </trans-unit>
+      <trans-unit id="ae4bbdfc3ee897f028841eca04a5d91ec2d4ee61" datatype="html">
+        <source>Is less than</source>
+				<target>작음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="description">The text of the less than filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterLtOperator</note>
+      </trans-unit>
+      <trans-unit id="16e9e2209633a80112df7c3b37bc56c938b27f8b" datatype="html">
+        <source>Is True</source>
+				<target>True</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description">The text of the IsTrue boolean filter option</note>
+        <note priority="1" from="meaning">kendo.treelist.filterIsTrue</note>
+      </trans-unit>
+      <trans-unit id="cdce58174b115a53dff112da82858d631f5a9be3" datatype="html">
+        <source>Is False</source>
+				<target>False</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="description">The text of the IsFalse boolean filter option</note>
+        <note priority="1" from="meaning">kendo.treelist.filterIsFalse</note>
+      </trans-unit>
+      <trans-unit id="ff1da0738702670621d008d4902f0ab704b4faa4" datatype="html">
+        <source>(All)</source>
+				<target>전체</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">The text of the (All) boolean filter option</note>
+        <note priority="1" from="meaning">kendo.treelist.filterBooleanAll</note>
+      </trans-unit>
+      <trans-unit id="ddd875fe8ef7c06a5abb4de1e13dc7be0fb0419b" datatype="html">
+        <source>Is after or equal to</source>
+				<target>이후 이거나 같음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">The text of the after or equal date filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterAfterOrEqualOperator</note>
+      </trans-unit>
+      <trans-unit id="d8c6140d38d89b5ce364f175030a23939049d0f1" datatype="html">
+        <source>Is after</source>
+				<target>이후</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <note priority="1" from="description">The text of the after date filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterAfterOperator</note>
+      </trans-unit>
+      <trans-unit id="572298b8e8959a35e49a469aa0f9afba2cffe5b2" datatype="html">
+        <source>Is before</source>
+				<target>이전</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <note priority="1" from="description">The text of the before date filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterBeforeOperator</note>
+      </trans-unit>
+      <trans-unit id="45178126c830dd074321fa50cdb0d1c1a3a10fe7" datatype="html">
+        <source>Is before or equal to</source>
+				<target>이전 이거나 같음</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <note priority="1" from="description">The text of the before or equal date filter operator</note>
+        <note priority="1" from="meaning">kendo.treelist.filterBeforeOrEqualOperator</note>
+      </trans-unit>
+      <trans-unit id="e44cdcd935db42c36a8914bd77afd7ec86297630" datatype="html">
+        <source>Filter</source>
+				<target>필터</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <note priority="1" from="description">The text of the filter button</note>
+        <note priority="1" from="meaning">kendo.treelist.filterFilterButton</note>
+      </trans-unit>
+      <trans-unit id="5c9958de639ddffc476be23653f805d868a4484f" datatype="html">
+        <source>Clear</source>
+				<target>지우기</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <note priority="1" from="description">The text of the clear filter button</note>
+        <note priority="1" from="meaning">kendo.treelist.filterClearButton</note>
+      </trans-unit>
+      <trans-unit id="9259e5d506e88328eb347535e1d224e931ed50d9" datatype="html">
+        <source>And</source>
+				<target>And</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+        <note priority="1" from="description">The text of the And filter logic</note>
+        <note priority="1" from="meaning">kendo.treelist.filterAndLogic</note>
+      </trans-unit>
+      <trans-unit id="30f792cf0c2dd03a72dcc124a681b3271a0b4b92" datatype="html">
+        <source>Or</source>
+				<target>Or</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <note priority="1" from="description">The text of the Or filter logic</note>
+        <note priority="1" from="meaning">kendo.treelist.filterOrLogic</note>
+      </trans-unit>
+      <trans-unit id="77f5d6685cf38119ed85876d6d04a79a2b67cb86" datatype="html">
+        <source>Loading</source>
+				<target>로딩 중</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <note priority="1" from="description">The loading text</note>
+        <note priority="1" from="meaning">kendo.treelist.loading</note>
+      </trans-unit>
+      <trans-unit id="b5b3d64e4b293fea9e936086a3d6c2d87b805442" datatype="html">
+        <source>Column Menu</source>
+				<target>컬럼 메뉴</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">The title of the column menu icon</note>
+        <note priority="1" from="meaning">kendo.treelist.columnMenu</note>
+      </trans-unit>
+      <trans-unit id="652dc1976e2e0ae414f459df4f18f36774dd6128" datatype="html">
+        <source>Columns</source>
+				<target>컬럼</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the columns item</note>
+        <note priority="1" from="meaning">kendo.treelist.columns</note>
+      </trans-unit>
+      <trans-unit id="e8924b69d5c28ae3a1f11f8b1f0a725788837e8d" datatype="html">
+        <source>Lock</source>
+				<target>잠금</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the lock item</note>
+        <note priority="1" from="meaning">kendo.treelist.lock</note>
+      </trans-unit>
+      <trans-unit id="bcc1c4161452d1e5d4ce53d6d059b5880a50d311" datatype="html">
+        <source>Unlock</source>
+				<target>잠금해제</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the unlock item</note>
+        <note priority="1" from="meaning">kendo.treelist.unlock</note>
+      </trans-unit>
+      <trans-unit id="0c76fe494d951c73c1d993cc0c54c687a179d23b" datatype="html">
+        <source>Sortable</source>
+				<target>정렬가능</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <note priority="1" from="description">The label of the sort icon</note>
+        <note priority="1" from="meaning">kendo.treelist.sortable</note>
+      </trans-unit>
+      <trans-unit id="181d125337591b17ca3d8612e307b06e761ad467" datatype="html">
+        <source>Sort Ascending</source>
+				<target>오름차순 정렬</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the sort ascending item</note>
+        <note priority="1" from="meaning">kendo.treelist.sortAscending</note>
+      </trans-unit>
+      <trans-unit id="e39fc1d5c36be50d813af6c976ea732e4487d157" datatype="html">
+        <source>Sort Descending</source>
+				<target>내림차순 정렬</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu for the sort descending item</note>
+        <note priority="1" from="meaning">kendo.treelist.sortDescending</note>
+      </trans-unit>
+      <trans-unit id="ba92b061442dc5087e47b98a1df883bb6041e633" datatype="html">
+        <source>Sorted Ascending</source>
+				<target>오름차순 정렬됨</target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <note priority="1" from="description">The status announcement when a column is sorted ascending</note>
+        <note priority="1" from="meaning">kendo.treelist.sortedAscending</note>
+      </trans-unit>
+      <trans-unit id="537d1f5cfa893932e71b5a0bc7a0f642b1b7c44f" datatype="html">
+        <source>내림차순 정렬됨</source>
+				<target></target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <note priority="1" from="description">The status announcement when a column is sorted descending</note>
+        <note priority="1" from="meaning">kendo.treelist.sortedDescending</note>
+      </trans-unit>
+      <trans-unit id="8faff57f906be135c4f091be815d9b90ad5bfe5f" datatype="html">
+        <source>정렬되지 않음</source>
+				<target></target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <note priority="1" from="description">The status announcement when a column is no longer sorted</note>
+        <note priority="1" from="meaning">kendo.treelist.sortedDefault</note>
+      </trans-unit>
+      <trans-unit id="ebf5078ae6c56ef46a575cad90e1055f6ee3da82" datatype="html">
+        <source>적용</source>
+				<target></target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu or column chooser for the columns apply button</note>
+        <note priority="1" from="meaning">kendo.treelist.columnsApply</note>
+      </trans-unit>
+      <trans-unit id="e4172c14ea54835be3d301ac88a2c1a5d2a39a92" datatype="html">
+        <source>초기화</source>
+				<target></target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-treelist/dist/es2015/treelist.component.d.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+        <note priority="1" from="description">The text shown in the column menu or column chooser for the columns reset button</note>
+        <note priority="1" from="meaning">kendo.treelist.columnsReset</note>
+      </trans-unit>
+      <trans-unit id="de53b3f74f2d4a81b5c3f54c0ac1269cb017bd4f" datatype="html">
+        <source>닫기</source>
+				<target></target>
+				<context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@progress/kendo-angular-tooltip/dist/es2015/tooltip/tooltip.content.component.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">The title of the close button</note>
+        <note priority="1" from="meaning">kendo.tooltip.closeTitle</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

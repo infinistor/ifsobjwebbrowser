@@ -1,0 +1,92 @@
+.k-toolbar input[type="text"] {
+	margin-top: -1px !important;
+
+}
+
+@media only screen and (max-width: 1540px) {
+	/* searchbar 내부 화면 축소 확대시 비/활성화 설정 */
+	.expand-search-date {
+		display: none;
+	}
+
+	.expand-search-date-flex {
+		display: none;
+		width: 120px;
+	}
+
+	.reduction-search-date {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1540px) {
+	.expand-search-date {
+		display: block;
+	}
+
+	.expand-search-date-flex {
+		display: inline-flex;
+		width: 120px;
+	}
+
+	.reduction-search-date {
+		display: none;
+	}
+}
+
+.k-toolbar .k-datepicker {
+	width: 140px;
+}
+
+.k-toolbar kendo-datetimepicker {
+	width: 195px;
+}
+
+//.k-datetime-wrap {
+//	width: 300px !important;
+//}
+
+.k-toolbar .k-multiselect-wrap.k-floatwrap {
+	padding-right: 0px;
+}
+
+.k-toolbar .k-multiselect-wrap .k-input {
+	padding-left: 0;
+	width: 60px;
+}
+
+.k-toolbar .k-multiselect {
+	width: 210px;
+}
+
+.k-toolbar input[type="text"] {
+	height: 30px;
+	color: #3d4149;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	margin-top: 7px;
+	line-height: 28px;
+	width: 120px;
+}
+
+.template {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	border-radius: 5%;
+	text-align: center;
+}
+
+kendo-multiselect {
+	height: 30px;
+
+	kendo-searchbar {
+		.k-input {
+			padding-top: 0 !important;
+			padding-bottom: 5px !important;
+		}
+	}
+}
+
+kendo-dropdownlist {
+	height: 30px;
+}

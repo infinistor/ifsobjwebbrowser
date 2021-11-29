@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:WebApi.Controllers.BaseController">
+            <summary>기본 컨트롤러 클래스</summary>
+        </member>
+        <member name="F:WebApi.Controllers.BaseController.m_logger">
+            <summary>로거</summary>
+        </member>
+        <member name="M:WebApi.Controllers.BaseController.#ctor">
+            <summary>생성자</summary>
+        </member>
+        <member name="M:WebApi.Controllers.BaseController.#ctor(Microsoft.Extensions.Logging.ILogger)">
+            <summary>생성자</summary>
+            <param name="logger">로거</param>
+        </member>
+        <member name="T:WebApi.Controllers.S3.S3Controller">
+            <summary>S3 관련 컨트롤러</summary>
+        </member>
+        <member name="F:WebApi.Controllers.S3.S3Controller.m_provider">
+            <summary>데이터 프로바이더</summary>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.#ctor(Microsoft.Extensions.Logging.ILogger{WebApi.Controllers.S3.S3Controller},CSSPProviderInterfaces.IS3Provider)">
+            <summary>생성자</summary>
+            <param name="logger">로거</param>
+            <param name="provider">데이터 프로바이더</param>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetBuckets(System.String,System.String,System.String)">
+            <summary>모든 버킷 목록을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.Operations(System.String,System.String,System.String,Newtonsoft.Json.Linq.JObject)">
+            <summary>S3 읽기 동작 요청</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">동작 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.Upload(System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.AspNetCore.Http.IFormFile},System.String)">
+            <summary>S3 업로드 요청</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="action">명령 문자열</param>
+            <param name="uploadFiles">업로드 파일 목록 객체</param>
+            <param name="path">저장할 경로</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.Download(System.String)">
+            <summary>파일을 다운로드 한다.</summary>
+            <param name="downloadInput">다운로드 요청 문자열</param>
+            <returns>다운로드 스트림</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.ImageDownload(System.String,System.String,System.String,System.String)">
+            <summary>이미지를 다운로드 한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="path">이미지 경로</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetCorsConfig(System.String,System.String,System.String,System.String)">
+            <summary>버킷의 CORS 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetCorsConfig(System.String,System.String,System.String,System.String,Amazon.S3.Model.CORSConfiguration)">
+            <summary>버킷의 CORS 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <param name="config">CORS 설정 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetWebSiteConfig(System.String,System.String,System.String,System.String)">
+            <summary>버킷의 웹사이트 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetWebSiteConfig(System.String,System.String,System.String,System.String,Amazon.S3.Model.WebsiteConfiguration)">
+            <summary>버킷의 웹사이트 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <param name="config">웹사이트 설정 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetVersionList(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3VersionList)">
+            <summary>객체의 Version 목록을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">S3 버전 목록 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.DeleteVersion(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3VersionDelete)">
+            <summary>객체의 특정 버전들을 삭제한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">S3 버전 삭제 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.DownloadVersion(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3VersionDownload)">
+            <summary>객체의 특정 버전을 다운로드 한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">S3 버전 다운로드 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetVersioningConfig(System.String,System.String,System.String,System.String)">
+            <summary>버킷의 Versioning 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetVersioningConfig(System.String,System.String,System.String,System.String,CSSPData.Request.S3.RequestS3VersioningConfig)">
+            <summary>버킷의 Versioning 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <param name="config">Versioning 설정 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetBucketPolicy(System.String,System.String,System.String,System.String)">
+            <summary>버킷의 정책 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetBucketPolicy(System.String,System.String,System.String,System.String,CSSPData.Request.S3.RequestS3BucketPolicy)">
+            <summary>버킷의 정책 설정을 저장한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <param name="config">Versioning 설정 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetAclConfig(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3AclConfig)">
+            <summary>버킷의 ACL 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">ACL 설정 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetAclConfig(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3AclConfigUpdate)">
+            <summary>버킷의 ACL 설정을 저장한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">ACL 설정 수정 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetMetadata(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3OperationMetadata)">
+            <summary>객체의 메타데이터 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">메타데이터 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetMetadata(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3Metadata)">
+            <summary>특정 객체의 메타데이터를 저장한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">메타데이터 수정요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetTagging(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3Tagging)">
+            <summary>특정 객체의 태그를 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">태그 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetTagging(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3OperationTagging)">
+            <summary>특정 객체의 태그를 저장한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">태그 수정요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetLifeCycle(System.String,System.String,System.String,System.String)">
+            <summary>특정 버킷의 라이프사이클 설정을 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.SetLifeCycle(System.String,System.String,System.String,System.String,CSSPData.Request.S3.RequestS3LifeCycle)">
+            <summary>특정 버킷의 라이프사이클 설정를 저장한다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="bucketName">버킷명</param>
+            <param name="request">라이프사이클 등록 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="M:WebApi.Controllers.S3.S3Controller.GetShareUrl(System.String,System.String,System.String,CSSPData.Request.S3.RequestS3OperationShareUrl)">
+            <summary>특정 객체의 공유 URL를 가져온다.</summary>
+            <param name="serviceUrl">서비스 URL</param>
+            <param name="accessKey">엑세스 키</param>
+            <param name="accessSecret">엑세스 시크릿</param>
+            <param name="request">공유 URL 요청 객체</param>
+            <returns>결과 JSON 문자열</returns>
+        </member>
+        <member name="T:WebApi.Program">
+            <summary>프로그램 클래스</summary>
+        </member>
+        <member name="M:WebApi.Program.Main(System.String[])">
+            <summary>메인 함수</summary>
+            <param name="args">인수 목록</param>
+        </member>
+        <member name="M:WebApi.Program.CreateHostBuilder(System.String[])">
+            <summary>호스트 빌더를 생성한다.</summary>
+            <param name="args">인자 목록</param>
+            <returns>IHostBuilder 객체</returns>
+        </member>
+        <member name="T:WebApi.Startup">
+            <summary>시작 클래스</summary>
+        </member>
+        <member name="P:WebApi.Startup.Configuration">
+            <summary>설정 객체</summary>
+        </member>
+        <member name="P:WebApi.Startup.ConfigurationOptions">
+            <summary>설정 옵션 객체</summary>
+        </member>
+        <member name="M:WebApi.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>생성자</summary>
+            <param name="env">호스팅 환경 객체</param>
+            <param name="configuration">환경 설정 객체</param>
+        </member>
+        <member name="M:WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>컨테이너에 서비스들을 추가한다.</summary>
+            <param name="services">서비스 집합 객체</param>
+        </member>
+        <member name="M:WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,MTLib.AspNetCore.IPathProvider)">
+            <summary>HTTP 요청 파이프 라인을 구성한다.</summary>
+            <param name="app">어플리케이션 빌더 객체</param>
+            <param name="env">호스팅 환경 객체</param>
+            <param name="loggerFactory">로거 팩토리</param>
+            <param name="pathProvider">경로 도우미 객체</param>
+        </member>
+    </members>
+</doc>

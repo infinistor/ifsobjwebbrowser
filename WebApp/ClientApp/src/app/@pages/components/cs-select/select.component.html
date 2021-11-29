@@ -1,0 +1,84 @@
+<div
+      tabindex="0"
+      #trigger
+      cdkOverlayOrigin
+      #origin="cdkOverlayOrigin"
+      class="cs-wrapper"
+      (keydown.Enter)="handleKeyEnterEvent($event)"
+      (keydown.Backspace)="handleKeyBackspaceEvent($event)"
+      (keydown.ArrowUp)="handleKeyUpEvent($event)"
+      (keydown.ArrowDown)="handleKeyDownEvent($event)">
+      <!-- <div class="pg-select-selection__rendered" >
+        <div class="pg-select-selection__placeholder">
+          <ng-template [ngIf]="!_selectedOption">
+            {{ PlaceHolder }}
+          </ng-template>
+        </div>
+   
+      </div> -->
+      <div class="cs-select cs-skin-slide cs-main" #placeHolder>
+          <span class="cs-placeholder">
+              <ng-template [ngIf]="!_selectedOption">
+                  {{ PlaceHolder }}
+              </ng-template>
+            {{ _selectedOption?.Label }}
+          </span>
+        <div class="cs-options" style="width: 100%; overflow-y: auto;" #csOptions>
+          <ul>
+            <li
+            *ngFor="let option of _filterOptions">
+            <span>
+              <ng-template
+                *ngIf="option.OptionTemplate"
+                [ngTemplateOutlet]="option.OptionTemplate">
+              </ng-template>
+              <ng-template [ngIf]="!option.OptionTemplate">
+                {{ option.Label }}
+              </ng-template>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-backdrop"></div>    
+      </div> 
+    </div>
+    <ng-template
+      cdkConnectedOverlay
+      cdkConnectedOverlayHasBackdrop
+      [cdkConnectedOverlayOrigin]="origin"
+      (backdropClick)="closeDropDown()"
+      (detach)="closeDropDown();"
+      (positionChange)="onPositionChange($event)"
+      [cdkConnectedOverlayWidth]="_triggerWidth"
+      [cdkConnectedOverlayOpen]="_isOpen"
+    >
+      <div class="cs-select cs-skin-slide"
+        [ngClass]="_dropDownClassMap" [ngStyle]="top" [class.cs-active]="_openBackdrop">
+          <span class="cs-placeholder">
+              <ng-template [ngIf]="!_selectedOption">
+                  {{ PlaceHolder }}
+              </ng-template>
+            {{ _selectedOption?.Label }}
+          </span>
+          <div class="cs-options" style="width: 100%; overflow-y: auto;">
+            <ul>
+              <li
+              *ngFor="let option of _filterOptions"
+              [class.active]="option.Value == _activeFilterOption?.Value"
+              [class.selected]="(option.Value==(_selectedOption?.Value))||(isInSet(_selectedOptions,option))"
+              (click)="clickOption(option,$event)">
+              <span>
+                <ng-template
+                  *ngIf="option.OptionTemplate"
+                  [ngTemplateOutlet]="option.OptionTemplate">
+                </ng-template>
+                <ng-template [ngIf]="!option.OptionTemplate">
+                  {{ option.Label }}
+                </ng-template>
+              </span>
+              </li>
+            </ul>
+          </div>
+          <div class="cs-backdrop" [ngStyle]="_backDropStyles"></div>
+      </div>
+    </ng-template>

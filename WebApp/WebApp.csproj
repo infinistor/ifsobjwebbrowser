@@ -1,0 +1,734 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.6" />
+    <PackageReference Include="MTLib.Core" Version="3.0.4" />
+    <PackageReference Include="MTLib.AspNetCore" Version="3.0.10" />
+    <PackageReference Include="MTLib.Reflection" Version="3.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp\dist\**" />
+    <Compile Remove="ClientApp\src\app\dashboard\**" />
+    <Compile Remove="ClientApp\src\app\logs\**" />
+    <Compile Remove="ClientApp\src\app\systems\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\common\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\ifss3\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\ifssync\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\load-balancer\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\settings\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\smb\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\system\**" />
+    <Compile Remove="ClientApp\src\app\_model\request\volumes\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\account\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\common\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\dashboard\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\ifssync\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\s3dr\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\settings\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\smb\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\system\**" />
+    <Compile Remove="ClientApp\src\app\_model\response\users\**" />
+    <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\dist\**" />
+    <Content Remove="ClientApp\src\app\dashboard\**" />
+    <Content Remove="ClientApp\src\app\logs\**" />
+    <Content Remove="ClientApp\src\app\systems\**" />
+    <Content Remove="ClientApp\src\app\_model\request\common\**" />
+    <Content Remove="ClientApp\src\app\_model\request\ifss3\**" />
+    <Content Remove="ClientApp\src\app\_model\request\ifssync\**" />
+    <Content Remove="ClientApp\src\app\_model\request\load-balancer\**" />
+    <Content Remove="ClientApp\src\app\_model\request\settings\**" />
+    <Content Remove="ClientApp\src\app\_model\request\smb\**" />
+    <Content Remove="ClientApp\src\app\_model\request\system\**" />
+    <Content Remove="ClientApp\src\app\_model\request\volumes\**" />
+    <Content Remove="ClientApp\src\app\_model\response\account\**" />
+    <Content Remove="ClientApp\src\app\_model\response\common\**" />
+    <Content Remove="ClientApp\src\app\_model\response\dashboard\**" />
+    <Content Remove="ClientApp\src\app\_model\response\ifssync\**" />
+    <Content Remove="ClientApp\src\app\_model\response\s3dr\**" />
+    <Content Remove="ClientApp\src\app\_model\response\settings\**" />
+    <Content Remove="ClientApp\src\app\_model\response\smb\**" />
+    <Content Remove="ClientApp\src\app\_model\response\system\**" />
+    <Content Remove="ClientApp\src\app\_model\response\users\**" />
+    <Content Include="log4net.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Remove="ClientApp\dist\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\dashboard\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\logs\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\systems\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\common\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\ifss3\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\ifssync\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\load-balancer\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\settings\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\smb\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\system\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\request\volumes\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\account\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\common\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\dashboard\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\ifssync\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\s3dr\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\settings\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\smb\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\system\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_model\response\users\**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\dist\**" />
+    <None Remove="ClientApp\src\app\dashboard\**" />
+    <None Remove="ClientApp\src\app\logs\**" />
+    <None Remove="ClientApp\src\app\systems\**" />
+    <None Remove="ClientApp\src\app\_model\request\common\**" />
+    <None Remove="ClientApp\src\app\_model\request\ifss3\**" />
+    <None Remove="ClientApp\src\app\_model\request\ifssync\**" />
+    <None Remove="ClientApp\src\app\_model\request\load-balancer\**" />
+    <None Remove="ClientApp\src\app\_model\request\settings\**" />
+    <None Remove="ClientApp\src\app\_model\request\smb\**" />
+    <None Remove="ClientApp\src\app\_model\request\system\**" />
+    <None Remove="ClientApp\src\app\_model\request\volumes\**" />
+    <None Remove="ClientApp\src\app\_model\response\account\**" />
+    <None Remove="ClientApp\src\app\_model\response\common\**" />
+    <None Remove="ClientApp\src\app\_model\response\dashboard\**" />
+    <None Remove="ClientApp\src\app\_model\response\ifssync\**" />
+    <None Remove="ClientApp\src\app\_model\response\s3dr\**" />
+    <None Remove="ClientApp\src\app\_model\response\settings\**" />
+    <None Remove="ClientApp\src\app\_model\response\smb\**" />
+    <None Remove="ClientApp\src\app\_model\response\system\**" />
+    <None Remove="ClientApp\src\app\_model\response\users\**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+    <None Update="ClientApp\src\app\_model\request\account\request-role-claim.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Account/RequestAddClaimToRole.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\logs\request-alert-message-status.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Logs/RequestAlertMessageStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-user-authentication.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Enums/EnumUserAuthentication.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\users\request-system-update-user-authentication.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Users/RequestSystemUpdateUserAuthentication.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-smb-share-case-sensitive.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Enums/EnumSMBExportPointType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-smb-share-lock-type.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Enums/EnumSMBExportPointType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-snas-vol.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-cors-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-website-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-acl-grant.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-settings-grafana.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-website-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-versioning-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-versioning-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-acl-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-acl-grant-for-grid.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-acl-config.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-acl-grant.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\users\request-system-update-user-authentications.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Users/RequestSystemUpdateUserAuthentication.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-ha-proxy-listen-mode.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Enums/EnumOnOff.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-ha-proxy-balance.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Enums/EnumOnOff.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-ha-proxy-timeout-unit.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Enums/EnumOnOff.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-versioning-info.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-version-list.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-version-delete.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-version-download.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-bucket-policy.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\s3\response-s3-bucket-policy-item.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Response/Securage/ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-bucket-policy.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\s3\request-s3-bucket-policy-item.model.ts">
+      <CustomToolNamespace>../Data/CSSPData/Request/Settings/RequestSettingsNotification.cs</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\dist\0-es5.465ad3863a2379203b33.js" />
+    <None Remove="ClientApp\dist\1-es2015.f680d7d639aadeeae25f.js" />
+    <None Remove="ClientApp\dist\3rdpartylicenses.txt" />
+    <None Remove="ClientApp\dist\4-es5.cb76f5f2dc9aec7c154f.js" />
+    <None Remove="ClientApp\dist\5-es2015.7db677d8e152e7647a77.js" />
+    <None Remove="ClientApp\dist\5-es5.aca89e445d0b26247d5e.js" />
+    <None Remove="ClientApp\dist\6-es2015.ef1d6221c55f8c4e8fd1.js" />
+    <None Remove="ClientApp\dist\6-es5.cb8969e1db72c6d28fd3.js" />
+    <None Remove="ClientApp\dist\7-es2015.41582c8dde97a895ae3a.js" />
+    <None Remove="ClientApp\dist\assets\app.scss" />
+    <None Remove="ClientApp\dist\assets\data\auth-logs.json" />
+    <None Remove="ClientApp\dist\assets\data\charts.json" />
+    <None Remove="ClientApp\dist\assets\data\email.json" />
+    <None Remove="ClientApp\dist\assets\data\feed.json" />
+    <None Remove="ClientApp\dist\assets\data\fontawesome.json" />
+    <None Remove="ClientApp\dist\assets\data\gallery.json" />
+    <None Remove="ClientApp\dist\assets\data\map.json" />
+    <None Remove="ClientApp\dist\assets\data\messages.json" />
+    <None Remove="ClientApp\dist\assets\data\notes.json" />
+    <None Remove="ClientApp\dist\assets\data\rest-control-log.json" />
+    <None Remove="ClientApp\dist\assets\data\table.json" />
+    <None Remove="ClientApp\dist\assets\data\table_browser.json" />
+    <None Remove="ClientApp\dist\assets\data\table_sample.json" />
+    <None Remove="ClientApp\dist\assets\data\users.json" />
+    <None Remove="ClientApp\dist\assets\fonts\feather\feather-sprite.svg" />
+    <None Remove="ClientApp\dist\assets\fonts\montserrat\montserrat-bold-webfont.svg" />
+    <None Remove="ClientApp\dist\assets\fonts\montserrat\Montserrat-Bold.ttf" />
+    <None Remove="ClientApp\dist\assets\fonts\montserrat\montserrat-regular-webfont.svg" />
+    <None Remove="ClientApp\dist\assets\fonts\montserrat\Montserrat-Regular.ttf" />
+    <None Remove="ClientApp\dist\assets\fonts\pages-icon\Pages-icon.eot" />
+    <None Remove="ClientApp\dist\assets\fonts\pages-icon\Pages-icon.svg" />
+    <None Remove="ClientApp\dist\assets\fonts\pages-icon\Pages-icon.ttf" />
+    <None Remove="ClientApp\dist\assets\fonts\pages-icon\Pages-icon.woff" />
+    <None Remove="ClientApp\dist\assets\i18n\en.json" />
+    <None Remove="ClientApp\dist\assets\i18n\ja.json" />
+    <None Remove="ClientApp\dist\assets\i18n\ko.json" />
+    <None Remove="ClientApp\dist\assets\i18n\zh-CN.json" />
+    <None Remove="ClientApp\dist\assets\i18n\zh-TW.json" />
+    <None Remove="ClientApp\dist\assets\img\account-background-img.jpg" />
+    <None Remove="ClientApp\dist\assets\img\common\circle-left.svg" />
+    <None Remove="ClientApp\dist\assets\img\common\circle-right.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\1.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\2.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\3.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\4.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\5.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\6.svg" />
+    <None Remove="ClientApp\dist\assets\img\foods\7.svg" />
+    <None Remove="ClientApp\dist\assets\img\left-border.jpg" />
+    <None Remove="ClientApp\dist\assets\img\logo.png" />
+    <None Remove="ClientApp\dist\assets\img\plus.svg" />
+    <None Remove="ClientApp\dist\assets\img\profiles\avatar_small.jpg" />
+    <None Remove="ClientApp\dist\assets\img\profiles\avatar_small2x.jpg" />
+    <None Remove="ClientApp\dist\assets\img\wm-logo.svg" />
+    <None Remove="ClientApp\dist\assets\kendo_variables.scss" />
+    <None Remove="ClientApp\dist\assets\notes_lines.png" />
+    <None Remove="ClientApp\dist\assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <None Remove="ClientApp\dist\assets\plugins\bootstrap\css\bootstrap.min.css.map" />
+    <None Remove="ClientApp\dist\assets\plugins\codrops-stepsform\css\component.css" />
+    <None Remove="ClientApp\dist\assets\plugins\codrops-stepsform\js\classie.js" />
+    <None Remove="ClientApp\dist\assets\plugins\codrops-stepsform\js\stepsForm.js" />
+    <None Remove="ClientApp\dist\assets\plugins\codrops-stepsform\README.txt" />
+    <None Remove="ClientApp\dist\assets\plugins\modernizr.custom.js" />
+    <None Remove="ClientApp\dist\assets\plugins\pace\pace-theme-flash.css" />
+    <None Remove="ClientApp\dist\assets\plugins\pace\pace.min.js" />
+    <None Remove="ClientApp\dist\assets\plugins\pace\progress-circle-success.svg" />
+    <None Remove="ClientApp\dist\assets\plugins\skycons\skycons.js" />
+    <None Remove="ClientApp\dist\assets\submenus\patient_submenus.json" />
+    <None Remove="ClientApp\dist\assets\vendor\tree-icons.gif" />
+    <None Remove="ClientApp\dist\editor_tray_2x.747b1929ca0377ef6ff9.png" />
+    <None Remove="ClientApp\dist\fa-brands-400.14c590d124662eb50efa.eot" />
+    <None Remove="ClientApp\dist\fa-brands-400.3e1b2a654a784ceb3851.woff2" />
+    <None Remove="ClientApp\dist\fa-brands-400.5e8aa9ea0ebcd2218178.ttf" />
+    <None Remove="ClientApp\dist\fa-brands-400.bfa9c38bd6081dafe727.svg" />
+    <None Remove="ClientApp\dist\fa-brands-400.df02c782834b113d605d.woff" />
+    <None Remove="ClientApp\dist\fa-regular-400.285a9d2a28886ad64c4e.ttf" />
+    <None Remove="ClientApp\dist\fa-regular-400.5623624dd1b017c66c29.woff" />
+    <None Remove="ClientApp\dist\fa-regular-400.95f13e0be408d117bd3d.svg" />
+    <None Remove="ClientApp\dist\fa-regular-400.aa66d0e0e38c75666e98.eot" />
+    <None Remove="ClientApp\dist\fa-regular-400.ac21cac3f22cc9642f5a.woff2" />
+    <None Remove="ClientApp\dist\fa-solid-900.3ded831d708bf90b2da8.woff" />
+    <None Remove="ClientApp\dist\fa-solid-900.42e1fbd2cf655a0b44a2.eot" />
+    <None Remove="ClientApp\dist\fa-solid-900.6ed5e3bc9018d2a03e2f.svg" />
+    <None Remove="ClientApp\dist\fa-solid-900.896e20e26ad07dc63c95.ttf" />
+    <None Remove="ClientApp\dist\fa-solid-900.d6d8d5da9214dc7d46b2.woff2" />
+    <None Remove="ClientApp\dist\favicon.ico" />
+    <None Remove="ClientApp\dist\linear_gradient.32746ff36444df8bb4e8.png" />
+    <None Remove="ClientApp\dist\main-es2015.890511eab85cf8839b62.js" />
+    <None Remove="ClientApp\dist\main-es5.0645a38ed1b994eb79e7.js" />
+    <None Remove="ClientApp\dist\notes_lines.5baa9d9946f43373a8a9.png" />
+    <None Remove="ClientApp\dist\noti-cross-2x.1c36cfb6cbc9106ce7e7.png" />
+    <None Remove="ClientApp\dist\noti-cross.8b70ae6456c1b4edf2f2.png" />
+    <None Remove="ClientApp\dist\Pages-icon.0fd5f549d439c281557b.woff" />
+    <None Remove="ClientApp\dist\Pages-icon.2df5fca00c299cadd3d7.eot" />
+    <None Remove="ClientApp\dist\Pages-icon.50fae7ee8f6d0467d5c4.ttf" />
+    <None Remove="ClientApp\dist\Pages-icon.e07c311262f0c2bfbe97.svg" />
+    <None Remove="ClientApp\dist\polyfills-es2015.36a52aa46f2fbdd78db0.js" />
+    <None Remove="ClientApp\dist\polyfills-es5.c4376a4cb64f643afeb8.js" />
+    <None Remove="ClientApp\dist\progress-bar-complete.2448ad3bdb2a4d7a2543.svg" />
+    <None Remove="ClientApp\dist\progress-bar-danger.b61fa449d74f326c1800.svg" />
+    <None Remove="ClientApp\dist\progress-bar-info.4b7024a343570e73e0bb.svg" />
+    <None Remove="ClientApp\dist\progress-bar-master.23ef1736012f0de67a1f.svg" />
+    <None Remove="ClientApp\dist\progress-bar-primary.2b75007a55e85c43bf66.svg" />
+    <None Remove="ClientApp\dist\progress-bar-success.9b786c6433a1c9ed9a59.svg" />
+    <None Remove="ClientApp\dist\progress-bar-warning.d24d8a6bf3e56e4849f3.svg" />
+    <None Remove="ClientApp\dist\progress-circle-complete.450ffc9e1ad60f8212e3.svg" />
+    <None Remove="ClientApp\dist\progress-circle-danger.0ff541d0bbe90e128fd5.svg" />
+    <None Remove="ClientApp\dist\progress-circle-info.896e53cdd2530511ac71.svg" />
+    <None Remove="ClientApp\dist\progress-circle-lg-master-static.62dd93ee671e931c31f4.svg" />
+    <None Remove="ClientApp\dist\progress-circle-lg-master.4c6ecbb9c270031838f5.svg" />
+    <None Remove="ClientApp\dist\progress-circle-lg-white-static.37b7eba1b9bfe35cde2c.svg" />
+    <None Remove="ClientApp\dist\progress-circle-lg-white.f05d8bade92a9202122e.svg" />
+    <None Remove="ClientApp\dist\progress-circle-master.fcbc16e940de58dbb6e8.svg" />
+    <None Remove="ClientApp\dist\progress-circle-primary.dd356a5e66a781d0e33d.svg" />
+    <None Remove="ClientApp\dist\progress-circle-success.8777a2baa03443814154.svg" />
+    <None Remove="ClientApp\dist\progress-circle-warning.7cc9f2d47671bc0f572e.svg" />
+    <None Remove="ClientApp\dist\Roboto-Medium-webfont.0a654489ae3cfd77b6ea.ttf" />
+    <None Remove="ClientApp\dist\Roboto-Medium-webfont.4babd1bb2a7bdfbac976.woff" />
+    <None Remove="ClientApp\dist\Roboto-Medium-webfont.758e1107cdcc1964a157.eot" />
+    <None Remove="ClientApp\dist\Roboto-Medium-webfont.fc764334f6bb6f0282ce.woff2" />
+    <None Remove="ClientApp\dist\Roboto-Regular-webfont.2b9dfec7807cb4a69fbb.woff" />
+    <None Remove="ClientApp\dist\Roboto-Regular-webfont.335bf110b72fb5edeb4e.ttf" />
+    <None Remove="ClientApp\dist\Roboto-Regular-webfont.7f6652096fad35bb930a.woff2" />
+    <None Remove="ClientApp\dist\Roboto-Regular-webfont.fe73001646b7087d8acb.eot" />
+    <None Remove="ClientApp\dist\runtime-es2015.3212d671cd04bb26f98f.js" />
+    <None Remove="ClientApp\dist\runtime-es5.49bfe02e3d2fd378e1c3.js" />
+    <None Remove="ClientApp\dist\scripts.45ac4384c313b424a8a4.js" />
+    <None Remove="ClientApp\dist\styles.5891b6ef22c28c046e09.css" />
+    <None Remove="ClientApp\dist\webixfa-webfont.0302e5bb09904b3eeb6c.ttf" />
+    <None Remove="ClientApp\dist\webixfa-webfont.48e569cad8583cb1ff52.eot" />
+    <None Remove="ClientApp\dist\webixfa-webfont.5a7b7724e5988badb950.woff" />
+    <None Remove="ClientApp\dist\webixfa-webfont.66478cf7cab9bfb69956.svg" />
+    <None Remove="ClientApp\dist\webixfa-webfont.f94a3a5931dbb07aa650.woff2" />
+    <None Remove="ClientApp\dist\webixmdi-webfont.2ce86a9e3ba2ab4ebe82.woff2" />
+    <None Remove="ClientApp\dist\webixmdi-webfont.41abc8d7d72ac62ced77.svg" />
+    <None Remove="ClientApp\dist\webixmdi-webfont.5b16efc1f3ec8f4f09d6.woff" />
+    <None Remove="ClientApp\dist\webixmdi-webfont.60d53a2941160dd5dc4e.eot" />
+    <None Remove="ClientApp\dist\webixmdi-webfont.bcb01a491bf941a4bca3.ttf" />
+    <None Remove="ClientApp\src\app\shared\directive\kendo-tab-content-load-on-demand-directive.ts" />
+    <None Remove="ClientApp\src\app\shared\directive\ngx-resize-watcher-directive.ts" />
+    <None Remove="log4net.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\CSSPResources\CSSPResources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\shared\classes\filter-list.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\classes\grid\grid-data-loaded-event.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\classes\grid\grid-component-interface.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\classes\required-no-empty-validator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\classes\timezones.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\directive\kendo-tab-content-load-on-demand-directive.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\directive\ngx-resize-watcher-directive.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\services\common-dialog.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\services\common-window.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\services\notification.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-access-ip.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-lifecycle-rule-expiration.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-lifecycle-rule.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-lifecycle.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-metadata.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-operation-metadata.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-operation-share-url.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-operation-tagging.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\request\s3\request-s3-tagging.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\response\s3\response-s3-access-ip.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\response\s3\response-s3-lifecycle-rule-expiration.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\response\s3\response-s3-lifecycle-rule.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\response\s3\response-s3-object-metadata.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_model\response\s3\response-s3-object-tagging.model.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClientApp\src\app\_model\enums\enum-admit-unlock-file-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumAdmitUnlockFileStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-alert-message-action-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumAlertMessageActionType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-disk-mode.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDiskMode.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-disk-size-unit.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDiskSizeUnit.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-dr-control-event-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDrControlEventType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-dr-error.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDrError.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-dr-io-event-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDrIoEventType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-dr-job-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDRJobStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-dr-target-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDRTargetStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-fsck-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumFSCKStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-ha-on-off.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumHaOnOff.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-ha-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumHaStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-http-error.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumHttpError.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-log-level.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumLogLevel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-mds-disk-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumMDSDiskStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-ok-or-fail.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumDrError.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-on-off.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumOnOff.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-osd-disk-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumOSDDiskStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-rest-control-event-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumRestControlEventType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-rest-error.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumRestError.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-rest-io-event-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumRestIoEventType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-server-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumServerStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-smb-export-point-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumSMBExportPointType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-syslog-facility.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumSyslogFacility.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-syslog-severity.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumSyslogSeverity.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-unlock-file-admit-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumUnlockFileAdmitStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-user-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumUserStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-volume-permission.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumVolumePermission.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-volume-replication-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumVolumeReplicationType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\enums\enum-volume-status.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Enums\EnumVolumeStatus.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-add-claim-to-role.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestAddClaimToRole.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-add-claim-to-user.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestAddClaimToUser.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-add-role-to-user.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestAddRoleToUser.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-add-user-to-role.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestAddUserToRole.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-add-volume.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Volumes\RequestAddVolume.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-change-password.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestChangePassword.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-confirm-email.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestConfirmEmail.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-external-account-verify.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestExternalAccountVerify.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-external-login.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestExternalLogin.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-external-register.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestExternalRegister.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-forget-password.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestForgetPassword.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-login.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestLogin.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-register.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestRegister.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-reset-password.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestResetPassword.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-update-volume-password.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Volumes\RequestUpdateVolumePassword.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-update-volume.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Volumes\RequestUpdateVolume.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-user-regist.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestUserRegist.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\account\request-user-update.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Account\RequestUserUpdate.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\application\request-add-application-volume-map.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Application\RequestAddApplicationVolumeMap.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\application\request-add-application.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Application\RequestAddApplication.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\application\request-add-file-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Application\RequestAddFileType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\application\request-add-unlock-file.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Application\RequestAddUnlockFile.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\dr\request-add-dr-job.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\DR\RequestAddDRJob.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\dr\request-add-dr-target.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\DR\RequestAddDRTarget.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\dr\request-remove-dr-job.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\DR\RequestRemoveDRJob.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\dr\request-start-dr-job.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\DR\RequestStartDRJob.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\dr\request-update-dr-source.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\DR\RequestUpdateDRSource.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\fsck\request-create-fsck-disk.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\FSCK\RequestCreateFSCKDisk.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\fsck\request-create-fsck-file.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\FSCK\RequestCreateFSCKFile.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\fsck\request-create-fsck-volume.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\FSCK\RequestCreateFSCKVolume.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\logs\request-alert-message-action.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Logs\RequestAlertMessageAction.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\users\request-system-add-user.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Users\RequestSystemAddUser.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\request\users\request-system-update-user.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Request\Users\RequestSystemUpdateUser.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response-volume-list.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\ResponseVolumeList.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\application\response-application.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Application\ResponseApplication.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\application\response-file-type.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Application\ResponseFileType.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\application\response-unlock-file.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Application\ResponseUnlockFile.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\application\response-volume-map.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Application\ResponseVolumeMap.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\dr\response-dr-job.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\DR\ResponseDRJob.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\dr\response-dr-server.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\DR\ResponseDRServer.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\dr\response-dr-source.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\DR\ResponseDRSource.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\dr\response-dr-target.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\DR\ResponseDRTarget.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\dr\response-dr.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\DR\ResponseDR.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\fsck\response-fsck-job-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\FSCK\ResponseFSCKJobLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\fsck\response-fsck-job.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\FSCK\ResponseFSCKJob.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-alert-message-action.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseAlertMessageAction.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-alert-message.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseAlertMessage.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-auth-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseAuthLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-portal-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponsePortalLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-syslog.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseSyslog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-volume-dr-control-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseVolumeDrControlLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-volume-dr-io-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseVolumeDrIoLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-volume-rest-control-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseVolumeRestControlLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\logs\response-volume-rest-io-log.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Logs\ResponseVolumeRestIoLog.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\securage\response-snas-vol.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Securage\ResponseSnasVol.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-user-volume.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Users\ResponseUserVolume.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-volume-list.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Volumes\ResponseVolumeList.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-volume-summary.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Volumes\ResponseVolumeSummary.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-volume-tenant.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Volumes\ResponseVolumeTenant.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-volume-user-tenant.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Volumes\ResponseVolumeUserTenant.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-volume-user.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Volumes\ResponseVolumeUser.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\src\app\_model\response\volumes\response-volume.model.ts">
+      <CustomToolNamespace>..\Data\CSSPData\Response\Volumes\ResponseVolume.cs</CustomToolNamespace>
+    </None>
+    <None Update="pspace.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\auth-logs.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\charts.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\email.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\feed.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\fontawesome.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\gallery.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\map.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\messages.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\notes.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\rest-control-log.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\table.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\table_browser.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\table_sample.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\data\users.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\i18n\.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\i18n\en.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\i18n\ja.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\i18n\ko.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\i18n\zh-CN.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\i18n\zh-TW.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\assets\submenus\patient_submenus.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\submenus\patient_submenus.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\auth-logs.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\charts.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\email.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\feed.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\fontawesome.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\gallery.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\map.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\messages.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\notes.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\rest-control-log.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\table.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\table_browser.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\table_sample.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\data\users.json" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+  <ProjectExtensions><VisualStudio><UserProperties clientapp_4package_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

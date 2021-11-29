@@ -1,0 +1,374 @@
+/*!
+* direction.less v0.1.0
+*/
+
+// Local vars
+
+$rtl: ~`"${direction}" === 'rtl' ? 'true' : 'false'`;
+$left: ~`${rtl} ? 'right' : 'left'`;
+$right: ~`${rtl} ? 'left' : 'right'`;
+
+
+// "border-color:" rule
+
+@mixin border-color($top, $right, $bottom, $left) when not ($rtl){
+	border-color: $top $right $bottom $left;
+}
+
+@mixin border-color($top, $right, $bottom, $left) when ($rtl){
+	border-color: $top $left $bottom $right;
+}
+
+
+// "border-left*:" rule
+
+@mixin border-left($left) when not ($rtl){
+	border-left: $left;
+}
+
+@mixin border-left($left) when ($rtl){
+	border-right: $left;
+}
+
+@mixin border-left-color($left) when not ($rtl){
+	border-left-color: $left;
+}
+
+@mixin border-left-color($left) when ($rtl){
+	border-right-color: $left;
+}
+
+@mixin border-left-style($left) when not ($rtl){
+	border-left-style: $left;
+}
+
+@mixin border-left-style($left) when ($rtl){
+	border-right-style: $left;
+}
+
+@mixin border-left-width($left) when not ($rtl){
+	border-left-width: $left;
+}
+
+@mixin border-left-width($left) when ($rtl){
+	border-right-width: $left;
+}
+
+
+// "border-right*:" rule
+
+@mixin border-right($right) when not ($rtl){
+	border-right: $right;
+}
+
+@mixin border-right($right) when ($rtl){
+	border-left: $right;
+}
+
+@mixin border-right-color($right) when not ($rtl){
+	border-right-color: $right;
+}
+
+@mixin border-right-color($right) when ($rtl){
+	border-left-color: $right;
+}
+
+@mixin border-right-style($right) when not ($rtl){
+	border-right-style: $right;
+}
+
+@mixin border-right-style($right) when ($rtl){
+	border-left-style: $right;
+}
+
+@mixin border-right-width($right) when not ($rtl){
+	border-right-width: $right;
+}
+
+@mixin border-right-width($right) when ($rtl){
+	border-left-width: $right;
+}
+
+
+// "border-style:" rule
+
+@mixin border-style($top, $right, $bottom, $left) when not ($rtl){
+	border-style: $top $right $bottom $left;
+}
+
+@mixin border-style($top, $right, $bottom, $left) when ($rtl){
+	border-style: $top $left $bottom $right;
+}
+
+
+// "border-width:" rule
+
+@mixin border-width($top, $right, $bottom, $left) when not ($rtl){
+	border-width: $top $right $bottom $left;
+}
+
+@mixin border-width($top, $right, $bottom, $left) when ($rtl){
+	border-width: $top $left $bottom $right;
+}
+
+
+// "border-radius:" rule
+
+@mixin border-top-left-radius($radius) when not ($rtl){
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-left-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) when ($rtl){
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-right-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) when not ($rtl){
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-right-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) when ($rtl){
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-left-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) when not ($rtl){
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) when ($rtl){
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) when not ($rtl){
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) when ($rtl){
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+
+// "clear:" rule
+
+@mixin clear($side: both) when not ($rtl), not ($side = left) and not ($side = right){
+	clear: $side;
+}
+
+@mixin clear(left) when ($rtl){
+	clear: right;
+}
+
+@mixin clear(right) when ($rtl){
+	clear: left;
+}
+
+
+// "direction:" rule
+
+@mixin direction(){
+	direction: $direction;
+}
+
+@mixin direction($dir) when not ($rtl), not ($dir = ltr) and not ($dir = rtl){
+	direction: $dir;
+}
+
+@mixin direction(ltr) when ($rtl){
+	direction: rtl;
+}
+
+@mixin direction(rtl) when ($rtl){
+	direction: ltr;
+}
+
+
+// "left:" rule
+
+@mixin left($left) when not ($rtl){
+	left: $left;
+}
+
+@mixin left($left) when ($rtl){
+	right: $left;
+}
+
+
+// "float:" rule
+
+@mixin float(){
+	float: $left;
+}
+
+@mixin float($float) when not ($rtl), not ($float = left) and not ($float = right){
+	float: $float;
+}
+
+@mixin float(left) when ($rtl){
+	float: right;
+}
+
+@mixin float(right) when ($rtl){
+	float: left;
+}
+
+
+// "margin:" rule
+
+@mixin margin($top, $right, $bottom, $left) when not ($rtl){
+	margin: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) when ($rtl){
+	margin: $top $left $bottom $right;
+}
+
+@mixin ie7-margin($top, $right, $bottom, $left) when not ($rtl){
+	*margin: $top $right $bottom $left;
+}
+
+@mixin ie7-margin($top, $right, $bottom, $left) when ($rtl){
+	*margin: $top $left $bottom $right;
+}
+
+
+// "margin-left:" rule
+
+@mixin margin-left($left) when not ($rtl){
+	margin-left: $left;
+}
+
+@mixin margin-left($left) when ($rtl){
+	margin-right: $left;
+}
+
+@mixin ie7-margin-left($left) when not ($rtl){
+	*margin-left: $left;
+}
+
+@mixin ie7-margin-left($left) when ($rtl){
+	*margin-right: $left;
+}
+
+
+// "margin-right:" rule
+
+@mixin margin-right($right) when not ($rtl){
+	margin-right: $right;
+}
+
+@mixin margin-right($right) when ($rtl){
+	margin-left: $right;
+}
+
+@mixin ie7-margin-right($right) when not ($rtl){
+	*margin-right: $right;
+}
+
+@mixin ie7-margin-right($right) when ($rtl){
+	*margin-left: $right;
+}
+
+
+// "padding:" rule
+
+@mixin padding($top, $right, $bottom, $left) when not ($rtl){
+	padding: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right, $bottom, $left) when ($rtl){
+	padding: $top $left $bottom $right;
+}
+
+
+// "padding-left:" rule
+
+@mixin padding-left($left) when not ($rtl){
+	padding-left: $left;
+}
+
+@mixin padding-left($left) when ($rtl){
+	padding-right: $left;
+}
+
+
+// "padding-right:" rule
+
+@mixin padding-right($right) when not ($rtl){
+	padding-right: $right;
+}
+
+@mixin padding-right($right) when ($rtl){
+	padding-left: $right;
+}
+
+
+// "text-align:" rule
+
+@mixin text-align(){
+	text-align: $left;
+}
+
+@mixin text-align($align) when not ($rtl), not ($align = left) and not ($align = right){
+	text-align: $align;
+}
+
+@mixin text-align(left) when ($rtl){
+	text-align: right;
+}
+
+@mixin text-align(right) when ($rtl){
+	text-align: left;
+}
+
+
+// "right:" rule
+
+@mixin right($right) when not ($rtl){
+	right: $right;
+}
+
+@mixin right($right) when ($rtl){
+	left: $right;
+}
+
+// "translateX":rule
+
+@mixin translateX($x) when not ($rtl){
+  -webkit-transform: translateX($x);
+      -ms-transform: translateX($x); // IE9+
+          transform: translateX($x);
+}
+@mixin translateX($x) when ($rtl){
+  -webkit-transform: translateX(-1*($x));
+      -ms-transform: translateX(-1*($x)); // IE9+
+          transform: translateX(-1*($x));
+}
+
+// "translate3d":rule
+
+@mixin translate3d($x; $y; $z) when not ($rtl){
+  -webkit-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+      -ms-transform:translate($x, $y);
+}
+
+@mixin translate3d($x; $y; $z) when ($rtl){
+  -webkit-transform: translate3d(-1*($x), $y, $z);
+          transform: translate3d(-1*($x), $y, $z);
+      -ms-transform:translate(-1*($x), $y);
+}

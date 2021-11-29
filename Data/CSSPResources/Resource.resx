@@ -1,0 +1,4926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+	  Microsoft ResX Schema 
+	  
+	  Version 2.0
+	  
+	  The primary goals of this format is to allow a simple XML format 
+	  that is mostly human readable. The generation and parsing of the 
+	  various data types are done through the TypeConverter classes 
+	  associated with the data types.
+	  
+	  Example:
+	  
+	  ... ado.net/XML headers & schema ...
+	  <resheader name="resmimetype">text/microsoft-resx</resheader>
+	  <resheader name="version">2.0</resheader>
+	  <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+	  <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+	  <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+	  <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+	  <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+		  <value>[base64 mime encoded serialized .NET Framework object]</value>
+	  </data>
+	  <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		  <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+		  <comment>This is a comment</comment>
+	  </data>
+				  
+	  There are any number of "resheader" rows that contain simple 
+	  name/value pairs.
+	  
+	  Each data row contains a name, and value. The row also contains a 
+	  type or mimetype. Type corresponds to a .NET class that support 
+	  text/value conversion through the TypeConverter architecture. 
+	  Classes that don't support this are serialized and stored with the 
+	  mimetype set.
+	  
+	  The mimetype is used for serialized objects, and tells the 
+	  ResXResourceReader how to depersist the object. This is currently not 
+	  extensible. For a given mimetype the value must be set accordingly:
+	  
+	  Note - application/x-microsoft.net.object.binary.base64 is the format 
+	  that the ResXResourceWriter will generate, however the reader can 
+	  read any of the formats listed below.
+	  
+	  mimetype: application/x-microsoft.net.object.binary.base64
+	  value   : The object must be serialized with 
+			  : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+			  : and then encoded with base64 encoding.
+	  
+	  mimetype: application/x-microsoft.net.object.soap.base64
+	  value   : The object must be serialized with 
+			  : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			  : and then encoded with base64 encoding.
+  
+	  mimetype: application/x-microsoft.net.object.bytearray.base64
+	  value   : The object must be serialized into a byte array 
+			  : using a System.ComponentModel.TypeConverter
+			  : and then encoded with base64 encoding.
+	  -->
+	<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root"
+				xmlns="">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+			PublicKeyToken=b77a5c561934e089
+		</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+			PublicKeyToken=b77a5c561934e089
+		</value>
+	</resheader>
+	<data name="EC_COMMON__ACCESS_DENIED" xml:space="preserve">
+    	<value>EC005</value>
+		<comment>접근 권한이 없습니다.</comment>
+  	</data>
+	<data name="EC_COMMON__ALREADY_EXIST" xml:space="preserve">
+    	<value>EC024</value>
+		<comment>해당 내용이 이미 존재합니다.</comment>
+	</data>
+	<data name="EC_COMMON__COMMUNICATION_ERROR_TO_API" xml:space="preserve">
+    	<value>EC999</value>
+		<comment>서버에 연결할 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON__DUPLICATED_DATA" xml:space="preserve">
+		<value>EC036</value>
+		<comment>중복된 데이터 입니다.</comment>
+	</data>
+	<data name="EC_COMMON__EXCEPTION" xml:space="preserve">
+		<value>EC001</value>
+		<comment>프로바이더 공통 익셉션</comment>
+	</data>
+	<data name="EC_COMMON__EXCEPTION_FAIL_TO_SERIALIZE" xml:space="preserve">
+		<value>EC002</value>
+		<comment>결과를 생성하는데 실패하였습니다. (객체를 JSON으로 변환하는데 실패)</comment>
+	</data>
+	<data name="EC_COMMON__FAIL_TO_DELETE" xml:space="preserve">
+		<value>EC034</value>
+		<comment>삭제에 실패하였습니다.</comment>
+	</data>
+	<data name="EC_COMMON__FAIL_TO_DELETE_MAY_BE_IN_USE" xml:space="preserve">
+		<value>EC035</value>
+		<comment>삭제에 실패하였습니다. (사용 중일 수 있습니다.)</comment>
+	</data>
+	<data name="EC_COMMON__FAIL_TO_GET" xml:space="preserve">
+		<value>EC031</value>
+		<comment>조회에 실패하였습니다.</comment>
+	</data>
+	<data name="EC_COMMON__FAIL_TO_REGIST" xml:space="preserve">
+		<value>EC032</value>
+		<comment>등록에 실패하였습니다.</comment>
+	</data>
+	<data name="EC_COMMON__FAIL_TO_UPDATE" xml:space="preserve">
+		<value>EC033</value>
+		<comment>수정에 실패하였습니다.</comment>
+	</data>
+	<data name="EC_COMMON__FILE_NOT_FOUND" xml:space="preserve">
+		<value>EC023</value>
+		<comment>해당 파일을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON__INVALID_INFORMATION" xml:space="preserve">
+		<value>EC011</value>
+		<comment>주어진 정보가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EC_COMMON__INVALID_IP_ADDRESS" xml:space="preserve">
+		<value>EC015</value>
+		<comment>아이피 주소가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EC_COMMON__INVALID_REQUEST" xml:space="preserve">
+		<value>EC012</value>
+		<comment>유효하지 않은 요청 입니다.</comment>
+	</data>
+	<data name="EC_COMMON__MAIL_SEND_ERROR" xml:space="preserve">
+		<value>EC041</value>
+		<comment>메일 발송을 하지 못했습니다.</comment>
+	</data>
+	<data name="EC_COMMON__MULTIPLE_DATA_EXIST" xml:space="preserve">
+		<value>EC051</value>
+		<comment>여러 데이터가 존재합니다.</comment>
+	</data>
+	<data name="EC_COMMON__NEED_LOGIN" xml:space="preserve">
+		<value>EC003</value>
+		<comment>로그인 후 이용이 가능한 서비스지만 로그인이 되어 있지 않은 경우</comment>
+	</data>
+	<data name="EC_COMMON__NETWORK_IS_NOT_AVAILABLE" xml:space="preserve">
+		<value>EC998</value>
+		<comment>네트워크를 이용할 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON__NO_SELECTION" xml:space="preserve">
+		<value>EC013</value>
+		<comment>선택된 항목이 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON__NOT_FOUND" xml:space="preserve">
+		<value>EC014</value>
+		<comment>해당 내용을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON__NOT_HAVE_PERMISSION" xml:space="preserve">
+		<value>EC004</value>
+		<comment>권한이 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON_UPLOAD_INVALID_UPLOADED_FILE" xml:space="preserve">
+		<value>EC021</value>
+		<comment>업로드된 파일이 유효하지 않습니다.</comment>
+	</data>
+	<data name="EC_COMMON_UPLOAD_INVALID_UPLOADED_FILE_FORMAT" xml:space="preserve">
+		<value>EC022</value>
+		<comment>업로드된 파일 타입이 유효하지 않습니다. ("{0}" 파일만 사용할 수 있습니다.)</comment>
+	</data>
+	<data name="EC_COMMON_UPLOAD_FAIL_TO_ADD_FILE" xml:space="preserve">
+		<value>EC025</value>
+		<comment>파일을 추가할 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_ALRECADY_AUTH_EMAIL" xml:space="preserve">
+		<value>ECA012</value>
+		<comment>이미 인증된 메일입니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_CURRENT_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>ECA031</value>
+		<comment>현재 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_CURRENT_PASSWORD_NEW_PASSWORD_SHOULD_NOT_BE_SAME" xml:space="preserve">
+		<value>ECA032</value>
+		<comment>기존 비밀번호와 현재 비밀번호는 동일해선 안됩니다</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_FAIL_TO_CHANGE_PASSWORD" xml:space="preserve">
+		<value>ECA033</value>
+		<comment>비밀번호를 변경하는 데 실패했습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_FAIL_TO_REGIST" xml:space="preserve">
+		<value>ECA011</value>
+		<comment>계정을 등록하는데 실패했습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_FAIL_TO_RESET_PASSWORD" xml:space="preserve">
+		<value>ECA041</value>
+		<comment>비밀번호를 재설정하는 데 실패했습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_FAIL_TO_UPDATE" xml:space="preserve">
+		<value>ECA051</value>
+		<comment>계정을 수정하는데 실패했습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_ID_OR_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>ECA021</value>
+		<comment>아이디 혹은 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_INVALID_TOKEN" xml:space="preserve">
+		<value>ECA003</value>
+		<comment>잘못된 토큰입니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_IS_LOCKED" xml:space="preserve">
+		<value>ECA023</value>
+		<comment>계정이 잠겼습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_IS_NOT_AUTH_EMAIL" xml:space="preserve">
+		<value>ECA004</value>
+		<comment>이메일 인증이 되지 않은 계정입니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_LOGIN_AFTER_EMAIL_CONFIRM" xml:space="preserve">
+		<value>ECA022</value>
+		<comment>이메일 인증 후에 로그인하여 주세요.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_NOT_ALLOWED_ACCESS_IP" xml:space="preserve">
+		<value>ECA001</value>
+		<comment>이 IP 주소 접근 불가능 합니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_NOT_FOUND" xml:space="preserve">
+		<value>ECA002</value>
+		<comment>회원 정보를 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_ROLE_NOT_FOUND" xml:space="preserve">
+		<value>ECA005</value>
+		<comment>역할 정보를 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_ROLE_PREDEFINED_ROLE_CANNOT_DELETE" xml:space="preserve">
+		<value>ECA061</value>
+		<comment>미리 정의된 역할은 삭제할 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_ROLE_PREDEFINED_ROLE_CANNOT_UPDATE" xml:space="preserve">
+		<value>ECA062</value>
+		<comment>미리 정의된 역할은 수정할 수 없습니다.</comment>
+	</data>
+	<data name="EC_COMMON_NEED_APP_UPDATE" xml:space="preserve">
+		<value>ECAPP001</value>
+		<comment>앱을 최신 버전으로 업데이트 후 사용하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON__ACCESS_DENIED" xml:space="preserve">
+		<value>You do not have access.</value>
+		<comment>접근 권한이 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON__ALREADY_EXIST" xml:space="preserve">
+		<value>The information is already exist.</value>
+		<comment>해당 내용이 이미 존재합니다.</comment>
+	</data>
+	<data name="EM_COMMON__COMMUNICATION_ERROR_TO_API" xml:space="preserve">
+		<value>Unable to connect to server.</value>
+		<comment>서버에 연결할 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON__DUPLICATED_DATA" xml:space="preserve">
+		<value>The requested data is duplicate.</value>
+		<comment>요청한 데이터는 중복되었습니다.</comment>
+	</data>
+	<data name="EM_COMMON__EXCEPTION" xml:space="preserve">
+		<value>An error has occurred during processing.</value>
+		<comment>처리 중 오류가 발생하였습니다.</comment>
+	</data>
+	<data name="EM_COMMON__EXCEPTION_FAIL_TO_SERIALIZE" xml:space="preserve">
+		<value>Fail to create response object.</value>
+		<comment>결과를 생성하는데 실패하였습니다. (객체를 JSON으로 변환하는데 실패)</comment>
+	</data>
+	<data name="EM_COMMON__FAIL_TO_DELETE" xml:space="preserve">
+		<value>Failed to delete data.</value>
+		<comment>삭제에 실패하였습니다.</comment>
+	</data>
+	<data name="EM_COMMON__FAIL_TO_DELETE_MAY_BE_IN_USE" xml:space="preserve">
+		<value>Failed to delete. (May be in use.)</value>
+		<comment>삭제에 실패하였습니다. (사용 중일 수 있습니다.)</comment>
+	</data>
+	<data name="EM_COMMON__FAIL_TO_GET" xml:space="preserve">
+		<value>Failed to get data.</value>
+		<comment>조회에 실패하였습니다.</comment>
+	</data>
+	<data name="EM_COMMON__FAIL_TO_REGIST" xml:space="preserve">
+		<value>Failed to regist data.</value>
+		<comment>등록에 실패하였습니다.</comment>
+	</data>
+	<data name="EM_COMMON__FAIL_TO_UPDATE" xml:space="preserve">
+		<value>Failed to update data.</value>
+		<comment>수정에 실패하였습니다.</comment>
+	</data>
+	<data name="EM_COMMON__FILE_NOT_FOUND" xml:space="preserve">
+		<value>The file can not be found.</value>
+		<comment>해당 파일을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON__INVALID_INFORMATION" xml:space="preserve">
+		<value>Given information is not valid.</value>
+		<comment>주어진 정보가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON__INVALID_IP_ADDRESS" xml:space="preserve">
+		<value>Invalid IP address.</value>
+		<comment>아이피 주소가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON__INVALID_REQUEST" xml:space="preserve">
+		<value>Invalid Request</value>
+		<comment>유효하지 않은 요청 입니다.</comment>
+	</data>
+	<data name="EM_COMMON__MAIL_SEND_ERROR" xml:space="preserve">
+		<value>The email could not be sent.</value>
+		<comment>메일 발송을 하지 못했습니다.</comment>
+	</data>
+	<data name="EM_COMMON__MULTIPLE_DATA_EXIST" xml:space="preserve">
+		<value>Multiple data exists.</value>
+		<comment>여러 데이터가 존재합니다.</comment>
+	</data>
+	<data name="EM_COMMON__NEED_LOGIN" xml:space="preserve">
+		<value>Please use after login.</value>
+		<comment>로그인 후 이용하여 주세요</comment>
+	</data>
+	<data name="EM_COMMON__NETWORK_IS_NOT_AVAILABLE" xml:space="preserve">
+		<value>You are not connected to the network.</value>
+		<comment>네트워크에 연결되지 않았습니다.</comment>
+	</data>
+	<data name="EM_COMMON__NO_SELECTION" xml:space="preserve">
+		<value>There is no selections.</value>
+		<comment>선택된 항목이 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON__NOT_FOUND" xml:space="preserve">
+		<value>The information is not found.</value>
+		<comment>해당 내용을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON__NOT_HAVE_PERMISSION" xml:space="preserve">
+		<value>You do not have permission.</value>
+		<comment>권한이 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_400" xml:space="preserve">
+		<value>We are sorry but your request contains bad syntax and cannot be fulfilled.</value>
+		<comment>400 에러</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_401" xml:space="preserve">
+		<value>We are sorry but you are not authorized to access this page.</value>
+		<comment>401 에러</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_403" xml:space="preserve">
+		<value>We are sorry but you do not have permission to access this page.</value>
+		<comment>403 에러</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_404" xml:space="preserve">
+		<value>We are sorry but the page you are looking for was not found.</value>
+		<comment>404 에러</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_500" xml:space="preserve">
+		<value>We are sorry but our server encountered an internal error.</value>
+		<comment>500 에러</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_503" xml:space="preserve">
+		<value>We are sorry but our service is currently not available.\nPlease try again in a minute.</value>
+		<comment>503 에러</comment>
+	</data>
+	<data name="EM_COMMON_UPLOAD_INVALID_UPLOADED_FILE" xml:space="preserve">
+		<value>Uploaded file is invalid.</value>
+		<comment>업로드된 파일이 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_UPLOAD_INVALID_UPLOADED_FILE_FORMAT" xml:space="preserve">
+		<value>Invalid file format (only "{{supportedFormats}}" file support)</value>
+		<comment>업로드된 파일 타입이 유효하지 않습니다. ("{0}" 파일만 사용할 수 있습니다.)</comment>
+	</data>
+	<data name="EM_COMMON_UPLOAD_FAIL_TO_ADD_FILE" xml:space="preserve">
+		<value>Could not add file.</value>
+		<comment>파일을 추가할 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_ALREADY_AUTH_EMAIL" xml:space="preserve">
+		<value>It's already confirmed.</value>
+		<comment>이미 인증된 메일입니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_CHANGING_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>The change password and confirmation password do not match.</value>
+		<comment>변경할 비밀번호와 확인 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_CURRENT_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>The current password does not match.</value>
+		<comment>현재 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_CURRENT_PASSWORD_NEW_PASSWORD_SHOULD_NOT_BE_SAME" xml:space="preserve">
+		<value>New password and confirm password should not be same as current password</value>
+		<comment>기존 비밀번호와 현재 비밀번호는 동일해선 안됩니다</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EXTERNAL_LOGIN_INFORMATION_INVALID" xml:space="preserve">
+		<value>Your social account information is not valid.</value>
+		<comment>소셜 계정 정보가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_FAIL_TO_CHANGE_PASSWORD" xml:space="preserve">
+		<value>Failed to change the password.</value>
+		<comment>비밀번호를 변경하는 데 실패했습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_FAIL_TO_REGIST" xml:space="preserve">
+		<value>Failed to regist account.</value>
+		<comment>계정을 등록하는데 실패했습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_FAIL_TO_RESET_PASSWORD" xml:space="preserve">
+		<value>Failed to reset the password.</value>
+		<comment>비밀번호를 재설정하는 데 실패했습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_FAIL_TO_UPDATE" xml:space="preserve">
+		<value>Failed to update account.</value>
+		<comment>계정을 수정하는데 실패했습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_ID_OR_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>The username or password do not match.</value>
+		<comment>아이디 혹은 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_INVALID_EMAIL" xml:space="preserve">
+		<value>Email is invalid</value>
+		<comment>에메일 주소가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_INVALID_PASSWORD" xml:space="preserve">
+		<value>Password is invalid.</value>
+		<comment>비밀번호가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_INVALID_PHONE_NUMBER" xml:space="preserve">
+		<value>Invalid phone number.</value>
+		<comment>전화번호가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_INVALID_TOKEN" xml:space="preserve">
+		<value>Invalid token.</value>
+		<comment>잘못된 토큰입니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_INVALID_USERID" xml:space="preserve">
+		<value>User Id is invalid</value>
+		<comment>아이디가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_IS_LOCKED" xml:space="preserve">
+		<value>Account was locked.</value>
+		<comment>계정이 잠겼습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_IS_NOT_AUTH_EMAIL" xml:space="preserve">
+		<value>This account is not authenticated e-mail address.</value>
+		<comment>이메일 인증이 되지 않은 계정입니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_LOGIN_AFTER_EMAIL_CONFIRM" xml:space="preserve">
+		<value>Please login after email confirmation.</value>
+		<comment>이메일 인증 후에 로그인하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_NOT_ALLOWED_ACCESS_IP" xml:space="preserve">
+		<value>This IP addresse can not be accessed.</value>
+		<comment>이 IP 주소는 접근 불가능 합니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_NOT_FOUND" xml:space="preserve">
+		<value>Account is not found.</value>
+		<comment>회원 정보를 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_PASSWORD_AND_CONFIRM_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>The password and confirmation password do not match.</value>
+		<comment>비밀번호와 확인 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_ACCESS_TOKEN" xml:space="preserve">
+		<value>The access token could not be found.</value>
+		<comment>액세스 토큰을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_CHANGE_CONFIRM_PASSWORD" xml:space="preserve">
+		<value>Please enter the confirmation password of changing.</value>
+		<comment>변경할 확인 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_CHANGE_PASSWORD" xml:space="preserve">
+		<value>Please enter a new password.</value>
+		<comment>변경할 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_CLAIM_VALUE" xml:space="preserve">
+		<value>Please enter a claim value.</value>
+		<comment>권한 값을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_CONFIRM_PASSWORD" xml:space="preserve">
+		<value>Please enter the confirmation password.</value>
+		<comment>확인 비밀번호를 입력하세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_CURRENT_PASSWORD" xml:space="preserve">
+		<value>Please enter your current password.</value>
+		<comment>현재 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_EMAIL" xml:space="preserve">
+		<value>Please enter your email address.</value>
+		<comment>이메일을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_EXTERNAL_LOGIN_PROVIDER" xml:space="preserve">
+		<value>No social account provider found.</value>
+		<comment>소셜 계정 연동 제공자를 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_LOGIN_ID" xml:space="preserve">
+		<value>Please enter your id.</value>
+		<comment>아이디를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_NAME" xml:space="preserve">
+		<value>Please enter your name.</value>
+		<comment>이름을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_PASSWORD" xml:space="preserve">
+		<value>Please enter your password.</value>
+		<comment>비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_PHONE_NUMBER" xml:space="preserve">
+		<value>Please enter phone number.</value>
+		<comment>핸드폰 번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_ROLE_NAME" xml:space="preserve">
+		<value>Please enter role name.</value>
+		<comment>역할명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_USER_IDENTIFIER" xml:space="preserve">
+		<value>Please enter user identifier.</value>
+		<comment>사용자 식별자를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_ROLE_NOT_FOUND" xml:space="preserve">
+		<value>Role is not found.</value>
+		<comment>역할 정보를 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_ROLE_PREDEFINED_ROLE_CANNOT_DELETE" xml:space="preserve">
+		<value>You can not delete predefined role.</value>
+		<comment>미리 정의된 역할은 삭제할 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_ROLE_PREDEFINED_ROLE_CANNOT_UPDATE" xml:space="preserve">
+		<value>You can not rename predefined role.</value>
+		<comment>미리 정의된 역할은 수정할 수 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ALLOW_CONNECTION_IP_REQUIRE_IP_ADDRESS" xml:space="preserve">
+		<value>Please enter a connection allowable IP address.</value>
+		<comment>접속 허용 아이피를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SEND_MAIL_REQUIRE_CONTENTS" xml:space="preserve">
+		<value>Please enter contents.</value>
+		<comment>이메일 내용을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SEND_MAIL_REQUIRE_EMAIL" xml:space="preserve">
+		<value>Please enter email address.</value>
+		<comment>이메일 주소를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SEND_MAIL_REQUIRE_SUBJECT" xml:space="preserve">
+		<value>Please enter subject.</value>
+		<comment>이메일 제목을 입력하여 주세요.</comment>
+	</data>
+	<data name="EMAIL_COMMON_ACCOUNT_EMAIL_CONFIRMATION" xml:space="preserve">
+		<value>EmailMemberVerifyMailForm.en.html</value>
+		<comment>메일 주소 확인 메일 템플릿</comment>
+	</data>
+	<data name="EMAIL_COMMON_ACCOUNT_RESET_PASSWORD" xml:space="preserve">
+		<value>EmailMemberResetMailForm.en.html</value>
+		<comment>비밀번호 재설정 메일 템플릿</comment>
+	</data>
+	<data name="SC_COMMON__SUCCESS" xml:space="preserve">
+		<value>SC001</value>
+		<comment>처리되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON___REQUESTED" xml:space="preserve">
+		<value>It has been requested.</value>
+		<comment>요청 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__ADDED" xml:space="preserve">
+		<value>It has been added.</value>
+		<comment>추가 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__APPROVED" xml:space="preserve">
+		<value>It has been approved.</value>
+		<comment>승인 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__CLONED" xml:space="preserve">
+		<value>It has been cloned.</value>
+		<comment>복제 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__CREATED" xml:space="preserve">
+		<value>It has been registered.</value>
+		<comment>등록 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__DELETED" xml:space="preserve">
+		<value>It has been deleted.</value>
+		<comment>삭제 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__DISABLED" xml:space="preserve">
+		<value>It has been disabled.</value>
+		<comment>비활성화 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__ENABLED" xml:space="preserve">
+		<value>It has been enabled.</value>
+		<comment>활성화 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__IMPORTED" xml:space="preserve">
+		<value>{0} request(s) have been registered in total {1} request(s).</value>
+		<comment>{1} 건 중 {0} 건이 등록 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__MOVED" xml:space="preserve">
+		<value>It has been moved.</value>
+		<comment>이동 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__REMOVED" xml:space="preserve">
+		<value>It has been removed.</value>
+		<comment>제거 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__SAVED" xml:space="preserve">
+		<value>It has been saved.</value>
+		<comment>저장 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON__SEND_MAIL" xml:space="preserve">
+		<value>Your email has been sent.</value>
+		<comment>이메일을 발송하였습니다.</comment>
+	</data>
+	<data name="SM_COMMON__UPDATED" xml:space="preserve">
+		<value>It has been updated.</value>
+		<comment>수정 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_EMAIL_CONFIRM_SUCCESS" xml:space="preserve">
+		<value>Email verification succeeded. Please login.</value>
+		<comment>이메일 인증에 성공하였습니다. 로그인 하여 주세요.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_SUCCESS_CHANGE_PASSWORD" xml:space="preserve">
+		<value>Your password has been changed.</value>
+		<comment>비밀번호가 변경되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_SUCCESS_CREATED" xml:space="preserve">
+		<value>Sign up is complete.</value>
+		<comment>회원 가입이 완료 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_SUCCESS_RESET_PASSWORD" xml:space="preserve">
+		<value>Your password has been reset.</value>
+		<comment>비밀번호가 재설정되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_SUCCESS_SEND_CONFIRM_MAIL" xml:space="preserve">
+		<value>Please check your account according to the content of the e-mail.</value>
+		<comment>메일 주소 확인 메일이 발송되었습니다.\n메일의 내용에 따라 계정을 확인하여 주세요.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_SUCCESS_SEND_RESET_MAIL" xml:space="preserve">
+		<value>Your password reset email has been sent. Please reset your password according to the contents of the message.</value>
+		<comment>비밀번호 재설정 메일이 발송되었습니다. 메일의 내용에 따라서 비밀번호를 재설정하여 주세요.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_ADD_CLAIM" xml:space="preserve">
+		<value>Permission '{1}' added to user account '{0}'.</value>
+		<comment>사용자 계정 '{0}'에 권한 '{1}'(이)가 추가되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_ADD_ROLE" xml:space="preserve">
+		<value>Role '{1}' added to user account '{0}'.</value>
+		<comment>사용자 계정 '{0}'에 권한그룹 '{1}'(이)가 추가되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_CREATED" xml:space="preserve">
+		<value>User account '{0} ({1}, {2})' has been created.</value>
+		<comment>사용자 계정 '{0} ({1}, {2})'(이)가 생성되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_DISABLED" xml:space="preserve">
+		<value>User account '{0} ({1}, {2})' has been disabled.</value>
+		<comment>사용자 계정 '{0} ({1}, {2})'(이)가 비활성화 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_REMOVE_CLAIM" xml:space="preserve">
+		<value>Permission '{1}' has been removed from user account '{0}'.</value>
+		<comment>사용자 계정 '{0}'에서 권한 '{1}'(을)를 제거 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_REMOVE_ROLE" xml:space="preserve">
+		<value>Role '{1}' has been removed from user account '{0}'.</value>
+		<comment>사용자 계정 '{0}'에서 권한그룹 '{1}'(을)를 제거 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ACCOUNT_USER_UPDATED" xml:space="preserve">
+		<value>The user account '{0} ({1})' has been modified to '{2}'.</value>
+		<comment>사용자 계정 '{0} ({1})'(이)가  '{2}'(으)로 변경 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ALLOWED_CONNECTION_IP_ADDED" xml:space="preserve">
+		<value>The connection permission IP '{0}' is registered.</value>
+		<comment>접속 허용 아이피 '{0}'가 등록 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_ALLOWED_CONNECTION_IP_REMOVED" xml:space="preserve">
+		<value>The connection permission IP '{0}' is deleted.</value>
+		<comment>접속 허용 아이피  '{0}'가 삭제 되었습니다.</comment>
+	</data>
+	<data name="SM_COMMON_USER_SUCCESS_CHANGE_PASSWORD" xml:space="preserve">
+		<value>Password has been changed.</value>
+		<comment>비밀번호가 변경되었습니다.</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_CHANGE_PASSWORD" xml:space="preserve">
+		<value>Change Password</value>
+		<comment>비밀번호 변경</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_LOGIN" xml:space="preserve">
+		<value>Login</value>
+		<comment>로그인</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_LOGOUT" xml:space="preserve">
+		<value>Logout</value>
+		<comment>로그아웃</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_REGISTER" xml:space="preserve">
+		<value>Register Account by email</value>
+		<comment>이메일로 회원가입</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_RESET_PASSWORD" xml:space="preserve">
+		<value>Reset Password</value>
+		<comment>비밀번호 재설정</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_SEND_CONFIRM_MAIL" xml:space="preserve">
+		<value>Send account verification email</value>
+		<comment>회원 확인 메일 발송</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_ADD" xml:space="preserve">
+		<value>Add</value>
+		<comment>추가</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_ADD_LOWER_LEVEL" xml:space="preserve">
+		<value>Add lower level</value>
+		<comment>하위 레벨 추가</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_ADD_SAME_LEVEL" xml:space="preserve">
+		<value>Add same level</value>
+		<comment>동일 레벨 추가</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_ADD_SEARCH_CONDITION" xml:space="preserve">
+		<value>Add search condition</value>
+		<comment>검색조건 추가</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_APPLY" xml:space="preserve">
+		<value>Apply</value>
+		<comment>적용</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_BATCH_APPLY" xml:space="preserve">
+		<value>Apply in batch</value>
+		<comment>일괄적용</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_BATCH_CANCEL" xml:space="preserve">
+		<value>Batch cancel</value>
+		<comment>일괄해제</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_CANCEL" xml:space="preserve">
+		<value>Cancel</value>
+		<comment>취소</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_CANCEL_ALL" xml:space="preserve">
+		<value>Cancel all</value>
+		<comment>전체 취소</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_CLOSE" xml:space="preserve">
+		<value>Close</value>
+		<comment>닫기</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_DELETE" xml:space="preserve">
+		<value>Delete</value>
+		<comment>삭제</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_DISABLE" xml:space="preserve">
+		<value>Disable</value>
+		<comment>비활성화</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_ENABLE" xml:space="preserve">
+		<value>Enable</value>
+		<comment>활성화</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_EXPORT_TO_EXCEL" xml:space="preserve">
+		<value>Export to Excel</value>
+		<comment>Excel로 내보내기</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_FILE_DROP_ZONE" xml:space="preserve">
+		<value>Drop files here to upload</value>
+		<comment>업로드할 파일을 여기로 끌어다 놓으세요.</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_LIST" xml:space="preserve">
+		<value>List</value>
+		<comment>목록</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_MODIFY" xml:space="preserve">
+		<value>Modify</value>
+		<comment>수정</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_NEXT" xml:space="preserve">
+		<value>Next</value>
+		<comment>다음</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_OK" xml:space="preserve">
+		<value>OK</value>
+		<comment>확인</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_PREVIOUS" xml:space="preserve">
+		<value>Previous</value>
+		<comment>이전</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_REFRESH" xml:space="preserve">
+		<value>Refresh</value>
+		<comment>새로고침</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_RETRY" xml:space="preserve">
+		<value>Retry</value>
+		<comment>재시도</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_REGIST" xml:space="preserve">
+		<value>Regist</value>
+		<comment>등록</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_REMOVE" xml:space="preserve">
+		<value>Remove</value>
+		<comment>제거</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_REMOVE_ALL" xml:space="preserve">
+		<value>Remove all</value>
+		<comment>전체 제거</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_SAVE" xml:space="preserve">
+		<value>Save</value>
+		<comment>저장</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_SEARCH" xml:space="preserve">
+		<value>Search</value>
+		<comment>검색</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_SELECT_FILE" xml:space="preserve">
+		<value>Select file</value>
+		<comment>파일선택</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_SELECT_FILES" xml:space="preserve">
+		<value>Select files</value>
+		<comment>여러파일선택</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_TEMPLATE_REGIST" xml:space="preserve">
+		<value>Template registration</value>
+		<comment>템플릿 등록</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_TEMPLATE_REQUEST" xml:space="preserve">
+		<value>Template request</value>
+		<comment>템플릿 요청</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_UPLOAD" xml:space="preserve">
+		<value>Upload</value>
+		<comment>업로드</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_UPLOAD_ALL" xml:space="preserve">
+		<value>Upload all</value>
+		<comment>전체 업로드</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCESS_IPS" xml:space="preserve">
+		<value>Access allowed IP management</value>
+		<comment>접속 허용 아이피 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCESS_IPS_CREATE" xml:space="preserve">
+		<value>Add Access Allowed IP</value>
+		<comment>접속 허용 아이피 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCESS_IPS_DELETE" xml:space="preserve">
+		<value>Remove Access Allowed IP</value>
+		<comment>접속 허용 아이피 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCESS_IPS_LIST" xml:space="preserve">
+		<value>List of access allowed IPs</value>
+		<comment>접속 허용 아이피 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_ROLES" xml:space="preserve">
+		<value>menu permissions</value>
+		<comment>메뉴 권한</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_ROLES_CREATE" xml:space="preserve">
+		<value>Add Role</value>
+		<comment>권한그룹추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_ROLES_DELETE" xml:space="preserve">
+		<value>Remove Role</value>
+		<comment>권한그룹삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_ROLES_LIST" xml:space="preserve">
+		<value>Roles</value>
+		<comment>권한그룹관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_ROLES_UPDATE" xml:space="preserve">
+		<value>Update Role</value>
+		<comment>권한그룹수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_ROLES_VIEW" xml:space="preserve">
+		<value>View Role</value>
+		<comment>권한그룹조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT" xml:space="preserve">
+		<value>Portal</value>
+		<comment>포탈 계정/권한 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_USERS" xml:space="preserve">
+		<value>Account</value>
+		<comment>계정 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_USERS_CREATE" xml:space="preserve">
+		<value>Add Account</value>
+		<comment>사용자추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_USERS_DELETE" xml:space="preserve">
+		<value>Remove Account</value>
+		<comment>사용자삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_USERS_LIST" xml:space="preserve">
+		<value>Accounts</value>
+		<comment>사용자관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_USERS_UPDATE" xml:space="preserve">
+		<value>Update Account</value>
+		<comment>사용자수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_ACCOUNT_USERS_VIEW" xml:space="preserve">
+		<value>View Account</value>
+		<comment>사용자조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_CONFIG_GENERAL" xml:space="preserve">
+		<value>System preferences</value>
+		<comment>시스템 환경 설정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_CONFIG_GENERAL_UPDATE" xml:space="preserve">
+		<value>Update General Config</value>
+		<comment>일반 설정 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_CONFIG_GENERAL_VIEW" xml:space="preserve">
+		<value>View General Config</value>
+		<comment>일반 설정 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_CONFIGS_SYSTEM" xml:space="preserve">
+		<value>System Configs</value>
+		<comment>시스템 설정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_CONFIGS_SYSTEM_UPDATE" xml:space="preserve">
+		<value>Update System Config</value>
+		<comment>시스템 설정 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_CONFIGS_SYSTEM_VIEW" xml:space="preserve">
+		<value>View System Config</value>
+		<comment>시스템 설정 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_LOGS_SYSTEMLOGS" xml:space="preserve">
+		<value>System logs</value>
+		<comment>시스템 로그</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_LOGS_SYSTEMLOGS_LIST" xml:space="preserve">
+		<value>System Logs</value>
+		<comment>시스템로그</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_LOGS_USERACTIONLOGS" xml:space="preserve">
+		<value>User action logs</value>
+		<comment>사용자 행동 로그</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_LOGS_USERACTIONLOGS_LIST" xml:space="preserve">
+		<value>User Action Logs</value>
+		<comment>사용자행동로그</comment>
+	</data>
+	<data name="UL_COMMON__GENDER" xml:space="preserve">
+		<value>Gender</value>
+		<comment>성별</comment>
+	</data>
+	<data name="UL_COMMON__GENDER_FEMALE" xml:space="preserve">
+		<value>Female</value>
+		<comment>여성</comment>
+	</data>
+	<data name="UL_COMMON__GENDER_MALE" xml:space="preserve">
+		<value>Male</value>
+		<comment>남성</comment>
+	</data>
+	<data name="UL_COMMON__LOG_LEVEL_DEBUG" xml:space="preserve">
+		<value>Debug</value>
+		<comment>디버그</comment>
+	</data>
+	<data name="UL_COMMON__LOG_LEVEL_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>에러</comment>
+	</data>
+	<data name="UL_COMMON__LOG_LEVEL_INFORMATION" xml:space="preserve">
+		<value>Information</value>
+		<comment>정보</comment>
+	</data>
+	<data name="UL_COMMON__LOG_LEVEL_WARNING" xml:space="preserve">
+		<value>Warning</value>
+		<comment>경고</comment>
+	</data>
+	<data name="UL_COMMON__MOD_DATE" xml:space="preserve">
+		<value>Mod. Date</value>
+		<comment>수정일시</comment>
+	</data>
+	<data name="UL_COMMON__MOD_NAME" xml:space="preserve">
+		<value>Mod. Name</value>
+		<comment>수정자명</comment>
+	</data>
+	<data name="UL_COMMON__MODIFY" xml:space="preserve">
+		<value>Modify</value>
+		<comment>수정</comment>
+	</data>
+	<data name="UL_COMMON__MONTH" xml:space="preserve">
+		<value>Month</value>
+		<comment>개월</comment>
+	</data>
+	<data name="UL_COMMON__NEXT" xml:space="preserve">
+		<value>Next</value>
+		<comment>다음</comment>
+	</data>
+	<data name="UL_COMMON__NO" xml:space="preserve">
+		<value>No</value>
+		<comment>아니오</comment>
+	</data>
+	<data name="UL_COMMON__NO_DATA" xml:space="preserve">
+		<value>No records available.</value>
+		<comment>데이터가 존재하지 않습니다.</comment>
+	</data>
+	<data name="UL_COMMON__NUMBER" xml:space="preserve">
+		<value>No</value>
+		<comment>번호</comment>
+	</data>
+	<data name="UL_COMMON__OK" xml:space="preserve">
+		<value>OK</value>
+		<comment>확인</comment>
+	</data>
+	<data name="UL_COMMON__PERIOD" xml:space="preserve">
+		<value>Period</value>
+		<comment>기간</comment>
+	</data>
+	<data name="UL_COMMON__PREVIOUS" xml:space="preserve">
+		<value>Previous</value>
+		<comment>이전</comment>
+	</data>
+	<data name="UL_COMMON__REG_DATE" xml:space="preserve">
+		<value>Reg. Date</value>
+		<comment>등록일시</comment>
+	</data>
+	<data name="UL_COMMON__REG_NAME" xml:space="preserve">
+		<value>Reg. Name</value>
+		<comment>등록자명</comment>
+	</data>
+	<data name="UL_COMMON__REGIST" xml:space="preserve">
+		<value>Regist</value>
+		<comment>등록</comment>
+	</data>
+	<data name="UL_COMMON__RESULT" xml:space="preserve">
+		<value>Result</value>
+		<comment>성공여부</comment>
+	</data>
+	<data name="UL_COMMON__SAVE" xml:space="preserve">
+		<value>Save</value>
+		<comment>저장</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH" xml:space="preserve">
+		<value>Search</value>
+		<comment>검색</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DATE_END" xml:space="preserve">
+		<value>End Date</value>
+		<comment>검색종료일</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DATE_END_TIME" xml:space="preserve">
+		<value>End Time</value>
+		<comment>검색종료시간</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_FIELD" xml:space="preserve">
+		<value>Application request search field</value>
+		<comment>검색항목</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_KEYWORD" xml:space="preserve">
+		<value>Input Searching keyword...</value>
+		<comment>검색어를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_KEYWORD_WITH_LENGTH" xml:space="preserve">
+		<value>Please enter at least {0} characters.</value>
+		<comment>검색어를 {0}자 이상 입력해주세요.</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DATE_START" xml:space="preserve">
+		<value>Start Date</value>
+		<comment>검색시작일</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DATE_START_TIME" xml:space="preserve">
+		<value>Start Time</value>
+		<comment>검색시작시간</comment>
+	</data>
+	<data name="UL_COMMON__SELECT" xml:space="preserve">
+		<value>Select</value>
+		<comment>선택</comment>
+	</data>
+	<data name="UL_COMMON__SELECTED_COUNT" xml:space="preserve">
+		<value>Selected count</value>
+		<comment>선택된 건수</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DURATION_TYPE" xml:space="preserve">
+		<value>Statistics duration</value>
+		<comment>통계 기간</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DURATION_TYPE_12_MONTHS" xml:space="preserve">
+		<value>Recent 12 months</value>
+		<comment>최근 12개월</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DURATION_TYPE_3_MONTHS" xml:space="preserve">
+		<value>Recent 3 months</value>
+		<comment>최근 3개월</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DURATION_TYPE_30_DAYS" xml:space="preserve">
+		<value>Recent 30 days</value>
+		<comment>최근 30일</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_DURATION_TYPE_6_MONTHS" xml:space="preserve">
+		<value>Recent 6 months</value>
+		<comment>최근 6개월</comment>
+	</data>
+	<data name="UL_COMMON__STAT_GROUP_BY_TYPE" xml:space="preserve">
+		<value>Statistical data grouping type</value>
+		<comment>통계 데이터 그룹핑 타입</comment>
+	</data>
+	<data name="UL_COMMON__STAT_GROUP_BY_TYPE_DAILY" xml:space="preserve">
+		<value>Daily</value>
+		<comment>일별</comment>
+	</data>
+	<data name="UL_COMMON__STAT_GROUP_BY_TYPE_MONTHLY" xml:space="preserve">
+		<value>Monthly</value>
+		<comment>월별</comment>
+	</data>
+	<data name="UL_COMMON__STAT_GROUP_BY_TYPE_WEEKLY" xml:space="preserve">
+		<value>Weekly</value>
+		<comment>주별</comment>
+	</data>
+	<data name="UL_COMMON__STAT_GROUP_BY_TYPE_YEARLY" xml:space="preserve">
+		<value>Yearly</value>
+		<comment>년별</comment>
+	</data>
+	<data name="UL_COMMON__STATUS" xml:space="preserve">
+		<value>Status</value>
+		<comment>상태</comment>
+	</data>
+	<data name="UL_COMMON__TABLE" xml:space="preserve">
+		<value>Table</value>
+		<comment>표</comment>
+	</data>
+	<data name="UL_COMMON__TIME_DAYS" xml:space="preserve">
+		<value>Days</value>
+		<comment>일</comment>
+	</data>
+	<data name="UL_COMMON__TIME_HOURS" xml:space="preserve">
+		<value>Hours</value>
+		<comment>시간</comment>
+	</data>
+	<data name="UL_COMMON__TIME_MINUTES" xml:space="preserve">
+		<value>Minutes</value>
+		<comment>분</comment>
+	</data>
+	<data name="UL_COMMON__TIME_SECONDS" xml:space="preserve">
+		<value>Seconds</value>
+		<comment>초</comment>
+	</data>
+	<data name="UL_COMMON__TOTAL_COUNT" xml:space="preserve">
+		<value>Total count</value>
+		<comment>총 건수</comment>
+	</data>
+	<data name="UL_COMMON__TYPE" xml:space="preserve">
+		<value>Type</value>
+		<comment>타입</comment>
+	</data>
+	<data name="UL_COMMON__UNAPPLIED" xml:space="preserve">
+		<value>Unapplied</value>
+		<comment>미적용</comment>
+	</data>
+	<data name="UL_COMMON__UNAPPLY" xml:space="preserve">
+		<value>Unapply</value>
+		<comment>해제</comment>
+	</data>
+	<data name="UL_COMMON__UPLOAD" xml:space="preserve">
+		<value>Upload</value>
+		<comment>업로드</comment>
+	</data>
+	<data name="UL_COMMON__UPLOAD_ACTION" xml:space="preserve">
+		<value>Actions</value>
+		<comment>작업</comment>
+	</data>
+	<data name="UL_COMMON__UPLOAD_STATUS" xml:space="preserve">
+		<value>Status</value>
+		<comment>상태</comment>
+	</data>
+	<data name="UL_COMMON__VIEW_ALL" xml:space="preserve">
+		<value>View All</value>
+		<comment>전체보기</comment>
+	</data>
+	<data name="UL_COMMON__VIEW_MORE" xml:space="preserve">
+		<value>View More..</value>
+		<comment>더보기</comment>
+	</data>
+	<data name="UL_COMMON__WARNING" xml:space="preserve">
+		<value>Warning</value>
+		<comment>에러</comment>
+	</data>
+	<data name="UL_COMMON__YES" xml:space="preserve">
+		<value>Yes</value>
+		<comment>예</comment>
+	</data>
+	<data name="UL_COMMON__YESTERDAY" xml:space="preserve">
+		<value>Yesterday</value>
+		<comment>어제</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_CHANGE_PASSWORD" xml:space="preserve">
+		<value>Change Password</value>
+		<comment>비밀번호 변경</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_CONFIRM_NEW_PASSWORD" xml:space="preserve">
+		<value>Confirm New Password</value>
+		<comment>신규 비밀번호 확인</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_CONFIRM_PASSWORD" xml:space="preserve">
+		<value>Confirm Password</value>
+		<comment>비밀번호 확인</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_CURRENT_PASSWORD" xml:space="preserve">
+		<value>Current Password</value>
+		<comment>현재 비밀번호</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_EMAIL" xml:space="preserve">
+		<value>E-mail</value>
+		<comment>이메일</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_LOGIN" xml:space="preserve">
+		<value>Login</value>
+		<comment>로그인</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_LOGOUT" xml:space="preserve">
+		<value>Logout</value>
+		<comment>로그아웃</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_MAIL_EMAIL_CONFIRM" xml:space="preserve">
+		<value>Mail confirmation</value>
+		<comment>이메일 확인</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_MAIL_PASSWORD_RESET" xml:space="preserve">
+		<value>Password reset</value>
+		<comment>비밀번호 재설정</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_NEW_PASSWORD" xml:space="preserve">
+		<value>New Password</value>
+		<comment>신규 비밀번호</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_PASSWORD" xml:space="preserve">
+		<value>Password</value>
+		<comment>비밀번호</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_REMEMBER_ME" xml:space="preserve">
+		<value>Remember User Id</value>
+		<comment>로그인 아이디 저장</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_RESET_PASSWORD" xml:space="preserve">
+		<value>Reset Password</value>
+		<comment>비밀번호 재설정</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_USER_ID" xml:space="preserve">
+		<value>ID</value>
+		<comment>아이디</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_USER_NAME" xml:space="preserve">
+		<value>Name</value>
+		<comment>이름</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_USER_STATUS" xml:space="preserve">
+		<value>Account Status</value>
+		<comment>회원 상태</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_USER_STATUS_ACTIVED" xml:space="preserve">
+		<value>Actived</value>
+		<comment>활성화</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_USER_STATUS_LOCKED" xml:space="preserve">
+		<value>Locked</value>
+		<comment>잠김</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_USER_STATUS_VERIFYING_EMAIL" xml:space="preserve">
+		<value>Verifying Email</value>
+		<comment>이메일 확인 중</comment>
+	</data>
+	<data name="UL_COMMON_LOG_IP_ADDRESS" xml:space="preserve">
+		<value>IP address</value>
+		<comment>IP 주소</comment>
+	</data>
+	<data name="UL_COMMON_LOG_LEVEL" xml:space="preserve">
+		<value>Log level</value>
+		<comment>로그 레벨</comment>
+	</data>
+	<data name="UL_COMMON_LOG_MESSAGE" xml:space="preserve">
+		<value>Log message</value>
+		<comment>로그 메시지</comment>
+	</data>
+	<data name="UL_COMMON_LOG_PRODUCT" xml:space="preserve">
+		<value>Product</value>
+		<comment>제품</comment>
+	</data>
+	<data name="UL_COMMON_LOG_USER_NAME" xml:space="preserve">
+		<value>User</value>
+		<comment>유저</comment>
+	</data>
+	<data name="UL_COMMON_USER" xml:space="preserve">
+		<value>User</value>
+		<comment>사용자</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_ACCOUNT_LOGOUT" xml:space="preserve">
+		<value>Are you sure to log off?</value>
+		<comment>로그아웃 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_COMMON_DELETE" xml:space="preserve">
+		<value>Are you sure to delete?</value>
+		<comment>삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_COMMON_MODIFY" xml:space="preserve">
+		<value>Are you sure to modify?</value>
+		<comment>수정 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_TITLE_ACCOUNT_LOGOUT" xml:space="preserve">
+		<value>Confirm logout</value>
+		<comment>로그아웃 확인</comment>
+	</data>
+	<data name="UL_EMAIL_TITLE_EMAIL_CONFIRM" xml:space="preserve">
+		<value>Mail confirmation</value>
+		<comment>이메일 확인</comment>
+	</data>
+	<data name="UL_EMAIL_TITLE_PASSWORD_RESET" xml:space="preserve">
+		<value>Password reset</value>
+		<comment>비밀번호 재설정</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_BACK_TO_HOME" xml:space="preserve">
+		<value>Back to home</value>
+		<comment>홈으로 돌아가기</comment>
+	</data>
+	<data name="EM_COMMON_SITE_ERROR_504" xml:space="preserve">
+		<value>We are sorry but our service is currently not available.\nPlease try again in a minute.</value>
+		<comment>504 에러</comment>
+	</data>
+	<data name="UL_COMMON__ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>에러</comment>
+	</data>
+	<data name="UL_BUTTON_ACCOUNT_FORGOT_PASSWORD" xml:space="preserve">
+		<value>Forgot Password</value>
+		<comment>비밀번호 찾기</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_FORGOT_PASSWORD" xml:space="preserve">
+		<value>Forgot Password</value>
+		<comment>비밀번호 찾기</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_NAME" xml:space="preserve">
+		<value>Name</value>
+		<comment>이름</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EXTERNAL_LOGIN_NAVER_CANCEL_BY_USER" xml:space="preserve">
+		<value>Cancel by user</value>
+		<comment>로그인이 취소 되었습니다.</comment>
+	</data>
+	<data name="UL_COMMON__SEARCH_KEYWORD_PLACEHOLDER" xml:space="preserve">
+		<value>Input Searching keyword...</value>
+		<comment>검색어를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_VERIFICATION_NUMBER" xml:space="preserve">
+		<value>Verification Number</value>
+		<comment>인증번호</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_VERIFICATION_NUMBER" xml:space="preserve">
+		<value>Please enter your verification number.</value>
+		<comment>인증 번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON_HOME" xml:space="preserve">
+		<value>Home</value>
+		<comment>Home</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EMAIL_VERIFICATION_REQUIRE_EMAIL" xml:space="preserve">
+		<value>There is no email address information you want to verify.</value>
+		<comment>인증하려는 이메일 주소 정보가 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EMAIL_VERIFICATION_REQUIRE_CODE" xml:space="preserve">
+		<value>There is no verification code for verifying your email.</value>
+		<comment>이메일 인증에 필요한 인증코드가 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EMAIL_VERIFICATION_PROCESSING" xml:space="preserve">
+		<value>Checking if email is valid.\nPlease wait a moment.</value>
+		<comment>이메일이 유효한지 확인 중 입니다.\n잠시만 기다려주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EMAIL_VERIFICATION_ACTIVATED" xml:space="preserve">
+		<value>Your email has been verified.\nPlease log in and use the service.</value>
+		<comment>이메일이 확인 되었습니다.\n로그인 후 서비스를 이용해 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_EMAIL_VERIFICATION_ERROR" xml:space="preserve">
+		<value>Following error occurred while checking your email.\n"{{errorMessage}}"\nPlease contact site manager.</value>
+		<comment>이메일 확인 중 아래의 에러가 발생하였습니다.\n"{{errorMessage}}"\n관리자에게 문의해 주세요.</comment>
+	</data>
+	<data name="UI_COMMON_ACCOUNT_EMAIL_VERIFICATION" xml:space="preserve">
+		<value>Email Verification</value>
+		<comment>이메일 확인</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_RESEND_CONFIRM_MAIL" xml:space="preserve">
+		<value>Resend verification mail</value>
+		<comment>인증메일 재전송</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_RESET_PASSWORD_REQUIRE_EMAIL" xml:space="preserve">
+		<value>There is no email address information for the account you want to reset.</value>
+		<comment>비밀번호를 초기화 하려는 계정의 이메일 주소 정보가 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_RESET_PASSWORD_REQUIRE_CODE" xml:space="preserve">
+		<value>There is no verification code to reset password.</value>
+		<comment>비밀번호 초기화에 필요한 인증코드가 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_REQUIRE_NEW_PASSWORD" xml:space="preserve">
+		<value>Please enter your password.</value>
+		<comment>6자이상, 영문, 숫자 한 자 이상 필수</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_GOTO_PREVIOUS_PAGE" xml:space="preserve">
+		<value>Go to Previous Page</value>
+		<comment>이전화면으로 가기</comment>
+	</data>
+	<data name="UL_CONFIRM_TITLE_COMMON_DELETE" xml:space="preserve">
+		<value>Confirm Deletion</value>
+		<comment>삭제확인</comment>
+	</data>
+	<data name="UL_CONFIRM_TITLE_COMMON_MODIFY" xml:space="preserve">
+		<value>Confirm modification</value>
+		<comment>수정확인</comment>
+	</data>
+	<data name="UL_COMMON__HOURS" xml:space="preserve">
+		<value>Hours</value>
+		<comment>시간</comment>
+	</data>
+	<data name="UL_COMMON__DAYS" xml:space="preserve">
+		<value>Days</value>
+		<comment>일</comment>
+	</data>
+	<data name="UL_COMMON_SEARCH_FIELD_TITLE" xml:space="preserve">
+		<value>Title</value>
+		<comment>제목</comment>
+	</data>
+	<data name="UL_COMMON_SEARCH_FIELD_REG_NAME" xml:space="preserve">
+		<value>Reg.Name</value>
+		<comment>등록자명</comment>
+	</data>
+	<data name="UL_COMMON_SEARCH_PERIOD_FIELD_REG_DATE" xml:space="preserve">
+		<value>Reg.Date</value>
+		<comment>등록일시</comment>
+	</data>
+	<data name="UL_LOGS_SYSLOG_SEARCH_FIELD_HOST" xml:space="preserve">
+		<value>Host</value>
+		<comment>호스트</comment>
+	</data>
+	<data name="UL_LOGS_SYSLOG_SEARCH_FIELD_MESSAGE" xml:space="preserve">
+		<value>Message</value>
+		<comment>메세지</comment>
+	</data>
+	<data name="UL_LOGS_SYSLOG_SEARCH_PERIOD_TIMESTAMP" xml:space="preserve">
+		<value>Timestamp</value>
+		<comment>로그일시</comment>
+	</data>
+	<data name="UL_COMMON__ALL" xml:space="preserve">
+		<value>All</value>
+		<comment>전체</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_SYSLOGS" xml:space="preserve">
+		<value>Syslog</value>
+		<comment>Syslog</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_IFSSMB_SYSLOGS" xml:space="preserve">
+		<value>IfsSMB Syslog</value>
+		<comment>IfsSMB Syslog</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_AUTHLOGS" xml:space="preserve">
+		<value>Auth Log</value>
+		<comment>Auth Log</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_REST_CONTROL_LOGS" xml:space="preserve">
+		<value>Rest Control Log</value>
+		<comment>Rest Control Log</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_REST_IO_LOGS" xml:space="preserve">
+		<value>Rest IO Log</value>
+		<comment>Rest IO Log</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_DR_CONTROL_LOGS" xml:space="preserve">
+		<value>DR Control Log</value>
+		<comment>DR Control Log</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_DR_IO_LOGS" xml:space="preserve">
+		<value>DR IO Log</value>
+		<comment>DR IO Log</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_PORTAL_LOGS" xml:space="preserve">
+		<value>Portal Log</value>
+		<comment>Portal Log</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_DR" xml:space="preserve">
+		<value>DR Error</value>
+		<comment>DR Error</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_DR_OK" xml:space="preserve">
+		<value>OK</value>
+		<comment>OK</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_DR_FAIL" xml:space="preserve">
+		<value>FAIL</value>
+		<comment>FAIL</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST" xml:space="preserve">
+		<value>REST Error</value>
+		<comment>REST Error</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST_OK" xml:space="preserve">
+		<value>OK</value>
+		<comment>OK</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST_NO_CONTENT" xml:space="preserve">
+		<value>No Content</value>
+		<comment>No Content</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST_FORBIDDEN" xml:space="preserve">
+		<value>Forbidden</value>
+		<comment>Forbidden</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST_UNAUTHORIZED" xml:space="preserve">
+		<value>Unauthorized</value>
+		<comment>Unauthorized</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST_NOT_FOUND" xml:space="preserve">
+		<value>Not Found</value>
+		<comment>Not Found</comment>
+	</data>
+	<data name="UL_COMMON__ERROR_REST_INTERNAL_SERVER" xml:space="preserve">
+		<value>Internal Server Error</value>
+		<comment>Internal Server Error</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT" xml:space="preserve">
+		<value>Rest Control Events</value>
+		<comment>Rest Control Events</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_CODE_CREATE_TENANT" xml:space="preserve">
+		<value>ifss30.createTenant</value>
+		<comment>ifss30.createTenant</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_CODE_SET_TENANT_QUOTA" xml:space="preserve">
+		<value>ifss30.settenantQuota</value>
+		<comment>ifss30.settenantQuota</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_CODE_CREATE_USER" xml:space="preserve">
+		<value>ifss30.createUser</value>
+		<comment>ifss30.createUser</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_CODE_SET_USER_QUOTA" xml:space="preserve">
+		<value>ifss30.setUserQuota</value>
+		<comment>ifss30.setUserQuota</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_CREATE_TENANT" xml:space="preserve">
+		<value>Create Tenant</value>
+		<comment>Create Tenant</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_SET_TENANT_QUOTA" xml:space="preserve">
+		<value>Set Tenant Quota</value>
+		<comment>Set Tenant Quota</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_CREATE_USER" xml:space="preserve">
+		<value>Create User</value>
+		<comment>Create User</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_EVENT_SET_USER_QUOTA" xml:space="preserve">
+		<value>Create User Quota</value>
+		<comment>Create User Quota</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT" xml:space="preserve">
+		<value>Rest IO Events</value>
+		<comment>Rest IO Events</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_CODE_GET" xml:space="preserve">
+		<value>rest.GET</value>
+		<comment>rest.GET</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_CODE_PUT" xml:space="preserve">
+		<value>rest.PUT</value>
+		<comment>rest.PUT</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_CODE_HEAD" xml:space="preserve">
+		<value>rest.HEAD</value>
+		<comment>rest.HEAD</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_CODE_DELETE" xml:space="preserve">
+		<value>rest.DELETE</value>
+		<comment>rest.DELETE</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_CODE_COPY" xml:space="preserve">
+		<value>rest.COPY</value>
+		<comment>rest.COPY</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_GET" xml:space="preserve">
+		<value>Download</value>
+		<comment>Download</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_PUT" xml:space="preserve">
+		<value>Upload</value>
+		<comment>Upload</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_HEAD" xml:space="preserve">
+		<value>Path Check</value>
+		<comment>Path Check</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_DELETE" xml:space="preserve">
+		<value>Delete</value>
+		<comment>Delete</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_EVENT_COPY" xml:space="preserve">
+		<value>Copy</value>
+		<comment>Copy</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT" xml:space="preserve">
+		<value>DR Control Event</value>
+		<comment>DR Control Event</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_CODE_START" xml:space="preserve">
+		<value>start</value>
+		<comment>start</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_CODE_STOP" xml:space="preserve">
+		<value>stop</value>
+		<comment>stop</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_CODE_PAUSE" xml:space="preserve">
+		<value>pause</value>
+		<comment>pause</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_CODE_RESUME" xml:space="preserve">
+		<value>resume</value>
+		<comment>resume</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_CODE_ADD_JOB" xml:space="preserve">
+		<value>add_job</value>
+		<comment>add_job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_CODE_REMOVE_JOB" xml:space="preserve">
+		<value>rm_job</value>
+		<comment>rm_job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_START" xml:space="preserve">
+		<value>Start DR Job</value>
+		<comment>Start DR Job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_STOP" xml:space="preserve">
+		<value>Stop DR Job</value>
+		<comment>Stop DR Job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_PAUSE" xml:space="preserve">
+		<value>Pause DR Job</value>
+		<comment>Pause DR Job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_RESUME" xml:space="preserve">
+		<value>Resume DR Job</value>
+		<comment>Resume DR Job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_ADD_JOB" xml:space="preserve">
+		<value>Add DR Job</value>
+		<comment>Add DR Job</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_EVENT_REMOVE_JOB" xml:space="preserve">
+		<value>Remove DR Job</value>
+		<comment>Remove DR Job</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT" xml:space="preserve">
+		<value>DR IO Event</value>
+		<comment>DR IO Event</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_CREATE_FILE" xml:space="preserve">
+		<value>CREATE_FILE</value>
+		<comment>CREATE_FILE</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_UNLINK" xml:space="preserve">
+		<value>UNLINK</value>
+		<comment>UNLINK</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_MKDIR" xml:space="preserve">
+		<value>MKDIR</value>
+		<comment>MKDIR</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_RMDIR" xml:space="preserve">
+		<value>RMDIR</value>
+		<comment>RMDIR</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_RENAME" xml:space="preserve">
+		<value>RENAME</value>
+		<comment>RENAME</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_UPDATE_FILE" xml:space="preserve">
+		<value>UPDATE_FILE</value>
+		<comment>UPDATE_FILE</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_SET_ATTR" xml:space="preserve">
+		<value>SETATTR</value>
+		<comment>SETATTR</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_SET_X_ATTR" xml:space="preserve">
+		<value>SETXATTR</value>
+		<comment>SETXATTR</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CODE_REMOVE_X_ATTR" xml:space="preserve">
+		<value>REMOVEXATTR</value>
+		<comment>REMOVEXATTR</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_CREATE_FILE" xml:space="preserve">
+		<value>Create File</value>
+		<comment>Create File</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_UNLINK" xml:space="preserve">
+		<value>Delete File</value>
+		<comment>Delete File</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_MKDIR" xml:space="preserve">
+		<value>Create Directory</value>
+		<comment>Create Directory</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_RMDIR" xml:space="preserve">
+		<value>Delete Directory</value>
+		<comment>Delete Directory</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_RENAME" xml:space="preserve">
+		<value>Rename File/Directory</value>
+		<comment>Rename File/Directory</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_UPDATE_FILE" xml:space="preserve">
+		<value>Update File</value>
+		<comment>Update File</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_SET_ATTR" xml:space="preserve">
+		<value>Set Attribute</value>
+		<comment>Set Attribute</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_SET_X_ATTR" xml:space="preserve">
+		<value>Set Extended Attribute</value>
+		<comment>Set Extended Attribute</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_EVENT_REMOVE_X_ATTR" xml:space="preserve">
+		<value>Remove Extended Attribute</value>
+		<comment>Remove Extended Attribute</comment>
+	</data>
+	<data name="EC_LOGS_REQUIRE_SEARCH_PERIOD" xml:space="preserve">
+		<value>EL001</value>
+		<comment>EL001</comment>
+	</data>
+	<data name="EM_LOGS_REQUIRE_SEARCH_PERIOD" xml:space="preserve">
+		<value>Please enter search period.</value>
+		<comment>검색 기간을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_LOGS_AUTHLOG_SEARCH_PERIOD_ACCESS_TIME" xml:space="preserve">
+		<value>Access Time</value>
+		<comment>Access Time</comment>
+	</data>
+	<data name="UL_LOGS_AUTHLOG_SEARCH_FIELD_REMOTE_HOST" xml:space="preserve">
+		<value>Remote Host</value>
+		<comment>Remote Host</comment>
+	</data>
+	<data name="UL_LOGS_AUTHLOG_SEARCH_FIELD_TENANT_KEY" xml:space="preserve">
+		<value>Tenant Key</value>
+		<comment>Tenant Key</comment>
+	</data>
+	<data name="UL_LOGS_AUTHLOG_SEARCH_FIELD_ACCESS_KEY" xml:space="preserve">
+		<value>Access Key</value>
+		<comment>Access Key</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_PERIOD_STARTTIME" xml:space="preserve">
+		<value>Start Time</value>
+		<comment>Start Time</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_EVENT" xml:space="preserve">
+		<value>Event</value>
+		<comment>Event</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_REMOTE_HOST" xml:space="preserve">
+		<value>Remote Host</value>
+		<comment>Remote Host</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_USER" xml:space="preserve">
+		<value>User</value>
+		<comment>User</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_PATH" xml:space="preserve">
+		<value>Path</value>
+		<comment>Path</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_STR_PARAM" xml:space="preserve">
+		<value>String Param.</value>
+		<comment>String Param.</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_INT_PARAM" xml:space="preserve">
+		<value>Int Param.</value>
+		<comment>Int Param.</comment>
+	</data>
+	<data name="UL_LOGS_REST_CONTROL_SEARCH_FIELD_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>Error</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_PERIOD_STARTTIME" xml:space="preserve">
+		<value>Start Time</value>
+		<comment>Start Time</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_PERIOD_ENDTIME" xml:space="preserve">
+		<value>End Time</value>
+		<comment>End Time</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_EVENT" xml:space="preserve">
+		<value>Event</value>
+		<comment>Event</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_REMOTE_HOST" xml:space="preserve">
+		<value>Remote Host</value>
+		<comment>Remote Host</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_USER" xml:space="preserve">
+		<value>User</value>
+		<comment>User</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_PATH" xml:space="preserve">
+		<value>Path</value>
+		<comment>Path</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_STR_PARAM" xml:space="preserve">
+		<value>String Param.</value>
+		<comment>String Param.</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_INT_PARAM" xml:space="preserve">
+		<value>Int Param.</value>
+		<comment>Int Param.</comment>
+	</data>
+	<data name="UL_LOGS_REST_IO_SEARCH_FIELD_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>Error</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_PERIOD_ENDTIME" xml:space="preserve">
+		<value>End Time</value>
+		<comment>End Time</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_EVENT" xml:space="preserve">
+		<value>Event</value>
+		<comment>Event</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>Error</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_REMOTE_HOST" xml:space="preserve">
+		<value>Remote Host</value>
+		<comment>Remote Host</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_DST" xml:space="preserve">
+		<value>Destination</value>
+		<comment>Destination</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_VOLUME" xml:space="preserve">
+		<value>Volume</value>
+		<comment>Volume</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_USER" xml:space="preserve">
+		<value>User</value>
+		<comment>User</comment>
+	</data>
+	<data name="UL_LOGS_DR_CONTROL_SEARCH_FIELD_ERROR_MESSAGE" xml:space="preserve">
+		<value>Error Message</value>
+		<comment>Error Message</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_PERIOD_ENDTIME" xml:space="preserve">
+		<value>End Time</value>
+		<comment>End Time</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_EVENT" xml:space="preserve">
+		<value>Event</value>
+		<comment>Event</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>Error</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_REMOTE_HOST" xml:space="preserve">
+		<value>Remote Host</value>
+		<comment>Remote Host</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_DR_LEVEL" xml:space="preserve">
+		<value>Dr Level</value>
+		<comment>Dr Level</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_USER" xml:space="preserve">
+		<value>User</value>
+		<comment>User</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_PATH" xml:space="preserve">
+		<value>Path</value>
+		<comment>Path</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_DST_PATH" xml:space="preserve">
+		<value>Destination Path</value>
+		<comment>Destination Path</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_SIZE" xml:space="preserve">
+		<value>Size</value>
+		<comment>Size</comment>
+	</data>
+	<data name="UL_LOGS_DR_IO_SEARCH_FIELD_ERROR_MESSAGE" xml:space="preserve">
+		<value>Error Message</value>
+		<comment>Error Message</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS" xml:space="preserve">
+		<value>Logs</value>
+		<comment>Logs</comment>
+	</data>
+	<data name="UL_LOGS_AUTHLOG_SEARCH_FIELD_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>Error</comment>
+	</data>
+	<data name="UL_LOGS_PORTAL_LOG_SEARCH_PERIOD_INSERT_DATE" xml:space="preserve">
+		<value>Reg. Date</value>
+		<comment>등록일시</comment>
+	</data>
+	<data name="UL_LOGS_PORTAL_LOG_SEARCH_FIELD_LOG_MESSAGE" xml:space="preserve">
+		<value>Message</value>
+		<comment>메세지</comment>
+	</data>
+	<data name="UL_LOGS_PORTAL_LOG_SEARCH_FIELD_LOG_DETAIL" xml:space="preserve">
+		<value>Detail</value>
+		<comment>상세내용</comment>
+	</data>
+	<data name="UL_LOGS_PORTAL_LOG_SEARCH_FIELD_IP_ADDR" xml:space="preserve">
+		<value>IP Address</value>
+		<comment>아이피</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_CREATE" xml:space="preserve">
+		<value>Create</value>
+		<comment>생성</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_UPDATE" xml:space="preserve">
+		<value>Update</value>
+		<comment>수정</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_START" xml:space="preserve">
+		<value>Start</value>
+		<comment>시작</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_STOP" xml:space="preserve">
+		<value>Stop</value>
+		<comment>중지</comment>
+	</data>
+	<data name="UL_BUTTON_VOLUME_TENANT_INFO" xml:space="preserve">
+		<value>CREDENTIAL</value>
+		<comment>CREDENTIAL</comment>
+	</data>
+	<data name="UL_VOLUMES_CREATE_VOLUME" xml:space="preserve">
+		<value>Create Volume</value>
+		<comment>볼륨 생성</comment>
+	</data>
+	<data name="UL_VOLUMES_UPDATE_VOLUME" xml:space="preserve">
+		<value>Update Volume</value>
+		<comment>볼륨 수정</comment>
+	</data>
+	<data name="UL_VOLUMES_REMOVE_VOLUME" xml:space="preserve">
+		<value>Remove Volume</value>
+		<comment>볼륨 삭제</comment>
+	</data>
+	<data name="UL_VOLUMES_START_VOLUME" xml:space="preserve">
+		<value>Start Volume</value>
+		<comment>불륨 시작</comment>
+	</data>
+	<data name="UL_VOLUMES_STOP_VOLUME" xml:space="preserve">
+		<value>Stop Volume</value>
+		<comment>볼륨 중지</comment>
+	</data>
+	<data name="UL_VOLUMES_VIEW_TENANT" xml:space="preserve">
+		<value>CREDENTIAL</value>
+		<comment>CREDENTIAL</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_VOLUME_REMOVE" xml:space="preserve">
+		<value>Are you sure you want to remove volume {{ Name }}?</value>
+		<comment>{{ Name }} 볼륨을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_VOLUME_START" xml:space="preserve">
+		<value>Do you want to start volume {{Name}}?</value>
+		<comment>{{ Name }} 볼륨을 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_VOLUME_STOP" xml:space="preserve">
+		<value>Do you want to stop volume {{Name}}?</value>
+		<comment>{{ Name }} 볼륨을 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON_VOLUME_REPLICATION_TYPE" xml:space="preserve">
+		<value>Replication Type</value>
+		<comment>복제타입</comment>
+	</data>
+	<data name="UL_COMMON_VOLUME_REPLICATION_TYPE_ONE_PLUS_ZERO" xml:space="preserve">
+		<value>1+0</value>
+		<comment>1+0</comment>
+	</data>
+	<data name="UL_COMMON_VOLUME_REPLICATION_TYPE_ONE_PLUS_ONE" xml:space="preserve">
+		<value>1+1</value>
+		<comment>1+1</comment>
+	</data>
+	<data name="UL_COMMON_VOLUME_REPLICATION_TYPE_ONE_PLUS_TWO" xml:space="preserve">
+		<value>1+2</value>
+		<comment>1+2</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_RESET" xml:space="preserve">
+		<value>Reset</value>
+		<comment>초기화</comment>
+	</data>
+	<data name="SM_VOLUME_AVAILABLE_NAME" xml:space="preserve">
+		<value>This volume name is available.</value>
+		<comment>사용 가능한 볼륨명입니다.</comment>
+	</data>
+	<data name="EC_VOLUME_PASSWORD_AND_CONFIRM_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>EV003</value>
+		<comment>EV003</comment>
+	</data>
+	<data name="EM_VOLUME_PASSWORD_AND_CONFIRM_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>The password you entered does not match your confirmation password.</value>
+		<comment>입력하신 비밀번호와 확인 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_NAME" xml:space="preserve">
+		<value>Please enter volume name.</value>
+		<comment>볼륨명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_REPLICATION_TYPE" xml:space="preserve">
+		<value>Please select replication type.</value>
+		<comment>복제 타입을 선택하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_PERMISSION" xml:space="preserve">
+		<value>Please select mode.</value>
+		<comment>모드를 선택하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_PASSWORD" xml:space="preserve">
+		<value>Please enter password.</value>
+		<comment>비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_CONFIRMATION_PASSWORD" xml:space="preserve">
+		<value>Please enter confirmation password.</value>
+		<comment>확인 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EC_VOLUME_REQUIRE_PASSWORD" xml:space="preserve">
+		<value>EV001</value>
+		<comment>EV001</comment>
+	</data>
+	<data name="EC_VOLUME_REQUIRE_CONFIRMATION_PASSWORD" xml:space="preserve">
+		<value>EV002</value>
+		<comment>EV002</comment>
+	</data>
+	<data name="EM_VOLUME_QUOTA_SIZE_GRATER_THAN_0" xml:space="preserve">
+		<value>Quota must be at least 1.</value>
+		<comment>할당량은 1 이상이어야 합니다.</comment>
+	</data>
+	<data name="EC_VOLUME_REQUIRE_CURRENT_PASSWORD" xml:space="preserve">
+		<value>EV004</value>
+		<comment>EV004</comment>
+	</data>
+	<data name="EC_VOLUME_REQUIRE_NEW_PASSWORD" xml:space="preserve">
+		<value>EV005</value>
+		<comment>EV005</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_NEW_PASSWORD" xml:space="preserve">
+		<value>Please enter new password.</value>
+		<comment>신규 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_CURRENT_PASSWORD" xml:space="preserve">
+		<value>Please enter current password.</value>
+		<comment>현재 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EC_VOLUME_CURRENT_PASSWORD_DOES_NOT_MATCH" xml:space="preserve">
+		<value>EV006</value>
+		<comment>EV006</comment>
+	</data>
+	<data name="EM_VOLUME_CURRENT_PASSWORD_DOES_NOT_MATCH" xml:space="preserve">
+		<value>Current password does not match.</value>
+		<comment>현재 비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EC_VOLUME_CHANGE_PASSWORD_IS_AVAILABLE_ONLY_PRIVATE_MODE" xml:space="preserve">
+		<value>EV007</value>
+		<comment>EV007</comment>
+	</data>
+	<data name="EM_VOLUME_CHANGE_PASSWORD_IS_AVAILABLE_ONLY_PRIVATE_MODE" xml:space="preserve">
+		<value>Password change is only possible in PRIVATE mode.</value>
+		<comment>비밀번호 변경은 PRIVATE 모드에서만 가능합니다.</comment>
+	</data>
+	<data name="UL_BUTTON_VOLUME_UPDATE_QUOTA_SIZE" xml:space="preserve">
+		<value>Update Quota Size</value>
+		<comment>Quota Size 변경</comment>
+	</data>
+	<data name="UL_BUTTON_VOLUME_UPDATE_PASSWORD" xml:space="preserve">
+		<value>Update password</value>
+		<comment>비밀번호 변경</comment>
+	</data>
+	<data name="UL_VOLUMES_USER_ROLE_ADMIN" xml:space="preserve">
+		<value>Admin</value>
+		<comment>관리자</comment>
+	</data>
+	<data name="UL_VOLUMES_USER_ROLE_USER" xml:space="preserve">
+		<value>User</value>
+		<comment>사용자</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS" xml:space="preserve">
+		<value>System</value>
+		<comment>System</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM" xml:space="preserve">
+		<value>Nodes / Disks</value>
+		<comment>Nodes / Disks</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_VIEW" xml:space="preserve">
+		<value>System Info.</value>
+		<comment>System 정보</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_REMOVE" xml:space="preserve">
+		<value>System Remove</value>
+		<comment>System 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMN_MASTER_USERS" xml:space="preserve">
+		<value>Volume Master User Management</value>
+		<comment>User 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMN_MASTER_USERS_ADD" xml:space="preserve">
+		<value>Add User</value>
+		<comment>User 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMN_MASTER_USERS_LIST" xml:space="preserve">
+		<value>Users</value>
+		<comment>User 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMN_MASTER_USERS_REMOVE" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>User 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMN_MASTER_USERS_UPDATE" xml:space="preserve">
+		<value>Update User</value>
+		<comment>User 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMN_MASTER_USERS_VIEW" xml:space="preserve">
+		<value>View User</value>
+		<comment>User 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS" xml:space="preserve">
+		<value>User Management</value>
+		<comment>User 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_ADD" xml:space="preserve">
+		<value>Add User</value>
+		<comment>User 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_LIST" xml:space="preserve">
+		<value>Users</value>
+		<comment>User 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_REMOVE" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>User 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_UPDATE" xml:space="preserve">
+		<value>Update User</value>
+		<comment>User 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_VIEW" xml:space="preserve">
+		<value>View User</value>
+		<comment>User 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_VOLUME" xml:space="preserve">
+		<value>User's Volume Management</value>
+		<comment>User 볼륨 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES" xml:space="preserve">
+		<value>Volume Management</value>
+		<comment>Volume 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_ADD" xml:space="preserve">
+		<value>Add Volume</value>
+		<comment>Volume 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_LIST" xml:space="preserve">
+		<value>Volumes</value>
+		<comment>Volume 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_REMOVE" xml:space="preserve">
+		<value>Remove Volume</value>
+		<comment>Volume 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_START" xml:space="preserve">
+		<value>Start Volume</value>
+		<comment>Volume 시작/중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_UPDATE" xml:space="preserve">
+		<value>Update Volume</value>
+		<comment>Volume 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_VIEW" xml:space="preserve">
+		<value>View Volume</value>
+		<comment>Volume 조회</comment>
+	</data>
+	<data name="UL_USERS_UPDATE_QUOTA_SIZE" xml:space="preserve">
+		<value>Update Quota Size</value>
+		<comment>할당 크기 변경</comment>
+	</data>
+	<data name="UL_BUTTON_VOLUME_REMOVE_USER" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>사용자제거</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_USER" xml:space="preserve">
+		<value>User Management</value>
+		<comment>User 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_USER_ADD" xml:space="preserve">
+		<value>Add User</value>
+		<comment>User 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_USER_UPDATE" xml:space="preserve">
+		<value>Update User</value>
+		<comment>User 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_VOLUMES_USER_REMOVE" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>User 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_VOLUME_ADD" xml:space="preserve">
+		<value>Add User's Volume</value>
+		<comment>User 볼륨 할당</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_VOLUME_UPDATE" xml:space="preserve">
+		<value>Update User's Volume</value>
+		<comment>User 볼륨 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_USERS_VOLUME_REMOVE" xml:space="preserve">
+		<value>Remove User's Volume</value>
+		<comment>User 볼륨 할당 해제</comment>
+	</data>
+	<data name="UL_BUTTON_VOLUME_ADD_USER" xml:space="preserve">
+		<value>Add User</value>
+		<comment>사용자추가</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_VOLUME_USER_REMOVE" xml:space="preserve">
+		<value>Are you sure you want to remove user {{ Name }}?</value>
+		<comment>{{ Name }} 사용자를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_VOLUMES_REMOVE_USER" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>사용자 제거</comment>
+	</data>
+	<data name="UL_VOLUMES_ADD_USER" xml:space="preserve">
+		<value>Add User</value>
+		<comment>사용자 추가</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_REQUIRE_USER_ID" xml:space="preserve">
+		<value>Please enter user id.</value>
+		<comment>아이디를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_REQUIRE_USER_NAME" xml:space="preserve">
+		<value>Please enter user name.</value>
+		<comment>이름을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_REQUIRE_PASSWORD" xml:space="preserve">
+		<value>Please enter password.</value>
+		<comment>비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_REQUIRE_CONFIRM_PASSWORD" xml:space="preserve">
+		<value>Please enter confirm password.</value>
+		<comment>확인 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_REQUIRE_DEPARTMENT" xml:space="preserve">
+		<value>Please enter department name.</value>
+		<comment>부서명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_PASSWORD_AND_CONFIRM_PASSWORD_DO_NOT_MATCH" xml:space="preserve">
+		<value>The password you entered does not match your confirmation password.</value>
+		<comment>비밀번호가 일치하지 않습니다.</comment>
+	</data>
+	<data name="EM_VOLUME_NOT_FOUND" xml:space="preserve">
+		<value>This volume is not found.</value>
+		<comment>해당 볼륨을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="EM_SYSTEM_USER_REQUIRE_NEW_PASSWORD" xml:space="preserve">
+		<value>Please enter new password.</value>
+		<comment>신규 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_BUTTON_USER_ADD_VOLUME" xml:space="preserve">
+		<value>Add Volume</value>
+		<comment>볼륨 추가</comment>
+	</data>
+	<data name="UL_BUTTON_USER_UPDATE_QUOTA_SIZE" xml:space="preserve">
+		<value>Change Quota Size</value>
+		<comment>Quota Size 변경</comment>
+	</data>
+	<data name="UL_BUTTON_USER_REMOVE_VOLUME" xml:space="preserve">
+		<value>Remove Volume</value>
+		<comment>볼륨 할당 해제</comment>
+	</data>
+	<data name="SM_USER_AVAILABLE_ID" xml:space="preserve">
+		<value>This user ID is available.</value>
+		<comment>사용 가능한 사용자 아이디입니다.</comment>
+	</data>
+	<data name="UL_BUTTON_USER_EMAIL_NOTIFICATION" xml:space="preserve">
+		<value>Subscribe for email notification</value>
+		<comment>이메일 알람</comment>
+	</data>
+	<data name="UL_USERS_ADD_USER" xml:space="preserve">
+		<value>Add User</value>
+		<comment>사용자 등록</comment>
+	</data>
+	<data name="UL_USERS_UPDATE_USER" xml:space="preserve">
+		<value>Update User</value>
+		<comment>사용자 수정</comment>
+	</data>
+	<data name="UL_USERS_REMOVE_USER" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>사용자 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_USERS_REMOVE_USER" xml:space="preserve">
+		<value>Are you sure you want to remove user {{ Name }}?</value>
+		<comment>{{ Name }} 사용자를 제거 하시겠습니까?</comment>
+	</data>
+	<data name="UL_USERS_ADD_NEW_DEPARTMENT" xml:space="preserve">
+		<value>Add New Department</value>
+		<comment>신규 부서 추가</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_USERS_ADD_NEW_DEPARTMENT" xml:space="preserve">
+		<value>Do you want to add a new user of department '{{Name}}'?</value>
+		<comment>'{{ Name }}' 라는 신규 부서 사용자를 추가 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_USERS_REMOVE_VOLUME" xml:space="preserve">
+		<value>Do you want to remove volume '{{Name}}'?</value>
+		<comment>{{ Name }} 볼륨을 제거 하시겠습니까?</comment>
+	</data>
+	<data name="UL_USERS_REMOVE_VOLUME" xml:space="preserve">
+		<value>Remove Volume</value>
+		<comment>볼륨 할당 해제</comment>
+	</data>
+	<data name="UL_USERS_ADD_VOLUME" xml:space="preserve">
+		<value>Add Volume</value>
+		<comment>볼륨 추가</comment>
+	</data>
+	<data name="UL_USERS_UPDATE_VOLUME" xml:space="preserve">
+		<value>Update Quota Size</value>
+		<comment>Quota Size 변경</comment>
+	</data>
+	<data name="UL_COMMON__LOG_LEVEL" xml:space="preserve">
+		<value>Log Level</value>
+		<comment>로그레벨</comment>
+	</data>
+	<data name="UL_COMMON__ON_OFF_STATUS" xml:space="preserve">
+		<value>ON/OFF</value>
+		<comment>ON/OFF</comment>
+	</data>
+	<data name="UL_COMMON__ON_OFF_STATUS_OFF" xml:space="preserve">
+		<value>OFF</value>
+		<comment>OFF</comment>
+	</data>
+	<data name="UL_COMMON__ON_OFF_STATUS_ON" xml:space="preserve">
+		<value>ON</value>
+		<comment>ON</comment>
+	</data>
+	<data name="UL_COMMON__HA_STATUS" xml:space="preserve">
+		<value>HA Status</value>
+		<comment>HA 상태</comment>
+	</data>
+	<data name="UL_COMMON__HA_STATUS_NOT_AVAILABLE" xml:space="preserve">
+		<value>N/A</value>
+		<comment>정보없음</comment>
+	</data>
+	<data name="UL_COMMON__HA_STATUS_ACTIVE" xml:space="preserve">
+		<value>Active</value>
+		<comment>Active</comment>
+	</data>
+	<data name="UL_COMMON__HA_STATUS_STANDBY" xml:space="preserve">
+		<value>StandBy</value>
+		<comment>StandBy</comment>
+	</data>
+	<data name="UL_COMMON__SERVER_STATUS" xml:space="preserve">
+		<value>Server Status</value>
+		<comment>서버상태</comment>
+	</data>
+	<data name="UL_COMMON__SERVER_STATUS_NOT_AVAILABLE" xml:space="preserve">
+		<value>N/A</value>
+		<comment>정보없음</comment>
+	</data>
+	<data name="UL_COMMON__SERVER_STATUS_ONLINE" xml:space="preserve">
+		<value>Online</value>
+		<comment>Online</comment>
+	</data>
+	<data name="UL_COMMON__SERVER_STATUS_OFFLINE" xml:space="preserve">
+		<value>Offline</value>
+		<comment>Offline</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_RW_MODE" xml:space="preserve">
+		<value>R/W MODE</value>
+		<comment>R/W MODE</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_RO_MODE" xml:space="preserve">
+		<value>R/O MODE</value>
+		<comment>R/O MODE</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_MDS_DISK_ADD" xml:space="preserve">
+		<value>Add MDS Disk</value>
+		<comment>MDS Disk 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_OSD_START" xml:space="preserve">
+		<value>Start/Stop OSD</value>
+		<comment>OSD 시작/중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_OSD_DISK_ADD" xml:space="preserve">
+		<value>Add OSD Disk</value>
+		<comment>OSD Disk 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_OSD_DISK_UPDATE" xml:space="preserve">
+		<value>Update OSD Disk</value>
+		<comment>OSD Disk 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_OSD_DISK_REMOVE" xml:space="preserve">
+		<value>Remove OSD Disk</value>
+		<comment>OSD Disk 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_OSD_DISK_START" xml:space="preserve">
+		<value>Start/Stop OSD Disk</value>
+		<comment>OSD Disk 시작/중지</comment>
+	</data>
+	<data name="UL_SYTEM_ADD_MDS_DISK" xml:space="preserve">
+		<value>Add MDS Disk</value>
+		<comment>MDS Disk 추가</comment>
+	</data>
+	<data name="UL_SYTEM_ADD_OSD_DISK" xml:space="preserve">
+		<value>Add OSD Disk</value>
+		<comment>OSD Disk 추가</comment>
+	</data>
+	<data name="UL_SYSTEM_REMOVE_OSD" xml:space="preserve">
+		<value>Remove OSD</value>
+		<comment>OSD 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_OSD" xml:space="preserve">
+		<value>Do you want to remove OSD ({{ Ip }})?</value>
+		<comment>OSD ({{ Ip }})를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_START_OSD" xml:space="preserve">
+		<value>Start OSD</value>
+		<comment>OSD 시작</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_OSD" xml:space="preserve">
+		<value>Do you want to start OSD ({{ Ip }})?</value>
+		<comment>OSD ({{ Ip }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_STOP_OSD" xml:space="preserve">
+		<value>Stop OSD</value>
+		<comment>OSD 중지</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_OSD" xml:space="preserve">
+		<value>Do you want to stop OSD ({{ Ip }})?</value>
+		<comment>OSD ({{ Ip }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_START_OSD_DISK" xml:space="preserve">
+		<value>Start OSD Disk</value>
+		<comment>OSD Disk 시작</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_OSD_DISK" xml:space="preserve">
+		<value>Do you want to start OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})?</value>
+		<comment>OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_STOP_OSD_DISK" xml:space="preserve">
+		<value>Stop OSD Disk</value>
+		<comment>OSD Disk 중지</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_OSD_DISK" xml:space="preserve">
+		<value>Do you want to stop OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})?</value>
+		<comment>OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_REMOVE_OSD_DISK" xml:space="preserve">
+		<value>Remove OSD Disk</value>
+		<comment>OSD Disk 제거</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_OSD_DISK" xml:space="preserve">
+		<value>Do you want to remove OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})?</value>
+		<comment>OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})를 제거 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_UPDATE_OSD_DISK_RW" xml:space="preserve">
+		<value>Update OSD Disk to Read/Write</value>
+		<comment>OSD Disk 읽기/쓰기 모드 변경</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_UPDATE_OSD_DISK_RW" xml:space="preserve">
+		<value>Do you want to update OSD Disk to Read/Write Mode ({{ Ip }}, {{ Id }}, {{ Path }})?</value>
+		<comment>OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})를 읽기/쓰기 모드로 변경 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_UPDATE_OSD_DISK_RO" xml:space="preserve">
+		<value>Update OSD Disk to Read Only</value>
+		<comment>OSD Disk 읽기 전용 모드 변경</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_UPDATE_OSD_DISK_RO" xml:space="preserve">
+		<value>Do you want to update OSD Disk to Read Only Mode ({{ Ip }}, {{ Id }}, {{ Path }})?</value>
+		<comment>OSD Disk ({{ Ip }}, {{ Id }}, {{ Path }})를 읽기 전용 모드로 변경 하시겠습니까?</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS" xml:space="preserve">
+		<value>OSD Disk Status</value>
+		<comment>OSD Disk Status</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS_DISABLE" xml:space="preserve">
+		<value>OSD Stop</value>
+		<comment>OSD 중지</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS_BAD" xml:space="preserve">
+		<value>Bad</value>
+		<comment>비정상</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS_BROKEN" xml:space="preserve">
+		<value>Broken</value>
+		<comment>디스크오류</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS_STOP" xml:space="preserve">
+		<value>Stop</value>
+		<comment>중지</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS_WEAK" xml:space="preserve">
+		<value>Disk full</value>
+		<comment>디스크 가득 참</comment>
+	</data>
+	<data name="UL_OSD_DISK_STATUS_GOOD" xml:space="preserve">
+		<value>Good</value>
+		<comment>정상</comment>
+	</data>
+	<data name="UL_COMMON__HA_ON_OFF_STATUS" xml:space="preserve">
+		<value>HA Service</value>
+		<comment>HA Service</comment>
+	</data>
+	<data name="UL_COMMON__HA_ON_OFF_STATUS_OFF" xml:space="preserve">
+		<value>No HA</value>
+		<comment>No HA</comment>
+	</data>
+	<data name="UL_COMMON__HA_ON_OFF_STATUS_ON" xml:space="preserve">
+		<value>HA</value>
+		<comment>HA</comment>
+	</data>
+	<data name="UL_DR_STATUS" xml:space="preserve">
+		<value>DR Status</value>
+		<comment>DR Status</comment>
+	</data>
+	<data name="UL_DR_STATUS_STOP" xml:space="preserve">
+		<value>Stop</value>
+		<comment>중지</comment>
+	</data>
+	<data name="UL_DR_STATUS_PAUSE" xml:space="preserve">
+		<value>Pause</value>
+		<comment>일시정지</comment>
+	</data>
+	<data name="UL_DR_STATUS_START" xml:space="preserve">
+		<value>Start</value>
+		<comment>시작</comment>
+	</data>
+	<data name="UL_MDS_DISK_STATUS" xml:space="preserve">
+		<value>MDS Disk Status</value>
+		<comment>MDS Disk Status</comment>
+	</data>
+	<data name="UL_MDS_DISK_STATUS_ONLINE" xml:space="preserve">
+		<value>Online</value>
+	</data>
+	<data name="UL_MDS_DISK_STATUS_OFFLINE" xml:space="preserve">
+		<value>Offline</value>
+	</data>
+	<data name="EM_MDS_DISK_REQUIRE_IP" xml:space="preserve">
+		<value>Please enter ip address.</value>
+		<comment>IP를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_MDS_DISK_REQUIRE_PATH" xml:space="preserve">
+		<value>Please enter path.</value>
+		<comment>경로를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_OSD_DISK_REQUIRE_IP" xml:space="preserve">
+		<value>Please enter ip address.</value>
+		<comment>IP를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_OSD_DISK_REQUIRE_PATH" xml:space="preserve">
+		<value>Please enter path.</value>
+		<comment>경로를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_DR_TARGET_STATUS" xml:space="preserve">
+		<value>Target Status</value>
+		<comment>타겟 상태</comment>
+	</data>
+	<data name="UL_DR_TARGET_STATUS_READY" xml:space="preserve">
+		<value>Ready</value>
+		<comment>등록 완료 전</comment>
+	</data>
+	<data name="UL_DR_TARGET_STATUS_DONE" xml:space="preserve">
+		<value>Done</value>
+		<comment>등록완료</comment>
+	</data>
+	<data name="EM_DR_SOURCE_REQUIRE_NAME" xml:space="preserve">
+		<value>Please enter name.</value>
+		<comment>이름을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_SOURCE_REQUIRE_IP" xml:space="preserve">
+		<value>Please enter ip address.</value>
+		<comment>IP를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_SOURCE_REQUIRE_DB_USER" xml:space="preserve">
+		<value>Please enter DB user.</value>
+		<comment>DB 사용자를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_SOURCE_REQUIRE_DB_PORT" xml:space="preserve">
+		<value>Please enter DB port.</value>
+		<comment>DB 포트를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_SOURCE_REQUIRE_DB_PASSWORD" xml:space="preserve">
+		<value>Please enter DB password.</value>
+		<comment>DB 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_TARGET_REQUIRE_NAME" xml:space="preserve">
+		<value>Please enter name.</value>
+		<comment>이름을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_TARGET_REQUIRE_IP" xml:space="preserve">
+		<value>Please enter ip address.</value>
+		<comment>IP를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_TARGET_INVALID_PORT" xml:space="preserve">
+		<value>Invalid port number.</value>
+		<comment>유효하지 않은 포트 값 입니다.</comment>
+	</data>
+	<data name="EM_DR_JOB_REQUIRE_SOURCE_IP" xml:space="preserve">
+		<value>Please enter DR source IP.</value>
+		<comment>DR 소스 아이피를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_JOB_REQUIRE_TARGET_NAME" xml:space="preserve">
+		<value>Please enter DR target name.</value>
+		<comment>DR 타겟명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_DR_JOB_REQUIRE_VOLUME_NAME" xml:space="preserve">
+		<value>Please select volume.</value>
+		<comment>볼륨을 선택하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR" xml:space="preserve">
+		<value>DR</value>
+		<comment>DR</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_SOURCE" xml:space="preserve">
+		<value>DR Source</value>
+		<comment>DR 소스</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_SOURCE_VIEW" xml:space="preserve">
+		<value>View DR Source</value>
+		<comment>DR 소스 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_TARGET" xml:space="preserve">
+		<value>DR Target</value>
+		<comment>DR 타겟</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_TARGET_LIST" xml:space="preserve">
+		<value>List DR Target</value>
+		<comment>DR 타겟 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_TARGET_ADD" xml:space="preserve">
+		<value>Add DR Target</value>
+		<comment>DR 타겟 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_TARGET_REMOVE" xml:space="preserve">
+		<value>Remove DR Target</value>
+		<comment>DR 타겟 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_TARGET_APPLY" xml:space="preserve">
+		<value>Apply DR Target</value>
+		<comment>DR 타겟 적용</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_JOBS" xml:space="preserve">
+		<value>DR Job</value>
+		<comment>DR Job</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_JOBS_LIST" xml:space="preserve">
+		<value>List DR Job</value>
+		<comment>DR Job 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_JOBS_ADD" xml:space="preserve">
+		<value>Add DR Job</value>
+		<comment>DR Job 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_JOBS_REMOVE" xml:space="preserve">
+		<value>Remove DR Job</value>
+		<comment>DR Job 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_JOBS_START" xml:space="preserve">
+		<value>Start/Stop DR Job</value>
+		<comment>DR Job 시작/중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_FSCK" xml:space="preserve">
+		<value>FSCK</value>
+		<comment>FSCK</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_FSCK_LIST" xml:space="preserve">
+		<value>List FSCK</value>
+		<comment>FSCK 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_FSCK_ADD" xml:space="preserve">
+		<value>Add FSCK</value>
+		<comment>FSCK 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_FSCK_REMOVE" xml:space="preserve">
+		<value>Remove FSCK</value>
+		<comment>FSCK 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_FSCK_STOP" xml:space="preserve">
+		<value>Stop FSCK</value>
+		<comment>FSCK 중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB" xml:space="preserve">
+		<value>IFSSMB</value>
+		<comment>IFSSMB 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_LIST" xml:space="preserve">
+		<value>List IFSSMB</value>
+		<comment>IFSSMB 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_ADD" xml:space="preserve">
+		<value>Add IFSSMB</value>
+		<comment>IFSSMB 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_UPDATE" xml:space="preserve">
+		<value>Update IFSSMB</value>
+		<comment>IFSSMB 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_REMOVE" xml:space="preserve">
+		<value>Remove IFSSMB</value>
+		<comment>IFSSMB 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_DR_SOURCE_UPDATE" xml:space="preserve">
+		<value>Update DR Source</value>
+		<comment>DR 소스 수정</comment>
+	</data>
+	<data name="UL_DR_ADD_DR_TARGET" xml:space="preserve">
+		<value>Add DR Target</value>
+		<comment>DR Target 등록</comment>
+	</data>
+	<data name="UL_DR_REMOVE_DR_TARGET" xml:space="preserve">
+		<value>Remove DR Target</value>
+		<comment>DR Target 삭제</comment>
+	</data>
+	<data name="UL_DR_APPLY_DR_TARGET" xml:space="preserve">
+		<value>Apply DR Target</value>
+		<comment>DR Target 적용</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_DR_TARGET" xml:space="preserve">
+		<value>Do you want to remove DR Target ({{ Name }})?</value>
+		<comment>DR Target ({{ Name }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_APPLY_DR_TARGET" xml:space="preserve">
+		<value>Do you want to apply DR Target ({{ Name }})?</value>
+		<comment>DR Target ({{ Name }})을 적용 하시겠습니까?</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_PAUSE" xml:space="preserve">
+		<value>Pause</value>
+		<comment>일시정지</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_RESUME" xml:space="preserve">
+		<value>Resume</value>
+		<comment>다시시작</comment>
+	</data>
+	<data name="UL_DR_ADD_DR_JOB" xml:space="preserve">
+		<value>Add DR Job</value>
+		<comment>DR Job 등록</comment>
+	</data>
+	<data name="UL_DR_REMOVE_DR_JOB" xml:space="preserve">
+		<value>Remove DR Job</value>
+		<comment>DR Job 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_DR_JOB" xml:space="preserve">
+		<value>Do you want to remove DR Job ({{ TargetName }}, {{ Volume }})?</value>
+		<comment>DR Job ({{ TargetName }}, {{ Volume }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="EM_DR_JOB_NEED_TO_SELECT_USER" xml:space="preserve">
+		<value>Please select user.</value>
+		<comment>사용자를 선택하여 주세요.</comment>
+	</data>
+	<data name="UL_DR_STOP_DR_JOB" xml:space="preserve">
+		<value>Stop DR Job</value>
+		<comment>DR Job 중지</comment>
+	</data>
+	<data name="UL_DR_PAUSE_DR_JOB" xml:space="preserve">
+		<value>Pause DR Job</value>
+		<comment>DR Job 일시정지</comment>
+	</data>
+	<data name="UL_DR_RESUME_DR_JOB" xml:space="preserve">
+		<value>Resume DR Job</value>
+		<comment>DR Job 다시시작</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_DR_JOB" xml:space="preserve">
+		<value>Do you want to stop DR Job ({{ TargetName }}, {{ Volume }})?</value>
+		<comment>DR Job ({{ TargetName }}, {{ Volume }})을 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_PAUSE_DR_JOB" xml:space="preserve">
+		<value>Do you want to pause DR Job ({{ TargetName }}, {{ Volume }})?</value>
+		<comment>DR Job ({{ TargetName }}, {{ Volume }})을 일시정지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_RESUME_DR_JOB" xml:space="preserve">
+		<value>Do you want to resume DR Job ({{ TargetName }}, {{ Volume }})?</value>
+		<comment>DR Job ({{ TargetName }}, {{ Volume }})을 다시 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_DR_START_DR_JOB" xml:space="preserve">
+		<value>Start DR Job</value>
+		<comment>DR Job 시작</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_DR_JOB" xml:space="preserve">
+		<value>Do you want to start DR Job ({{ TargetName }}, {{ Volume }})?</value>
+		<comment>DR Job ({{ TargetName }}, {{ Volume }})을 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_EXPORT_POINT" xml:space="preserve">
+		<value>IfsSMB Share</value>
+		<comment>IfsSMB Share</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_EXPORT_POINT_LIST" xml:space="preserve">
+		<value>List IfsSMB Share</value>
+		<comment>IfsSMB Share 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_EXPORT_POINT_ADD" xml:space="preserve">
+		<value>Add IfsSMB Share</value>
+		<comment>IfsSMB Share 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_EXPORT_POINT_REMOVE" xml:space="preserve">
+		<value>Remove IfsSMB Share</value>
+		<comment>IfsSMB Share 삭제</comment>
+	</data>
+	<data name="EM_SMB_REQUIRE_IP" xml:space="preserve">
+		<value>Please enter IP.</value>
+		<comment>IP를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_REQUIRE_GROPU_ID" xml:space="preserve">
+		<value>Please enter group ID.</value>
+		<comment>그룹 ID를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_REQUIRE_EP_NAME" xml:space="preserve">
+		<value>Please enter name.</value>
+		<comment>이름을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_REQUIRE_MGS_IP" xml:space="preserve">
+		<value>Please enter MGS IP.</value>
+		<comment>MGS 아이피를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_REQUIRE_MGS_PORT" xml:space="preserve">
+		<value>Please enter MGS Port.</value>
+		<comment>MGS 포트를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_REQUIRE_VOLUME" xml:space="preserve">
+		<value>Please select volume.</value>
+		<comment>볼륨을 선택하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__FSCK_STATUS" xml:space="preserve">
+		<value>FSCK Status</value>
+		<comment>FSCK 상태</comment>
+	</data>
+	<data name="UL_COMMON__FSCK_STATUS_STOP" xml:space="preserve">
+		<value>Stop</value>
+		<comment>중지</comment>
+	</data>
+	<data name="UL_COMMON__FSCK_STATUS_RUN" xml:space="preserve">
+		<value>Running</value>
+		<comment>실행 중</comment>
+	</data>
+	<data name="UL_COMMON__FSCK_STATUS_DONE" xml:space="preserve">
+		<value>Done</value>
+		<comment>완료</comment>
+	</data>
+	<data name="EM_FSCK_SELECT_DISK" xml:space="preserve">
+		<value>Please select a disk.</value>
+		<comment>디스크를 선택하여 주세요.</comment>
+	</data>
+	<data name="EM_FSCK_INVALID_STEP" xml:space="preserve">
+		<value>Please enter the number of files to perform.</value>
+		<comment>수행할 파일 개수를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_FSCK_INVALID_DELAY" xml:space="preserve">
+		<value>Please enter the number of seconds to wait between step.</value>
+		<comment>스탭 간 대기할 시간(초)을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_FSCK_SELECT_VOLUME" xml:space="preserve">
+		<value>Please select a volume.</value>
+		<comment>볼륨을 선택하여 주세요.</comment>
+	</data>
+	<data name="EM_FSCK_REQUIRE_FILE_PATH" xml:space="preserve">
+		<value>Please enter a file path.</value>
+		<comment>파일 경로를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_FSCK_REQUIRE_JOB_ID" xml:space="preserve">
+		<value>Please enter a Job ID.</value>
+		<comment>JOB ID를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_FSCK_VIEW" xml:space="preserve">
+		<value>View FSCK Log</value>
+		<comment>FSCK 로그 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_START" xml:space="preserve">
+		<value>Start/Load IFSSMB</value>
+		<comment>IFSSMB 시작/로드</comment>
+	</data>
+	<data name="UL_SMB_ADD_SMB_SERVER" xml:space="preserve">
+		<value>Add IFSSMB</value>
+		<comment>IFSSMB 등록</comment>
+	</data>
+	<data name="UL_SMB_UPDATE_SMB_SERVER" xml:space="preserve">
+		<value>Update IFSSMB</value>
+		<comment>IFSSMB 수정</comment>
+	</data>
+	<data name="UL_SMB_REMOVE_SMB_SERVER" xml:space="preserve">
+		<value>Remove IFSSMB</value>
+		<comment>IFSSMB 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_SMB_SERVER" xml:space="preserve">
+		<value>Do you want to remove SMB Server ({{ Name }})?</value>
+		<comment>SMB Server ({{ Name }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_SMB_SERVER" xml:space="preserve">
+		<value>Do you want to start SMB Server ({{ Name }})?</value>
+		<comment>SMB Server ({{ Name }})을 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SMB_START_SMB_SERVER" xml:space="preserve">
+		<value>Start IFSSMB</value>
+		<comment>IFSSMB 시작</comment>
+	</data>
+	<data name="UL_SMB_STOP_SMB_SERVER" xml:space="preserve">
+		<value>Stop IFSSMB</value>
+		<comment>IFSSMB 중지</comment>
+	</data>
+	<data name="UL_SMB_RELOAD_SMB_SERVER" xml:space="preserve">
+		<value>Reload IFSSMB Config</value>
+		<comment>IFSSMB 설정 리로드</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_RELOAD_SMB_SERVER" xml:space="preserve">
+		<value>Do you want to reload SMB Server Config ({{ Name }})?</value>
+		<comment>SMB Server ({{ Name }}) 설정을 리로드 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SMB_LIST_SMB_EXPORT_POINT" xml:space="preserve">
+		<value>IfsSMB Share List</value>
+		<comment>IfsSMB Share 목록</comment>
+	</data>
+	<data name="UL_SMB_ADD_SMB_EXPORT_POINT" xml:space="preserve">
+		<value>Add IfsSMB Share</value>
+		<comment>IfsSMB Share 추가</comment>
+	</data>
+	<data name="UL_SMB_REMOVE_SMB_EXPORT_POINT" xml:space="preserve">
+		<value>Remove IfsSMB Share</value>
+		<comment>IfsSMB Share 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_EXPORT_POINT" xml:space="preserve">
+		<value>Do you want to remove IfsSMB Share ({{ Name }})?</value>
+		<comment>IfsSMB Share ({{ Name }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_BUTTON_SMB_RELOAD_CONFIG" xml:space="preserve">
+		<value>Reload</value>
+		<comment>리로드</comment>
+	</data>
+	<data name="UL_FSCK_ADD_VOLUME_JOB" xml:space="preserve">
+		<value>Add Volume Job</value>
+		<comment>Volume Job 추가</comment>
+	</data>
+	<data name="UL_FSCK_STOP_JOB" xml:space="preserve">
+		<value>Job 중지</value>
+		<comment>Job 중지</comment>
+	</data>
+    <data name="UL_CONFIRM_MESSAGE_STOP_FSCK_STOP" xml:space="preserve">
+        <value>Do you want to stop Job ({{ JobId }})?</value>
+        <comment>Job ({{ JobId }})을 중지 하시겠습니까?</comment>
+    </data>
+	<data name="UL_FSCK_REMOVE_JOB" xml:space="preserve">
+		<value>Job 삭제</value>
+		<comment>Job 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_FSCK_JOB" xml:space="preserve">
+		<value>Do you want to remove Job ({{ JobId }})?</value>
+		<comment>Job ({{ JobId }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_FSCK_ADD_DISK_JOB" xml:space="preserve">
+		<value>Add Disk Job</value>
+		<comment>Disk Job 추가</comment>
+	</data>
+	<data name="UL_FSCK_ADD_FILE_JOB" xml:space="preserve">
+		<value>Add File Job</value>
+		<comment>File Job 추가</comment>
+	</data>
+	<data name="UL_BUTTON_FSCK_VIEW_LOG" xml:space="preserve">
+		<value>View Log</value>
+		<comment>로그 조회</comment>
+	</data>
+	<data name="UL_FSCK_VIEW_JOB_LOG" xml:space="preserve">
+		<value>View Log</value>
+		<comment>로그 보기</comment>
+	</data>
+	<data name="EM_SMB_CANNOT_REMOVE_GLOBAL_EXPORT_POINT" xml:space="preserve">
+		<value>IfsSMB Share 'global' cannot be deleted.</value>
+		<comment>IfsSMB Share 'global'은 삭제할 수 없습니다.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_TENANT_SECRET" xml:space="preserve">
+		<value>Please enter Tenant Secret.</value>
+		<comment>Tenant Secret을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_USER_TENANT_ACCESS_KEY" xml:space="preserve">
+		<value>Please enter User's Access Key.</value>
+		<comment>사용자 Access Key를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_REQUIRE_USER_TENANT_ACCESS_SECRET" xml:space="preserve">
+		<value>Please enter User's Access Secret.</value>
+		<comment>사용자 Access Secret을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_MUST_BE_LENGTH_USER_TENANT_ACCESS_KEY" xml:space="preserve">
+		<value>User's Access Key must be a {1} length.</value>
+		<comment>사용자 Access Key는 {1}자리 여야 합니다.</comment>
+	</data>
+	<data name="EM_VOLUME_MUST_BE_LENGTH_USER_TENANT_ACCESS_SECRET" xml:space="preserve">
+		<value>User's Access Secret must be a {1} length.</value>
+		<comment>사용자 Access Secret은 {1}자리 여야 합니다.</comment>
+	</data>
+	<data name="EM_VOLUME_MUST_BE_LENGTH_TENANT_SECRET" xml:space="preserve">
+		<value>Tenant Secret must be a {1} length.</value>
+		<comment>Tenant Secret은 {1}자리 여야 합니다.</comment>
+	</data>
+	<data name="UL_VOLUMES_VIEW_USER_TENANT" xml:space="preserve">
+		<value>User CREDENTIAL</value>
+		<comment>사용자 CREDENTIAL</comment>
+	</data>
+	<data name="EM_APPLICATION_REQUIRE_EXTENSION_NAME" xml:space="preserve">
+		<value>Please enter extension.</value>
+		<comment>확장자를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_APPLICATION_REQUIRE_APPLICATION_NAME" xml:space="preserve">
+		<value>Please enter application name.</value>
+		<comment>어플리케이션명을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION" xml:space="preserve">
+		<value>Securage</value>
+		<comment>Securage</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_FILETYPE" xml:space="preserve">
+		<value>File Type</value>
+		<comment>파일타입</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_FILETYPE_LIST" xml:space="preserve">
+		<value>List File Type</value>
+		<comment>파일타입 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_FILETYPE_VIEW" xml:space="preserve">
+		<value>View File Type</value>
+		<comment>파일타입 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_FILETYPE_ADD" xml:space="preserve">
+		<value>Add File Type</value>
+		<comment>파일타입 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_FILETYPE_REMOVE" xml:space="preserve">
+		<value>Remove File Type</value>
+		<comment>파일타입 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_FILETYPE_UPDATE" xml:space="preserve">
+		<value>Update File Type</value>
+		<comment>파일타입 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_APP" xml:space="preserve">
+		<value>Application</value>
+		<comment>어플리케이션</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_APP_LIST" xml:space="preserve">
+		<value>List Application</value>
+		<comment>어플리케이션 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_APP_VIEW" xml:space="preserve">
+		<value>View Application</value>
+		<comment>어플리케이션 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_APP_ADD" xml:space="preserve">
+		<value>Add Application</value>
+		<comment>어플리케이션 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_APP_REMOVE" xml:space="preserve">
+		<value>Remove Application</value>
+		<comment>어플리케이션 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_APP_UPDATE" xml:space="preserve">
+		<value>Update Application</value>
+		<comment>어플리케이션 수정</comment>
+	</data>
+	<data name="EM_APPLICATION_INVALID_VOLUME_ID" xml:space="preserve">
+		<value>Invalid volume ID.</value>
+		<comment>볼륨 아이디가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_APPLICATION_REQUIRE_VOLUME_NAME" xml:space="preserve">
+		<value>Please enter volume name.</value>
+		<comment>볼륨명을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_BUTTON_APPLICATION_MANAGE_FILE_TYPES" xml:space="preserve">
+		<value>Manage File Types</value>
+		<comment>파일 타입 관리</comment>
+	</data>
+	<data name="UL_BUTTON_APPLICATION_MANAGE_VOLUMES" xml:space="preserve">
+		<value>Manage Volumes</value>
+		<comment>볼륨 관리</comment>
+	</data>
+	<data name="UL_BUTTON_APPLICATION_MANAGE_APP" xml:space="preserve">
+		<value>Manage App.</value>
+		<comment>어플리케이션 관리</comment>
+	</data>
+	<data name="UL_APPLICATION_ADD_APP" xml:space="preserve">
+		<value>Add Application</value>
+		<comment>어플리케이션 추가</comment>
+	</data>
+	<data name="UL_APPLICATION_REMOVE_APP" xml:space="preserve">
+		<value>Remove Application</value>
+		<comment>어플리케이션 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_APPLICATION_APP" xml:space="preserve">
+		<value>Do you want to remove Application ({{ Name }})?</value>
+		<comment>어플리케이션 ({{ Name }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_APPLICATION_ADD_FILE_TYPE" xml:space="preserve">
+		<value>Add File Type</value>
+		<comment>파일 타입 추가</comment>
+	</data>
+	<data name="UL_APPLICATION_REMOVE_FILE_TYPE" xml:space="preserve">
+		<value>Remove File Type</value>
+		<comment>파일 타입 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_APPLICATION_FILE_TYPE" xml:space="preserve">
+		<value>Do you want to remove File Type ({{ Name }})?</value>
+		<comment>파일 타입 ({{ Name }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="SM_APPLICATION_AVAILABLE_APP_NAME" xml:space="preserve">
+		<value>This application name is available.</value>
+		<comment>사용 가능한 어플리케이션명 입니다.</comment>
+	</data>
+	<data name="SM_APPLICATION_AVAILABLE_FILE_TYPE_NAME" xml:space="preserve">
+		<value>This file type name is available.</value>
+		<comment>사용 가능한 파일 타입명 입니다.</comment>
+	</data>
+	<data name="UL_APPLICATION_MANAGE_FILE_TYPE" xml:space="preserve">
+		<value>Update relative file types</value>
+		<comment>연결 파일 타입 수정</comment>
+	</data>
+	<data name="UL_APPLICATION_MANAGE_VOLUME" xml:space="preserve">
+		<value>Update relative volumes</value>
+		<comment>연결 볼륨 수정</comment>
+	</data>
+	<data name="UL_APPLICATION_MANAGE_APP" xml:space="preserve">
+		<value>Update relative applications</value>
+		<comment>연결 어플리케이션 수정</comment>
+	</data>
+	<data name="UL_APPLICATION_UNLOCK_FILE_ADMIT_STATUS" xml:space="preserve">
+		<value>Processing Status</value>
+		<comment>반출 처리상태</comment>
+	</data>
+	<data name="UL_APPLICATION_UNLOCK_FILE_ADMIT_STATUS_CANCEL" xml:space="preserve">
+		<value>Cancel</value>
+		<comment>취소</comment>
+	</data>
+	<data name="UL_APPLICATION_UNLOCK_FILE_ADMIT_STATUS_WAIT" xml:space="preserve">
+		<value>Wait</value>
+		<comment>대기</comment>
+	</data>
+	<data name="UL_APPLICATION_UNLOCK_FILE_ADMIT_STATUS_REJECT" xml:space="preserve">
+		<value>Reject</value>
+		<comment>반려</comment>
+	</data>
+	<data name="UL_APPLICATION_UNLOCK_FILE_ADMIT_STATUS_PERMIT" xml:space="preserve">
+		<value>Permit</value>
+		<comment>허가</comment>
+	</data>
+	<data name="EM_APPLICATION_REQUIRE_FILE_NAME" xml:space="preserve">
+		<value>Please enter file name.</value>
+		<comment>파일명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_APPLICATION_REQUIRE_USER" xml:space="preserve">
+		<value>Please enter request user no.</value>
+		<comment>신청 사용자 정보를 입력하여 주세요.</comment>
+	</data>
+	<data name="EC_APPLICATION_ONLY_WAITING_ITEMS_CAN_BE_CANCELED" xml:space="preserve">
+		<value>EAPP001</value>
+		<comment>대기 중인 건만 취소 가능 합니다.</comment>
+	</data>
+	<data name="EM_APPLICATION_ONLY_WAITING_ITEMS_CAN_BE_CANCELED" xml:space="preserve">
+		<value>Only waiting items can be canceled.</value>
+		<comment>대기 중인 건만 취소 가능 합니다.</comment>
+	</data>
+	<data name="UL_BUTTON_APPLICATION_UNLOCK_FILE_PERMIT" xml:space="preserve">
+		<value>Permit</value>
+		<comment>허가</comment>
+	</data>
+	<data name="UL_BUTTON_APPLICATION_UNLOCK_FILE_REJECT" xml:space="preserve">
+		<value>Reject</value>
+		<comment>반려</comment>
+	</data>
+	<data name="UL_APPLICATION_CANCEL_UNLOCK_FILE" xml:space="preserve">
+		<value>Cancel release</value>
+		<comment>파일 반출 취소</comment>
+	</data>
+	<data name="UL_APPLICATION_PERMIT_UNLOCK_FILE" xml:space="preserve">
+		<value>Permit release</value>
+		<comment>파일 반출 허가</comment>
+	</data>
+	<data name="UL_APPLICATION_REJECT_UNLOCK_FILE" xml:space="preserve">
+		<value>Reject release</value>
+		<comment>파일 반출 반려</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_APPLICATION_CANCEL_UNLOCK_FILE" xml:space="preserve">
+		<value>Do you want to cancel release ({{ VolumeName }}, {{ FileName }})?</value>
+		<comment>파일 반출 ({{ VolumeName }}, {{ FileName }})을 취소 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_APPLICATION_PERMIT_UNLOCK_FILE" xml:space="preserve">
+		<value>Do you want to permit release ({{ VolumeName }}, {{ FileName }})?</value>
+		<comment>파일 반출 ({{ VolumeName }}, {{ FileName }})을 허가 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_APPLICATION_REJECT_UNLOCK_FILE" xml:space="preserve">
+		<value>Do you want to reject release ({{ VolumeName }}, {{ FileName }})?</value>
+		<comment>파일 반출 ({{ VolumeName }}, {{ FileName }})을 반려 하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_LOGS_ALERT_MESSAGES" xml:space="preserve">
+		<value>Alert Messages</value>
+		<comment>Alert Messages</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_PERIOD_TIMESTAMP" xml:space="preserve">
+		<value>Timestamp</value>
+		<comment>로그일시</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_AGENT_ADDRESS" xml:space="preserve">
+		<value>Agent Address</value>
+		<comment>에이전트 주소</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_SOURCE_ADDRESS" xml:space="preserve">
+		<value>Source Address</value>
+		<comment>원본 주소</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_SOURCE_PORT" xml:space="preserve">
+		<value>Source Port</value>
+		<comment>원본 포트</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_COMMUNITY" xml:space="preserve">
+		<value>Community</value>
+		<comment>커뮤니티</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_SNMP_VERSION" xml:space="preserve">
+		<value>SNMP Version</value>
+		<comment>SNMP 버전</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_OBJECT_ID" xml:space="preserve">
+		<value>Object ID</value>
+		<comment>오브젝트 아이디</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_MESSAGE" xml:space="preserve">
+		<value>Message</value>
+		<comment>메세지</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_PERIOD_ACTION_DATE" xml:space="preserve">
+		<value>Action Date</value>
+		<comment>처리일시</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_ACTION_NAME" xml:space="preserve">
+		<value>Name</value>
+		<comment>처리자명</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_ACTION" xml:space="preserve">
+		<value>Action</value>
+		<comment>처리내용</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_STATUS" xml:space="preserve">
+		<value>Status</value>
+		<comment>상태</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_ACTION_DATE" xml:space="preserve">
+		<value>Action Date</value>
+		<comment>처리일시</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SEARCH_FIELD_TIMESTAMP" xml:space="preserve">
+		<value>Timestamp</value>
+		<comment>로그일시</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_VIEW_LOG_DETAIL" xml:space="preserve">
+		<value>View Log</value>
+		<comment>로그조회</comment>
+	</data>
+	<data name="UL_BUTTON_ALERT_MESSAGE_CONFIRM_MESSAGE" xml:space="preserve">
+		<value>Confirmed</value>
+		<comment>알람 확인</comment>
+	</data>
+	<data name="UL_BUTTON_LOGS_ALERT_MESSAGE_ADD_ACTION" xml:space="preserve">
+		<value>Add Action</value>
+		<comment>처리 내용 추가</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_ADD_ACTION" xml:space="preserve">
+		<value>Add Action</value>
+		<comment>처리 내용 추가</comment>
+	</data>
+	<data name="UI_LOGS_ALERT_MESSAGE_SHOW_ALL_NOTIFICATION" xml:space="preserve">
+		<value>Show all notifications</value>
+		<comment>전체 알람 보기</comment>
+	</data>
+	<data name="UL_COMMON_SETTINGS_UPDATE_SETTING" xml:space="preserve">
+		<value>IfsPortal Setting</value>
+		<comment>세팅 변경</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_ALDB_IP" xml:space="preserve">
+		<value>Please enter the ALDB IP.</value>
+		<comment>ALDB 아이피를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_INVALID_ALDB_PORT" xml:space="preserve">
+		<value>Please enter valid ALDB port number.</value>
+		<comment>유효한 ALDB 포트번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_ALDB_ID" xml:space="preserve">
+		<value>Please enter your ALDB ID.</value>
+		<comment>ALDB 아이디를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_ALDB_PASSWORD" xml:space="preserve">
+		<value>Please enter your ALDB password.</value>
+		<comment>ALDB 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_SMTP_IP" xml:space="preserve">
+		<value>Please enter the SMTP IP.</value>
+		<comment>SMTP 아이피를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_INVALID_SMTP_PORT" xml:space="preserve">
+		<value>Please enter valid SMTP port number.</value>
+		<comment>유효한 SMTP 포트번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_SMTP_ACCOUNT" xml:space="preserve">
+		<value>Please enter the SMTP ID.</value>
+		<comment>SMTP 아이디를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_SMTP_PASSWORD" xml:space="preserve">
+		<value>Please enter your SMTP password.</value>
+		<comment>SMTP 비밀번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_SMTP_SENDER_EMAIL" xml:space="preserve">
+		<value>Please enter a sender email address.</value>
+		<comment>발신자 이메일 주소를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_SMTP_SENDER_NAME" xml:space="preserve">
+		<value>Please enter a sender name.</value>
+		<comment>발신자 이름을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_VOLUME_CHANGING_QUOTA_SIZE_MUST_ON_ONLINE" xml:space="preserve">
+		<value>You can change the volume quota size only while online.</value>
+		<comment>온라인 상태에서만 Quota Size 변경이 가능합니다.</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_CLOSE_SETTINGS_DIALOG_WITHOUT_SAVING" xml:space="preserve">
+		<value>Do you want to discard the changes and close the window?</value>
+		<comment>변경 사항을 무시하고 창을 닫으시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_CHANGE_TAB_WITHOUT_SAVING" xml:space="preserve">
+		<value>Do you want to discard the changes and move tab?</value>
+		<comment>변경 사항을 무시하고 이동하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SETTINGS" xml:space="preserve">
+		<value>System Settings</value>
+		<comment>시스템 설정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SETTINGS_VIEW" xml:space="preserve">
+		<value>View System Settings</value>
+		<comment>시스템 설정 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SETTINGS_UPDATE" xml:space="preserve">
+		<value>Update System Settings</value>
+		<comment>시스템 설정 수정</comment>
+	</data>
+	<data name="UL_NTP_SERVER_STATUS" xml:space="preserve">
+		<value>NTP Server Status</value>
+		<comment>NTP 서버 상태</comment>
+	</data>
+	<data name="UL_NTP_SERVER_STATUS_CHECKING" xml:space="preserve">
+		<value>Checking</value>
+		<comment>검사 중</comment>
+	</data>
+	<data name="UL_NTP_SERVER_STATUS_ERROR" xml:space="preserve">
+		<value>Error</value>
+		<comment>에러</comment>
+	</data>
+	<data name="UL_NTP_SERVER_STATUS_OK" xml:space="preserve">
+		<value>OK</value>
+		<comment>정상</comment>
+	</data>
+	<data name="UL_BUTTON_SETTING_DOWNLOAD_FILES_ADD_FILE" xml:space="preserve">
+		<value>Add File</value>
+		<comment>파일 추가</comment>
+	</data>
+	<data name="UL_BUTTON_SETTING_DOWNLOAD_FILES_ADD_LINK" xml:space="preserve">
+		<value>Add Link</value>
+		<comment>링크 추가</comment>
+	</data>
+	<data name="UL_BUTTON_SETTING_DOWNLOAD_FILES_ENABLE" xml:space="preserve">
+		<value>Enable</value>
+		<comment>활성화</comment>
+	</data>
+	<data name="UL_BUTTON_SETTING_DOWNLOAD_FILES_DISABLE" xml:space="preserve">
+		<value>Disable</value>
+		<comment>비활성화</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_DISPLAY_NAME" xml:space="preserve">
+		<value>Please input display name.</value>
+		<comment>Display Name을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_FILE_OR_LINK" xml:space="preserve">
+		<value>Please select file or input link.</value>
+		<comment>File 혹은 링크를 선택/입력하여 주세요.</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_DOWNLOAD" xml:space="preserve">
+		<value>Download</value>
+		<comment>다운로드</comment>
+	</data>
+	<data name="EM_COMMON__EXCEL_EXPORT_MAX_EXPORT_LIMIT" xml:space="preserve">
+		<value>Up to {{MaxExportCount}} data can be exported to Excel.</value>
+		<comment>엑셀로 내보낼 수 있는 데이터는 최대 {{MaxExportCount}}건 입니다.</comment>
+	</data>
+	<data name="EM_COMMON__UPLOAD_MAX_SIZE_LIMIT" xml:space="preserve">
+		<value>The maximum file size that can be uploaded is {{ maxUploadSize }}.</value>
+		<comment>업로드 할 수 있는 최대 파일 크기는 {{ maxUploadSize }} 입니다.</comment>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE" xml:space="preserve">
+		<value>Share Type</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_PUBLIC" xml:space="preserve">
+		<value>Public Type</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_PRIVATE" xml:space="preserve">
+		<value>Private User Folder Type</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_SHARED" xml:space="preserve">
+		<value>Private Shared Type</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_BUCKET" xml:space="preserve">
+		<value>Bucket Type</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_PUBLIC_SHORT" xml:space="preserve">
+		<value>Public</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_PRIVATE_SHORT" xml:space="preserve">
+		<value>Private User Folder</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_SHARED_SHORT" xml:space="preserve">
+		<value>Private Shared</value>
+	</data>
+	<data name="UL_SMB_SHARE_TYPE_BUCKET_SHORT" xml:space="preserve">
+		<value>Bucket</value>
+	</data>
+	<data name="SM_SMB_EXPORT_POINT_AVAILABLE_NAME" xml:space="preserve">
+		<value>This share name is available.</value>
+		<comment>사용 가능한 Share 명입니다.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_EXPORT_POINT_UPDATE" xml:space="preserve">
+		<value>Update IfsSMB Share</value>
+	</data>
+	<data name="UL_SMB_UPDATE_SMB_EXPORT_POINT" xml:space="preserve">
+		<value>Update IfsSMB Share</value>
+	</data>
+	<data name="EM_SMB_EXPORT_POINT_USER_ID" xml:space="preserve">
+		<value>Please enter user id.</value>
+		<comment>사용자 아이디를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_TITLE_STATISTICS_TOTAL_USAGE" xml:space="preserve">
+		<value>System Usage Graph: Total Usage</value>
+		<comment>System Usage Graph: 전체 사용 용량 (Physical)</comment>
+	</data>
+	<data name="UL_TITLE_STATISTICS_USAGE_BY_VOLUME" xml:space="preserve">
+		<value>System Usage Graph: Usage by Volume</value>
+		<comment>System Usage Graph: 볼륨별 사용 용량 (Logical)</comment>
+	</data>
+	<data name="UL_TITLE_STATISTICS_USAGE_CAPACITY_BY_OSD_DISK" xml:space="preserve">
+		<value>System Usage Graph: Usage Capacity by OSD DISK</value>
+		<comment>System Usage Graph: OSD DISK별 사용 용량</comment>
+	</data>
+	<data name="UL_TITLE_STATISTICS_INODE_USAGE_BY_MDS_DISK" xml:space="preserve">
+		<value>System Usage Graph: Inode Usage by MDS DISK</value>
+		<comment>System Usage Graph: MDS DISK별 Inode 사용 용량</comment>
+	</data>
+	<data name="UL_BUTTON_VOLUME_UPDATE_REMARK" xml:space="preserve">
+		<value>Edit Remark</value>
+		<comment>Remark 수정</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_ALREADY_EXIST" xml:space="preserve">
+		<value>It's duplicated id.</value>
+		<comment>중복된 아이디 입니다.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_DASHBOARD" xml:space="preserve">
+		<value>Dashboard</value>
+		<comment>Dashboard</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_DASHBOARD_ALL" xml:space="preserve">
+		<value>Dashboard - All</value>
+		<comment>Dashboard - All</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_DASHBOARD_VOLUME" xml:space="preserve">
+		<value>Dashboard - Volume</value>
+		<comment>Dashboard - Volume</comment>
+	</data>
+	<data name="EC_VOLUME_USER_QUOTA_MUST_BE_LESS_THAN_VOLUME_QUOTA" xml:space="preserve">
+		<value>EV011</value>
+		<comment>사용자에게 할당 할 할당량은 볼륨의 할당량보다 작아야합니다.</comment>
+	</data>
+	<data name="EM_VOLUME_USER_QUOTA_MUST_BE_LESS_THAN_VOLUME_QUOTA" xml:space="preserve">
+		<value>The quota to be allocated to the user must be smaller than the volume's quota.</value>
+		<comment>사용자에게 할당 할 할당량은 볼륨의 할당량보다 작아야합니다.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC" xml:space="preserve">
+		<value>IfsSync</value>
+		<comment>IfsSync</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_JOB" xml:space="preserve">
+		<value>Jobs</value>
+		<comment>Jobs</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_JOB_LIST" xml:space="preserve">
+		<value>Job List</value>
+		<comment>Job 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_JOB_VIEW" xml:space="preserve">
+		<value>Job View</value>
+		<comment>Job 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_JOB_ADD" xml:space="preserve">
+		<value>Add Job</value>
+		<comment>Job 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_JOB_REMOVE" xml:space="preserve">
+		<value>Remove Job</value>
+		<comment>Job 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_JOB_UPDATE" xml:space="preserve">
+		<value>Update Job</value>
+		<comment>Job 수정</comment>
+	</data>
+
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_WHITELIST" xml:space="preserve">
+		<value>Whitelists</value>
+		<comment>Whitelists</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_WHITELIST_LIST" xml:space="preserve">
+		<value>Whitelist</value>
+		<comment>Whitelist 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_WHITELIST_VIEW" xml:space="preserve">
+		<value>Whitelist View</value>
+		<comment>Whitelist 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_WHITELIST_ADD" xml:space="preserve">
+		<value>Add Whitelist</value>
+		<comment>Whitelist 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_WHITELIST_REMOVE" xml:space="preserve">
+		<value>Remove Whitelist</value>
+		<comment>Whitelist 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_WHITELIST_UPDATE" xml:space="preserve">
+		<value>Update Whitelist</value>
+		<comment>Whitelist 수정</comment>
+	</data>
+	<data name="EM_IFS_SYNC_REQUIRE_JOB_PATH" xml:space="preserve">
+		<value>Please enter job path.</value>
+		<comment>Job Path를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_REQUIRE_EXT_NAME" xml:space="preserve">
+		<value>Please enter extension name.</value>
+		<comment>확장자명을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_USER" xml:space="preserve">
+		<value>Users</value>
+		<comment>Users</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_USER_LIST" xml:space="preserve">
+		<value>Users</value>
+		<comment>User 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_USER_VIEW" xml:space="preserve">
+		<value>User View</value>
+		<comment>User 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_USER_ADD" xml:space="preserve">
+		<value>Add User</value>
+		<comment>User 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_USER_REMOVE" xml:space="preserve">
+		<value>Remove User</value>
+		<comment>User 삭제</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_USER_UPDATE" xml:space="preserve">
+		<value>Update User</value>
+		<comment>User 수정</comment>
+	</data>
+	<data name="UL_IFSSYNC_USER_STATUS" xml:space="preserve">
+		<value>Status</value>
+		<comment>Status</comment>
+	</data>
+	<data name="UL_IFSSYNC_USER_STATUS_OFFLINE" xml:space="preserve">
+		<value>Offline</value>
+		<comment>Offline</comment>
+	</data>
+	<data name="UL_IFSSYNC_USER_STATUS_INIT" xml:space="preserve">
+		<value>Init</value>
+		<comment>Init</comment>
+	</data>
+	<data name="UL_IFSSYNC_USER_STATUS_ONLINE" xml:space="preserve">
+		<value>Online</value>
+		<comment>Online</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_REQUIRE_IFSSYNC_VOLUME_NAME" xml:space="preserve">
+		<value>Please enter IfsSync volume name.</value>
+		<comment>IfsSync 볼륨명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_INVALID_IFSSYNC_VOLUME_QUOTA" xml:space="preserve">
+		<value>Invalid IfsSync volume quota.</value>
+		<comment>IfsSync 볼륨 할당 크기가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_INVALID_IFSSYNC_USER_QUOTA" xml:space="preserve">
+		<value>Invalid IfsSync user quota.</value>
+		<comment>IfsSync 사용자 할당 크기가 유효하지 않습니다.</comment>
+	</data>
+	<data name="SM_IFSSYNC_AVAILABLE_JOB_PATH" xml:space="preserve">
+		<value>This job path is available.</value>
+		<comment>사용 가능한 Job 경로 입니다.</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_IFSSYNC_JOB_REMOVE" xml:space="preserve">
+		<value>Are you sure you want to remove job '{{ JobPath }}'?</value>
+		<comment>IfsSync Job '{{ JobPath }}'를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_IFSSYNC_TITLE_MANAGE_MAPPED_USERS" xml:space="preserve">
+		<value>Backup Destination Management</value>
+		<comment>백업 대상 관리</comment>
+	</data>
+	<data name="UL_IFSSYNC_TITLE_MANAGE_UNMAPPED_USERS" xml:space="preserve">
+		<value>Backup Exclusions Management</value>
+		<comment>백업 제외 대상 관리</comment>
+	</data>
+	<data name="UL_IFSSYNC_TITLE_MANAGE_WHITELIST_FILE_TYPES" xml:space="preserve">
+		<value>Whitelist File Type Management</value>
+		<comment>화이트 리스트 파일 타입 관리</comment>
+	</data>
+	<data name="UL_BUTTON_IFSSYNC_MANAGE_MAPPED_USERS" xml:space="preserve">
+		<value>PC</value>
+		<comment>백업 대상</comment>
+	</data>
+	<data name="UL_BUTTON_IFSSYNC_MANAGE_UNMAPPED_USERS" xml:space="preserve">
+		<value>PC</value>
+		<comment>백업 대상 관리</comment>
+	</data>
+	<data name="UL_BUTTON_IFSSYNC_MANAGE_WHITELIST_FILE_TYPES" xml:space="preserve">
+		<value>WHITELIST</value>
+		<comment>화이트 리스트 파일 타입 관리</comment>
+	</data>
+	<data name="UL_BUTTON_IFSSYNC_MANAGE_JOB" xml:space="preserve">
+		<value>Manage Job</value>
+		<comment>Job 관리</comment>
+	</data>
+	<data name="SM_IFSSYNC_AVAILABLE_EXT_NAME" xml:space="preserve">
+		<value>This extension name is available.</value>
+		<comment>사용 가능한 확장자 입니다.</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_IFSSYNC_WHITELIST_FILE_TYPE" xml:space="preserve">
+		<value>Are you sure you want to remove whitelist file tytpe '{{ ExtName }}'?</value>
+		<comment>화이트리스트 파일 타입 '{{ ExtName }}'를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_BUTTON_USER_INFO" xml:space="preserve">
+		<value>User Info</value>
+		<comment>사용자 정보</comment>
+	</data>
+	<data name="UL_BUTTON_USER_CONF_PREVIEW" xml:space="preserve">
+		<value>Conf Preview</value>
+		<comment>설정 미리보기</comment>
+	</data>
+	<data name="SM_COMMON__COPIED_TO_CLIPBOARD" xml:space="preserve">
+		<value>It has been copied to the clipboard.</value>
+		<comment>클립보드로 복사 되었습니다.</comment>
+	</data>
+	<data name="UL_MANAGERS_ADD_MANAGER" xml:space="preserve">
+		<value>Add Manager</value>
+		<comment>관리자 등록</comment>
+	</data>
+	<data name="UL_MANAGERS_UPDATE_MANAGER" xml:space="preserve">
+		<value>Update Manager</value>
+		<comment>관리자 수정</comment>
+	</data>
+	<data name="UL_MANAGERS_REMOVE_MANAGER" xml:space="preserve">
+		<value>Remove Manager</value>
+		<comment>관리자 삭제</comment>
+	</data>
+	<data name="SM_USER_AVAILABLE_LOGIN_ID" xml:space="preserve">
+		<value>It is available login id.</value>
+		<comment>사용 가능한 아이디입니다.</comment>
+	</data>
+	<data name="UL_BUTTON_COMMON_CHECK_DUPLICATION" xml:space="preserve">
+		<value>Check Dup.</value>
+		<comment>중복검사</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_ADD_ROLE" xml:space="preserve">
+		<value>Add Role</value>
+		<comment>역할 등록</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_UPDATE_ROLE" xml:space="preserve">
+		<value>Update Role</value>
+		<comment>역할 수정</comment>
+	</data>
+	<data name="UL_COMMON_ACCOUNT_REMOVE_ROLE" xml:space="preserve">
+		<value>Remove Role</value>
+		<comment>역할 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_ROLES_REMOVE_ROLE" xml:space="preserve">
+		<value>Are you sure you want to delete the {{Name}} role?</value>
+		<comment>{{ Name }} 역할을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_UNLOCK_FILE" xml:space="preserve">
+		<value>Release</value>
+		<comment>Release</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_UNLOCK_FILE_LIST" xml:space="preserve">
+		<value>List of Release</value>
+		<comment>Release 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_UNLOCK_FILE_VIEW" xml:space="preserve">
+		<value>View Release</value>
+		<comment>Release 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_UNLOCK_FILE_UPDATE" xml:space="preserve">
+		<value>Release Update</value>
+		<comment>Release 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_APPLICATION_UNLOCK_FILE_REQUEST" xml:space="preserve">
+		<value>Release Request</value>
+		<comment>Release 요청</comment>
+	</data>
+	<data name="SM_ROLES_AVAILABLE_NAME" xml:space="preserve">
+		<value>This role name is available.</value>
+		<comment>사용 가능한 역할명입니다.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE" xml:space="preserve">
+		<value>NAS Service</value>
+		<comment>NAS Service</comment>
+	</data>
+	<data name="UL_COMMON__ACCOUNT_ROLE_CLAIM_UPDATE" xml:space="preserve">
+		<value>Update Role Claims</value>
+		<comment>역할 권한 수정</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_ROLES_CLAIM_UPDATE" xml:space="preserve">
+		<value>Are you sure you want to update claims of the {{Name}} role?</value>
+		<comment>{{ Name }} 역할의 권한을 수정 하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_NETWORK_MANAGER" xml:space="preserve">
+		<value>Network Manager</value>
+		<comment>네트워크 매니저</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_NETWORK_MANAGER_LIST" xml:space="preserve">
+		<value>List Network for IfsSMB</value>
+		<comment>네트워크 목록</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_NETWORK_MANAGER_ADD" xml:space="preserve">
+		<value>Add Network for IfsSMB</value>
+		<comment>IfsSMB 네트워크 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_NETWORK_MANAGER_UPDATE" xml:space="preserve">
+		<value>Update Network for IfsSMB</value>
+		<comment>IfsSMB 네트워크 수정</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_SMB_NETWORK_MANAGER_REMOVE" xml:space="preserve">
+		<value>Remove Network for IfsSMB</value>
+		<comment>IfsSMB 네트워크 삭제</comment>
+	</data>
+	<data name="UL_SMB_LIST_SMB_NETWORK_MANAGER" xml:space="preserve">
+		<value>IfsSMB Network List</value>
+		<comment>IfsSMB 네트워크 목록</comment>
+	</data>
+	<data name="EM_SMB_NETWORK_REQUIRE_DEVICE_NAME" xml:space="preserve">
+		<value>Please select device.</value>
+		<comment>디바이스를 선택하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_NETWORK_INVALID_VLAN_ID" xml:space="preserve">
+		<value>VLAN ID must be 1~4094.</value>
+		<comment>VLAN ID는 1 ~ 4094 내의 값이어야 합니다.</comment>
+	</data>
+	<data name="EM_SMB_NETWORK_REQUIRE_IP" xml:space="preserve">
+		<value>Please enter ip.</value>
+		<comment>아이피를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_NETWORK_REQUIRE_NETMASK" xml:space="preserve">
+		<value>Please enter netmask.</value>
+		<comment>넷마스크를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_NETWORK_REQUIRE_GATEWAY" xml:space="preserve">
+		<value>Please enter gateway.</value>
+		<comment>게이트웨이를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_SMB_ADD_SMB_NETWORK_DEVICE" xml:space="preserve">
+		<value>Add IfsSMB Network Device</value>
+		<comment>IfsSMB 네트워크 추가</comment>
+	</data>
+	<data name="UL_SMB_ADD_SMB_NETWORK_VLAN" xml:space="preserve">
+		<value>Add IfsSMB Network VLAN</value>
+		<comment>IfsSMB 네트워크 추가</comment>
+	</data>
+	<data name="UL_SMB_UPDATE_SMB_NETWORK" xml:space="preserve">
+		<value>Update IfsSMB Network</value>
+		<comment>IfsSMB 네트워크 수정</comment>
+	</data>
+	<data name="UL_SMB_REMOVE_SMB_NETWORK" xml:space="preserve">
+		<value>Remove IfsSMB Network</value>
+		<comment>IfsSMB 네트워크 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_NETWORK" xml:space="preserve">
+		<value>Do you want to remove IfsSMB Network (Name : {{ DeviceName }}, VLAN ID : {{ VlanId }})?</value>
+		<comment>IfsSMB 네트워크 (Name : {{ DeviceName }}, VLAN ID : {{ VlanId }})을 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="SM_SMB_AVAILABLE_VLAN_ID" xml:space="preserve">
+		<value>This vlan id is available.</value>
+		<comment>사용 가능한 VLAN ID입니다.</comment>
+	</data>
+	<data name="UL_SMB_PLACEHOLDER_VLAN_ID" xml:space="preserve">
+		<value>Value range : 2 ~ 4094</value>
+		<comment>값의 범위 : 2 ~ 4094</comment>
+	</data>
+	<data name="UL_LOG_TYPE" xml:space="preserve">
+		<value>Log Type</value>
+		<comment>로그 타입</comment>
+	</data>
+	<data name="UL_LOG_TYPE_REST_CONTROL_LOG" xml:space="preserve">
+		<value>Rest Control Log</value>
+		<comment>Rest Control Log</comment>
+	</data>
+	<data name="UL_LOG_TYPE_REST_IO_LOG" xml:space="preserve">
+		<value>Rest IO Log</value>
+		<comment>Rest IO Log</comment>
+	</data>
+	<data name="UL_LOG_TYPE_DR_CONTROL_LOG" xml:space="preserve">
+		<value>DR Control Log</value>
+		<comment>DR Control Log</comment>
+	</data>
+	<data name="UL_LOG_TYPE_DR_IO_LOG" xml:space="preserve">
+		<value>DR IO Log</value>
+		<comment>DR IO Log</comment>
+	</data>
+	<data name="UL_LOG_TYPE_AUTH_LOG" xml:space="preserve">
+		<value>Auth Log</value>
+		<comment>Auth Log</comment>
+	</data>
+	<data name="UL_LOG_TYPE_PORTAL_LOG" xml:space="preserve">
+		<value>Portal Log</value>
+		<comment>Portal Log</comment>
+	</data>
+	<data name="UL_LOG_TYPE_SYSLOG" xml:space="preserve">
+		<value>Syslog</value>
+		<comment>Syslog</comment>
+	</data>
+	<data name="UL_LOG_TYPE_SMB_SYSLOG" xml:space="preserve">
+		<value>SMB Syslog</value>
+		<comment>SMB Syslog</comment>
+	</data>
+	<data name="UL_LOG_TYPE_ALERT_MESSAGES" xml:space="preserve">
+		<value>Alert Messages</value>
+		<comment>Alert Messages</comment>
+	</data>
+	<data name="UL_LOG_TYPE_IFS_REPORT" xml:space="preserve">
+		<value>IfsReport</value>
+		<comment>IfsReport</comment>
+	</data>
+	<data name="UL_LOG_EXPORT_REQUEST_STATUS" xml:space="preserve">
+		<value>Export Request Status</value>
+		<comment>내보내기 요청 상태</comment>
+	</data>
+	<data name="UL_LOG_EXPORT_REQUEST_STATUS_FAILED" xml:space="preserve">
+		<value>Failed</value>
+		<comment>실패</comment>
+	</data>
+	<data name="UL_LOG_EXPORT_REQUEST_STATUS_REQUEST" xml:space="preserve">
+		<value>Request</value>
+		<comment>요청</comment>
+	</data>
+	<data name="UL_LOG_EXPORT_REQUEST_STATUS_PROGRESS" xml:space="preserve">
+		<value>Progress</value>
+		<comment>처리 중</comment>
+	</data>
+	<data name="UL_LOG_EXPORT_REQUEST_STATUS_END" xml:space="preserve">
+		<value>End</value>
+		<comment>완료</comment>
+	</data>
+	<data name="UL_COMMON__SERVER_STATUS_TIMEOUT" xml:space="preserve">
+		<value>Timeout</value>
+		<comment>타임아웃</comment>
+	</data>
+	<data name="EC_EXPORT_REQUEST_REQUIRE_VOLUME_NAME" xml:space="preserve">
+		<value>ECER001</value>
+		<comment>볼륨을 선택하여 주세요.</comment>
+	</data>
+	<data name="EM_EXPORT_REQUEST_REQUIRE_VOLUME_NAME" xml:space="preserve">
+		<value>Please select volume.</value>
+		<comment>볼륨을 선택하여 주세요.</comment>
+	</data>
+	<data name="UL_EXPORT_REQUEST_ADD" xml:space="preserve">
+		<value>Add Export Request</value>
+		<comment>내보내기 요청 등록</comment>
+	</data>
+	<data name="UL_EXPORT_REQUEST_REMOVE" xml:space="preserve">
+		<value>Remove Export Request</value>
+		<comment>내보내기 요청 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_EXPORT_REQUEST_REMOVE" xml:space="preserve">
+		<value>Are you sure you want to remove?</value>
+		<comment>삭제 하시겠습니까?</comment>
+	</data>
+	<data name="EC_EXPORT_REQUEST_IN_PROGRESS_CANNOT_REMOVE" xml:space="preserve">
+		<value>ECER011</value>
+		<comment>처리 중인 건은 삭제할 수 없습니다.</comment>
+	</data>
+	<data name="EM_EXPORT_REQUEST_IN_PROGRESS_CANNOT_REMOVE" xml:space="preserve">
+		<value>Cannot remove in progress item.</value>
+		<comment>처리 중인 건은 삭제할 수 없습니다.</comment>
+	</data>
+	<data name="EC_EXPORT_REQUEST_NOT_FAILED_CANNOT_RETRY" xml:space="preserve">
+		<value>ECER012</value>
+		<comment>실패한 건 만 재시작할 수 있습니다.</comment>
+	</data>
+	<data name="EM_EXPORT_REQUEST_NOT_FAILED_CANNOT_RETRY" xml:space="preserve">
+		<value>Only the failed item can be restarted.</value>
+		<comment>실패한 건 만 재시작할 수 있습니다.</comment>
+	</data>
+	<data name="UL_BUTTON_LOG_DUMP_ADD" xml:space="preserve">
+		<value>Create Log Dump</value>
+		<comment>로그덤프 생성</comment>
+	</data>
+	<data name="UL_BUTTON_LOG_DUMP_REMOVE" xml:space="preserve">
+		<value>Remove Log Dump</value>
+		<comment>로그덤프 삭제</comment>
+	</data>
+	<data name="UL_BUTTON_LOG_DUMP_RETRY" xml:space="preserve">
+		<value>Retry Creating Log Dump</value>
+		<comment>로그덤프 생성 재시도</comment>
+	</data>
+	<data name="UL_BUTTON_LOG_DUMP_DOWNLOAD" xml:space="preserve">
+		<value>Download Log Dump</value>
+		<comment>로그덤프 다운로드</comment>
+	</data>
+	<data name="EC_COMMON_ACCOUNT_NOT_HAVE_PERMISSION_TO_LOGIN" xml:space="preserve">
+		<value>ECA101</value>
+		<comment>해당 유저는 Portal에 로그인할 수 있는 권한이 없습니다.</comment>
+	</data>
+	<data name="EM_COMMON_ACCOUNT_NOT_HAVE_PERMISSION_TO_LOGIN" xml:space="preserve">
+		<value>The user does not have permission to login to the Portal.</value>
+		<comment>해당 유저는 Portal에 로그인할 수 있는 권한이 없습니다.</comment>
+	</data>
+	<data name="UL_LOG_DUMP_ALL_LOG_TYPE" xml:space="preserve">
+		<value>All Log Type</value>
+		<comment>전체 로그 타입</comment>
+	</data>
+	<data name="UL_LOG_DUMP_ALL_VOLUMES" xml:space="preserve">
+		<value>All Volumes</value>
+		<comment>전체 볼륨</comment>
+	</data>
+	<data name="UL_LOG_DUMP_ALL_STATUS" xml:space="preserve">
+		<value>All Status</value>
+		<comment>전체 상태</comment>
+	</data>
+	<data name="UL_IFSSMB_SHARE_ADVANCED_OPTIONS" xml:space="preserve">
+		<value>Advanced Options</value>
+		<comment>고급 설정</comment>
+	</data>
+	<data name="UL_BUTTON_IFSSMB_NETWORK_DEVICE_ADD" xml:space="preserve">
+		<value>Add Device</value>
+		<comment>Device 등록</comment>
+	</data>
+	<data name="UL_BUTTON_IFSSMB_NETWORK_VLAN_ADD" xml:space="preserve">
+		<value>Add VLAN</value>
+		<comment>VLAN 등록</comment>
+	</data>
+	<data name="UL_IFSSMB_NETWORK_POLICY_ALLOW_IFSSMB_SERVICE_ON_ALL_NETWORK" xml:space="preserve">
+		<value>Allow IfsSMB Service on all network devices</value>
+		<comment>모든 Network Device에서 IfsSMB Service 허용</comment>
+	</data>
+	<data name="UL_IFSSMB_NETWORK_POLICY_ALLOW_IFSSMB_SERVICE_ON_ALL_NETWORK_HINT" xml:space="preserve">
+		<value>If you enable the above, "IfsSMB Share" is accessible via all Network Devices.</value>
+		<comment>위를 활성화하면 모든 네트워크 장치에서 "IfsSMB Share"에 액세스 할 수 있습니다.</comment>
+	</data>
+	<data name="UL_IFSSMB_NETWORK_POLICY_ALLOWED_NETWORK_LIST_FOR_IFSSMB_SERVICE" xml:space="preserve">
+		<value>Allowed Network Devices for IfsSMB Service</value>
+		<comment>IfsSMB Service용 Network Device 허용 목록</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_IFSSMB_SERVICE_WILL_BE_RESTART" xml:space="preserve">
+		<value>Restart IfsSMB Service to apply the selected settings.\nAre you sure you want to proceed?</value>
+		<comment>선택한 설정을 적용하기 위해 IfsSMB Service를 재시작합니다.\n계속 진행하시겠습니까?</comment>
+	</data>
+	<data name="UL_LOG_ALERT_MESSAGE_STATUS" xml:space="preserve">
+		<value>Status</value>
+		<comment>처리상태</comment>
+	</data>
+	<data name="UL_LOG_ALERT_MESSAGE_STATUS_OPEN" xml:space="preserve">
+		<value>Open</value>
+		<comment>발생</comment>
+	</data>
+	<data name="UL_LOG_ALERT_MESSAGE_STATUS_IN_PROGRESS" xml:space="preserve">
+		<value>In Pregress</value>
+		<comment>처리 중</comment>
+	</data>
+	<data name="UL_LOG_ALERT_MESSAGE_STATUS_IN_REVIEW" xml:space="preserve">
+		<value>In Review</value>
+		<comment>확인 중</comment>
+	</data>
+	<data name="UL_LOG_ALERT_MESSAGE_STATUS_DONE" xml:space="preserve">
+		<value>Done</value>
+		<comment>완료</comment>
+	</data>
+	<data name="UL_LOG_ALERT_MESSAGE_STATUS_IGNORE" xml:space="preserve">
+		<value>Ignore</value>
+		<comment>무시</comment>
+	</data>
+	<data name="UL_USERS_LOGIN_AUTHENTICATION" xml:space="preserve">
+		<value>Auth Login</value>
+		<comment>로그인 활성화 여부</comment>
+	</data>
+	<data name="UL_USERS_LOGIN_AUTHENTICATION_DISABLE" xml:space="preserve">
+		<value>Disable</value>
+		<comment>비활성화</comment>
+	</data>
+	<data name="UL_USERS_LOGIN_AUTHENTICATION_ENABLE" xml:space="preserve">
+		<value>Enable</value>
+		<comment>활성화</comment>
+	</data>
+	<data name="EM_USERS_LOGIN_AUTHENTICATION_REQUIRE_VOLUME_NAME" xml:space="preserve">
+		<value>Please enter volume name.</value>
+		<comment>볼륨명을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_BUTTON_USER_AUTHENTICATION" xml:space="preserve">
+		<value>Change Authentication</value>
+		<comment>Authentication 설정 변경</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_IP_ADDRESS" xml:space="preserve">
+		<value>Please input ip address.</value>
+		<comment>아이피 주소를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_HOSTNAME" xml:space="preserve">
+		<value>Please input host name.</value>
+		<comment>호스트명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_PORT" xml:space="preserve">
+		<value>Please input port number.</value>
+		<comment>포트 번호를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_INVALID_PORT" xml:space="preserve">
+		<value>Invalid port number.</value>
+		<comment>포트 번호가 유효하지 않습니다.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_MAC_ADDRESS" xml:space="preserve">
+		<value>Please input mac address.</value>
+		<comment>MAC 주소를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_OS" xml:space="preserve">
+		<value>Please input os type.</value>
+		<comment>OS 종류를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_GROUP" xml:space="preserve">
+		<value>Please input group.</value>
+		<comment>그룹을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_PC_NAME" xml:space="preserve">
+		<value>Please input PC name.</value>
+		<comment>PC명을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_USERID" xml:space="preserve">
+		<value>Please input user id.</value>
+		<comment>사용자 아이디를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_COMPANY" xml:space="preserve">
+		<value>Please input company.</value>
+		<comment>회사를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_TYPE" xml:space="preserve">
+		<value>Please input type.</value>
+		<comment>타입을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_IFS_SYNC_CLIENT_REQUIRE_VERSION" xml:space="preserve">
+		<value>Please input version.</value>
+		<comment>버전을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_COMMON__ALL_HA_STATUS" xml:space="preserve">
+		<value>All HA Status</value>
+		<comment>전체 HA 상태</comment>
+	</data>
+	<data name="UL_COMMON__ALL_SERVER_STATUS" xml:space="preserve">
+		<value>All Server Status</value>
+		<comment>전체 서버 상태</comment>
+	</data>
+	<data name="UL_SYSTEM_DISK_MDS_DISK_STATUS" xml:space="preserve">
+		<value>All Disk Status</value>
+		<comment>전체 디스크 상태</comment>
+	</data>
+	<data name="UL_SYSTEM_DISK_OSD_DISK_STATUS" xml:space="preserve">
+		<value>All Disk Status</value>
+		<comment>전체 디스크 상태</comment>
+	</data>
+	<data name="UL_SYSTEM_DISK_OSD_DISK_MODE" xml:space="preserve">
+		<value>All Disk Mode</value>
+		<comment>전체 디스크 모드</comment>
+	</data>
+	<data name="UL_SYSTEM_VOLUME_REPLICATION_TYPE" xml:space="preserve">
+		<value>All Replication Type</value>
+		<comment>전체 복제 타입</comment>
+	</data>
+	<data name="UL_SYSTEM_VOLUME_PERMISSION_TYPE" xml:space="preserve">
+		<value>All Permission Type</value>
+		<comment>전체 권한 타입</comment>
+	</data>
+	<data name="UL_SYSTEM_VOLUME_STATUS" xml:space="preserve">
+		<value>All Status</value>
+		<comment>전체 상태</comment>
+	</data>
+	<data name="UL_SYSTEM_FSCK_STATUS" xml:space="preserve">
+		<value>All Status</value>
+		<comment>전체 상태</comment>
+	</data>
+	<data name="UL_DR_JOB_STATUS" xml:space="preserve">
+		<value>All Status</value>
+		<comment>전체 상태</comment>
+	</data>
+	<data name="UL_DR_JOB_ACTION" xml:space="preserve">
+		<value>All Action</value>
+		<comment>전체 액션</comment>
+	</data>
+	<data name="UL_SECURAGE_RELEASE_STATUS" xml:space="preserve">
+		<value>All Status</value>
+		<comment>전체 상태</comment>
+	</data>
+	<data name="UL_LOGS_AUTH_RESPONSE_CODE" xml:space="preserve">
+		<value>All Response Code</value>
+		<comment>전체 반환 코드</comment>
+	</data>
+	<data name="UL_LOGS_SYSLOG_FACILITY" xml:space="preserve">
+		<value>All Facility</value>
+		<comment>전체 종류</comment>
+	</data>
+	<data name="UL_LOGS_SYSLOG_SEVERITY" xml:space="preserve">
+		<value>All Severity</value>
+		<comment>전체 중요도</comment>
+	</data>
+	<data name="UL_LOGS_ALERT_MESSAGE_ACTION_STATUS" xml:space="preserve">
+		<value>All Status</value>
+		<comment>전체 상태</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_SECURITY_TYPE" xml:space="preserve">
+		<value>Please enter security type.</value>
+		<comment>Security Type을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_WORKGROUP" xml:space="preserve">
+		<value>Please enter workgroup.</value>
+		<comment>WorkGroup을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_REALM" xml:space="preserve">
+		<value>Please enter realm.</value>
+		<comment>Realm을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_LOGLEVEL" xml:space="preserve">
+		<value>Please enter log level.</value>
+		<comment>Log Level을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_DOMAIN_NAME" xml:space="preserve">
+		<value>Please enter domain name.</value>
+		<comment>Domain Name을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_DOMAIN_IP" xml:space="preserve">
+		<value>Please enter domain ip address.</value>
+		<comment>Domain IP를 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_DOMAIN_ACCOUNT_NAME" xml:space="preserve">
+		<value>Please enter domain account name.</value>
+		<comment>Domain Account Name을 입력하여 주세요.</comment>
+	</data>
+	<data name="EM_SMB_GLOBAL_CONFIG_REQUIRE_DOMAIN_ACCOUNT_PASSWORD" xml:space="preserve">
+		<value>Please enter domain account password.</value>
+		<comment>Domain Account Password를 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_BUTTON_SMB_EXPORT_POINT_ADD_GROUP" xml:space="preserve">
+		<value>Add Group</value>
+		<comment>그룹 추가</comment>
+	</data>
+	<data name="UL_BUTTON_SMB_EXPORT_POINT_ADD_USER" xml:space="preserve">
+		<value>Add User</value>
+		<comment>사용자 추가</comment>
+	</data>
+	<data name="EM_SMB_THERE_IS_NO_BUCKET" xml:space="preserve">
+		<value>There are no buckets to choose from for this volume.</value>
+		<comment>해당 볼륨에는 선택할 수 있는 버킷이 존재하지 않습니다.</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_AUTH_START" xml:space="preserve">
+		<value>Start/Stop AUTH</value>
+		<comment>AUTH 시작/중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_REST_START" xml:space="preserve">
+		<value>Start/Stop REST</value>
+		<comment>REST 시작/중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_S3_START" xml:space="preserve">
+		<value>Start/Stop S3</value>
+		<comment>S3 시작/중지</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_IFSSMB_START" xml:space="preserve">
+		<value>Start/Stop IfsSmb</value>
+		<comment>IfsSmb 시작/중지</comment>
+	</data>
+	<data name="UL_SYSTEM_START_AUTH" xml:space="preserve">
+		<value>Start AUTH</value>
+		<comment>AUTH 시작</comment>
+	</data>
+	<data name="UL_SYSTEM_STOP_AUTH" xml:space="preserve">
+		<value>Stop AUTH</value>
+		<comment>AUTH 중지</comment>
+	</data>
+	<data name="UL_SYSTEM_START_REST" xml:space="preserve">
+		<value>Start REST</value>
+		<comment>REST 시작</comment>
+	</data>
+	<data name="UL_SYSTEM_STOP_REST" xml:space="preserve">
+		<value>Stop REST</value>
+		<comment>REST 중지</comment>
+	</data>
+	<data name="UL_SYSTEM_START_S3" xml:space="preserve">
+		<value>Start S3</value>
+		<comment>S3 시작</comment>
+	</data>
+	<data name="UL_SYSTEM_STOP_S3" xml:space="preserve">
+		<value>Stop S3</value>
+		<comment>S3 중지</comment>
+	</data>
+	<data name="UL_SYSTEM_START_IFSSMB" xml:space="preserve">
+		<value>Start IFSSMB</value>
+		<comment>IFSSMB 시작</comment>
+	</data>
+	<data name="UL_SYSTEM_STOP_IFSSMB" xml:space="preserve">
+		<value>Stop IFSSMB</value>
+		<comment>IFSSMB 중지</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_AUTH" xml:space="preserve">
+		<value>Do you want to start AUTH ({{ Ip }})?</value>
+		<comment>AUTH ({{ Ip }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_AUTH" xml:space="preserve">
+		<value>Do you want to stop AUTH ({{ Ip }})?</value>
+		<comment>AUTH ({{ Ip }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_REST" xml:space="preserve">
+		<value>Do you want to start REST ({{ Ip }})?</value>
+		<comment>REST ({{ Ip }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_REST" xml:space="preserve">
+		<value>Do you want to stop REST ({{ Ip }})?</value>
+		<comment>REST ({{ Ip }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_S3" xml:space="preserve">
+		<value>Do you want to start S3 ({{ Ip }})?</value>
+		<comment>S3 ({{ Ip }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_S3" xml:space="preserve">
+		<value>Do you want to stop S3 ({{ Ip }})?</value>
+		<comment>S3 ({{ Ip }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_IFSSMB" xml:space="preserve">
+		<value>Do you want to start IFSSMB ({{ Ip }})?</value>
+		<comment>IFSSMB ({{ Ip }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_IFSSMB" xml:space="preserve">
+		<value>Do you want to stop IFSSMB ({{ Ip }})?</value>
+		<comment>IFSSMB ({{ Ip }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_SYSTEM_REMOVE_AUTH" xml:space="preserve">
+		<value>Remove AUTH</value>
+		<comment>AUTH 삭제</comment>
+	</data>
+	<data name="UL_SYSTEM_REMOVE_REST" xml:space="preserve">
+		<value>Remove REST</value>
+		<comment>REST 삭제</comment>
+	</data>
+	<data name="UL_SYSTEM_REMOVE_S3" xml:space="preserve">
+		<value>Remove S3</value>
+		<comment>S3 삭제</comment>
+	</data>
+	<data name="UL_SYSTEM_REMOVE_IFSSMB" xml:space="preserve">
+		<value>Remove IFSSMB</value>
+		<comment>IFSSMB 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_AUTH" xml:space="preserve">
+		<value>Do you want to remove AUTH ({{ Ip }})?</value>
+		<comment>AUTH ({{ Ip }})를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_REST" xml:space="preserve">
+		<value>Do you want to remove REST ({{ Ip }})?</value>
+		<comment>REST ({{ Ip }})를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_S3" xml:space="preserve">
+		<value>Do you want to remove S3 ({{ Ip }})?</value>
+		<comment>S3 ({{ Ip }})를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_IFSSMB" xml:space="preserve">
+		<value>Do you want to remove IFSSMB ({{ Ip }})?</value>
+		<comment>IFSSMB ({{ Ip }})를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="EM_COMMON_API_KEY_REQUIRE_KEY_NAME" xml:space="preserve">
+		<value>Please enter key name.</value>
+		<comment>키 명칭을 입력하여 주세요.</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_APIKEY" xml:space="preserve">
+		<value>Do you want to remove API Key '{{ KeyName }}'?</value>
+		<comment>API Key '{{ KeyName }}'를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_COMMON_APIKEY_MANAGEMENT" xml:space="preserve">
+		<value>Manage API Keys</value>
+		<comment>API 키 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_APIKEY" xml:space="preserve">
+		<value>Manage API Keys</value>
+		<comment>API Key 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_APIKEY_LIST" xml:space="preserve">
+		<value>API Keys</value>
+		<comment>API Key 관리</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_APIKEY_VIEW" xml:space="preserve">
+		<value>View API Key</value>
+		<comment>API Key 조회</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_APIKEY_CREATE" xml:space="preserve">
+		<value>Add API Key</value>
+		<comment>API Key 추가</comment>
+	</data>
+	<data name="UL_COMMON__CLAIM_NAME_COMMON_APIKEY_DELETE" xml:space="preserve">
+		<value>Remove API Key</value>
+		<comment>API Key 삭제</comment>
+	</data>
+	<data name="EM_COMMON_SETTINGS_INVALID_GRAFANA_SETTING" xml:space="preserve">
+		<value>No host or username has been set for Grafana. Please use after setting.</value>
+		<comment>Grafana에 대한 호스트 혹은 사용자 아이디가 설정되지 않았습니다. 설정 후에 사용하여 주세요.</comment>
+	</data>
+	<data name="EC_S3_NEED_TO_SET_CREDENTIAL" xml:space="preserve">
+		<value>ECS3001</value>
+		<comment>S3 인증 정보 설정 후에 이용하여 주세요.</comment>
+	</data>
+	<data name="EM_S3_NEED_TO_SET_CREDENTIAL" xml:space="preserve">
+		<value>Please use it after setting S3 credential information.</value>
+		<comment>S3 인증 정보 설정 후에 이용하여 주세요.</comment>
+	</data>
+	<data name="EC_S3_CANNOT_RETRIEVE_BUCKET_LIST" xml:space="preserve">
+		<value>ECS3011</value>
+		<comment>S3 인증 정보 설정 후에 이용하여 주세요.</comment>
+	</data>
+	<data name="EM_S3_CANNOT_RETRIEVE_BUCKET_LIST" xml:space="preserve">
+		<value>Can not get list of S3 buckets.</value>
+		<comment>S3 버킷 목록을 가져올 수 없습니다.</comment>
+	</data>
+    <data name="UL_BUTTON_SMB_EXPORT_POINT_APPLY_ACCESS_RIGHT" xml:space="preserve">
+        <value>Apply Access Rights</value><comment>접근 권한 적용</comment>
+    </data>
+	<data name="UL_LOGS_PORTAL_ALL_LOG_LEVEL" xml:space="preserve">
+		<value>All Log Level</value>
+		<comment>전체 로그 레벨</comment>
+	</data>
+    <data name="EC_S3_FAIL_TO_CREATE_BUCKET" xml:space="preserve">
+        <value>ECS3021</value>
+    </data>
+    <data name="EM_S3_FAIL_TO_CREATE_BUCKET" xml:space="preserve">
+        <value>Fail to create S3 bucket.</value>
+    </data>
+    <data name="EC_S3_BUCKET_NAME_MUST_BE_3_CHAR_LENGTH" xml:space="preserve">
+        <value>ECS3002</value>
+    </data>
+    <data name="EM_S3_BUCKET_NAME_MUST_BE_3_CHAR_LENGTH" xml:space="preserve">
+        <value>The S3 bucket name must be at least 3 characters long.</value>
+    </data>
+    <data name="EC_S3_FAIL_TO_DELETE_BUCKET" xml:space="preserve">
+        <value>ECS3031</value>
+    </data>
+    <data name="EM_S3_FAIL_TO_DELETE_BUCKET" xml:space="preserve">
+        <value>Fail to delete S3 bucket. Please check if the file or folder exists in the bucket and try again.</value>
+    </data>
+    <data name="EC_S3_BUCKET_NAME_CANNOT_EXCEED_63_CHAR_LENGTH" xml:space="preserve">
+        <value>ECS3003</value>
+    </data>
+    <data name="EC_S3_BUCKET_NAME_INVALID" xml:space="preserve">
+        <value>ECS3004</value>
+    </data>
+    <data name="EM_S3_BUCKET_NAME_CANNOT_EXCEED_63_CHAR_LENGTH" xml:space="preserve">
+        <value>Bucket names cannot exceed 63 characters.</value>
+    </data>
+    <data name="EM_S3_BUCKET_NAME_INVALID" xml:space="preserve">
+        <value>&lt;li&gt;Bucket names must be 3 to 63 characters long and can contain only lowercase letters and numbers, periods and dashes.&lt;/li&gt;
+&lt;li&gt;Each label in the bucket name must start with a lowercase letter or number.&lt;/li&gt;
+&lt;li&gt;Bucket names cannot contain an underscore, end with a dash, have a period, or contain a dash adjacent to the period.&lt;/li&gt;
+&lt;li&gt;You cannot use the IP address format (198.51.100.24) for the bucket name.&lt;/li&gt;</value>
+    </data>
+    <data name="EC_S3_SOURCE_FILE_INFO_NOT_FOUND" xml:space="preserve">
+        <value>ECS3041</value>
+    </data>
+    <data name="EM_S3_SOURCE_FILE_INFO_NOT_FOUND" xml:space="preserve">
+        <value>The source file information does not exist.</value>
+    </data>
+    <data name="EM_S3_TARGET_PATH_NOT_FOUND" xml:space="preserve">
+        <value>The destination folder does not exist.</value>
+    </data>
+    <data name="EC_S3_TARGET_PATH_NOT_FOUND" xml:space="preserve">
+        <value>ECS3042</value>
+    </data>
+    <data name="UL_S3_VARIOUS_FILES_OR_FOLDERS" xml:space="preserve">
+        <value>Various Files or Folders</value><comment>여러 파일 및 폴더</comment>
+    </data>
+    <data name="EM_S3_MOVE_MUST_NOT_SAME_TARGET_PATH_AND_SOURCE_PATH" xml:space="preserve">
+        <value>Moving files must not be the same in the source folder and destination folder.</value>
+    </data>
+    <data name="EC_S3_MOVE_MUST_NOT_SAME_TARGET_PATH_AND_SOURCE_PATH" xml:space="preserve">
+        <value>ECS3051</value>
+    </data>
+    <data name="UL_S3_DUPLICATE_FILE_WORD" xml:space="preserve">
+        <value> - copy</value>
+    </data>
+    <data name="EC_S3_FILE_WITH_TARGET_NAME_IS_ALREADY_EXIST" xml:space="preserve">
+        <value>ECS3022</value>
+    </data>
+    <data name="EC_S3_FOLDER_WITH_TARGET_NAME_IS_ALREADY_EXIST" xml:space="preserve">
+        <value>ECS3023</value>
+    </data>
+    <data name="EM_S3_FILE_WITH_TARGET_NAME_IS_ALREADY_EXIST" xml:space="preserve">
+        <value>A file with the same name already exists.</value>
+    </data>
+    <data name="EM_S3_FOLDER_WITH_TARGET_NAME_IS_ALREADY_EXIST" xml:space="preserve">
+        <value>A folder with the same name already exists.</value>
+    </data>
+    <data name="EC_COMMON__TEMP_PATH_NOT_FOUND" xml:space="preserve">
+        <value>EC025</value><comment>임시 폴더를 찾을 수 없습니다.</comment>
+    </data>
+    <data name="EM_COMMON__TEMP_PATH_NOT_FOUND" xml:space="preserve">
+        <value>The temp foler can not be found.</value><comment>임시 폴더를 찾을 수 없습니다.</comment>
+    </data>
+    <data name="UL_BUTTON_SMB_LOAD_GLOBAL_VETO_FILES" xml:space="preserve">
+        <value>Load Global Settings</value><comment>전역 설정 불러오기</comment>
+    </data>
+    <data name="EC_S3_SUCH_BUCKET_NOT_FOUND" xml:space="preserve">
+        <value>ECS3005</value><comment>해당 버킷이 존재하지 않습니다.</comment>
+    </data>
+    <data name="EM_S3_SUCH_BUCKET_NOT_FOUND" xml:space="preserve">
+        <value>Such bucket doesn't exist.</value><comment>해당 버킷이 존재하지 않습니다.</comment>
+    </data>
+    <data name="UL_S3_SETTINGS_CORS" xml:space="preserve">
+        <value>CORS Settings</value><comment>CORS 설정</comment>
+    </data>
+    <data name="UL_S3_SETTINGS_ACL" xml:space="preserve">
+        <value>ACL Settings</value><comment>ACL 설정</comment>
+    </data>
+    <data name="UL_S3_SETTINGS_WEB_SITE" xml:space="preserve">
+        <value>WebSite Settings</value><comment>WebSite 설정</comment>
+    </data>
+    <data name="UL_S3_SETTINGS_VERSIONING" xml:space="preserve">
+        <value>Versioning Settings</value><comment>Versioning 설정</comment>
+    </data>
+    <data name="UL_S3_SETTING_WEB_SITE_ENABLE" xml:space="preserve">
+        <value>Enable static website hosting</value><comment>정적 웹 사이트 호스팅 활성화</comment>
+    </data>
+    <data name="UL_S3_SETTING_VERSIONING_ENABLE" xml:space="preserve">
+        <value>Enable versioning</value><comment>버전 기록 활성화</comment>
+    </data>
+    <data name="UL_COMMON__NO_SERVER" xml:space="preserve">
+        <value>No servers available.</value><comment>서버가 존재하지 않습니다.</comment>
+    </data>
+    <data name="UL_BUTTON_SMB_EXPORT_POINT_USER_DIRECTORY_QUOTA" xml:space="preserve">
+        <value>User Directory Quota</value><comment>사용자 폴더 할당 크기</comment>
+    </data>
+    <data name="UL_SMB_EXPORT_POINT_USER_DIRECTORY_QUOTA" xml:space="preserve">
+        <value>User Directory Quota Management</value><comment>사용자 폴더 할당량 관리</comment>
+    </data>
+    <data name="UL_SMB_EXPORT_POINT_USER_DIRECTORY_INITIAL_QUOTA" xml:space="preserve">
+        <value>User Directory Initial Quota</value><comment>사용자 폴더 초기 할당량</comment>
+    </data>
+    <data name="EC_SMB_USER_INITIAL_QUOTA_CAN_MODIFY_ONLY_PRIVATE" xml:space="preserve">
+        <value>ECSMB001</value><comment>사용자 초기 할당량은 Private User Folder에서만 수정할 수 있습니다.</comment>
+    </data>
+    <data name="EM_SMB_USER_INITIAL_QUOTA_CAN_MODIFY_ONLY_PRIVATE" xml:space="preserve">
+        <value>User initial quota can only be modified in Private User Folder.</value><comment>사용자 초기 할당량은 Private User Folder에서만 수정할 수 있습니다.</comment>
+    </data>
+    <data name="EC_VOLUME_USER_QUOTA_SIZE_LESS_THAN_VOLUME_QUOTA" xml:space="preserve">
+        <value>EV021</value>
+    </data>
+    <data name="EM_VOLUME_USER_QUOTA_SIZE_LESS_THAN_VOLUME_QUOTA" xml:space="preserve">
+        <value>User quota must be less than or equal to volume quota.</value>
+    </data>
+    <data name="EM_SMB_ID_MAP_RANGE_GRATER_THAN_0" xml:space="preserve">
+        <value>ID map range must be at least 1.</value>
+    </data>
+    <data name="EM_S3_OBJECT_NAME_NOT_FOUND" xml:space="preserve">
+        <value>Please enter object name.</value>
+    </data>
+    <data name="EM_S3_OBJECT_TAGGING_TAG_KEY_NOT_FOUND" xml:space="preserve">
+        <value>Please enter tag key.</value>
+    </data>
+    <data name="EM_S3_OBJECT_TAGGING_TAG_VALUE_NOT_FOUND" xml:space="preserve">
+        <value>Please enter tag value.</value>
+    </data>
+    <data name="UL_S3_OBJECT_METADATA" xml:space="preserve">
+        <value>Metadata</value>
+    </data>
+    <data name="UL_S3_OBJECT_TAGGING" xml:space="preserve">
+        <value>Tagging</value>
+    </data>
+    <data name="UL_S3_BUCKET_LIFECYCLE" xml:space="preserve">
+        <value>Life Cycle</value>
+    </data>
+    <data name="UL_S3_TAB_SERVER_SETTING" xml:space="preserve">
+        <value>IfsS3 Node</value>
+    </data>
+    <data name="UL_S3_TAB_USAGE" xml:space="preserve">
+        <value>IfsS3 Usage</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_APPLY_TYPE" xml:space="preserve">
+        <value>Global Apply</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_APPLY_TYPE_GLOBAL" xml:space="preserve">
+        <value>Global</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_APPLY_TYPE_INDIVIDUAL" xml:space="preserve">
+        <value>Individual</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_REMOVE_TYPE" xml:space="preserve">
+        <value>File Remove</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_REMOVE_TYPE_DISABLE" xml:space="preserve">
+        <value>Enable</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_REMOVE_TYPE_ENABLE" xml:space="preserve">
+        <value>Disable</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_USE_TYPE" xml:space="preserve">
+        <value>Use</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_USE_TYPE_NOT_USE" xml:space="preserve">
+        <value>Not Use</value>
+    </data>
+    <data name="UL_IFSSYNC_JOB_USE_TYPE_USE" xml:space="preserve">
+        <value>Use</value>
+    </data>
+    <data name="UL_BUTTON_USER_AUTHENTICATION_ENABLE" xml:space="preserve">
+        <value>Enable Authentication</value>
+    </data>
+    <data name="UL_BUTTON_USER_AUTHENTICATION_DISABLE" xml:space="preserve">
+        <value>Disable Authentication</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_SENDER_CONFIGURATION" xml:space="preserve">
+        <value>Sender Configuration</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_SENDER_CONFIGURATION_LIST" xml:space="preserve">
+        <value>Sender Config List</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_SENDER_CONFIGURATION_VIEW" xml:space="preserve">
+        <value>Sender Config View</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_SENDER_CONFIGURATION_ADD" xml:space="preserve">
+        <value>Add Sender Config</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_SENDER_CONFIGURATION_REMOVE" xml:space="preserve">
+        <value>Remove Sender Config</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_IFSSYNC_SENDER_CONFIGURATION_UPDATE" xml:space="preserve">
+        <value>Update Sender Config</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_IFSSYNC_SENDER_CONFIG_REMOVE" xml:space="preserve">
+        <value>Are you sure you want to remove sender config?</value>
+    </data>
+    <data name="EC_S3_FOLDER_CANNOT_SHARED" xml:space="preserve">
+        <value>ECS3062</value>
+    </data>
+    <data name="EM_S3_FOLDER_CANNOT_SHARED" xml:space="preserve">
+        <value>Folders cannot be shared.</value>
+    </data>
+    <data name="UL_S3_BUCKET_FILE_SHARE" xml:space="preserve">
+        <value>File Share</value>
+    </data>
+    <data name="UL_BUTTON_S3_CREATE_SHARE_URL" xml:space="preserve">
+        <value>Create Share Url</value>
+    </data>
+    <data name="EM_S3_ACCESS_IP_REQUIRE_USER_ID" xml:space="preserve">
+        <value>Please enter user ID.</value>
+    </data>
+    <data name="EM_S3_ACCESS_IP_REQUIRE_TENANT_ID" xml:space="preserve">
+        <value>Please enter TENANT ID.</value>
+    </data>
+    <data name="EM_S3_ACCESS_IP_REQUIRE_IP_ADDRESS" xml:space="preserve">
+        <value>Please enter IP Address.</value>
+    </data>
+  <data name="EM_S3_ACCESS_IP_REQUIRE_BUCKET_NAME" xml:space="preserve">
+        <value>Please enter Bucket Name.</value>
+    </data>
+    <data name="EM_S3_ACCESS_IP_REQUIRE_REG_NAME" xml:space="preserve">
+        <value>Please enter register name.</value>
+    </data>
+    <data name="UL_S3_TAB_ACCESS_IP" xml:space="preserve">
+        <value>S3 Access IP</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_S3_ACCESS_IP_REMOVE" xml:space="preserve">
+        <value>Are you sure you want to delete ip address {{IpAddress}}?</value>
+    </data>
+    <data name="UL_COMMON__HA_ACTION" xml:space="preserve">
+        <value>HA Status</value>
+    </data>
+    <data name="UL_COMMON__HA_ACTION_INIT" xml:space="preserve">
+        <value>Initializing</value>
+    </data>
+    <data name="UL_COMMON__HA_ACTION_ACTIVE" xml:space="preserve">
+        <value>Active</value>
+    </data>
+    <data name="UL_COMMON__HA_ACTION_STANDBY" xml:space="preserve">
+        <value>Standby</value>
+    </data>
+    <data name="UL_COMMON__HA_ACTION_SYNC" xml:space="preserve">
+        <value>Syncing</value>
+    </data>
+    <data name="UL_COMMON__HA_ACTION_UNKNOWN" xml:space="preserve">
+        <value>Unknown</value>
+    </data>
+    <data name="UL_COMMON__SERVER_GROUP_MODE" xml:space="preserve">
+        <value>Server Group Mode</value>
+    </data>
+    <data name="UL_COMMON__SERVER_GROUP_MODE_SINGLE" xml:space="preserve">
+        <value>Single</value>
+    </data>
+    <data name="UL_COMMON__SERVER_GROUP_MODE_LOAD_BALANCE" xml:space="preserve">
+        <value>HA</value>
+    </data>
+    <data name="EM_SYSTEM_SERVER_GROUP_REQUIRE_NAME" xml:space="preserve">
+        <value>Please enter name.</value>
+    </data>
+    <data name="EC_SYSTEM_SERVER_GROUP_SERVER_TYPE_NOT_MATCH" xml:space="preserve">
+        <value>CSSG001</value>
+    </data>
+    <data name="EM_SYSTEM_SERVER_GROUP_SERVER_TYPE_NOT_MATCH" xml:space="preserve">
+        <value>The server type does not match the server group type.</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3" xml:space="preserve">
+        <value>IFSS3</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3_LIST" xml:space="preserve">
+        <value>List IFSS3</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3_ADD" xml:space="preserve">
+        <value>Add IFSS3</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3_UPDATE" xml:space="preserve">
+        <value>Update IFSS3</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3_REMOVE" xml:space="preserve">
+        <value>Remove IFSS3</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3_START" xml:space="preserve">
+        <value>Start/Load IFSS3</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_STORAGE_S3_VIEW" xml:space="preserve">
+        <value>View IFSS3</value>
+    </data>
+    <data name="EC_S3_CONFIG_FILE_PERMISSION_DENIED" xml:space="preserve">
+        <value>ECS3101</value>
+    </data>
+    <data name="EM_S3_CONFIG_FILE_PERMISSION_DENIED" xml:space="preserve">
+        <value>You do not have permission to the configuration file.</value>
+    </data>
+    <data name="UL_S3_SERVICE_SERVER_GROUP_STEP_SELECT_NODE" xml:space="preserve">
+        <value>Node Selection</value>
+    </data>
+    <data name="UL_S3_SERVICE_SERVER_GROUP_STEP_CONFIG" xml:space="preserve">
+        <value>Server Configuration</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER" xml:space="preserve">
+        <value>Load Balancer</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY" xml:space="preserve">
+        <value>HA Proxy</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY_LIST" xml:space="preserve">
+        <value>HA Proxy List</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY_VIEW" xml:space="preserve">
+        <value>View HA Proxy</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY_ADD" xml:space="preserve">
+        <value>Add HA Proxy</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY_UPDATE" xml:space="preserve">
+        <value>Update HA Proxy</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY_REMOVE" xml:space="preserve">
+        <value>Remove HA Proxy</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_LOAD_BALANCER_HA_PROXY_START" xml:space="preserve">
+        <value>Start/Stop HA Proxy</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_REMOVE_SYSTEM_SERVER_GROUP" xml:space="preserve">
+        <value>Are you sure you want to delete server group {{Name}}?</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_REMOVE_SYSTEM_SERVER_GROUP" xml:space="preserve">
+        <value>Delete Server Group</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_START_SERVER_IN_GROUP" xml:space="preserve">
+        <value>서버 그룹 {{Name}} 내의 모든 서버를 시작 하시겠습니까?</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_START_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Start Server Group</value>
+    </data>
+    <data name="SM_SYSTEM_START_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Started the servers in the server group.</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_RESTART_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Do you want to restart all servers in server group {{Name}}?</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_RESTART_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Restart Server Group</value>
+    </data>
+    <data name="SM_SYSTEM_RESTART_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Restarted the servers in the server group.</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_STOP_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Do you want to stop all servers in server group {{Name}}?</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_STOP_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Stop Server Group</value>
+    </data>
+    <data name="SM_SYSTEM_STOP_SERVER_IN_GROUP" xml:space="preserve">
+        <value>Stopped the servers in the server group.</value>
+    </data>
+    <data name="SM_SYSTEM_AVAILABLE_SERVER_GROUP_NAME" xml:space="preserve">
+        <value>This server group name can be used.</value>
+    </data>
+    <data name="SM_SYSTEM_RELOAD_SERVER_CONFIG_IN_GROUP" xml:space="preserve">
+        <value>The settings of the servers in the server group were loaded and applied.</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_REMOVE_SYSTEM_SERVER_NODE" xml:space="preserve">
+        <value>Are you sure you want to delete server group node {{Name}}?</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_REMOVE_SYSTEM_SERVER_NODE" xml:space="preserve">
+        <value>Delete Server Group Node</value>
+    </data>
+    <data name="SM_SYSTEM_STOP_SERVER_NODE" xml:space="preserve">
+        <value>{{ Ip }} server stopped.</value>
+    </data>
+    <data name="SM_SYSTEM_START_SERVER_NODE" xml:space="preserve">
+        <value>{{ Ip }} server started.</value>
+    </data>
+    <data name="SM_SYSTEM_RESTART_SERVER_NODE" xml:space="preserve">
+        <value>{{ Ip }} server restarted.</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_REMOVE_HA_PROXY_LISTEN" xml:space="preserve">
+        <value>Are you sure you want to delete {{Name}}?</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_REMOVE_HA_PROXY_LISTEN_SERVER" xml:space="preserve">
+        <value>Are you sure you want to delete {{ Host }} ({{ IpAddress }})?</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_REMOVE_HA_PROXY_LISTEN_SERVER" xml:space="preserve">
+        <value>Delete Listen Server</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_REMOVE_HA_PROXY_LISTEN" xml:space="preserve">
+        <value>Delete Listen</value>
+    </data>
+    <data name="UL_BUTTON_LISTEN_SERVER_GROUP_ADD" xml:space="preserve">
+        <value>Add Server Group</value>
+    </data>
+    <data name="EC_S3_SUCH_OBJECT_NOT_FOUND" xml:space="preserve">
+        <value>ECS3006</value>
+    </data>
+    <data name="EM_S3_SUCH_OBJECT_NOT_FOUND" xml:space="preserve">
+        <value>Such object doesn't exist.</value>
+    </data>
+    <data name="UL_S3_VERSIONS" xml:space="preserve">
+        <value>Versions</value>
+    </data>
+    <data name="UL_BUTTON_COMMON_RESTORE" xml:space="preserve">
+        <value>Restore</value>
+    </data>
+    <data name="UL_CONFIRM_TITLE_REMOVE_S3_OBJECT_VERSION" xml:space="preserve">
+        <value>Delete S3 Object Version</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_REMOVE_S3_OBJECT_VERSION" xml:space="preserve">
+        <value>Do you want to remove S3 Object Version ({{ VersionId }})?</value>
+    </data>
+    <data name="UL_S3_SETTINGS_BUCKET_POLICY" xml:space="preserve">
+        <value>Bucket Policy</value>
+    </data>
+    <data name="UL_COMMON__THIS_FUNCTION_IS_NOT_SUPPORTED" xml:space="preserve">
+        <value>This feature is not supported not yet.</value>
+    </data>
+    <data name="UL_SYSTEM_REMOVE_HAPROXY" xml:space="preserve">
+        <value>Remove HaProxy</value>
+    </data>
+    <data name="UL_SYSTEM_START_HAPROXY" xml:space="preserve">
+        <value>Start HaProxy</value>
+    </data>
+    <data name="UL_SYSTEM_STOP_HAPROXY" xml:space="preserve">
+        <value>Stop HaProxy</value>
+    </data>
+    <data name="UL_COMMON__CLAIM_NAME_CSSP_SYSTEMS_SYSTEM_HAPROXY_START" xml:space="preserve">
+        <value>Start/Stop HaProxy</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_STOP_HAPROXY" xml:space="preserve">
+        <value>Do you want to stop HaProxy ({{ Ip }})?</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_START_HAPROXY" xml:space="preserve">
+        <value>Do you want to start HaProxy ({{ Ip }})?</value>
+    </data>
+    <data name="UL_CONFIRM_MESSAGE_REMOVE_HAPROXY" xml:space="preserve">
+        <value>Do you want to remove HaProxy ({{ Ip }})?</value>
+    </data>
+	<data name="EM_S3DR_INVALID_DUMP" xml:space="preserve">
+		<value>Invalid Value(Dump).</value>
+		<comment>유효하지 않은 Dump 값 입니다.</comment>
+	</data>
+    <data name="EM_S3DR_REQUIRE_USER_ID" xml:space="preserve">
+        <value>Please enter user ID.</value>
+    </data>
+    <data name="EM_S3DR_ACCOUNT_NOT_FOUND" xml:space="preserve">
+		<value>Does not found User .</value>
+		<comment>유저 정보를 찾을 수 없습니다.</comment>
+    </data>
+	<data name="EM_S3DR_TARGET_NOT_FOUND" xml:space="preserve">
+		<value>This Target is not found.</value>
+		<comment>해당 타겟을 찾을 수 없습니다.</comment>
+	</data>
+	<data name="UL_S3DR" xml:space="preserve">
+		<value>S3DR</value>
+		<comment>S3DR</comment>
+	</data>
+	<data name="UL_S3DR_SOURCE" xml:space="preserve">
+		<value>S3DR Source</value>
+		<comment>S3DR 소스</comment>
+	</data>
+	<data name="UL_S3DR_SOURCE_VIEW" xml:space="preserve">
+		<value>View S3DR Source</value>
+		<comment>S3DR 소스 조회</comment>
+	</data>
+	<data name="UL_S3DR_TARGET" xml:space="preserve">
+		<value>S3DR Target</value>
+		<comment>S3DR 타겟</comment>
+	</data>
+	<data name="UL_S3DR_TARGET_LIST" xml:space="preserve">
+		<value>List S3DR Target</value>
+		<comment>S3DR 타겟 목록</comment>
+	</data>
+	<data name="UL_S3DR_TARGET_ADD" xml:space="preserve">
+		<value>Add S3DR Target</value>
+		<comment>S3DR 타겟 추가</comment>
+	</data>
+	<data name="UL_S3DR_TARGET_REMOVE" xml:space="preserve">
+		<value>Remove S3DR Target</value>
+		<comment>S3DR 타겟 삭제</comment>
+	</data>
+	<data name="UL_S3DR_TARGET_APPLY" xml:space="preserve">
+		<value>Apply S3DR Target</value>
+		<comment>S3DR 타겟 적용</comment>
+	</data>
+	<data name="UL_S3DR_USERLIST" xml:space="preserve">
+		<value>S3DR User List</value>
+		<comment>S3DR User List</comment>
+	</data>
+	<data name="UL_S3DR_USERLIST_LIST" xml:space="preserve">
+		<value>List S3DR User List</value>
+		<comment>S3DR User List 목록</comment>
+	</data>
+  <data name="UL_S3DR_ADD_USER_LIST" xml:space="preserve">
+		<value>Add S3DR User</value>
+		<comment>S3DR 유저 등록</comment>
+	</data>
+	<data name="UL_S3DR_USERLIST_ADD" xml:space="preserve">
+		<value>Add S3DR User List</value>
+		<comment>S3DR User List 추가</comment>
+	</data>
+	<data name="UL_S3DR_USERLIST_REMOVE" xml:space="preserve">
+		<value>Remove S3DR User List</value>
+		<comment>S3DR User List 삭제</comment>
+	</data>
+	<data name="UL_S3DR_USERLIST_START" xml:space="preserve">
+		<value>Start/Stop S3DR User List</value>
+		<comment>S3DR User List 시작/중지</comment>
+	</data>
+	<data name="UL_S3DR_START_SERVICE" xml:space="preserve">
+		<value>Start S3DR Service</value>
+		<comment>S3DR Service 시작</comment>
+	</data>
+	<data name="UL_S3DR_STOP_SERVICE" xml:space="preserve">
+		<value>Stop S3DR Service</value>
+		<comment>S3DR Service 중지</comment>
+	</data>
+	<data name="UL_S3DR_ADD_TARGET" xml:space="preserve">
+		<value>Add S3DR Target</value>
+		<comment>S3DR Target 등록</comment>
+	</data>
+	<data name="UL_S3DR_REMOVE_TARGET" xml:space="preserve">
+		<value>Remove S3DR Target</value>
+		<comment>S3DR Target 삭제</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_S3DR_USER" xml:space="preserve">
+		<value>Do you want to remove S3DR User ({{ TenantId }}, {{ UserId }})?</value>
+		<comment>S3DR User ({{ TenantId }}, {{ UserId }})를 삭제 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_RESUME_S3DR_USER" xml:space="preserve">
+		<value>Do you want to resume S3DR User ({{ TenantId }}, {{ UserId }})?</value>
+		<comment>S3DR User ({{ TenantId }}, {{ UserId }})를 다시 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_PAUSE_S3DR_USER" xml:space="preserve">
+		<value>Do you want to pause S3DR User ({{ TenantId }}, {{ UserId }})?</value>
+		<comment>S3DR User ({{ TenantId }}, {{ UserId }})를 일시정지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_START_S3DR_SERVICE" xml:space="preserve">
+		<value>Do you want to start S3DR Service ({{ Ip }})?</value>
+		<comment>S3DR Service ({{ Ip }})를 시작 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_STOP_S3DR_SERVICE" xml:space="preserve">
+		<value>Do you want to stop S3DR Service ({{ Ip }})?</value>
+		<comment>S3DR Service ({{ Ip }})를 중지 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_ADD_S3DR_TARGET" xml:space="preserve">
+		<value>Do you want to add S3DR Target ({{ Name }})?</value>
+		<comment>S3DR Target ({{ Name }})을 등록 하시겠습니까?</comment>
+	</data>
+	<data name="UL_CONFIRM_MESSAGE_REMOVE_S3DR_TARGET" xml:space="preserve">
+		<value>Do you want to remove S3DR Target ({{ Name }})?</value>
+		<comment>S3DR Target ({{ Name }})을 삭제 하시겠습니까?</comment>
+	</data>
+</root>

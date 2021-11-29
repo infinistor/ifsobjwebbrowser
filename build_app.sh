@@ -1,0 +1,1 @@
+dotnet publish .\WebApp\WebApp.csproj  -c Release -o .\publish\csspfront

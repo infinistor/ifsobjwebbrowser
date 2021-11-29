@@ -1,0 +1,50 @@
+<div class="common-grid-wrapper">
+	<kendo-grid [data]="grid.gridView"
+							[height]="grid.height"
+							[resizable]="grid.isUseResize"
+							[kendoGridSelectBy]="itemId"
+							[(selectedKeys)]="grid.selectedKeys"
+							[scrollable]="'virtual'"
+							[rowHeight]="35"
+							[selectable]="grid.selectableSettings"
+							[pageSize]="grid.pageSize"
+							[skip]="grid.skip"
+							[navigable]="false"
+							(selectedKeysChange)="onSelectedKeysChange($event)"
+							(selectionChange)="selectionChange($event)"
+							(pageChange)="pageChange($event)">
+
+		<!--<kendo-grid-checkbox-column [width]="40" *ngIf="grid.isUseCheckboxSelect">
+				<ng-template kendoGridHeaderTemplate let-dataItem *ngIf="this.grid.selectableSettings.mode == 'multiple'">
+						<input type="checkbox" name="selectAll" (change)="selectAllRows($event)" [checked]="allRowsSelected" />
+				</ng-template>
+		</kendo-grid-checkbox-column>-->
+		<kendo-grid-checkbox-column [width]="40" showSelectAll="grid.selectableSettings == 'multiple' && grid.isShowSelectAll" *ngIf="grid.isUseCheckboxSelect"></kendo-grid-checkbox-column>
+		<kendo-grid-column [width]="75" [title]="'UL_COMMON__NUMBER' | translate" *ngIf="grid.isUseSequence">
+			<ng-template kendoGridCellTemplate let-rowIndex="rowIndex">
+				<span>{{ grid.gridView.total - rowIndex }}</span>
+			</ng-template>
+		</kendo-grid-column>
+
+		<kendo-grid-column *ngFor="let column of grid.columns" [width]="column.width" [title]="column.title | translate" [field]="column.field" [format]="column.format" [sortable]="column.sortable === undefined || column.sortable">
+			<ng-template *ngIf='column.format === ""' kendoGridCellTemplate let-dataItem>
+				<div [innerHTML]="dataItem | dynamicPipe : column.pipe : column.pipeEnumTranslateClass : column.field | safeHtml"></div>
+			</ng-template>
+
+			<!--디테일그리드를 사용할 경우-->
+			<div *ngIf="grid.isUseDetailGrid">
+				<div *kendoGridDetailTemplate="let dataItem">
+					<common-kendo-grid-detail [datilGrid]="grid.detailGrid" [items]="dataItem['Items']">
+					</common-kendo-grid-detail>
+				</div>
+			</div>
+		</kendo-grid-column>
+		<ng-template kendoGridNoRecordsTemplate></ng-template>
+	</kendo-grid>
+	<div *ngIf="!isLoading && grid.gridView.total == 0" class="common-grid-no-record-layer">
+		<div>No records available.</div>
+	</div>
+	<loading [isActivate]="isLoading"></loading>
+</div>
+
+

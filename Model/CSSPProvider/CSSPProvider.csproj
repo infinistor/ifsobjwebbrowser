@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="AWSSDK.S3" Version="3.5.0.9" />
+	<PackageReference Include="CsvHelper" Version="22.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="1.1.0" />
+    <PackageReference Include="MTLib.Core" Version="3.0.4" />
+    <PackageReference Include="MTLib.AspNetCore" Version="3.0.10" />
+    <PackageReference Include="MTLib.EntityFramework" Version="3.0.4" />
+    <PackageReference Include="MTLib.HttpClient" Version="3.0.2" />
+    <PackageReference Include="MTLib.NetworkData" Version="3.0.1" />
+    <PackageReference Include="MTLib.Reflection" Version="3.0.3" />
+    <PackageReference Include="nsoftware.IPWorksSSH" Version="20.0.7397" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSSPProviderInterfaces\CSSPProviderInterfaces.csproj" />
+  </ItemGroup>
+
+</Project>

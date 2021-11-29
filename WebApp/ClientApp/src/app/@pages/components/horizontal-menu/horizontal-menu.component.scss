@@ -1,0 +1,36 @@
+.horizontal-app-menu {
+  .menu-bar > ul {
+    flex-flow: row;
+
+    i {
+      vertical-align: middle;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+
+    .menu-popup {
+      display: inline-block !important;
+    }
+  }
+
+  .ghost-nav-dropdown {
+    height: 0;
+  }
+
+  .ghost-ul {
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .horizontal-menu-backdrop-dekstop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

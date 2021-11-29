@@ -1,0 +1,150 @@
+<div *ngIf="_type === 'widget'" class="card social-card share {{_additionalClasses}}" data-social="item">
+  <div class="card-header ">
+    <h5 class="{{_titleClass}} pull-left fs-12">{{_title}}
+      <i class="fa fa-circle text-complete fs-11"></i>
+    </h5>
+    <div class="pull-right small hint-text">
+      {{_comments}}
+      <i class="fa fa-comment-o"></i>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="card-description">
+    <h3>{{_body}}</h3>
+    <ng-template [ngTemplateOutlet]="CustomBody"></ng-template>
+  </div>
+  <div class="card-footer clearfix">
+    <div class="pull-left">via
+      <span class="{{_titleClass}}">{{_source}}</span>
+    </div>
+    <div class="pull-right hint-text">
+      {{_timestamp}}
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+
+<div *ngIf="_type == 'text'" class="card social-card share  {{_additionalClasses}}">
+  <!-- START ITEM -->
+  <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+  </div>
+  <div class="card-header clearfix">
+    <div class="user-pic">
+      <ng-template [ngTemplateOutlet]="AuthorAvatar"></ng-template>
+    </div>
+    <h5>{{_author}}</h5>
+    <h6>{{_activity}}
+      <span class="location semi-bold">
+        <i class="fa fa-map-marker"></i> {{_location}}</span>
+    </h6>
+  </div>
+  <div class="card-description">
+    <ng-template [ngTemplateOutlet]="CustomBody"></ng-template>
+    <div class="via">{{_source}}</div>
+  </div>
+  <div *ngIf="_image.length > 0" class="card-content">
+      <ul class="buttons ">
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-expand"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+      </ul>
+      <img alt="Social post" src="{{_image}}">
+  </div>
+  <div *ngIf="_image.length > 0" class="card-footer clearfix">
+      <div class="time">{{_timestamp}}</div>
+      <ul class="reactions">
+        <li>
+          <a href="javascript:void(0)">{{_comments}}
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">{{_likes}}
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  <!-- END ITEM -->
+</div>
+
+<div  *ngIf="_type == 'image'" class="card social-card share {{_additionalClasses}}">
+    <!-- START ITEM -->
+    <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+    </div>
+    <div class="card-content">
+      <ul class="buttons ">
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-expand"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+      </ul>
+      <img alt="Quote" src="{{_image}}">
+    </div>
+    <div class="card-description">
+      <p>{{_body}}</p>
+      <ng-template [ngTemplateOutlet]="CustomBody"></ng-template>
+    </div>
+    <div class="card-footer clearfix">
+      <div class="time">{{_timestamp}}</div>
+      <ul class="reactions">
+        <li>
+          <a href="javascript:void(0)">{{_comments}}
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">{{_likes}}
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-header clearfix last">
+      <div class="user-pic">
+        <ng-template [ngTemplateOutlet]="AuthorAvatar"></ng-template>
+      </div>
+      <h5>{{_author}}</h5>
+      <h6>{{_activity}}</h6>
+    </div>
+    <!-- END ITEM -->
+  </div>
+
+
+
+  <div  *ngIf="_type == 'status'" class="card social-card status {{_additionalClasses}}">
+      <!-- START ITEM -->
+      <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+      </div>
+      <h5>{{_author}} {{_activity}}
+        <span class="hint-text">{{_timestamp}}</span>
+      </h5>
+      <h2>{{_body}}</h2>
+      <ul class="reactions">
+        <li>
+          <a href="javascript:void(0)">{{_comments}}
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">{{_likes}}
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- END ITEM -->
+    </div>

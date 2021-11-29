@@ -1,0 +1,34 @@
+$disabled-color:#ddd;
+$zindex-picker:777;
+.time-picker-panel {
+  z-index: $zindex-picker;
+  position: absolute;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid $form-control-border-color;
+  &-input {
+    display: none;
+  }
+  .btn.btn-link{
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 12px;
+    line-height: 17px;
+    &.active{
+      background-color: $color-primary !important;
+      color:#fff;
+    }
+    &.disabled{
+      background-color: $disabled-color !important;
+    }
+    &:hover{
+      background-color: $color-master-lighter;
+    }
+  }
+  .select-panel{
+    max-height: 144px;
+    overflow: auto;
+    position: relative;
+    flex:1;
+  }
+}
+

@@ -1,0 +1,9 @@
+<div *ngIf="_enableHorizontalContainer; else determineBlock" class="container {{_extraHorizontalClass}}">
+  <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+</div>
+<ng-template #determineBlock>
+  <div class="container-fluid container-fixed-lg {{_extraClass}}">
+    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+  </div>
+</ng-template>
+<ng-template #contentTpl><ng-content></ng-content></ng-template>

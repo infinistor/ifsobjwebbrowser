@@ -1,0 +1,43 @@
+
+.icon-thumbnail {
+    display: inline-block;
+    background: #21252d;
+    height: 40px;
+    width: 40px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    left: 0;
+    float: right;
+    margin-right: 14px;
+    color: #788195;
+    font-size: 12px;
+    font-weight: bold;
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.05,.74,.27,.99);
+    transition: transform .4s cubic-bezier(.05,.74,.27,.99);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1e3;
+    font-family: segoe ui,helvetica neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-weight: 700;
+    & > svg {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        &.feather{
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+}
+
+.secondary-sidebar .main-menu {
+  & > li > a {
+    color: rgba(98,98,98,.6);
+  }
+}

@@ -1,0 +1,239 @@
+$box-shadow-base : none;
+$disabled-bg: $color-master-light;
+pg-datepicker, pg-timepicker{
+  flex: 1;
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+    background: transparent;
+    color:$color-master;
+  }
+}
+.pg-calendar{
+  padding: 15px;
+  max-width: 250px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid $form-control-border-color;
+  .date-panel{
+    position: relative;
+    .card-header{
+      min-height: auto;
+    }
+    .overlay-view{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      border:0;
+      margin: 0;
+      z-index: 1;
+      .card-header{
+        padding: 0;
+        a:not(.btn){
+          color:$color-master !important;
+          opacity: .7;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+      pg-calendar-view, .pg-calendar-view{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 10px;
+      }
+      .grid-cell{
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        .date{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          height: 100%;
+          &:hover{
+            background: transparent;
+            color: inherit;
+            .value{
+              background-color: $color-master-light;
+              border-radius: 3px;
+              margin: 10px;
+            }            
+          }
+        }
+        &.selected-cell .date{
+          background: transparent;
+          color: inherit;
+          .value{
+            background-color: $color-primary;
+            color: #fff;
+            border-radius: 3px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+  .calendar-header{
+    width: 100%;
+  }
+  .calendar-body{
+    position: relative;
+    .table tbody tr td{
+      padding:0;
+    }
+    .table thead tr th{
+      padding-top:15px;
+      padding-bottom: 5px;
+      padding-left: 0;
+      padding-right: 0;
+      border:0;
+    }
+    .table thead tr th:first-child{
+      padding-left: 0 !important;
+    }
+    pg-timepicker-inner{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      .time-picker-panel{
+        background: #fff;
+        z-index: 777;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        box-shadow: none;
+        border:0;
+        .select-panel{
+          max-height: 100%;
+        }
+        .time-picker-inner{
+          height: 100%;
+          .time-picker-panel-combobox{
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .my-select{}
+  .cell{
+    border: 0;
+    cursor: pointer;
+    .date{
+      text-align: center;
+      border-radius: 2px;
+      transition: all .2s ease;
+      color: $color-master;
+      .value{
+        padding: 6px 8px;
+      }
+    }
+    &:hover{
+      .date{
+        background-color: $color-master-light;
+        color: $color-master-darker;
+      }
+    }
+    &.disabled-cell{
+      background-color: $color-master-lighter;
+      &:hover{
+        cursor: no-drop;
+        .date{
+          background-color: $color-master-lighter !important;
+          color: rgba($color-master,.5) !important;
+        }
+      }
+      .date{
+        color: rgba($color-master,.5)
+      }
+    }
+    &.last-month-cell,&.next-month-btn-day{
+      .date{
+        color: rgba($color-master,.5)
+      }
+      &:hover{
+        .date{
+          color: $color-master;
+        }
+      } 
+    }
+    &.selected-day,&.selected-cell{
+      .date{
+      background-color: $color-primary;
+      color:#fff;
+      }
+    }
+  }
+  .wrap-scroller{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    .horizontal-dates{
+      display: flex;
+      flex-wrap: nowrap;
+
+      flex-direction: column;
+      & > div{
+        transition: transform .2s ease-in;
+      }
+      .month-select{
+        flex-basis: 80px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+        color:$color-master;
+        opacity: 0.7;
+        transition: all .2s ease;
+        &:hover{
+          opacity: 1;
+        }
+        cursor: pointer;
+        &.selected-date{
+          color:$color-master-darker;
+          opacity: 1;
+          border-radius: 3px;
+          &:hover{
+            background: $color-master-light;
+          }
+        }
+      }
+    }
+  }
+  .year-select{
+    font-size: 12px;
+    color: $color-master;
+    opacity: 0.7;
+    transition: all .2s ease;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    &:hover{
+      opacity: 1;
+      background: $color-master-light;
+    }
+    cursor: pointer;
+  }
+  .month-panel-year-select-arrow{
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.calendar-range{
+  width: 470px;
+  max-width: 470px;
+  .pg-calendar-range-panel{
+    display: flex;
+  }
+}

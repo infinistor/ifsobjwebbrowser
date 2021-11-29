@@ -1,0 +1,226 @@
+.upload-list{
+    .list-group-item{
+      padding: 7px 5px;
+      border: 0;
+      font-size: 12px;
+    }
+    .list-group-item-inner{
+      width: 100%;
+      display: flex;
+    }
+    .upload-error{
+      color:$color-danger;
+    }
+    .progress-circle-indeterminate{
+      width: 20px;
+      height: 20px;
+    }
+    i{
+      display:flex;
+      &:before{
+        align-self:center;
+      }
+    }
+    .img-thumbnail{
+      width: 48px;
+      height: 48px;
+      img{
+        width: 100%;
+      }
+    }
+    .list-item-name{
+      align-self: center;
+      margin-left:10px;
+    }
+    .item-progress{
+      width: 100%;
+      display: flex;
+      margin-top: 14px;
+      height: 3px;
+      flex-direction: column;
+    }
+  }
+  
+  .dropzone{
+    .upload-btn{
+      border: 1px solid rgba(0,0,0,0.03);
+      min-height: 360px;
+      background: rgba(0,0,0,0.03);
+      &:focus{
+        outline: 0;
+      }
+    }
+    .upload-drag-container{
+      display: flex;
+      width: 100%;
+      height: 360px;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  .upload-select-picture-card{
+    border: 1px dashed $color-master-light;
+    width: 96px;
+    height: 96px;
+    border-radius: 4px;
+    background-color:$color-master-lightest;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: border-color .3s ease;
+    transition: border-color .3s ease;
+    display: inline-flex;
+    vertical-align: top;
+    margin:5px;
+    .upload{
+      width: 100%;
+      height: 100%;
+      &:focus{
+        outline: 0;
+       }
+    }
+    &:hover{
+      border-color:$color-master;
+    }
+    &:focus{
+     outline: 0;
+    }
+  }
+
+//Gallery List View
+.upload-list-picture{
+  margin-top: 10px;
+  .list-group-item{
+    border: 1px solid $form-control-border-color;
+    margin-bottom: 5px;
+  }
+  .img-thumbnail{
+    border: 0;
+    overflow: hidden;
+  }
+}
+
+//Gallery View Grid
+.upload-list-picture-card {
+  display: inline-flex;
+  flex-direction: row;
+  .list-group-item{
+    padding: 5px 5px;
+    border: 0;
+    margin: 4px;
+    font-size: 12px;
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid $form-control-border-color;
+    .list-group-item-inner{
+      position: relative;
+    }
+    .list-item-name{
+      display: none;
+    }
+    &.upload-uploading{
+      justify-content: flex-start;
+      .upload-list-item-uploading-text{
+        display: none;
+      }
+      .pg-close{
+        opacity: 0.5;
+      }
+      .item-progress{
+        margin: 0;
+        flex: 1;
+        height: auto;
+        justify-content: center;
+      }
+    }
+  }
+
+  .upload-list-item-actions{
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      bottom: 0;
+      top: 0;
+      background: rgba(0,0,0,0.3);
+      transition: opacity 0.2s ease;
+      border-radius: 3px;
+      a,i{
+          align-self: center;
+          padding: 0 4px;
+          font-size: 14px;
+          color:rgba(255,255,255,.76);
+          cursor: pointer;
+      }
+  }
+  .img-thumbnail{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+  }
+  .list-group-item{
+      &:hover{
+          .upload-list-item-actions{
+              opacity: 1;
+              visibility: visible;
+          }
+      }
+  }
+}
+.pic-placeholder{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  &:focus{
+    outline: 0;
+  }
+}
+  @keyframes uploadAnimateIn {
+    from {
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+    }
+  }
+  
+  @keyframes uploadAnimateOut {
+    to {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes uploadAnimateInlineIn {
+    from {
+      width: 0;
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+    }
+  }
+  
+  @keyframes uploadAnimateInlineOut {
+    to {
+      width: 0;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+    }
+  }
+  

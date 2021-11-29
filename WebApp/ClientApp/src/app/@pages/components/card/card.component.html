@@ -1,0 +1,51 @@
+
+<div class="card card-{{_type}} {{_additionalClasses}}" *ngIf="!_close_card"
+    [class.card-collapsed]="_isCollapsed"
+    [class.card-maximized]="_isMaximixed"
+    #hostContent>
+    <div class="card-header {{_extraHeaderClass}}">
+        <div class="card-title">
+            <ng-template [ngTemplateOutlet]="CardTitle"></ng-template>
+        </div>
+        <div class="card-controls" *ngIf="_showTools == true">
+            <ul *ngIf="_minimalHeader == false; else minimalBlock">
+                <ng-template [ngTemplateOutlet]="CardExtraControls"></ng-template>
+                <li *ngIf="_toggle == true"><a href="javascript:void(0);" data-toggle class="card-collapse" (click)='toggle()'><i class="pg pg-arrow_maximize" [class.pg-arrow_minimize]="_isCollapsed"></i></a>
+                </li>
+                <li *ngIf="_refresh == true"><a href="javascript:void(0);" data-toggle class="card-refresh" (click)='refresh()'><i class="card-icon card-icon-refresh"></i></a>
+                </li>
+                <li *ngIf="_maximize == true"><a  href="javascript:void(0);" data-toggle class="card-maximize" (click)='maximize()'><i class="card-icon card-icon-maximize"></i></a>
+                </li>
+                <li *ngIf="_close == true"><a href="javascript:void(0);" data-toggle class="card-close" (click)='close()'><i class="card-icon card-icon-close"></i></a>
+                </li>
+            </ul>
+        <ng-template #minimalBlock>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" (click)='refresh()' class="card-refresh minimal" [class.refreshing]="_isLoading">
+                        <i #minimalCircleLoadingTrigger class="card-icon card-icon-refresh-lg-{{_refreshColor == 'light' ? 'white' : 'master'}}" [class.fade]="_isLoading"></i>
+                        <i #minimalCircleLoading
+                        class="card-icon-refresh-lg-white-animated" style="position: absolute;top:0;left:0" [class.active]="_isLoading"  [class.hide]="_isLoading != true"></i>
+                    </a>
+                </li>
+            </ul>
+        </ng-template>  
+        </div>
+    </div>
+    <div class="card-body {{_extraBodyClass}}" [@collapseState]="_isCollapsed == true ?'inactive':'active'">
+        <ng-content></ng-content>
+    </div>
+    <div *ngIf="_messageVisible == true" class="pgn-wrapper" data-position="top">
+        <div class="pgn pgn-bar push-on-sidebar-open">
+            <div class="alert alert-danger">
+                <span>{{_message}}</span><button class="close" (click)='alertDismiss()' type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="_messageVisible == true" class="card-progress" [style.backgroundColor] = "_minimalHeader ? 'rgba(0,0,0, 0.6)' : 'rgba(255, 255, 255, 0.8)'" style=" display: block;">
+
+    </div>
+    <div [@fadeAnimation]="_isLoading" class="card-progress"  [style.backgroundColor] = "_minimalHeader ? 'rgba(0,0,0, 0.6)' : 'rgba(255, 255, 255, 0.8)'" style="display: block;pointer-events: none">
+        <pg-progress *ngIf="_minimalHeader == false" type="{{_progressType}}" color="{{_progressColor}}" indeterminate="true" class=""></pg-progress>
+    </div>
+</div>

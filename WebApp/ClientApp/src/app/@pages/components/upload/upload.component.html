@@ -1,0 +1,42 @@
+<ng-template #list>
+    <pg-upload-list *ngIf="ShowUploadList"
+      [listType]="ListType"
+      [items]="FileList"
+      [icons]="ShowUploadList"
+      [onPreview]="Preview"
+      [onRemove]="onRemove"
+      [progressType]="progressType"></pg-upload-list>
+  </ng-template>
+  <ng-template #con><ng-content></ng-content></ng-template>
+  <ng-template #btn>
+    <div [ngClass]="_classList" [style.display]="ShowButton ? '' : 'none'">
+      <div pg-upload-btn #upload [options]="_btnOptions">
+        <ng-template [ngTemplateOutlet]="con"></ng-template>
+      </div>
+    </div>
+  </ng-template>
+  <ng-container *ngIf="Type === 'drag'; else select">
+    <div [ngClass]="_classList"
+        (drop)="fileDrop($event)"
+        (dragover)="fileDrop($event)"
+        (dragleave)="fileDrop($event)"
+        class="{{extraClass}}"
+        >
+        <div pg-upload-btn #upload [options]="_btnOptions" [classes]="['upload-btn']">
+          <div class="upload-drag-container">
+            <ng-template [ngTemplateOutlet]="con"></ng-template>
+          </div>
+        </div>
+    </div>
+    <ng-template [ngTemplateOutlet]="list"></ng-template>
+  </ng-container>
+  <ng-template #select>
+    <ng-container *ngIf="ListType === 'picture-card'; else pic">
+      <ng-template [ngTemplateOutlet]="list"></ng-template>
+      <ng-template [ngTemplateOutlet]="btn"></ng-template>
+    </ng-container>
+  </ng-template>
+  <ng-template #pic>
+    <ng-template [ngTemplateOutlet]="btn"></ng-template>
+    <ng-template [ngTemplateOutlet]="list"></ng-template>
+  </ng-template>

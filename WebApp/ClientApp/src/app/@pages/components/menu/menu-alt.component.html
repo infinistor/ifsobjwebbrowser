@@ -1,0 +1,48 @@
+<ul class="main-menu">
+    <li *ngFor="let item of menuItems" [class.open]="item.toggle ==='open'" >
+            <a  href="javascript:;" *ngIf="item.submenu;else singleLink" (click)="toggleNavigationSub($event,item)" [class.detailed]="item.details">
+                <pg-menu-icon *ngIf="item.iconType" [IconType]="item.iconType" [IconName]="item.iconName"></pg-menu-icon>
+                <span class="title">{{ item.label }}</span>
+                <span  *ngIf="item.submenu" class=" arrow" [class.open]="item.toggle ==='open'"></span>
+                <span  *ngIf="item.badgeCount" class="badge pull-right">{{item.badgeCount}}</span>
+            </a>
+            <ng-template #singleLink>
+                <a *ngIf="item.routerLink" [routerLink]="[item.routerLink]" [class.detailed]="item.details" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: false}">
+                    <pg-menu-icon *ngIf="item.iconType" [IconType]="item.iconType" [IconName]="item.iconName"></pg-menu-icon>
+                    <span class="title">{{ item.label }}</span>
+                    <span  *ngIf="item.submenu" class=" arrow" [class.open]="item.toggle ==='open'"></span>
+                    <span  *ngIf="item.badgeCount" class="badge pull-right">{{item.badgeCount}}</span>
+                </a>
+                <a *ngIf="item.externalLink" href="{{item.externalLink}}" [attr.target]="item.target" [class.detailed]="item.details">
+                    <pg-menu-icon *ngIf="item.iconType" [IconType]="item.iconType" [IconName]="item.iconName"></pg-menu-icon>
+                    <span class="title">{{ item.label }}</span>
+                    <span  *ngIf="item.submenu" class=" arrow" [class.open]="item.toggle ==='open'"></span>
+                    <span  *ngIf="item.badgeCount" class="badge pull-right">{{item.badgeCount}}</span>
+                </a>
+            </ng-template>
+            <ul class="sub-menu" *ngIf="item.submenu" [@toggleHeight]="item.toggle">
+                <li *ngFor="let child of item.submenu" [class.open]="child.toggle ==='open'">
+                    <a href="javascript:;" *ngIf="child.submenu;else singleLinkChild" (click)="toggleNavigationSub($event,item)">
+                        <pg-menu-icon *ngIf="child.iconType" [IconType]="child.iconType" [IconName]="child.iconName"></pg-menu-icon>
+                        <span class="title">{{ child.label }}</span>
+                        <span  *ngIf="child.submenu" class=" arrow" [class.open]="child.toggle ==='open'"></span>
+                        <span  *ngIf="child.badgeCount" class="badge pull-right">{{child.badgeCount}}</span>
+                    </a>
+                    <ng-template #singleLinkChild>
+                        <a *ngIf="child.routerLink" [routerLink]="[child.routerLink]">
+                            <pg-menu-icon *ngIf="child.iconType" [IconType]="child.iconType" [IconName]="child.iconName"></pg-menu-icon>
+                            <span class="title">{{ child.label }}</span>
+                            <span  *ngIf="child.submenu" class=" arrow" [class.open]="child.toggle ==='open'"></span>
+                            <span  *ngIf="child.badgeCount" class="badge pull-right">{{child.badgeCount}}</span>
+                        </a>
+                        <a *ngIf="child.externalLink" href="{{child.externalLink}}" [attr.target]="item.target">
+                            <pg-menu-icon *ngIf="child.iconType" [IconType]="child.iconType" [IconName]="child.iconName"></pg-menu-icon>
+                            <span class="title">{{ child.label }}</span>
+                            <span  *ngIf="child.submenu" class=" arrow" [class.open]="child.toggle ==='open'"></span>
+                            <span  *ngIf="child.badgeCount" class="badge pull-right">{{child.badgeCount}}</span>
+                        </a>
+                    </ng-template>
+                </li>
+            </ul>
+    </li>
+</ul>

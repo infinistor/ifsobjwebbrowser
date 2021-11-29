@@ -1,0 +1,283 @@
+<ng-container *ngIf="enablePeriodSearch">
+	<div class="group-start"></div>
+	<div class="expand-search-date m-l-5" *ngIf="searchPeriodFields.length > 1">
+		<kendo-dropdownlist class="expand-search-date-flex"
+												[disabled]="disabled"
+												[data]="searchPeriodFields"
+												textField="text"
+												valueField="value"
+												[valuePrimitive]="true"
+												[(value)]="selectedPreriodField">
+			<ng-template kendoDropDownListItemTemplate let-dataItem>
+				<span class="fs-12">{{ dataItem.text | translate }}</span>
+			</ng-template>
+			<ng-template kendoDropDownListValueTemplate let-dataItem>
+				<span class="fs-12">{{ dataItem?.text | translate }}</span>
+			</ng-template>
+		</kendo-dropdownlist>
+	</div>
+
+	<kendo-daterange class="expand-search-date m-t-1">
+		<label class="m-b-0">
+			<kendo-dateinput kendoDateRangeStartInput
+											 [format]="startDateFormat"
+											 [disabled]="disabled"
+											 [value]="startDate"
+											 (valueChange)="onStartDateTimeChanged($event)">
+			</kendo-dateinput>
+		</label>
+		<label class="m-l-5 m-r-5 m-b-0">
+			~
+		</label>
+		<label class="m-b-0">
+			<kendo-dateinput kendoDateRangeEndInput
+											 [format]="endDateFormat"
+											 [disabled]="disabled"
+											 [value]="endDate"
+											 (valueChange)="onEndDateTimeChanged($event)">
+			</kendo-dateinput>
+		</label>
+		<kendo-daterange-popup>
+			<ng-template kendoDateRangePopupTemplate>
+				<kendo-multiviewcalendar kendoDateRangeSelection (valueChange)="onCalendarSelect($event)">
+				</kendo-multiviewcalendar>
+				<div class="row" style="padding-left: 55px; padding-right: 55px;" *ngIf="displayTime">
+					<div class="col-6 text-center">
+						<label class="m-r-5" for="startTime">{{ 'UL_COMMON__SEARCH_DATE_START_TIME' | translate }}</label>
+						<kendo-timepicker
+							id="startTime"
+							[format]="'HH:mm:ss'"
+							[value]="startDate"
+							(valueChange)="onStartTimeChanged($event)"
+							[popupSettings]="{
+                appendTo: 'component'
+              }"
+						>
+						</kendo-timepicker>
+					</div>
+					<div class="col-6 text-center">
+						<label class="m-r-5" for="endTime">{{ 'UL_COMMON__SEARCH_DATE_END_TIME' | translate }}</label>
+						<kendo-timepicker
+							id="endTime"
+							[format]="'HH:mm:ss'"
+							[value]="endDate"
+							(valueChange)="onEndTimeChanged($event)"
+							[popupSettings]="{
+                appendTo: 'component'
+              }"
+						></kendo-timepicker>
+					</div>
+				</div>
+			</ng-template>
+		</kendo-daterange-popup>
+	</kendo-daterange>
+
+<!--	<div class="expand-search-date m-l-5 m-t-1" *ngIf="!displayTime">-->
+<!--		<kendo-datepicker [navigation]="true"-->
+<!--											[disabled]="disabled"-->
+<!--											[(value)]="startDate"-->
+<!--											[format]="'yyyy-MM-dd'"-->
+<!--											[max]="maxDate"-->
+<!--											placeholder=" "-->
+<!--											(valueChange)="dateChangeEvent($event)"-->
+<!--											(keydown)="keydownEvent($event)">-->
+<!--		</kendo-datepicker>-->
+<!--	</div>-->
+<!--	<div class="expand-search-date m-l-5 m-t-1" *ngIf="displayTime">-->
+<!--		<kendo-datetimepicker [cancelButton]="false"-->
+<!--													[disabled]="disabled"-->
+<!--													[(value)]="startDate"-->
+<!--													[format]="'yyyy-MM-dd HH:mm:ss'"-->
+<!--													[max]="maxDate"-->
+<!--													placeholder=" "-->
+<!--													(valueChange)="dateChangeEvent($event)"-->
+<!--													(keydown)="keydownEvent($event)">-->
+<!--		</kendo-datetimepicker>-->
+<!--	</div>-->
+<!--	<div class="expand-search-date">-->
+<!--		<label class="control-label k-text-default m-l-5 m-r-5">~</label>-->
+<!--	</div>-->
+<!--	<div class="expand-search-date m-t-1" *ngIf="!displayTime">-->
+<!--		<kendo-datepicker [navigation]="true"-->
+<!--											[disabled]="disabled"-->
+<!--											[(value)]="endDate"-->
+<!--											[format]="'yyyy-MM-dd'"-->
+<!--											[max]="maxDate"-->
+<!--											placeholder=" "-->
+<!--											(keydown)="keydownEvent($event)">-->
+<!--		</kendo-datepicker>-->
+<!--	</div>-->
+<!--	<div class="expand-search-date m-t-1" *ngIf="displayTime">-->
+<!--		<kendo-datetimepicker [cancelButton]="false"-->
+<!--													[disabled]="disabled"-->
+<!--													[(value)]="endDate"-->
+<!--													[format]="'yyyy-MM-dd HH:mm:ss'"-->
+<!--													[max]="maxDate"-->
+<!--													placeholder=" "-->
+<!--													(keydown)="keydownEvent($event)">-->
+<!--		</kendo-datetimepicker>-->
+<!--	</div>-->
+	<div class="expand-search-date m-l-5" *ngFor="let hours of hoursList">
+		<button kendoButton (click)="modifyHoursFromDate(hours)" [disabled]="disabled || !startDate">-{{hours}}{{ 'UL_COMMON__HOURS'  | translate }}</button>
+	</div>
+	<div class="expand-search-date m-l-5" *ngFor="let days of daysList">
+		<button kendoButton (click)="modifyDaysFromDate(days)" [disabled]="disabled || !startDate">-{{days}}{{ 'UL_COMMON__DAYS'  | translate }}</button>
+	</div>
+	<div class="reduction-search-date"><button type="button" class="k-button" #anchor (click)="searchDatePopup()"><i class="k-icon k-i-calendar"></i></button></div>
+	<kendo-popup class="reduction-search-date" [anchor]="anchor" (anchorViewportLeave)="showSearchPeriodPopup = false" [popupAlign]="popupAlign" *ngIf="showSearchPeriodPopup">
+		<div class="padding-10">
+			<kendo-dropdownlist *ngIf="searchPeriodFields.length > 1"
+													class="w-100"
+													[disabled]="disabled"
+													[data]="searchPeriodFields"
+													textField="text"
+													valueField="value"
+													[valuePrimitive]="true"
+													[(value)]="selectedPreriodField">
+				<ng-template kendoDropDownListItemTemplate let-dataItem>
+					<span class="fs-12">{{ dataItem.text | translate }}</span>
+				</ng-template>
+				<ng-template kendoDropDownListValueTemplate let-dataItem>
+					<span class="fs-12">{{ dataItem?.text | translate }}</span>
+				</ng-template>
+			</kendo-dropdownlist>
+			<div class="display-flex m-t-5">
+				<kendo-daterange>
+					<label class="m-b-0">
+						<kendo-dateinput kendoDateRangeStartInput
+														 [format]="startDateFormat"
+														 [disabled]="disabled"
+														 [value]="startDate"
+														 (valueChange)="onStartDateTimeChanged($event)">
+						</kendo-dateinput>
+					</label>
+					<label class="m-l-5 m-r-5 m-b-0">
+						~
+					</label>
+					<label class="m-b-0">
+						<kendo-dateinput kendoDateRangeEndInput
+														 [format]="endDateFormat"
+														 [disabled]="disabled"
+														 [value]="endDate"
+														 (valueChange)="onEndDateTimeChanged($event)">
+						</kendo-dateinput>
+					</label>
+					<kendo-daterange-popup>
+						<ng-template kendoDateRangePopupTemplate>
+							<kendo-multiviewcalendar kendoDateRangeSelection (valueChange)="onCalendarSelect($event)">
+							</kendo-multiviewcalendar>
+							<div class="row" style="padding-left: 55px; padding-right: 55px;" *ngIf="displayTime">
+								<div class="col-6 text-center">
+									<label class="m-r-5" for="startTimePopup">{{ 'UL_COMMON__SEARCH_DATE_START_TIME' | translate }}</label>
+									<kendo-timepicker
+										id="startTimePopup"
+										[format]="'HH:mm:ss'"
+										[value]="startDate"
+										(valueChange)="onStartTimeChanged($event)"
+										[popupSettings]="{ appendTo: 'component' }"
+									>
+									</kendo-timepicker>
+								</div>
+								<div class="col-6 text-center">
+									<label class="m-r-5" for="endTimePopup">{{ 'UL_COMMON__SEARCH_DATE_END_TIME' | translate }}</label>
+									<kendo-timepicker
+										id="endTimePopup"
+										[format]="'HH:mm:ss'"
+										[value]="endDate"
+										(valueChange)="onEndTimeChanged($event)"
+										[popupSettings]="{ appendTo: 'component' }"
+									></kendo-timepicker>
+								</div>
+							</div>
+						</ng-template>
+					</kendo-daterange-popup>
+				</kendo-daterange>
+			</div>
+
+<!--			<div class="display-flex m-t-5" *ngIf="!displayTime">-->
+<!--				<kendo-datepicker [navigation]="true"-->
+<!--													[disabled]="disabled"-->
+<!--													[(value)]="startDate"-->
+<!--													[format]="'yyyy-MM-dd'"-->
+<!--													[max]="maxDate"-->
+<!--													placeholder=" "-->
+<!--													(valueChange)="dateChangeEvent($event)"-->
+<!--													(keydown)="keydownEvent($event)">-->
+<!--				</kendo-datepicker>-->
+<!--				<label class="control-label k-text-default m-l-5 m-r-5">~</label>-->
+<!--				<kendo-datepicker [navigation]="true"-->
+<!--													[disabled]="disabled"-->
+<!--													[(value)]="endDate"-->
+<!--													[format]="'yyyy-MM-dd'"-->
+<!--													[max]="maxDate"-->
+<!--													placeholder=" "-->
+<!--													(keydown)="keydownEvent($event)">-->
+<!--				</kendo-datepicker>-->
+<!--			</div>-->
+<!--			<div class="display-flex m-t-5" *ngIf="displayTime">-->
+<!--				<kendo-datetimepicker [cancelButton]="false"-->
+<!--															[disabled]="disabled"-->
+<!--															[(value)]="startDate"-->
+<!--															[format]="'yyyy-MM-dd HH:mm:ss'"-->
+<!--															[max]="maxDate"-->
+<!--															placeholder=" "-->
+<!--															(valueChange)="dateChangeEvent($event)"-->
+<!--															(keydown)="keydownEvent($event)">-->
+<!--				</kendo-datetimepicker>-->
+<!--				<label class="control-label k-text-default m-l-5 m-r-5">~</label>-->
+<!--				<kendo-datetimepicker [cancelButton]="false"-->
+<!--															[disabled]="disabled"-->
+<!--															[(value)]="endDate"-->
+<!--															[format]="'yyyy-MM-dd HH:mm:ss'"-->
+<!--															[max]="maxDate"-->
+<!--															placeholder=" "-->
+<!--															(keydown)="keydownEvent($event)">-->
+<!--				</kendo-datetimepicker>-->
+<!--			</div>-->
+			<div class="row pull-right m-t-5 m-r-0">
+				<div class="display-flex m-r-5" *ngFor="let hours of hoursList">
+					<button kendoButton (click)="modifyHoursFromDate(hours)" [disabled]="disabled || !startDate">-{{hours}}{{ 'UL_COMMON__HOURS'  | translate }}</button>
+				</div>
+				<div class="display-flex m-r-5" *ngFor="let days of daysList">
+					<button kendoButton (click)="modifyDaysFromDate(days)" [disabled]="disabled || !startDate">-{{days}}{{ 'UL_COMMON__DAYS'  | translate }}</button>
+				</div>
+			</div>
+		</div>
+	</kendo-popup>
+</ng-container>
+<ng-container *ngIf="enableKeywordSearch">
+	<div class="group-start"></div>
+	<div>
+		<kendo-multiselect #searchFieldsMultiSelect
+											 class="mr-1"
+											 [disabled]="disabled"
+											 [data]="items"
+											 [(ngModel)]="searchFields"
+											 [textField]="'text'"
+											 [valueField]="'value'"
+											 [autoClose]="false"
+											 [clearButton]="false"
+											 [filterable]="true"
+											 [placeholder]="'UL_COMMON__SEARCH_FIELD' | translate"
+											 kendoMultiSelectSummaryTag>
+			<ng-template kendoMultiSelectItemTemplate let-dataItem>
+				<span class="fs-12"> {{ dataItem.text }}</span>
+			</ng-template>
+		</kendo-multiselect>
+	</div>
+	<div>
+		<input type="text" style="vertical-align: middle;" (keydown)="searchKeywordEnter($event)" [(ngModel)]="searchKeyword" placeholder="{{'UL_COMMON__SEARCH_KEYWORD' | translate }}" [disabled]="disabled" />
+	</div>
+</ng-container>
+<ng-container>
+	<div>
+		<div kendoTooltip style="display: inline; text-align: center; padding-top: 10px;">
+			<button type="button" class="btn btn-xs btn-primary m-l-5 m-r-5" [disabled]="disabled" (click)="search()" title="{{ 'UL_BUTTON_COMMON_SEARCH' | translate }}">
+				<i [class]="searchButtonIconClass"></i> <span class="m-l-5" *ngIf="searchButtonTitle">{{ searchButtonTitle | translate }}</span>
+			</button>
+			<button type="button" class="btn btn-xs btn-primary m-l-5 m-r-5" *ngIf="enableRefreshButton" [disabled]="disabled" (click)="search()" title="{{ 'UL_BUTTON_COMMON_REFRESH' | translate }}">
+				<i class="fas fa-sync-alt"></i>
+			</button>
+		</div>
+	</div>
+</ng-container>

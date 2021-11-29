@@ -1,0 +1,159 @@
+
+@import 'core.scss';
+
+$base-img-url: "../../assets/images" !global;
+$assets-url: "../../assets" !global;
+
+@import "modules/_layout.scss";
+@import "modules/_sidebar.scss";
+@import "modules/_secondary-sidebar.scss";
+@import 'modules/_header.scss';
+@import 'modules/_overlay-search.scss';
+@import 'modules/_split-view.scss';
+//Sidebar Styles
+@import 'modules/_quick-view.scss';
+@import 'modules/_list.scss';
+
+//UI Components
+@import "icons.scss";
+@import "modules/_typography.scss";
+@import 'modules/_breadcrumb.scss';
+@import "modules/_buttons.scss";
+@import "modules/_alerts.scss";
+@import "modules/_notifications.scss";
+@import "modules/_tabs_accordian.scss";
+@import "modules/_modals.scss";
+@import "modules/_progress_indicators.scss";
+
+//Pages Components
+@import "modules/_datepicker.scss";
+@import "modules/_timepicker.scss";
+@import "modules/_select.scss";
+@import "modules/_slider.scss";
+@import "modules/_switch.scss";
+@import "modules/_tabs.scss";
+@import "modules/_tags.scss";
+@import "modules/_uploader.scss";
+@import "modules/_pagination.scss";
+
+//Email App
+@import 'modules/_email.scss';
+
+//View
+@import "modules/_view.scss";
+
+//Cards
+@import "modules/_cards.scss";
+
+//Form Elements
+@import "modules/_form_elements.scss";
+
+//Tables
+@import "modules/_tables.scss";
+
+//Charts
+@import "modules/_charts.scss";
+
+//List
+@import "modules/_list.scss";
+
+//Social
+@import "modules/_social.scss";
+
+//Email
+@import "modules/_email.scss";
+
+//Login
+@import "modules/_login.scss";
+
+//Lock screen
+@import "modules/_lock_screen.scss";
+
+//Timeline
+@import "modules/_timeline.scss";
+
+//Gallery
+@import "modules/_gallery.scss";
+
+//Chat
+@import "modules/_chat.scss";
+
+//Z-indexes
+@import "modules/z_index.scss";
+
+//Misc
+@import "modules/_misc.scss";
+
+//Print
+@import "modules/_print.scss";
+
+//Misc Helpers
+@import "modules/_misc.scss";
+
+//Demo - Remove in production
+@import "modules/_demo.scss";
+
+//Responsive Classes
+@import "_responsive.scss";
+
+//Utils
+@import "utils.scss";
+
+//Vendor
+@import "vendor/perfect-scroller.scss";
+@import "vendor/typehead.scss";
+@import "vendor/ng-tree.scss";
+@import "vendor/quill.scss";
+@import "vendor/ng-datatable.scss";
+@import "vendor/ngx-nvd3.scss";
+@import "vendor/ngx-google-map.scss";
+
+.settings-layout {
+	display: table-cell;
+	display: flex;
+	width: 100%;
+
+	kendo-tabstrip {
+		width: 100%;
+
+		.k-tabstrip-items {
+			width: 180px;
+		}
+
+		.k-item.k-state-active {
+			background-color: $color-primary;
+			color: #ffffff;
+		}
+		.k-content {
+			border: 0;
+			padding-top: 0;
+			height: 450px;
+			.content {
+				margin-top: -10px;
+				padding-left: 20px;
+				height: 100%;
+				overflow-x: hidden;
+
+				.action-buttons {
+					position: absolute;
+					bottom: 20px;
+					right: 20px;
+				}
+			}
+		}
+	}
+}
+
+// 업로드 컴포넌트의 업로드 버튼 보이지 않도록 수정
+kendo-upload .k-action-buttons {
+	display: none
+}
+
+.k-datetime-container .k-datetime-wrap {
+	width: 345px !important;
+}
+
+
+.form-group {
+	margin-bottom: 3px;
+}

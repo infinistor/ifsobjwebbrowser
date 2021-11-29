@@ -1,0 +1,12 @@
+<div class="header {{extraClass}} {{_headerClass}}" >
+  <div *ngIf="boxed; else nonBoxedBlock" class="container">
+    <div class="header-inner"  *ngIf="!isHorizontalLayout; else boxedHorizontal">
+      <ng-container *ngTemplateOutlet="nonBoxedBlock"></ng-container>
+    </div>
+    <ng-template #boxedHorizontal>
+        <ng-container *ngTemplateOutlet="nonBoxedBlock"></ng-container>
+    </ng-template>
+  </div>
+  <ng-template #nonBoxedBlock><ng-content></ng-content>
+  </ng-template>
+</div>

@@ -1,0 +1,19 @@
+<div class="nav-tabs-wrapper {{_navTabClass}}" [class.scrolling]="_scrolling" #tabListContainer>
+  <span class="nav-tabs-navigator left"><i class="pg pg-arrow_left"></i></span>
+  <ul class="nav nav-tabs {{_navTabClass}}" [ngClass]="classMap" (click)="$event.preventDefault()">
+    <li *ngFor="let tabz of tabs" [ngClass]="['nav-item']"
+        [class.disabled]="tabz.disabled">
+      <a href="javascript:void(0);" class=""
+        [attr.id]="tabz.id ? tabz.id + '-link' : ''"
+        [class.active]="tabz.active" [class.disabled]="tabz.disabled"
+        (click)="tabz.active = true;" >
+        <span [ngTransclude]="tabz.headingRef">{{ tabz.heading }}</span>
+        <span *ngIf="tabz.removable" (click)="$event.preventDefault(); removeTab(tabz);" class="bs-remove-tab"> &#10060;</span>
+      </a>
+    </li>
+  </ul>
+  <span class="nav-tabs-navigator right"><i class="pg pg-arrow_right"></i></span>
+</div>
+<div class="tab-content {{_tabContentClass}}">
+  <ng-content></ng-content>
+</div>

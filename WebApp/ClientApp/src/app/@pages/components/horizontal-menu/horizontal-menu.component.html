@@ -1,0 +1,61 @@
+<div class="menu-bar header-sm-height" #menuWrapper [class.open]="_horizontalMobileMenu">
+  <a href="javascript:void(0)" (click)="toggleHorizontalMenu()" class="btn-link toggle-sidebar d-lg-none pg pg-close">
+  </a>
+  <ul (cdkObserveContent)="_onContentChanges()">
+    <li *ngFor="let item of _renduerMenuItems" [class.open]="item.open || item.mToggle ==='open'" [class.opening]="item.opening" [class.more]="item.type" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: false}">
+      <a href="javascript:void(0);" *ngIf="item.submenu;else singleLink" (click)="toggleLink($event,item)">
+        <span class="title">
+          <ng-template [ngIf]="item.type != 'more'">{{ item.label }}</ng-template>
+          <i *ngIf="item.type" class="fas fa-ellipsis-h"></i>
+        </span>
+        &nbsp;<i *ngIf="item.submenu && !item.type" class="fas fa-chevron-down" [class.open]="item.mToggle ==='open'"></i>
+      </a>
+      <ng-template #singleLink>
+        <a *ngIf="item.routerLink" [routerLink]="[item.routerLink]">
+          <i *ngIf="item.iconType && item.iconName" class="{{item.iconType}} {{item.iconName}}"></i>&nbsp;<span class="title">{{ item.label }}</span>
+        </a>
+        <a *ngIf="item.externalLink" href="{{item.externalLink}}" [attr.target]="item.target">
+          <i *ngIf="item.iconType && item.iconName" class="{{item.iconType}} {{item.iconName}}"></i>&nbsp;<span class="title">{{ item.label }}</span>
+        </a>
+      </ng-template>
+      <ul *ngIf="item.submenu">
+        <li *ngFor="let child of item.submenu">
+          <a href="javascript:void(0);" class="menu-popup" *ngIf="child.submenu;else singleLinkChild">
+            <span class="title">{{ child.label }}</span>
+            &nbsp;<i *ngIf="item.submenu" class="fas fa-chevron-down" [class.open]="item.mToggle ==='open'"></i>
+          </a>
+          <ng-template #singleLinkChild>
+            <a *ngIf="child.routerLink" class="menu-popup" [routerLink]="[child.routerLink]">
+              <span class="title">{{ child.label }}</span>
+            </a>
+            <a *ngIf="child.externalLink" class="menu-popup" href="{{child.externalLink}}" [attr.target]="child.target">
+              <span class="title">{{ child.label }}</span>
+            </a>
+          </ng-template>
+          <ul *ngIf="child.submenu" class="sub-menu">
+            <li *ngFor="let lvl2 of child.submenu">
+              <a *ngIf="lvl2.routerLink" [routerLink]="[lvl2.routerLink]">
+                <span class="title">{{ lvl2.label }}</span>
+              </a>
+              <a *ngIf="lvl2.externalLink" [routerLink]="[lvl2.externalLink]" [attr.target]="lvl2.target">
+                <span class="title">{{ item.label }}</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="ghost-nav-dropdown" [ngStyle]="item.ghost"></div>
+    </li>
+  </ul>
+  <ul #menuItemsList class="ghost-ul d-none d-lg-block">
+    <li *ngFor="let item of menuItems">
+      <a href="javascript:void(0);">
+        <span class="title">{{ item.label }}</span>
+        &nbsp;<i *ngIf="item.submenu" class="fas fa-chevron-down"></i>
+      </a>
+    </li>
+  </ul>
+  <ng-template [ngTemplateOutlet]="mobileSidebarFooter"></ng-template>
+</div>
+<div class="horizontal-menu-backdrop-dekstop" [style.display]="(currentItem?.open) ? 'block':'none'" (click)="closeHorizontalMenu()"></div>
+<div class="horizontal-menu-backdrop" [style.display]="_horizontalMobileMenu ? 'block':'none'" (click)="toggleHorizontalMenu()"></div>

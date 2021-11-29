@@ -1,0 +1,144 @@
+
+$disabled-color:$color-master-lighter;
+$font-size-base:14px;
+$component-background:#fff;
+$switch-duration:200ms;
+$ease-in-out-circ:ease;
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 32px;
+  min-width: 52px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(223, 223, 223);
+  box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+  cursor: pointer;
+  transition: all $switch-duration;
+  user-select: none;
+  &-inner {
+    color: #fff;
+    font-size: $font-size-base;
+    margin-left: 24px;
+    margin-right: 6px;
+    display: block;
+  }
+
+  &:after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    border-radius: 30px;
+    background-color: $component-background;
+    content: " ";
+    cursor: pointer;
+    transition: all $switch-duration $ease-in-out-circ;
+  }
+
+  &:active:after {
+    width: 34px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px fade($color-master-light, 20%);
+    outline: 0;
+  }
+
+  &:focus:hover {
+    box-shadow: none;
+  }
+
+  &-small {
+    height: 22px;
+    min-width: 35px;
+    line-height: 22px;
+
+    .switch-toggle-inner {
+      margin-left: 18px;
+      margin-right: 3px;
+    }
+
+    &:after {
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 0.5px;
+    }
+
+    &:active:after {
+      width: 22px;
+    }
+
+    &.toggle-switch-checked {
+      &:after {
+        left: 100%;
+        margin-left: -20px;
+      }
+
+      .switch-toggle-inner {
+        margin-left: 3px;
+        margin-right: 18px;
+      }
+    }
+    &:active{
+      &.toggle-switch-checked:after {
+        margin-left: -22px;
+      }
+    }
+  }
+
+
+  &-checked {
+    background-color: $color-primary;
+    &.primary{
+      background-color: $color-primary;
+    }
+    &.success{
+      background-color: $color-success;
+    }
+    &.info{
+      background-color: $color-info;
+    }
+    &.info{
+      background-color: $color-danger;
+    }
+    &.warning{
+      background-color: $color-warning;
+    }
+    .switch-toggle-inner {
+      margin-left: 6px;
+      margin-right: 24px;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: -30px;
+    }
+
+    &:active:after {
+      margin-left: -34px;
+    }
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    background: #f4f4f4;
+    opacity: 0.5;
+    &:after {
+      //background:$color-master-lighter;
+      cursor: not-allowed;
+    }
+
+    .switch-toggle-inner {
+      color: $disabled-color;
+    }
+  }
+}

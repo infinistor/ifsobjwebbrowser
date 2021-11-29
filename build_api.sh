@@ -1,0 +1,1 @@
+dotnet publish ./WebApi/WebApi.csproj -c Release -o ./publish/csspapi

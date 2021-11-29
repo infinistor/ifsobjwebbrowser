@@ -1,0 +1,20 @@
+::ng-deep .k-window-actions.k-dialog-actions {
+    display: none;
+}
+
+.loading-popup-container {
+    padding: 5px 20px;
+    font-size: 15px;
+}
+
+.loading-popup-content {
+    font-weight: 700;
+    color: #666666;
+}
+
+.loading-popup-spinner {
+    font-size: 12px;
+    margin-top: 12px;
+    text-align: center;
+    color: #f68a20;
+}

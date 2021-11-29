@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Ellipse_5_copy_2" data-name="Ellipse 5 copy 2" transform="translate(1 1)" fill="#fff" stroke="rgba(13,13,14,0.17)" stroke-linejoin="round" stroke-width="1">
+    <circle cx="9" cy="9" r="9" stroke="none" />
+    <circle cx="9" cy="9" r="9.5" fill="none" />
+  </g>
+  <path id="Arrow_copy_10" data-name="Arrow copy 10" d="M631.123,492,633,493.9l-1.089,1.1-2.915-2.951.05-.05-.05-.05L631.909,489l1.089,1.1Z" transform="translate(-621 -482)" opacity="0.302" />
+</svg>

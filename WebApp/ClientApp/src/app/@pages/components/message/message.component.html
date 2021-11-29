@@ -1,0 +1,32 @@
+<div class="pgn push-on-sidebar-open pgn-{{_options.Style}}">
+    <div class="alert alert-{{Message.type}}">
+        <div *ngIf="_options.Style === 'bar'; else determineBlock" [class.container]="_enableHorizontalContainer"> 
+            <div >
+                <span>{{ Message.content }}</span> 
+                <button class="close" (click)="onClickClose()"  type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
+        </div>
+        <ng-template #determineBlock>
+            <div *ngIf="_options.Style === 'circle'; else standardBlock">
+                <div class="pgn-thumbnail">
+                    <div>
+                        <img alt="" height="40" src="{{_options.imgURL}}" style="display: inline-block;" width="40">
+                    </div>
+                </div>
+                <div class="pgn-message">
+                    <div>
+                        <p class="bold">{{ _options.Title}}</p>
+                        <p>{{ Message.content }}</p>
+                    </div>
+                </div>  
+                <button type="button" class="close" (click)="onClickClose()"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>              
+            </div>
+        </ng-template>
+        <ng-template #standardBlock>
+                <div>
+                    <span>{{ Message.content }}</span>
+                    <button class="close" (click)="onClickClose()"  type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+        </ng-template>
+    </div>
+</div>

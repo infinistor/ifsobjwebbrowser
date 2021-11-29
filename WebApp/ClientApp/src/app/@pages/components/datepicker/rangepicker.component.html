@@ -1,0 +1,193 @@
+<span class="pg-calendar-picker"
+(click)="_openCalendar()"
+cdkOverlayOrigin
+#origin="cdkOverlayOrigin"
+#trigger>
+<span class="pg-calendar-picker-input pg-input"
+  [class.pg-input-disabled]="Disabled"
+  [class.pg-input-sm]="Size === 'small'"
+  [class.pg-input-lg]="Size === 'large'">
+<ng-container *ngTemplateOutlet="inputRangePart; context: { part: _part.Start }"></ng-container>
+<span class="pg-calendar-range-picker-separator"> ~ </span>
+<ng-container *ngTemplateOutlet="inputRangePart; context: { part: _part.End }"></ng-container>
+</span>
+<i class="pg-calendar-picker-clear anticon anticon-cross-circle"
+*ngIf="showClearIcon"
+(click)="onTouched();
+_clearValue($event)">
+</i>
+<span class="pg-calendar-picker-icon"></span>
+</span>
+
+<ng-template cdkConnectedOverlay
+       cdkConnectedOverlayHasBackdrop
+       [cdkConnectedOverlayOffsetX]="_offsetX"
+       [cdkConnectedOverlayPositions]="_positions"
+       [cdkConnectedOverlayOrigin]="origin"
+       (backdropClick)="_closeCalendar()"
+       (detach)="_closeCalendar()"
+       (positionChange)="onPositionChange($event)"
+       (attach)="onAttach()"
+       [cdkConnectedOverlayOpen]="_open">
+<div class="dropdown open show"
+ [class.top]="_dropDownPosition === 'top'"
+ [class.bottom]="_dropDownPosition === 'bottom'"
+ [@dropDownAnimation]="_dropDownPosition">
+  <div class="pg-calendar dropdown-menu show bg-white calendar-range"
+    [class.pg-calendar-time]="ShowTime"
+    [class.pg-calendar-show-time-picker]="_mode[_part.Start] === 'time' || _mode[_part.End] === 'time'"
+    tabindex="0">
+    <div class="date-panel">
+      <div class="pg-calendar-range-panel">
+        <ng-container *ngTemplateOutlet="calendarRangePart; context: { part: _part.Start }"></ng-container>
+        <span class="pg-calendar-range-middle">~</span>
+        <ng-container *ngTemplateOutlet="calendarRangePart; context: { part: _part.End }"></ng-container>
+      </div>
+      <div class="footer d-flex">
+          <span class="pg-calendar-footer-btn">
+            <a class="pg-calendar-time-picker-btn"
+              [class.pg-calendar-time-picker-btn-disabled]="!_isComplete()"
+              (click)="_changeTimeView($event)"
+              *ngIf="_mode[_part.Start] !== 'time' && ShowTime">
+              Chose Time
+            </a>
+            <a class="pg-calendar-time-picker-btn"
+              (click)="_changeYearView($event)"
+              *ngIf="_mode[_part.Start] === 'time' && ShowTime">
+              Choose Date
+            </a>
+            <a class="pg-calendar-ok-btn"
+              [class.pg-calendar-ok-btn-disabled]="!_isComplete()"
+              *ngIf="ShowTime" (click)="_closeCalendar()">
+              Ok
+            </a>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<!-- input template -->
+<ng-template #inputRangePart let-part="part">
+  <input class="pg-calendar-range-picker-input">
+</ng-template>
+
+<!-- calendar template -->
+<ng-template #calendarRangePart let-part="part">
+  <div class="pg-calendar-range-part"
+  [class.calendar-range-left]="part === _part.Start"
+  [class.calendar-range-right]="part === _part.End">
+  <div class="pg-calendar-input-wrap">
+    <div class="pg-calendar-date-input-wrap">
+
+    </div>
+  </div>
+
+  <div class="calendar-header">
+    <div style="position: relative;" *ngIf="_mode[part] !== 'time'">
+      <a class="pg-calendar-prev-year-btn"
+        *ngIf="part !== _part.End || _showBtn(part)"
+        (click)="_preYear(part)"></a>
+      <a class="pg-calendar-prev-month-btn"
+        *ngIf="_mode[part] !== 'month' && (part !== _part.End ||_showBtn(part))"
+        (click)="_preMonth(part)"></a>
+      <span class="pg-calendar-ym-select">
+                  <a class="pg-calendar-month-select"
+                    *ngIf="_mode[part] !== 'month'"
+                    (click)="_mode[part] = 'month'; _bindDisabledDateToPart()">
+                    {{_showMonth[part] + 1 }}
+                  </a>
+                  <a class="pg-calendar-year-select"
+                    (click)="_mode[part] = 'decade'">
+                    {{ _showYear[part] }}</a>
+                </span>
+      <a class="pg-calendar-next-month-btn"
+        *ngIf="_mode[part] !== 'month' && (part !== _part.Start || _showBtn(part))"
+        (click)="_nextMonth(part)"></a>
+      <a class="pg-calendar-next-year-btn"
+        *ngIf="part !== _part.Start || _showBtn(part)"
+        (click)="_nextYear(part)"></a>
+    </div>
+    <div style="position: relative;" *ngIf="_mode[part] === 'time'">
+        <span class="pg-calendar-my-select">
+          <a class="pg-calendar-year-select"
+            title="Choose a month">{{ _selectedYear[part] }}</a>
+          <a class="pg-calendar-month-select"
+            title="Choose a month">{{ _showMonth[part] + 1 }}</a>
+          <a class="pg-calendar-day-select">{{ _selectedDate[part] }}</a>
+        </span>
+    </div>
+  </div>
+
+  <div class="pg-calendar-year-panel" *ngIf="_mode[part] === 'decade'">
+    <div>
+    <div class="pg-calendar-year-panel-header">
+      <a class="pg-calendar-year-panel-prev-decade-btn" 
+        (click)="_preDecade(part)"></a>
+      <a class="pg-calendar-year-panel-decade-select">
+        <span class="pg-calendar-year-panel-decade-select-content">
+          {{ _startDecade[part] }}-{{ _startDecade[part] + 9 }}</span>
+        <span class="pg-calendar-year-panel-decade-select-arrow">x</span>
+      </a>
+      <a class="pg-calendar-year-panel-next-decade-btn"
+        (click)="_nextDecade(part)"></a>
+    </div>
+    <div class="pg-calendar-year-panel-body">
+      <table class="pg-calendar-year-panel-table" cellspacing="0" role="grid">
+        <tbody class="pg-calendar-year-panel-tbody">
+        <tr *ngFor="let tr of _yearPanel">
+          <ng-template ngFor let-td [ngForOf]="tr">
+            <td class="pg-calendar-year-panel-cell pg-calendar-year-panel-last-decade-cell"
+                *ngIf="td === 'start'">
+              <a class="pg-calendar-year-panel-year" (click)="_preDecade()">{{ _startDecade[part] - 1 }}</a>
+            </td>
+            <td *ngIf="(td !== 'start') && (td !== 'end')" [attr.title]="_startDecade[part] + td"
+                class="pg-calendar-year-panel-cell"
+                [ngClass]="{'pg-calendar-year-panel-selected-cell':(_startDecade[part] + td === _showYear[part])}">
+              <a class="pg-calendar-year-panel-year"
+                (click)="_setShowYear(_startDecade[part] + td, part, $event)">{{ _startDecade[part] + td }}</a>
+            </td>
+            <td class="pg-calendar-year-panel-cell pg-calendar-year-panel-next-decade-cell"
+                *ngIf="td === 'end'">
+              <a class="pg-calendar-year-panel-year" (click)="_nextDecade()">{{ _startDecade[part] + 10 }}</a>
+            </td>
+          </ng-template>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>
+
+  <div class="calendar-body">
+    <pg-calendar-view
+      (ClickMonth)="_clickMonth($event, part)"
+      (ClickDay)="_clickDay($event, part)"
+      [ClearTime]="!ShowTime"
+      (HoverDay)="_hoverDay($event)"
+      [HoveringSelectValue]="hoveringSelectValue"
+      [RangeValue]="Value"
+      [ShowMonth]="_showMonth[part]"
+      [ShowYear]="_showYear[part]"
+      [Mode]="_mode[part] === 'decade' ? 'year' : _mode[part]"
+      [DisabledDate]="_disabledDatePart[part]"
+      [FullScreen]="false"
+      [ShowHeader]="false"
+      [IsRange]="true"
+      [DatePicker]="true">
+    </pg-calendar-view>
+  </div>
+  <div class="pg-calendar-time-picker-body" *ngIf="ShowTime && _mode[part] === 'time'">
+    <pg-timepicker-inner
+      [PlaceHolder]="'Choose Time'"
+      [Format]="ShowTime && ShowTime.Format||'HH:mm:ss'"
+      [Disabled]="ShowTime && ShowTime.Disabled||false"
+      [DisabledHours]="ShowTime && ShowTime.DisabledHours||null"
+      [DisabledMinutes]="ShowTime && ShowTime.DisabledMinutes||null"
+      [DisabledSeconds]="ShowTime && ShowTime.DisabledSeconds||null"
+      [HideDisabledOptions]="ShowTime && ShowTime.HideDisabledOptions||false"
+      [ngModel]="Value[part]" (ngModelChange)="_changeTime($event, part)"></pg-timepicker-inner>
+    </div>
+  </div>
+</ng-template>

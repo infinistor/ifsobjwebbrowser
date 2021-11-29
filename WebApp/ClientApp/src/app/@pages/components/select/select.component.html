@@ -1,0 +1,114 @@
+<div
+      tabindex="0"
+      #trigger
+      cdkOverlayOrigin
+      #origin="cdkOverlayOrigin"
+      [ngClass]="_selectionClassMap"
+      (keydown.Enter)="handleKeyEnterEvent($event)"
+      (keydown.Backspace)="handleKeyBackspaceEvent($event)"
+      (keydown.ArrowUp)="handleKeyUpEvent($event)"
+      (keydown.ArrowDown)="handleKeyDownEvent($event)">
+      <div class="pg-select-selection__rendered" *ngIf="!ShowSearch">
+        <div class="pg-select-selection__placeholder">
+          <ng-template [ngIf]="!_selectedOption">
+            {{ PlaceHolder }}
+          </ng-template>
+        </div>
+        <div class="pg-select-selection-selected-value">
+          {{ _selectedOption?.Label }}
+        </div>
+      </div>
+      <div class="pg-select-selection__rendered" *ngIf="ShowSearch">
+        <div
+          [hidden]="_searchText||(!Open&&_selectedOption)||_selectedOptions.size"
+          class="pg-select-selection__placeholder">
+          <ng-template [ngIf]="(!_composing)&&_selectedOption">
+            {{ _selectedOption.Label }}
+          </ng-template>
+          <ng-template [ngIf]="(!_composing)&&(!_selectedOption)">
+            {{ PlaceHolder }}
+          </ng-template>
+        </div>
+        <ul *ngIf="Multiple">
+          <li
+            *ngFor="let option of _selectedOptions"
+            [@tagAnimation]
+            [attr.title]="option?.Label || option?.Value"
+            class="pg-select-selection__choice" style="-webkit-user-select: none;">
+            <span class="pg-select-selection__choice__remove" (click)="unSelectMultipleOption(option,$event)"></span><div class="pg-select-selection__choice__content">{{ option?.Label }}</div>
+          </li>
+          <li class="pg-select-search pg-select-search--inline">
+            <div class="pg-select-search__field__wrap">
+              <input
+                class="pg-select-search__field"
+                (compositionstart)="compositionStart()"
+                (compositionend)="compositionEnd();updateWidth(searchInput,_searchText);"
+                [(ngModel)]="_searchText"
+                (ngModelChange)="updateFilterOption();onSearchChange($event);"
+                (keydown)="updateWidth(searchInput,_searchText)"
+                (input)="updateWidth(searchInput,_searchText)"
+                (blur)="onTouched()"
+                #searchInput>
+              <span class="pg-select-search__field__mirror"></span></div>
+          </li>
+        </ul>
+        <div
+          *ngIf="!Multiple"
+          class="pg-select-selection-selected-value"
+          [hidden]="!(_selectedOption?.Label)||Open">
+          {{ _selectedOption?.Label }}
+        </div>
+        <div *ngIf="!Multiple" [hidden]="!Open" class="pg-select-search pg-select-search--inline">
+          <div class="pg-select-search__field__wrap">
+            <input
+              class="pg-select-search__field"
+              (blur)="onTouched()"
+              (compositionstart)="compositionStart()"
+              (compositionend)="compositionEnd()"
+              [(ngModel)]="_searchText"
+              (ngModelChange)="updateFilterOption();onSearchChange($event);"
+              #searchInput>
+            <span class="pg-select-search__field__mirror"></span>
+          </div>
+        </div>
+      </div>
+      <span
+        (click)="onTouched();clearSelect($event)"
+        class="pg-select-selection__clear"
+        style="-webkit-user-select: none;"
+        *ngIf="_selectedOption?.Label&&AllowClear&&!Multiple">
+      </span>
+      <span class="pg-select-arrow"><b></b></span></div>
+    <ng-template
+      cdkConnectedOverlay
+      cdkConnectedOverlayHasBackdrop
+      [cdkConnectedOverlayOrigin]="origin"
+      (backdropClick)="closeDropDown()"
+      (detach)="closeDropDown();"
+      (positionChange)="onPositionChange($event)"
+      [cdkConnectedOverlayWidth]="_triggerWidth"
+      [cdkConnectedOverlayOpen]="_isOpen"
+    >
+      <div
+        [ngClass]="_dropDownClassMap" [@dropDownAnimation]="_dropDownPosition">
+        <div style="overflow: auto;">
+          <ul class="pg-select-dropdown-menu pg-select-dropdown-menu-vertical pg-select-dropdown-menu-root" #dropdownUl (scroll)="dropDownScroll(dropdownUl)">
+            <li
+              *ngFor="let option of _filterOptions"
+              [class.pg-select-dropdown-menu-item-disabled]="option.Disabled"
+              [class.pg-select-dropdown-menu-item-active]="option.Value == _activeFilterOption?.Value"
+              [class.pg-select-dropdown-menu-item-selected]="(option.Value==(_selectedOption?.Value))||(isInSet(_selectedOptions,option))"
+              class="pg-select-dropdown-menu-item"
+              (click)="clickOption(option,$event)">
+              <ng-template
+                *ngIf="option.OptionTemplate"
+                [ngTemplateOutlet]="option.OptionTemplate">
+              </ng-template>
+              <ng-template [ngIf]="!option.OptionTemplate">
+                {{ option.Label }}
+              </ng-template>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>

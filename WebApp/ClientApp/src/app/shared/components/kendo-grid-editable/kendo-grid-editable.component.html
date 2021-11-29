@@ -1,0 +1,62 @@
+<div class="common-grid-wrapper">
+  <!--<kendo-grid [data]="grid.gridView"
+              [height]="grid.height"
+              [resizable]="grid.isUseResize"
+              [kendoGridSelectBy]="itemId"
+              [(selectedKeys)]="grid.selectedKeys"
+              [selectable]="grid.selectableSettings"
+              [pageSize]="grid.pageSize"
+              [pageable]="true"
+              [skip]="grid.skip"
+              (remove)="removeCellEvent($event)"
+              (add)="addCellEvent($event)"
+              (selectedKeysChange)="onSelectedKeysChange($event)"
+              (pageChange)="pageChange($event)"
+              (cellClick)="cellClick($event)"
+              [kendoGridInCellEditing]="createFormGroup"
+              [kendoGridBinding]="grid.editObject"
+              (selectionChange)="selectionChange($event)">-->
+  <kendo-grid [data]="grid.gridView"
+              [height]="grid.height"
+              [resizable]="grid.isUseResize"
+              [kendoGridSelectBy]="getSelectionKey"
+              [selectedKeys]="grid.selectedKeys"
+							[selectable]="grid.selectableSettings"
+              [pageSize]="grid.pageSize"
+              [pageable]="true"
+              [skip]="grid.skip"
+              (selectedKeysChange)="onSelectedKeysChange($event)">
+
+    <!--<kendo-grid-checkbox-column [width]="40" showSelectAll="grid.selectableSettings == 'multiple' && grid.isShowSelectAll" *ngIf="grid.isUseCheckboxSelect">
+        <ng-template kendoGridHeaderTemplate>
+            <input class="k-checkbox" kendoGridSelectAllCheckbox
+                   id="grid.name"
+                   [state]="grid.selectAllState"
+                   (selectAllChange)="onSelectAllChange($event)" >
+            <label class="k-checkbox-label" for="grid.name"></label>
+        </ng-template>
+    </kendo-grid-checkbox-column>-->
+    <kendo-grid-checkbox-column [width]="40" [showSelectAll]="grid.selectableSettings?.mode === 'multiple' && grid.isShowSelectAll" *ngIf="grid.isUseCheckboxSelect"></kendo-grid-checkbox-column>
+    <kendo-grid-column [width]="75" [title]="'UL_COMMON__NUMBER' | translate" *ngIf="grid.isUseSequence">
+      <ng-template kendoGridCellTemplate let-rowIndex="rowIndex">
+        <span>{{ grid.gridView.total - rowIndex }}</span>
+      </ng-template>
+    </kendo-grid-column>
+
+    <kendo-grid-column *ngFor="let column of grid.columns" [width]="column.width" [title]="column.title | translate" [field]="column.field" [format]="column.format" [sortable]="column.sortable === undefined || column.sortable">
+      <ng-template *ngIf='column.format === "" && (column.customTemplate == null || column.customTemplate === "")' kendoGridCellTemplate let-dataItem>
+        <div [innerHTML]="dataItem | dynamicPipe : column.pipe : column.pipeEnumTranslateClass : column.field | safeHtml"></div>
+      </ng-template>
+      <ng-template *ngIf='column.format === "" && column.customTemplate !== ""' kendoGridCellTemplate let-dataItem>
+        <div [innerHTML]="dataItem[column.field] | dynamicPipe : column.pipe : column.customTemplate | safeHtml"></div>
+      </ng-template>
+    </kendo-grid-column>
+    <ng-template kendoGridNoRecordsTemplate></ng-template>
+  </kendo-grid>
+  <div *ngIf="!isLoading && grid.gridView.total == 0" class="common-grid-no-record-layer">
+    <div>No records available.</div>
+  </div>
+  <loading [isActivate]="isLoading"></loading>
+</div>
+
+

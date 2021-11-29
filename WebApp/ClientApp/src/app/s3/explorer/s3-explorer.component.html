@@ -1,0 +1,363 @@
+<div class="explorer-container">
+	<ejs-filemanager *ngIf="ServiceUrl && AccessKey && AccessSecret"
+									 id='file-manager' #fileManager
+									 locale="ko-KR"
+									 [ajaxSettings]='ajaxSettings'
+									 [contextMenuSettings]='contextMenuSettings'
+									 [toolbarSettings]='toolbarSettings'
+									 [uploadSettings]='uploadSettings'
+									 [enablePersistence]='enablePersistence'
+									 [view]='viewMode'
+									 (created)="onCreated($event)"
+									 (beforeSend)="onBeforeSend($event)"
+									 (success)="onSuccess($event)"
+									 (menuOpen)='onMenuOpen($event)'
+									 (menuClick)="onMenuClick($event)"
+									 (fileDragStart)="onFileDragStart($event)"
+									 (fileSelect)="onFileSelect($event)"
+									 (beforeDownload)="onBeforeDownload($event)"
+									 (beforeImageLoad)="onBeforeImageLoad($event)"
+									 (toolbarCreate)="onToolbarCreate($event)"
+									 (toolbarClick)="onToolbarClick($event)"
+	>
+	</ejs-filemanager>
+
+	<kendo-dialog title="{{ 'UL_S3_SETTINGS_CORS' | translate }}" *ngIf="dialogOpenedCors" (close)="dialogOpenedCors = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupCors">
+				<div class="form-group row">
+					<div class="col-md-12 input-group">
+						<textarea type="text" rows="20" style="width: 100%; font-size: 10pt; resize: none;" class="form-control" formControlName="Cors" [disableControl]="inCommunication"></textarea>
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupCors.invalid" (click)="updateCors(formGroupCors.value)" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedCors = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_SETTINGS_ACL' | translate }}" *ngIf="dialogOpenedAcl" (close)="dialogOpenedAcl = false" [minWidth]="600" [width]="800" [height]="600">
+		<div>
+			<div class="form-group row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<common-kendo-grid-paginate #acl_grid
+																				[grid]="grid"
+																				[disabled]="inCommunication"
+																				(checkColumnAllChanged)="onCheckColumnAllChanged($event)"
+						>
+						</common-kendo-grid-paginate>
+					</div>
+				</div>
+			</div>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication" (click)="updateAcl(aclGrantsForGrid)" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedAcl = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_SETTINGS_WEB_SITE' | translate }}" *ngIf="dialogOpenedWebsite" (close)="dialogOpenedWebsite = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupWebsite">
+				<div class="form-group row">
+					<label class="col-md-3 control-label" for="WebSiteEnable"></label>
+					<div class="col-md-9">
+						<div class="form-group">
+							<kendo-switch id="WebSiteEnable" formControlName="Enable" [disableControl]="inCommunication" (valueChange)="onWebSiteEnableChanged($event)"></kendo-switch> {{ 'UL_S3_SETTING_WEB_SITE_ENABLE' | translate }}
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="WebSiteIndex">Index Document</label>
+					<div class="col-md-9">
+						<div class="form-group">
+							<input type="text" class="form-control" id="WebSiteIndex" formControlName="IndexDocumentSuffix" [disableControl]="inCommunication || !formGroupWebsite.controls['Enable'].value">
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="WebSiteError">Error Document</label>
+					<div class="col-md-9">
+						<div class="form-group">
+							<input type="text" class="form-control" id="WebSiteError" formControlName="ErrorDocument" [disableControl]="inCommunication || !formGroupWebsite.controls['Enable'].value">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupWebsite.invalid" (click)="updateWebSite()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedWebsite = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_SETTINGS_VERSIONING' | translate }}" *ngIf="dialogOpenedVersioning" (close)="dialogOpenedVersioning = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupVersioning">
+				<div class="form-group row">
+					<label class="col-md-1 control-label" for="VersioningEnable"></label>
+					<div class="col-md-11">
+						<div class="form-group">
+							<kendo-switch id="VersioningEnable" formControlName="Enable" [disableControl]="inCommunication"></kendo-switch> {{ 'UL_S3_SETTING_VERSIONING_ENABLE' | translate }}
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupVersioning.invalid" (click)="updateVersioning(formGroupVersioning.value)" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedVersioning = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_SETTINGS_BUCKET_POLICY' | translate }}" *ngIf="dialogOpenedBucketPolicy" (close)="dialogOpenedBucketPolicy = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupBucketPolicy">
+				<div class="form-group row">
+					<div class="col-md-11">
+						<div class="form-group">
+							<label>
+								<textarea type="text" rows="20" style="width: 100%; font-size: 10pt; resize: none;" class="form-control" formControlName="Policy" [disableControl]="inCommunication"></textarea>
+							</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupBucketPolicy.invalid" (click)="updateBucketPolicy(formGroupBucketPolicy.value)" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedBucketPolicy = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_OBJECT_METADATA' | translate }}" *ngIf="dialogOpenedMetadata" (close)="dialogOpenedMetadata = false" [minWidth]="800" [width]="1024">
+		<div>
+			<div class="col-12">
+				<button type="button" class="btn btn-xs btn-primary m-r-5"  [disabled]="inCommunication" (click)="addMetadataItem()">
+					<i class="fas fa-file-signature m-r-5"></i>{{ 'UL_BUTTON_COMMON_ADD' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-primary m-r-5" [disabled]="inCommunication || gridMetadata.selectedKeys.length === 0" (click)="updateMetadataItem()">
+					<i class="fas fa-edit m-r-5"></i>{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-danger m-r-5" [disabled]="inCommunication || gridMetadata.selectedKeys.length === 0" (click)="removeMetadataItem()">
+					<i class="fas fa-trash-alt m-r-5"></i>{{ 'UL_BUTTON_COMMON_REMOVE' | translate }}
+				</button>
+			</div>
+		</div>
+		<div>
+			<div class="col-12">
+				<common-kendo-grid-paginate #metadata_grid
+																		[grid]="gridMetadata"
+																		[disabled]="inCommunication"
+				>
+				</common-kendo-grid-paginate>
+			</div>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication" (click)="updateMetadata()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedMetadata = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_OBJECT_METADATA' | translate }}" *ngIf="dialogOpenedMetadataInput" (close)="dialogOpenedMetadataInput = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupMetadata">
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="MetadataKey">Key</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="MetadataKey" class="form-control" formControlName="Key" [disableControl]="inCommunication ">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 control-label" for="MetadataValue">Value</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="MetadataValue" class="form-control" formControlName="Value" [disableControl]="inCommunication ">
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupMetadata.invalid" (click)="saveMetadataItem()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedMetadataInput = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_OBJECT_TAGGING' | translate }}" *ngIf="dialogOpenedTagging" (close)="dialogOpenedTagging = false" [minWidth]="800" [width]="1024">
+		<div>
+			<div class="col-12">
+				<button type="button" class="btn btn-xs btn-primary m-r-5"  [disabled]="inCommunication" (click)="addTaggingItem()">
+					<i class="fas fa-file-signature m-r-5"></i>{{ 'UL_BUTTON_COMMON_ADD' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-primary m-r-5" [disabled]="inCommunication || gridTagging.selectedKeys.length === 0" (click)="updateTaggingItem()">
+					<i class="fas fa-edit m-r-5"></i>{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-danger m-r-5" [disabled]="inCommunication || gridTagging.selectedKeys.length === 0" (click)="removeTaggingItem()">
+					<i class="fas fa-trash-alt m-r-5"></i>{{ 'UL_BUTTON_COMMON_REMOVE' | translate }}
+				</button>
+			</div>
+		</div>
+		<div>
+			<div class="col-12">
+				<common-kendo-grid-paginate #tagging_grid
+																		[grid]="gridTagging"
+																		[disabled]="inCommunication"
+				>
+				</common-kendo-grid-paginate>
+			</div>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication" (click)="updateTagging()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedTagging = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_OBJECT_TAGGING' | translate }}" *ngIf="dialogOpenedTaggingInput" (close)="dialogOpenedTaggingInput = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupTagging">
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="TaggingKey">Key</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="TaggingKey" class="form-control" formControlName="Key" [disableControl]="inCommunication ">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 control-label" for="TaggingValue">Value</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="TaggingValue" class="form-control" formControlName="Value" [disableControl]="inCommunication ">
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupTagging.invalid" (click)="saveTaggingItem()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedTaggingInput = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_BUCKET_LIFECYCLE' | translate }}" *ngIf="dialogOpenedLifeCycle" (close)="dialogOpenedLifeCycle = false" [minWidth]="800" [width]="1024">
+		<div>
+			<div class="col-12">
+				<button type="button" class="btn btn-xs btn-primary m-r-5"  [disabled]="inCommunication" (click)="addLifeCycleRule()">
+					<i class="fas fa-file-signature m-r-5"></i>{{ 'UL_BUTTON_COMMON_ADD' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-primary m-r-5" [disabled]="inCommunication || gridLifeCycle.selectedKeys.length === 0" (click)="updateLifeCycleRule()">
+					<i class="fas fa-edit m-r-5"></i>{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-danger m-r-5" [disabled]="inCommunication || gridLifeCycle.selectedKeys.length === 0" (click)="removeLifeCycleRule()">
+					<i class="fas fa-trash-alt m-r-5"></i>{{ 'UL_BUTTON_COMMON_REMOVE' | translate }}
+				</button>
+			</div>
+		</div>
+		<div>
+			<div class="col-12">
+				<common-kendo-grid-paginate #lifecycle_grid
+																		[grid]="gridLifeCycle"
+																		[disabled]="inCommunication"
+																		(checkColumnAllChanged)="onCheckColumnAllChanged($event)"
+				>
+				</common-kendo-grid-paginate>
+			</div>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication" (click)="updateLifeCycle()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedLifeCycle = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_BUCKET_LIFECYCLE' | translate }}" *ngIf="dialogOpenedLifeCycleInput" (close)="dialogOpenedLifeCycleInput = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupLifeCycle">
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="LifeCycleId">ID</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="LifeCycleId" class="form-control" formControlName="Id" [disableControl]="inCommunication ">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 control-label" for="LifeCyclePrefix">Prefix</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="LifeCyclePrefix" class="form-control" formControlName="Prefix" [disableControl]="inCommunication ">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="LifeCycleDays">Days</label>
+					<div class="col-md-9 input-group">
+						<input type="number" id="LifeCycleDays" class="form-control" formControlName="Days" [disableControl]="inCommunication ">
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication || formGroupLifeCycle.invalid" (click)="saveLifeCycleRule()" primary="true">{{ 'UL_BUTTON_COMMON_UPDATE' | translate }}</button>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedLifeCycleInput = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_BUCKET_FILE_SHARE' | translate }}" *ngIf="dialogOpenedShare" (close)="dialogOpenedShare = false" [minWidth]="450" [width]="600">
+		<div>
+			<form role="form" autocomplete="off" [formGroup]="formGroupShare">
+				<div class="form-group row">
+					<label class="col-md-3 control-label required" for="ShareUrlExpiration">Expire At</label>
+					<div class="col-md-9 input-group">
+						<kendo-datetimepicker id="ShareUrlExpiration"
+							[format]="'yyyy-MM-dd HH:mm'"
+							[min]="minDateTime"
+							formControlName="Expiration"
+							[readonly]="formGroupShare.controls['ShareUrl'].valid"
+						>
+						</kendo-datetimepicker>
+					</div>
+				</div>
+				<div class="form-group row" *ngIf="formGroupShare.controls['ShareUrl'].valid">
+					<label class="col-md-3 control-label" for="ShareUrl">URL</label>
+					<div class="col-md-9 input-group">
+						<input type="text" id="ShareUrl" class="form-control" formControlName="ShareUrl" [disableControl]="inCommunication" [readOnly]="true" style="color: rgb(41, 43, 44) !important">
+						<div class="input-group-append ">
+							<button type="button" class="btn btn-xs btn-primary" [disabled]="formGroupShare.controls['ShareUrl'].invalid || inCommunication" (click)="copyShareUrl()">
+								Copy Url
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton *ngIf="formGroupShare.controls['ShareUrl'].invalid" [disabled]="inCommunication" (click)="getShareUrl()" primary="true">{{ 'UL_BUTTON_S3_CREATE_SHARE_URL' | translate }}</button>
+			<button kendoButton *ngIf="formGroupShare.invalid" [disabled]="inCommunication" (click)="dialogOpenedShare = false">{{ 'UL_BUTTON_COMMON_CANCEL' | translate }}</button>
+			<button kendoButton *ngIf="formGroupShare.valid" [disabled]="inCommunication" (click)="dialogOpenedShare = false">{{ 'UL_BUTTON_COMMON_CLOSE' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+	<kendo-dialog title="{{ 'UL_S3_VERSIONS' | translate }}" *ngIf="dialogOpenedVersions" (close)="dialogOpenedVersions = false" [minWidth]="1440" [width]="900">
+		<div class="row">
+			<div class="col-12">
+				<button type="button" class="btn btn-xs btn-primary m-r-5" [disabled]="inCommunication || gridVersions.selectedItems.length === 0 || !gridVersions.selectedItems[0].VersionId" (click)="versionDownload()">
+					<i class="fas fa-cloud-download-alt m-r-5"></i>{{ 'UL_BUTTON_COMMON_DOWNLOAD' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-secondary m-r-20" [disabled]="inCommunication" (click)="versionRefresh()">
+					<i class="fas fa-sync-alt m-r-5"></i>{{ 'UL_BUTTON_COMMON_REFRESH' | translate }}
+				</button>
+				<button type="button" class="btn btn-xs btn-danger m-r-5" [disabled]="inCommunication || gridVersions.selectedItems.length === 0 || !gridVersions.selectedItems[0].VersionId" (click)="showVersionRemove()">
+					<i class="fas fa-trash-alt m-r-5"></i>{{ 'UL_BUTTON_COMMON_REMOVE' | translate }}
+				</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<common-kendo-grid-paginate #versions_grid
+																		[grid]="gridVersions"
+																		[disabled]="inCommunication"
+				>
+				</common-kendo-grid-paginate>
+			</div>
+		</div>
+		<kendo-dialog-actions>
+			<button kendoButton [disabled]="inCommunication" (click)="dialogOpenedVersions = false">{{ 'UL_BUTTON_COMMON_CLOSE' | translate }}</button>
+		</kendo-dialog-actions>
+	</kendo-dialog>
+
+</div>
+<div kendoDialogContainer></div>

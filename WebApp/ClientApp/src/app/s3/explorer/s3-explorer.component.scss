@@ -1,0 +1,32 @@
+.explorer-container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+
+	ejs-filemanager {
+		height: 100% !important;
+	}
+}
+
+::ng-deep {
+	.fa,
+	.fas {
+		font-family: 'Font Awesome 5 Free' !important;
+		font-weight: 900 !important;
+	}
+
+	.k-grid-edit-cell {
+		.k-input {
+			font-size: 13px;
+		}
+	}
+
+	.k-datetime-container .k-datetime-wrap {
+		width: 350px !important;
+	}
+
+	.e-dlg-container {
+		z-index: 999 !important;
+	}
+}

@@ -1,0 +1,26 @@
+kendo-popup {
+	.k-popup {
+		font-size: 14px;
+
+		kendo-button-list {
+			font-size: 14px;
+
+			li {
+				/*margin-top: 10px;
+				margin-bottom: 10px;*/
+
+				i.fas {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+kendo-dropdownbutton {
+	button {
+		i.fas {
+			font-size: 14px;
+		}
+	}
+}

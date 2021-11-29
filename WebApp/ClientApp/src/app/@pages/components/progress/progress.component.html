@@ -1,0 +1,28 @@
+<div *ngIf="type === 'bar';else circleBlock">
+	<div *ngIf="indeterminate; else determineBarBlock">
+		<div class="progress" [class.progress-small]=!thick>
+			<div class="progress-bar-{{color}}" [class.progress-bar-indeterminate]=indeterminate></div>
+		</div>
+	</div>
+	<ng-template #determineBarBlock>
+		<div class="progress" [class.progress-small]=!thick>
+			<div class="progress-bar progress-bar-{{color}}" [ngStyle]="{'width':value+'%'}"></div>
+		</div>
+	</ng-template>
+</div>
+<ng-template #circleBlock>
+	<div class="progress-circle-{{color}}"
+	[class.progress-circle-indeterminate]=indeterminate 
+	[class.progress-circle]=!indeterminate 
+	[class.progress-circle-thick]=thick
+	>
+		<div *ngIf="indeterminate; else determineBlock"></div>
+	    <ng-template #determineBlock>
+			<div class="pie" [ngStyle]="_value2 && {'clip': 'rect(auto, auto, auto, auto)'}">
+				<div class="left-side half-circle" [ngStyle]="_value2 && {'transform': 'rotate('+value+'deg)'}"></div>
+				<div class="right-side half-circle" [ngStyle]="{'transform': _value2 === true ? 'rotate(180deg)' : 'rotate('+value+'deg)'}"></div>
+			</div>
+			<div class="shadow"></div>
+		</ng-template>
+	</div>
+</ng-template>

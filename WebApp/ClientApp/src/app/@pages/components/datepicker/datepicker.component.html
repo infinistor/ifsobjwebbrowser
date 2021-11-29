@@ -1,0 +1,148 @@
+
+  
+  <span style="display: block"
+    (click)="_openCalendar()"
+    cdkOverlayOrigin
+    #origin="cdkOverlayOrigin"
+    #trigger>
+  <input
+    type="input"
+    (blur)="onTouched()"
+    class="form-control"
+    [attr.placeholder]="_placeHolder"
+    [value]="_value|pgDate:Format"
+    readonly>
+  <i class="picker-clear anticon anticon-cross-circle"
+    *ngIf="_showClearIcon"
+    (click)="onTouched();_clearValue($event)">
+  </i>
+  <span class="picker-icon"></span>
+</span>
+  <ng-template
+    cdkConnectedOverlay
+    cdkConnectedOverlayHasBackdrop
+    [cdkConnectedOverlayPositions]="_positions"
+    [cdkConnectedOverlayOrigin]="origin"
+    (backdropClick)="_closeCalendar()"
+    (detach)="_closeCalendar()"
+    (positionChange)="onPositionChange($event)"
+    [cdkConnectedOverlayOpen]="_open"
+  >
+    <div class="dropdown open show"
+      [class.top]="_dropDownPosition==='top'"
+      [class.bottom]="_dropDownPosition==='bottom'"
+      [@dropDownAnimation]="_dropDownPosition">
+      <div class="pg-calendar dropdown-menu show bg-white" tabindex="0" [class.time]="ShowTime">
+        <div class="date-panel">
+          <div class="calendar-header">
+            <div class="d-flex flex-row " style="position: relative;" *ngIf="_mode!='time'">
+              <!-- <a class="prev-month-btn" title="" (click)="_preMonth()">
+                <i class="pg  pg-arrow_left"></i>
+              </a> -->
+              <span class="d-flex flex-row full-width justify-content-center">
+                <a  href="javascript:void(0);"  class="year-select" title="" (click)="_changeDecadeView($event)">{{_showYear }}</a>
+              </span>
+              <!-- <a class="next-year-btn" title="" (click)="_nextYear()">
+                <i class="pg  pg-arrow_right"></i>
+              </a> -->
+            </div>
+              <pg-datepicker-scroller [selectedMonth]="_showMonth" *ngIf="_mode!='time'"></pg-datepicker-scroller>
+
+            <div style="position: relative;" *ngIf="_mode=='time'">
+              <span class="block text-center">
+                <a href="javascript:void(0);"  class="year-select" title="Choose a month">{{_selectedYear}}</a>
+                <a href="javascript:void(0);" class="year-select p-l-15" title="Choose a month">{{ _showMonth + 1 }}</a>
+                <a href="javascript:void(0);"  class="year-select p-l-15">{{ _selectedDate }}</a>
+              </span>
+            </div>
+            <!-- smonth : {{_selectedMonth}}
+            showmonth {{_showMonth}}
+            showyear {{_showYear}}
+            selected year {{_selectedYear}} -->
+            <div class="card overlay-view"  *ngIf="_mode=='month'">
+                <!-- <span class="month-panel-year-select-arrow">x</span> -->
+                <div class="card-header month-header">
+                  <div class="d-flex flex-row justify-content-around" style="position: relative;">
+                  <a href="javascript:void(0);" class="month-panel-prev-year-btn" title="" (click)="_preYear()">
+                      <i class="pg  pg-arrow_left"></i>
+                  </a>
+                  <a href="javascript:void(0);" class="month-panel-year-select year-select" title="" (click)="_changeDecadeView($event)">
+                    <span class="">{{ _showYear }}</span>
+                  </a>
+                  <a href="javascript:void(0);" class="month-panel-next-year-btn" title="" (click)="_nextYear()">
+                      <i class="pg  pg-arrow_right"></i>
+                  </a>
+                  </div>
+                </div>
+                <div class="card-body relative">
+                  <pg-calendar-view
+                    [ClearTime]="!ShowTime"
+                    [DisabledDate]="DisabledDate"
+                    (ClickDay)="_clickDay($event)"
+                    [ShowMonth]="_showMonth"
+                    [ShowYear]="_showYear"
+                    [Value]="_value"
+                    (ClickMonth)="_clickMonth($event)"
+                    [Mode]="'year'"
+                    [FullScreen]="false"
+                    [ShowHeader]="false"
+                    pgDatePicker>
+                  </pg-calendar-view>
+                </div>
+            </div>
+            <div class="card overlay-view year-panel" *ngIf="_mode=='decade'">
+                <div class="card-header decade">
+                  <div class="d-flex flex-row justify-content-around" style="position: relative;">
+                    <a class="year-panel-prev-decade-btn" title="" (click)="_preDecade()">
+                        <i class="pg  pg-arrow_left"></i>
+                    </a>
+                    <a class="year-panel-decade-select" title="">
+                      <span class="year-panel-decade-select-content">{{ _startDecade }}-{{ _startDecade + 9 }}</span>
+                    </a>
+                    <a class="year-panel-next-decade-btn" title="" (click)="_nextDecade()">
+                        <i class="pg  pg-arrow_right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body relative">
+                  <div class="pg-calendar-view">
+                    <div class="d-flex flex-column justify-content-between full-height">
+                        <div class="d-flex justify-content-between flex-1" *ngFor="let tr of _yearPanel">
+                          <ng-template ngFor let-td [ngForOf]="tr">
+                            <div class="cell grid-cell year-panel-last-decade-cell" *ngIf="td=='start'">
+                                <a class="date" (click)="_preDecade()"><span class="value">{{ _startDecade - 1 }}</span></a>
+                              </div>
+                              <div *ngIf="(td!='start')&&(td!='end')" [attr.title]="_startDecade+td" class="cell grid-cell" [ngClass]="{'selected-cell':(_startDecade+td==_showYear)}">
+                                <a class="date" (click)="_setShowYear(_startDecade+td,$event)"><span class="value">{{ _startDecade + td }}</span></a>
+                              </div>
+                              <div class="cell grid-cell year-panel-next-decade-cell" *ngIf="td=='end'">
+                                <a class="date" (click)="_nextDecade()"><span class="value">{{ _startDecade + 10 }}</span></a>
+                              </div>
+                          </ng-template>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="calendar-body">
+              <pg-timepicker-inner
+              [Format]="ShowTime&&ShowTime.Format||'HH:mm:ss'"
+              [Disabled]="ShowTime&&ShowTime.Disabled||false"
+              [DisabledHours]="ShowTime&&ShowTime.DisabledHours||null"
+              [DisabledMinutes]="ShowTime&&ShowTime.DisabledMinutes||null"
+              [DisabledSeconds]="ShowTime&&ShowTime.DisabledSeconds||null"
+              [HideDisabledOptions]="ShowTime&&ShowTime.HideDisabledOptions||false"
+              [ngModel]="_value" (ngModelChange)="_changeTime($event)"
+              *ngIf="ShowTime&&(_mode == 'time')"></pg-timepicker-inner>
+            <pg-calendar-view [ClearTime]="!ShowTime" [DisabledDate]="DisabledDate" (ClickDay)="_clickDay($event)" [ShowMonth]="_showMonth" [ShowYear]="_showYear" [Value]="_value" (ClickMonth)="_clickMonth($event)" [Mode]="'month'" [FullScreen]="false" [ShowHeader]="false" pgDatePicker></pg-calendar-view>
+          </div>
+          <div class="footer row m-t-10" *ngIf="!HideFooter">
+              <a class="btn btn-link col" (click)="_changeTimeView($event)" *ngIf="(_mode != 'time')&&ShowTime">Choose Time</a>
+              <a class="btn btn-link col" (click)="_changeYearView($event)" *ngIf="(_mode == 'time')&&ShowTime">Select Date</a>
+              <a class="btn btn-link btn-sm col" *ngIf="ShowTime" (click)="_closeCalendar()">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>

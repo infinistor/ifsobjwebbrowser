@@ -1,0 +1,28 @@
+<pg-container extraClass="full-height" style="overflow-y: auto;">
+	<div style="width: 700px; position: absolute; left: 50%; margin-left: -350px;">
+		<h3 class="p-t-35">Sign into InfiniStor IfsS3 File Manager</h3>
+		<!-- START Login Form -->
+		<form class="p-t-15" autocomplete="off" [formGroup]="formGroupLogin">
+			<!-- START Form Control-->
+			<div pgFormGroupDefault class="form-group form-group-default" [class.has-error]="formGroupLogin.controls['ServiceUrl'].invalid && (formGroupLogin.controls['ServiceUrl'].dirty || formGroupLogin.controls['ServiceUrl'].touched)">
+				<label for="ServiceUrl">Service Url</label>
+				<input type="text" id="ServiceUrl" formControlName="ServiceUrl" [disableControl]="inCommunication" class="form-control" required>
+			</div>
+			<!-- END Form Control-->
+			<!-- START Form Control-->
+			<div pgFormGroupDefault class="form-group form-group-default" [class.has-error]="formGroupLogin.controls['AccessKey'].invalid && (formGroupLogin.controls['AccessKey'].dirty || formGroupLogin.controls['AccessKey'].touched)">
+				<label for="AccessKey">Access Key</label>
+				<input type="text" id="AccessKey" formControlName="AccessKey" [disableControl]="inCommunication" class="form-control" required>
+			</div>
+			<!-- END Form Control-->
+			<!-- START Form Control-->
+			<div pgFormGroupDefault class="form-group form-group-default" [class.has-error]="formGroupLogin.controls['AccessSecret'].invalid && (formGroupLogin.controls['AccessSecret'].dirty || formGroupLogin.controls['AccessSecret'].touched)">
+				<label for="AccessSecret">Access Secret</label>
+				<input type="text" id="AccessSecret" formControlName="AccessSecret" [disableControl]="inCommunication" class="form-control" required>
+			</div>
+			<!-- END Form Control-->
+			<button class="btn btn-primary btn-cons m-t-10" type="button" [disabled]="formGroupLogin.invalid" (click)="onLogin(formGroupLogin.value)">{{ 'UL_BUTTON_ACCOUNT_LOGIN' | translate }}</button>
+		</form>
+		<!--END Login Form-->
+	</div>
+</pg-container>

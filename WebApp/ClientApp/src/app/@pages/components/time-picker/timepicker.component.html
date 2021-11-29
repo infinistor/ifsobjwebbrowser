@@ -1,0 +1,131 @@
+
+    <span
+    class="time-picker"
+    [class.time-picker-large]="Size=='large'"
+    [class.time-picker-small]="Size=='small'"
+    cdkOverlayOrigin #origin="cdkOverlayOrigin"
+    #trigger>
+    <input
+      [disabled]="Disabled"
+      class="time-picker-input form-control"
+      [attr.placeholder]="PlaceHolder"
+      (click)="_openCalendar()"
+      (blur)="onTouched()"
+      [value]="_value|pgDate:_format"
+      readonly>
+  </span>
+  <ng-template
+    cdkConnectedOverlay
+    cdkConnectedOverlayHasBackdrop
+    [cdkConnectedOverlayPositions]="_positions"
+    [cdkConnectedOverlayOrigin]="origin"
+    (backdropClick)="_closeCalendar()"
+    (detach)="_closeCalendar()"
+    (positionChange)="onPositionChange($event)"
+    [cdkConnectedOverlayOpen]="_open"
+  >
+    <div class="time-picker-panel dropdown show open"
+      [class.top]="_dropDownPosition==='top'"
+      [class.bottom]="_dropDownPosition==='bottom'"
+      [style.width]="_width"
+      [@dropDownAnimation]="_dropDownPosition">
+      <div class="dropdown-menu show bg-white">
+        <div class="time-picker-panel-input-wrap">
+          <input class="time-picker-panel-input"
+            [attr.placeholder]="PlaceHolder"
+            #inputTimeInstance
+            [value]="_value|pgDate:_format"
+            (blur)="_manualChangeInput(inputTimeInstance)"
+            (keydown.Enter)="_manualChangeInput(inputTimeInstance)">
+          <a class="time-picker-panel-clear-btn" title="select time" (click)="_clearValue()"></a>
+        </div>
+        <div class="time-picker-panel-combobox d-flex flex-row">
+          <div class="select-panel" perfectScrollbar
+            #hourListInstance *ngIf="_showHour"
+            (mouseover)="_overHour()">
+            <ul class="no-style no-padding text-center">
+              <ng-template
+                ngFor
+                let-_hour
+                [ngForOf]="_hourList"
+                let-i="index">
+                <li
+                  class="btn btn-link"
+                  [class.active]="_hour.index===_selectedHour"
+                  [class.disabled]="_hour.disabled"
+                  [ngClass]="_hour.name"
+                  *ngIf="!(HideDisabledOptions&&_hour.disabled)"
+                  (click)="_selectHour(hourListInstance,_hour.index,_hour.disabled)">
+                  {{ _hour.name }}
+                </li>
+              </ng-template>
+            </ul>
+          </div>
+          <div class="select-panel" perfectScrollbar
+            #minuteListInstance
+            *ngIf="_showMinute"
+            (mouseover)="_overMinute()">
+            <ul class="no-style no-padding text-center">
+              <ng-template
+                ngFor
+                let-_minute
+                [ngForOf]="_minuteList"
+                let-i="index">
+                <li
+                class="btn btn-link"
+                  [ngClass]="_minute.name"
+                  *ngIf="!(HideDisabledOptions&&_minute.disabled)"
+                  [class.active]="_minute.index===_selectedMinute"
+                  [class.disabled]="_minute.disabled"
+                  (click)="_selectMinute(minuteListInstance,_minute.index,_minute.disabled)">
+                  {{ _minute.name }}
+                </li>
+              </ng-template>
+            </ul>
+          </div>
+          <div class="select-panel" perfectScrollbar
+            #secondListInstance *ngIf="_showSecond"
+            (mouseover)="_overSecond()">
+            <ul class="no-style no-padding text-center">
+              <ng-template
+                ngFor
+                let-_second
+                [ngForOf]="_secondList"
+                let-i="index">
+                <li
+                 class="btn btn-link"
+                  [ngClass]="_second.name"
+                  [class.active]="_second.index===_selectedSecond"
+                  [class.disabled]="_second.disabled"
+                  *ngIf="!(HideDisabledOptions&&_second.disabled)"
+                  (click)="_selectSecond(secondListInstance,_second.index,_second.disabled)">
+                  {{ _second.name }}
+                </li>
+              </ng-template>
+            </ul>
+          </div>
+          <div class="select-panel" perfectScrollbar
+          #ampmListInstance *ngIf="_showAMPM"
+          (mouseover)="_overSecond()">
+            <ul class="no-style no-padding text-center">
+              <ng-template
+                ngFor
+                let-_ampm
+                [ngForOf]="_ampmList"
+                let-i="index">
+                <li
+                class="btn btn-link"
+                  [ngClass]="_ampm.name"
+                  [class.active]="_ampm.index===_selectedAMPM"
+                  [class.disabled]="_ampm.disabled"
+                  *ngIf="!(HideDisabledOptions&&_ampm.disabled)"
+                  (click)="_selectAMPM(ampmListInstance,_ampm.index,_ampm.disabled)">
+                  {{ _ampm.name }}
+                </li>
+              </ng-template>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>

@@ -1,0 +1,98 @@
+<ul [class.table-pagination]="InTable" class="pagination" *ngIf="Simple">
+        <li
+          title="Previous"
+          class="page-item"
+          (click)="_jumpPage(_current-1)"
+          [class.pagination-disabled]="_isFirstIndex">
+          <a class="page-link">
+              <i class="pg pg-arrow_left"></i>
+          </a>
+        </li>
+        <li [attr.title]="_current+'/'+_lastIndex" class="pagination-simple-pager">
+          <input [ngModel]="PageIndex" (ngModelChange)="_PageIndexChange($event)" size="3"><span class="pagination-slash">／</span>{{ _lastIndex }}
+        </li>
+        <li
+          title="Next"
+          class="page-item"
+          (click)="_jumpPage(_current+1)"
+          [class.pagination-disabled]="_isLastIndex">
+          <a class="page-link">
+                <i class="pg pg-arrow_right"></i>
+          </a>
+        </li>
+      </ul>
+      <ul [class.table-pagination]="InTable" *ngIf="!Simple" class="pagination" [class.mini]="Size=='small'">
+        <span class="pagination-total-text" *ngIf="ShowTotal">{{ _total }}</span>
+        <li
+          title="Previous"
+          class="page-item"
+          (click)="_jumpPage(_current-1)"
+          [class.pagination-disabled]="_isFirstIndex">
+          <a class="page-link">
+                <i class="pg pg-arrow_left"></i>
+          </a>
+        </li>
+        <li
+          title="First"
+          class="page-item"
+          (click)="_jumpPage(_firstIndex)"
+          [class.active]="_isFirstIndex">
+          <a class="page-link">{{ _firstIndex }}</a>
+        </li>
+        <li
+          (click)="_jumpBefore(_pageSize)"
+          class="page-item"
+          *ngIf="(_lastIndex >9)&&(_current-3>_firstIndex)">
+          <a class="page-link"><i class="pg pg-more"></i></a>
+        </li>
+        <li
+          *ngFor="let page of _pages"
+          [attr.title]="page.index"
+          class="page-item"
+          (click)="_jumpPage(page.index)"
+          [class.active]="_current==page.index">
+          <a class="page-link">{{ page.index }}</a>
+        </li>
+        <li
+          (click)="_jumpAfter(_pageSize)"
+          class="page-item"
+          *ngIf="(_lastIndex >9)&&(_current+3<_lastIndex)">
+          <a class="page-link"><i class="pg pg-more"></i></a>
+        </li>
+        <li
+          class="page-item"
+          (click)="_jumpPage(_lastIndex)"
+          *ngIf="(_lastIndex>0)&&(_lastIndex!==_firstIndex)"
+          [class.active]="_isLastIndex">
+          <a class="page-link">{{ _lastIndex }}</a>
+        </li>
+        <li
+          title="Next"
+          class="page-item"
+          (click)="_jumpPage(_current+1)"
+          [class.pagination-disabled]="_isLastIndex">
+          <a class="page-link"><i class="pg pg-arrow_right"></i></a>
+        </li>
+        <div class="pagination-options">
+          <pg-select
+            *ngIf="ShowSizeChanger"
+            [Size]="Size=='small'?'small':''"
+            [ngModel]="_pageSize"
+            (ngModelChange)="_pageSizeChange($event)">
+            <pg-option
+              *ngFor="let option of _options"
+              [Label]="option"
+              [Value]="option">
+            </pg-option>
+            <pg-option
+              *ngIf="_options.indexOf(PageSize)==-1"
+              [Label]="PageSize"
+              [Value]="PageSize">
+            </pg-option>
+          </pg-select>
+          <div class="pagination-options-quick-jumper"
+            *ngIf="ShowQuickJumper">
+            Jump to <input [ngModel]="PageIndex" (ngModelChange)="_PageIndexChange($event)"> Page
+          </div>
+        </div>
+      </ul>

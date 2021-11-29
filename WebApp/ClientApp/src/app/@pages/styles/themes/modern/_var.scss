@@ -1,0 +1,164 @@
+// Pages Retro Theme
+// --------------------------------------------------
+// Copyright Reserved Revox - 2014
+// --------------------------------------------------
+
+$base-img-url: "../../img" !global;
+$assets-url: "../../../assets" !global;
+// Global Color
+// --------------------------------------------------
+// Base Grey Guided Color * change only $base-light
+// --------------------------------------------------
+
+//Base Grey Color
+$color-master: #575a5d !global;
+
+$color-white: #fff !global;
+$color-black: #000 !global;
+
+$color-success: #1dbb99 !global;
+$color-complete: #07c25f !global;
+$color-primary: #5f99c7 !global;
+$color-warning: #f7cf5f !global;
+$color-danger: #d9534f !global;
+$color-info: #1f3953 !global;
+
+// Lighter Grey colors
+$color-master-light:mix($color-master, #fff, 18%) !global;
+$color-master-lighter:#e8e9ea !global;
+$color-master-lightest:#f5f6f7 !global;
+
+// Darker Grey colors
+$color-master-dark:mix($color-master, #000, 50%) !global;
+$color-master-darker:mix($color-master, #000, 28%) !global;
+$color-master-darkest:mix($color-master, #000, 20%) !global;
+
+$base-font-family: -apple-system, BlinkMacSystemFont,  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell","Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif !default;
+
+// Menu Vars
+// --------------------------------------------------
+//Menu Animation Curve
+$menu-bezier:.05, .74, .27, .99 !global;
+$menu-icon-size:40px !global;
+$color-menu :#323237 !global;
+$color-menu-dark :mix($color-menu, #000, 77%) !global;
+$color-menu-darker :mix($color-menu, #000, 90%) !global;
+
+//Generating Menu font color
+$menu-mix-temp : mix($color-menu, #fff, 92%) !global;
+$menu :blend-hardlight($menu-mix-temp,#fff) !global;
+$color-menu-light :$menu !global;
+//Menu Font Color
+$color-menu-link-hover:#fff !global;
+
+// Body
+// --------------------------------------------------
+$body-background: $color-master-lightest !global;
+$body-color: $color-master !global;
+$body-font-family : $base-font-family !global;
+$body-font-size : 13px !global;
+
+// Layout
+// --------------------------------------------------
+$layout-header-height:60px !global;
+$layout-mobile-header-height:48px !global;
+$layout-mobile-logo-scale:0.8 !global;
+$layout-sidepanel-width-collapsed : 70px !global;
+$layout-sidepanel-width:280px !global;
+$layout-sidepanel-pin-width:250px !global;
+$layout-right-quickview-width: 285px !global;
+$layout-user-profile-margin:25px !global;
+$layout-container-fixed-lg: 1700px !global;
+
+$layout-gutter-sm : 5px !global;
+
+//Horizontal Dropdown
+//---------------------------------------------------
+$navbar-width:45px;
+$menu-padding:25px;
+
+$header-lg-height:60px;
+$header-md-height:50px;
+$header-sm-height:45px;
+
+// Panels
+$panel-border-color: transparent !global;
+$panel-padding: 20px !global;
+$panel-heading-padding: $panel-padding $panel-padding 7px $panel-padding !global;
+$panel-heading-min-height: 48px !global;
+$panel-condensed-heading-padding: 13px 13px 0 13px !global;
+$panel-condensed-body-padding: 13px !global;
+$panel-condensed-heading-min-height: 48px !global;
+
+//Forms
+$form-group-height: 54px !global;
+$form-control-border-color: rgba($color-black, .07) !global;
+
+//Dashboard
+$dashboard-background : $color-master-lightest !global;
+
+
+//Mixing Color varriable for creating both light and dark colors
+$mix-percentage-dark: 81% !global;
+$mix-percentage-darker: 60% !global;
+$mix-percentage-light: 80% !global;
+$mix-percentage-lighter: 20% !global;
+
+//Lighter colors
+$color-success-light: mix($color-success, $color-white, $mix-percentage-light) !global;
+$color-success-lighter: mix($color-success, $color-white, $mix-percentage-lighter) !global;
+
+$color-complete-light: mix($color-complete, $color-white, $mix-percentage-light) !global;
+$color-complete-lighter: mix($color-complete, $color-white, $mix-percentage-lighter) !global;
+
+$color-primary-light: mix($color-primary, $color-white, $mix-percentage-light) !global;
+$color-primary-lighter: mix($color-primary, $color-white, $mix-percentage-lighter) !global;
+
+$color-warning-light: mix($color-warning, $color-white, $mix-percentage-light) !global;
+$color-warning-lighter: mix($color-warning, $color-white, $mix-percentage-lighter) !global;
+
+$color-danger-light: mix($color-danger, $color-white, $mix-percentage-light) !global;
+$color-danger-lighter: mix($color-danger, $color-white, $mix-percentage-lighter) !global;
+
+$color-info-light: mix($color-info, $color-white, $mix-percentage-light) !global;
+$color-info-lighter: mix($color-info, $color-white, $mix-percentage-lighter) !global;
+
+//Darker colors
+$color-success-dark: mix($color-success, $color-black, $mix-percentage-dark) !global;
+$color-success-darker: mix($color-success, $color-black, $mix-percentage-darker) !global;
+
+$color-complete-dark: mix($color-complete, $color-black, $mix-percentage-dark) !global;
+$color-complete-darker: mix($color-complete, $color-black, $mix-percentage-darker) !global;
+
+$color-primary-dark: mix($color-primary, $color-black, $mix-percentage-dark) !global;
+$color-primary-darker: mix($color-primary, $color-black, $mix-percentage-darker) !global;
+
+$color-warning-dark: mix($color-warning, $color-black, $mix-percentage-dark) !global;
+$color-warning-darker: mix($color-warning, $color-black, $mix-percentage-darker) !global;
+
+$color-danger-dark: mix($color-danger, $color-black, $mix-percentage-dark) !global;
+$color-danger-darker: mix($color-danger, $color-black, $mix-percentage-darker) !global;
+
+$color-info-dark: mix($color-info, $color-black, $mix-percentage-dark) !global;
+$color-info-darker: mix($color-info, $color-black, $mix-percentage-darker) !global;
+
+// Email colors
+$sidebar-background-color : $color-menu-dark !global;
+
+$secondary-sidebar-width : 250px;
+
+// Components
+// --------------------------------------------------
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+//$padding-base-vertical:     6px !global;
+$padding-base-horizontal:   17px !global;
+
+// $padding-lg-vertical:    28px !global;
+$padding-lg-horizontal:  28px !global;
+
+// $padding-sm-vertical:    5px !global;
+$padding-sm-horizontal:  16px !global;
+
+$padding-xs-vertical:       2px !global;
+$padding-xs-horizontal:     9px !global;

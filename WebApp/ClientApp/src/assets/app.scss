@@ -1,0 +1,183 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts" !default;
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+
+@import "./kendo_variables.scss";
+@import "~@progress/kendo-theme-bootstrap/dist/all.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import '~@syncfusion/ej2-base/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-buttons/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-dropdowns/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-inputs/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-layouts/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-navigations/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-popups/styles/bootstrap4.css';
+@import '~@syncfusion/ej2-angular-kanban/styles/bootstrap4.css';
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1360px;
+	}
+}
+
+.k-treeview-item .k-mid .k-in {
+	margin-left: 8px;
+}
+
+.k-dialog-titlebar {
+	color:#fff;
+	background-color:#5f99c7;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	height: 32px;
+}
+
+kendo-multiselect, kendo-dropdownlist, kendo-dateinput {
+	font-size: 14px !important;
+}
+
+kendo-multiselect {
+	kendo-taglist {
+		li {
+			font-size: 12px !important;
+			margin-top: 1px !important;
+		}
+	}
+}
+
+.k-dropdown-wrap {
+	.k-input {
+		padding-top: 0 !important;
+	}
+}
+
+.k-dialog-content {
+	white-space: pre-wrap;
+}
+
+.v-middle {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.card {
+	margin: 0 !important;
+}
+
+.card-body-vertical-middle {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -0%);
+	left: 50%;
+}
+
+.bottom-line-1px {
+	border-bottom: 1px solid #1A1A1A24
+}
+
+.section-title {
+	font-size: 12px !important;
+	font-weight: bold !important;
+}
+
+.header-title {
+	font-size: 11px !important;
+}
+
+.pg-select-dropdown-menu-item {
+	font-size: 12px !important;
+}
+
+.pg-select-selection-selected-value {
+	font-size: 12px !important;
+}
+
+.pg-select-selection__placeholder {
+	font-size: 12px !important;
+}
+
+.btn-grey {
+	background-color: #E0E0E0 !important;
+}
+
+/* k-toolbar 내부 형식 변경 CSS */
+.k-toolbar {
+	height: 43px !important;
+	line-height: 40px !important;
+	display: table;
+	width: 100%;
+	padding-top: 0;
+	padding-bottom: 2px;
+}
+
+.k-toolbar > ul {
+	/*position: absolute;
+	right: 0;
+	top: 0;*/
+	list-style-type: none;
+	margin: 0 !important;
+	height: 100% !important;
+	display: contents;
+}
+
+.k-toolbar > ul > li {
+	margin-left: 4px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	line-height: 3;
+}
+
+/*.k-toolbar > ul > li {
+	display: table-row;
+}*/
+
+.k-toolbar > ul > li .group-start {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.k-toolbar .common-search-flex {
+	display: inline-flex;
+	vertical-align: top;
+	margin: 0 4px;
+}
+
+/*.k-autocomplete, .k-combobox, .k-dateinput, .k-datepicker, .k-datetimepicker, .k-dropdown, .k-multiselect, .k-numerictextbox, .k-maskedtextbox, .k-timepicker, .k-dropdowntree, .k-button {
+	font-size: 12px;
+}*/
+
+.w-100 {
+	width: 100px !important;
+}
+
+.w-110 {
+	width: 110px !important;
+}
+
+.w-120 {
+	width: 120px !important;
+}
+
+.w-130 {
+	width: 130px !important;
+}
+
+.w-140 {
+	width: 140px !important;
+}
+
+.w-150 {
+	width: 150px !important;
+}
+
+.form-control[readonly] {
+	color: rgba(98, 98, 98, 0.5) !important;
+}

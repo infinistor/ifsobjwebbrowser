@@ -1,0 +1,9 @@
+﻿<kendo-grid [data]="items" [resizable]="true">
+    <kendo-grid-column *ngFor="let column of datilGrid.columns" [title]="column.title | translate" [field]="column.field" [width]="column.width" [format]="column.format">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <div [innerHTML]="dataItem | dynamicPipe : column.pipe : column.pipeEnumTranslateClass : column.field | safeHtml"></div>
+        </ng-template>
+    </kendo-grid-column>
+    <ng-template kendoGridNoRecordsTemplate>
+    </ng-template>
+</kendo-grid>

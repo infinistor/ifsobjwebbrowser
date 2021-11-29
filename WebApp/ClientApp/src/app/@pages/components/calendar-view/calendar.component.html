@@ -1,0 +1,110 @@
+
+<div class="header" *ngIf="ShowHeader">
+  <pg-select class="year-select" style="width: 75px;"
+             [ngModel]="_showYear"
+             (ngModelChange)="_showYear = $event;_buildCalendar()">
+    <pg-option *ngFor="let year of _listOfYearName"
+               [Label]="year"
+               [Value]="year">
+    </pg-option>
+  </pg-select>
+  <pg-select class="month-select"
+             style="width: 70px;"
+             *ngIf="Mode == 'month'"
+             [ngModel]="_showMonth"
+             (ngModelChange)="_showMonth = $event;_buildCalendar()">
+    <pg-option *ngFor="let _month of _listOfMonthName;let i = index;"
+               [Label]="_month"
+               [Value]="i">
+    </pg-option>
+  </pg-select>
+
+</div>
+<table [class.table]="!DatePicker"
+       [class.calendar-table]="DatePicker"
+       [class.patch-full-height]="DatePicker"
+       *ngIf="Mode == 'month'">
+  <thead>
+    <tr>
+      <th *ngFor="let _min of _listOfWeekName"
+          [class.column-header]="!DatePicker"
+          [class.calendar-column-header]="DatePicker">
+        <span class="column-header-inner">{{ _min }}</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody [class.fullcalendartbody]="!DatePicker"
+         [class.calendartbody]="DatePicker">
+    <tr *ngFor="let week of _weeksCalendar">
+      <ng-template [ngIf]="!DatePicker">
+        <td [attr.title]="day.title"
+            *ngFor="let day of week.days"
+            class="cell"
+            [class.disabled-cell-first-of-row]="day.firstDisabled"
+            [class.disabled-cell-last-of-row]="day.lastDisabled"
+            [class.disabled-cell]="day.disabled"
+            [class.last-month-cell]="day.isLastMonth"
+            [class.next-month-btn-day]="day.isNextMonth"
+            [class.selected-day]="day.isSelectedDay"
+            [class.in-range-cell]="day.isInRange && !day.isSelectedDay"
+            [class.today]="day.isCurrentDay">
+          <div class="date">
+            <div class="value" (click)="_clickDay($event,day)">{{ day.number }}</div>
+            <div class="content">
+              <ng-template *ngIf="dateCell"
+                           [ngTemplateOutlet]="dateCell"
+                           [ngTemplateOutletContext]="{ $implicit: day}">
+              </ng-template>
+            </div>
+          </div>
+        </td>
+      </ng-template>
+      <ng-template [ngIf]="DatePicker">
+        <td [attr.title]="day.title"
+            *ngFor="let day of week.days"
+            class="cell"
+            [class.disabled-cell-first-of-row]="day.firstDisabled"
+            [class.disabled-cell-last-of-row]="day.lastDisabled"
+            [class.disabled-cell]="day.disabled"
+            [class.last-month-cell]="day.isLastMonth"
+            [class.next-month-btn-day]="day.isNextMonth"
+            [class.selected-day]="day.isSelectedDay"
+            [class.in-range-cell]="day.isInRange && !day.isSelectedDay"
+            [class.today]="day.isCurrentDay"
+            (mouseenter)="_onDayHover($event, day)">
+          <div class="date">
+            <div class="value s" (click)="_clickDay($event,day)">{{ day.number }}</div>
+          </div>
+        </td>
+      </ng-template>
+    </tr>
+  </tbody>
+</table>
+<div class="d-flex flex-column justify-content-between full-height "
+     [class.month-panel-table]="!DatePicker"
+     [class.calendar-month-panel-table]="DatePicker"
+     *ngIf="Mode == 'year'">
+  <div class="d-flex justify-content-between flex-1" *ngFor="let quarter of _quartersCalendar">
+    <ng-template [ngIf]="!DatePicker">
+      <div *ngFor="let month of quarter"
+           [attr.title]="month.name"
+           class="cell grid-cell"
+           [class.current-cell]="month.isCurrentMonth"
+           [class.selected-cell]="month.isSelectedMonth">
+        <a href="javascript:void(0)" class="date" (click)="_clickMonth($event,month)"><span class="value">{{ month.name }}</span></a>
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="DatePicker">
+      <div *ngFor="let month of quarter"
+           [attr.title]="month.name"
+           class="cell"
+           [class.selected-cell]="month.isSelectedMonth"
+           [class.cell-disabled]="month.disabled"
+           [class.current-cell]="month.isCurrentMonth">
+        <div class="date" (click)="_clickMonth($event,month)">
+          <span class="value">{{ month.name }}</span>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

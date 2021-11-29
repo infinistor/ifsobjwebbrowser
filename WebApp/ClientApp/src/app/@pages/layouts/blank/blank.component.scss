@@ -1,0 +1,40 @@
+@import 'core.scss';
+
+$base-img-url: "../../assets/images" !global;
+$assets-url: "../../assets" !global;
+
+@import "modules/_layout.scss";
+
+//UI Components
+@import "icons.scss";
+@import "modules/_typography.scss";
+@import "modules/_buttons.scss";
+@import "modules/_alerts.scss";
+@import "modules/_notifications.scss";
+
+//Cards
+@import "modules/cards.scss";
+
+//Form Elements
+@import "modules/form_elements.scss";
+
+//Login
+@import "modules/login.scss";
+
+//Lock screen
+@import "modules/lock_screen.scss";
+
+//Error
+@import "modules/_error.scss";
+
+//Z-indexes
+@import "modules/z_index.scss";
+
+//Misc Helpers
+@import "modules/_misc.scss";
+
+//Responsive Classes
+@import "_responsive.scss";
+
+//Utils
+@import "utils.scss";

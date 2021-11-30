@@ -35,11 +35,11 @@ sudo yum install -y dotnet-sdk-3.1
 
 ### API Build
 - `build_api.sh` 스크립트를 실행 또는 아래의 명령어를 복사하여 실행
-    `dotnet publish ./WebApi/WebApi.csproj -c Release -o ./publish/csspapi`
+- `dotnet publish ./WebApi/WebApi.csproj -c Release -o ./publish/csspapi`
 
 ### APP Build
 - `build_app.sh` 스크립트를 실행 또는 아래의 명령어를 복사하여 실행
-    `dotnet publish ./WebApp/WebApp.csproj -c Release -o ./publish/csspfront`
+- `dotnet publish ./WebApp/WebApp.csproj -c Release -o ./publish/csspfront`
 
 ## 실행 방법
 

@@ -1,10 +1,4 @@
-Libuv transport for the ASP.NET Core Kestrel cross-platform web server.
-This package was built from the source code at https://github.com/aspnet/AspNetCore/tree/62c098bc170f50feca15916e81cb7f321ffc52ff
-
 Helpers for building single-page applications on ASP.NET MVC Core.
-This package was built from the source code at https://github.com/aspnet/AspNetCore/tree/62c098bc170f50feca15916e81cb7f321ffc52ff
-
-Libuv transport for the ASP.NET Core Kestrel cross-platform web server.
 This package was built from the source code at https://github.com/aspnet/AspNetCore/tree/62c098bc170f50feca15916e81cb7f321ffc52ff
 
                                  Apache License

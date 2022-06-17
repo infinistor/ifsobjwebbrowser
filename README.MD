@@ -1,4 +1,4 @@
-# IfsS3Browser
+# IfsObjWebBrowser
 
 ## 용도
 WEB 기반 S3 Compatible 스토리지용 파일 탐색기
